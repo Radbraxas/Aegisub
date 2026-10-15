@@ -23,6 +23,40 @@
 #include <wx/image.h>
 #include <wx/intl.h>
 #include <wx/mstream.h>
+#include <wx/settings.h>
+
+namespace {
+int icon_theme = ICON_THEME_CLASSIC;
+
+/// Replace a classic icon group by its variant in the active icon theme, if it has one
+void resolve_icon_theme(const LibresrcBlob *&images, size_t &count) {
+	if (icon_theme != ICON_THEME_MATERIAL || count == 0)
+		return;
+
+	for (size_t i = 0; i < libresrc_icon_themes_count; i++) {
+		auto const& theme = libresrc_icon_themes[i];
+		if (theme.base != images[0].data)
+			continue;
+
+		if (wxSystemSettings::GetAppearance().IsDark()) {
+			images = theme.dark;
+			count = theme.dark_count;
+		} else {
+			images = theme.light;
+			count = theme.light_count;
+		}
+		return;
+	}
+}
+}
+
+void libresrc_set_icon_theme(int theme) {
+	icon_theme = theme;
+}
+
+int libresrc_get_icon_theme() {
+	return icon_theme;
+}
 
 wxBitmap libresrc_getimage(const unsigned char *buff, size_t size, int dir) {
 	wxMemoryInputStream mem(buff, size);
@@ -39,6 +73,8 @@ wxIcon libresrc_geticon(const unsigned char *buff, size_t size) {
 }
 
 wxBitmapBundle libresrc_getbitmapbundle(const LibresrcBlob *images, size_t count, int height, int dir) {
+	resolve_icon_theme(images, count);
+
 	// This function should only ever be called on the GUI thread but declaring this thread_local is the safe way
 	thread_local std::map<std::tuple<const LibresrcBlob *, int, int>, wxBitmapBundle> cache;
 	auto key = std::make_tuple(images, height, dir);

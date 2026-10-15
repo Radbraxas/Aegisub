@@ -68,6 +68,13 @@ namespace {
 		/// Listener for hotkey change signal
 		agi::signal::Connection hotkeys_changed_slot;
 
+		/// Listener for icon theme change signal
+		/// (Slots run in an unspecified order, so make sure the new theme is active before reloading the icons.)
+		agi::signal::Connection icon_theme_slot = OPT_SUB("App/Icon Theme", [this](agi::OptionValue const& opt) {
+			libresrc_set_icon_theme(opt.GetInt());
+			RegenerateToolbar();
+		});
+
 		/// Enable/disable the toolbar buttons
 		void OnIdle(wxIdleEvent &) {
 			for (size_t i = 0; i < commands.size(); ++i) {

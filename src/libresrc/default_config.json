@@ -11,6 +11,7 @@
 		"Call Tips" : false,
 		"First Start" : true,
 		"Hotkey Migrations" : [{"string": "placeholder since empty arrays aren't supported"}],
+		"Icon Theme" : 0,
 		"Language" : "",
 		"Maximized" : false,
 		"Save Charset" : "UTF-8",
