@@ -235,46 +235,45 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"ไฟล์คำบรรยายที่คุณเปิดมีสคริปต์ทุ่นเเรงภายในไฟล์ "
+"ต้องการโหลดสคริปต์ทุ่นเเรงที่เกี่ยวข้องหรือไม่?\n"
+"\n"
+"รายการสคริปต์:\n"
+"\n"
+"%s\n"
+"\n"
+"ควรโหลดสคริปต์ทุ่นเเรงที่เกี่ยวข้องก็ต่อเมื่อคุณไว้ใจผู้สร้างเท่านั้น! "
+"สคริปต์เหล่านี้ไม่จำเป็นสำหรับการดูหรือเเก้ไขไฟล์คำบรรยาย"
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    มาโคร: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "รีโหลดสคริปต์ทุ่นเเรงในautoload(นำเข้าอัตโนมัติ)"
+msgstr "โหลดสคริปต์ทุ่นเเรงที่เกี่ยวข้องหรือไม่?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "ไม่"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "สคริปต์นำเข้าอัตโนมัติหลัก"
+msgstr "เชื่อถือผู้สร้าง && โหลดสคริปต์"
 
 #: ../src/auto4_base.cpp:437
-#, fuzzy, c-format
-#| msgid ""
-#| "Automation Script referenced could not be found.\n"
-#| "Filename specified: %c%s\n"
-#| "Searched relative to: %s\n"
-#| "Resolved filename: %s"
+#, c-format
 msgid ""
 "Automation Script referenced could not be found.\n"
 "Filename specified: %s\n"
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
-"ไม่พบสิ่งที่สคริปต์ทุ่นเเรงใช้อ้างอิง\n"
-"ชื่อไฟล์: %c%s\n"
-"สิ่งที่เรียกหา: %s\n"
-"ชื่อไฟล์ที่ต้องทำการเเก้ไข: %s"
+"ไม่พบสคริปต์ทุ่นเเรงที่อ้างอิงถึง\n"
+"ชื่อไฟล์ที่ระบุ: %s\n"
+"ค้นหาโดยอ้างอิงจาก: %s\n"
+"ชื่อไฟล์ที่ได้: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -5095,21 +5094,19 @@ msgstr "ช่วงความยาว:"
 
 #: ../src/dialog_video_details.cpp:68
 msgid "Actual color matrix:"
-msgstr ""
+msgstr "เมทริกซ์สีจริง:"
 
 #: ../src/dialog_video_details.cpp:69
 msgid "Forced color matrix:"
-msgstr ""
+msgstr "เมทริกซ์สีที่บังคับใช้:"
 
 #: ../src/dialog_video_details.cpp:70
 msgid "Actual color range:"
-msgstr ""
+msgstr "ช่วงสีจริง:"
 
 #: ../src/dialog_video_details.cpp:71
-#, fuzzy
-#| msgid "Force sample rate"
 msgid "Forced color range:"
-msgstr "บังคับเรทตัวอย่าง"
+msgstr "ช่วงสีที่บังคับใช้:"
 
 #: ../src/dialog_video_details.cpp:72
 msgid "Decoder:"
@@ -5137,10 +5134,8 @@ msgstr ""
 "โปรดทำการติดแท็กสีเมทริกซ์ลงในไฟล์วิดีโอเพื่อให้มั่นใจว่าทั้งตัวเล่นวิดีโอเเละคำบรรยายใช้ค่าสีเมทริกซ์เดียวกัน"
 
 #: ../src/dialog_video_properties.cpp:140
-#, fuzzy
-#| msgid "Unload video"
 msgid "Untagged video"
-msgstr "นำวิดีโอออก"
+msgstr "วิดีโอที่ไม่ได้ระบุเมทริกซ์สี"
 
 #: ../src/dialog_video_properties.cpp:145
 msgid ""
@@ -5153,10 +5148,8 @@ msgstr ""
 "(สรุป:โทนสีซับอาจไม่ตรงกับของวิดีโอ)"
 
 #: ../src/dialog_video_properties.cpp:148
-#, fuzzy
-#| msgid "Warn on HDR/WCG video"
 msgid "HDR and/or WCG video"
-msgstr "เเจ้งเตือนสำหรับวิดีโอที่เป็น HDR/WCG"
+msgstr "วิดีโอ HDR และ/หรือ WCG"
 
 #: ../src/dialog_video_properties.cpp:161
 #, c-format
@@ -5227,15 +5220,7 @@ msgid "Resolution mismatch"
 msgstr "ความละเอียดไม่ตรงกัน"
 
 #: ../src/dialog_video_properties.cpp:260
-#, fuzzy, c-format
-#| msgid ""
-#| "The resolution of the loaded video and the resolution specified for the "
-#| "subtitles don't match.\n"
-#| "\n"
-#| "Video resolution:\t%d x %d\n"
-#| "Script resolution:\t%d x %d\n"
-#| "\n"
-#| "Change subtitles resolution to match video?"
+#, c-format
 msgid ""
 "The resolution of the loaded video and the resolution specified for the "
 "subtitles don't match.\n"
@@ -5245,12 +5230,12 @@ msgid ""
 "\n"
 "Change subtitles resolution to match video?"
 msgstr ""
-"ความละเอียดของวิดีโอที่นำเข้ากับความละเอียดของคำบรรยายไม่ตรงกัน\n"
+"ความละเอียดของวิดีโอที่นำเข้ากับความละเอียดที่กำหนดไว้ในคำบรรยายไม่ตรงกัน\n"
 "\n"
-"ความละเอียดวิดีโอ: \t%d x %d\n"
-"ความละเอียดสคริปต์: \t%d x %d\n"
+"ความละเอียดวิดีโอ:\t%d × %d\n"
+"ความละเอียดสคริปต์:\t%d × %d\n"
 "\n"
-"ท่านต้องการเปลี่ยนความละเอียดให้เท่ากับของตัววิดีโอหรือไม่ ?"
+"ต้องการเปลี่ยนความละเอียดของคำบรรยายให้ตรงกับวิดีโอหรือไม่?"
 
 #: ../src/dialog_video_properties.cpp:271
 #: ../src/dialog_video_properties.cpp:280
@@ -5383,17 +5368,15 @@ msgstr "ปล่อยความละเอียดโครงงานไ
 
 #: ../src/dialog_video_properties.cpp:509
 msgid "change ycbcr matrix"
-msgstr ""
+msgstr "เปลี่ยนเมทริกซ์ YCbCr"
 
 #: ../src/dialog_video_properties.cpp:512
 msgid "change script resolution"
 msgstr "เปลี่ยนความละเอียดของสคริปต์"
 
 #: ../src/dialog_video_properties.cpp:515
-#, fuzzy
-#| msgid "change script resolution"
 msgid "change layout resolution"
-msgstr "เปลี่ยนความละเอียดของสคริปต์"
+msgstr "เปลี่ยนความละเอียดเลย์เอาต์"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -7189,64 +7172,46 @@ msgid "Override &AR"
 msgstr "เขียนทับ &AR"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&File"
 msgctxt "Menu bar"
 msgid "&File"
 msgstr "&ไฟล์"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&Edit"
 msgctxt "Menu bar"
 msgid "&Edit"
 msgstr "&เเก้ไข"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&Subtitle"
 msgctxt "Menu bar"
 msgid "&Subtitle"
 msgstr "&คำบรรยาย"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&Timing"
 msgctxt "Menu bar"
 msgid "&Timing"
 msgstr "&ไทม์มิ่ง"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&Video"
 msgctxt "Menu bar"
 msgid "&Video"
 msgstr "&วิดีโอ"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&Audio"
 msgctxt "Menu bar"
 msgid "&Audio"
 msgstr "&เสียง"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "A&utomation"
 msgctxt "Menu bar"
 msgid "A&utomation"
 msgstr "ส&คริปต์ทุ่นเเรง"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "Vie&w"
 msgctxt "Menu bar"
 msgid "Vie&w"
 msgstr "&มุมมอง"
 
 #: default_menu.json:0
-#, fuzzy
-#| msgid "&Help"
 msgctxt "Menu bar"
 msgid "&Help"
 msgstr "&ความช่วยเหลือ"

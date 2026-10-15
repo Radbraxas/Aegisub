@@ -230,36 +230,35 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"열어 둔 자막 파일에 로컬 자동화 스크립트가 들어 있습니다. 연결된 자동화 스크"
+"립트를 불러올까요?\n"
+"\n"
+"스크립트 목록:\n"
+"\n"
+"%s\n"
+"\n"
+"작성자를 신뢰하는 경우에만 연결된 자동화 스크립트를 불러오세요! 자막 파일을 "
+"보거나 편집하는 데에는 필요하지 않습니다."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    매크로 : %s(%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "자동 장전 스크립트 자동화 다시 불러오기"
+msgstr "연결된 자동화 스크립트를 불러올까요?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "아니요"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "전역 자동 장전 스크립트"
+msgstr "작성자를 신뢰하고 && 스크립트 불러오기"
 
 #: ../src/auto4_base.cpp:437
-#, fuzzy, c-format
-#| msgid ""
-#| "Automation Script referenced could not be found.\n"
-#| "Filename specified: %c%s\n"
-#| "Searched relative to: %s\n"
-#| "Resolved filename: %s"
+#, c-format
 msgid ""
 "Automation Script referenced could not be found.\n"
 "Filename specified: %s\n"
@@ -267,8 +266,8 @@ msgid ""
 "Resolved filename: %s"
 msgstr ""
 "참조된 자동화 스크립트를 찾을 수 없습니다.\n"
-"지정된 파일 이름 : %c%s\n"
-"상대 위치 : %s\n"
+"지정된 파일 이름 : %s\n"
+"검색 기준 위치 : %s\n"
 "확인된 파일 이름 : %s"
 
 #: ../src/auto4_base.cpp:498
@@ -3854,6 +3853,18 @@ msgstr "해상도"
 msgid "From &video"
 msgstr "동영상에서(&V)"
 
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "스크립트 : "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "영상에서"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "레이아웃 : "
+
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
 msgid "YCbCr Matrix:"
@@ -5100,8 +5111,127 @@ msgid "Length:"
 msgstr "길이 :"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "실제 색 매트릭스 :"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "강제 색 매트릭스 :"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "실제 색 범위 :"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "강제 색 범위 :"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "디코더 :"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"불러온 영상에 색 매트릭스가 지정되어 있지 않습니다. Aegisub는 색 매트릭스를 "
+"%s(으)로 추정하지만, 다른 프로그램도 같은 매트릭스로 추정한다는 보장은 없습니"
+"다. 이 때문에 미디어 플레이어마다 영상의 색이 다르게 보일 수 있고, 자막 색이 "
+"영상 색과 맞지 않을 수 있습니다.\n"
+" \n"
+"모든 플레이어에서 영상이 똑같이 표시되고 자막 색이 영상 색과 확실히 맞도록 영"
+"상에 색 매트릭스를 지정하는 것을 고려해 보세요."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "색 매트릭스가 지정되지 않은 영상"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"불러온 영상에 HDR 및/또는 WCG 색이 있습니다. 일반 대사 자막은 이런 영상에서도"
+" 문제없이 작동하지만, HDR 및/또는 WCG 영상에서는 자막으로 영상 색을 맞출 수 "
+"없습니다."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "HDR 및/또는 WCG 영상"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"현재 자막 파일에 YCbCr 매트릭스가 설정되어 있지 않습니다.\n"
+"\n"
+"새로 불러온 이 영상 파일에 자막 파일을 사용할 계획이라면,\n"
+"자막 파일의 YCbCr 매트릭스를 영상의 색 공간(\"%s\")으로 설정해야 합니다.\n"
+"\n"
+"다른 영상 파일을 사용할 계획이라면, 올바른 영상 파일을 불러올 때까지\n"
+"YCbCr 매트릭스를 설정하지 않은 상태로 두어도 됩니다.\n"
+"\n"
+"이 확인 창은 환경 설정에서 바꿀 수 있습니다."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "스크립트의 YCbCr 매트릭스를 설정할까요?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "YCbCr 매트릭스를 설정하지 않음"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "스크립트의 YCbCr 매트릭스를 영상의 것으로 설정 (\"%s\")"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"이 영상의 권장 YCbCr 매트릭스(\"%s\")가 자막 파일의 YCbCr 매트릭스(\"%s\")와 "
+"다릅니다.\n"
+"\n"
+"새 영상의 색이 자막 파일을 처음 만들 때 사용한 영상과 똑같아 보인다면,\n"
+"자막 파일의 YCbCr 매트릭스를 영상의 YCbCr 매트릭스로 설정해야 합니다."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "YCbCr 매트릭스 불일치"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "스크립트의 YCbCr 매트릭스를 그대로 두기 (\"%s\")"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5125,9 +5255,10 @@ msgstr ""
 "\n"
 "영상과 일치하도록 자막 해상도를 수정하시겠습니까?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr "영상 해상도로 설정"
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "해상도를 그대로 두기"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
@@ -5145,9 +5276,128 @@ msgstr "스크립트 재표본화(테두리 제거)"
 msgid "Resample script"
 msgstr "스크립트 재표본화"
 
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"현재 자막 파일에 레이아웃 해상도가 설정되어 있지 않습니다.\n"
+"\n"
+"새로 불러온 이 영상 파일에 자막 파일을 사용할 계획이라면,\n"
+"자막 파일의 레이아웃 해상도를 영상의 표시 해상도로 설정해야 합니다.\n"
+"\n"
+"다른 영상 파일을 사용할 계획이라면, 올바른 영상 파일을 불러올 때까지\n"
+"레이아웃 해상도를 설정하지 않은 상태로 두어도 됩니다.\n"
+"\n"
+"레이아웃 해상도가 아직 없는 기존의 오래된 자막 파일을 수정하는 경우에는,\n"
+"자막 파일을 재생하려던 영상의 해상도로\n"
+"레이아웃 해상도를 설정해야 합니다.\n"
+"대개 파일의 스크립트 해상도와 같습니다. (%d × %d)\n"
+"\n"
+"이 확인 창은 환경 설정에서 바꿀 수 있습니다."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "스크립트의 레이아웃 해상도를 설정할까요?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "레이아웃 해상도를 설정하지 않음"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "스크립트의 레이아웃 해상도를 영상 해상도로 설정 (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr "스크립트의 레이아웃 해상도를 스크립트 해상도로 설정 (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"불러온 영상의 해상도와 자막에 지정된 레이아웃 해상도가 일치하지 않습니다.\n"
+"\n"
+"영상 해상도 :    %d × %d\n"
+"자막 레이아웃 해상도 :    %d × %d\n"
+"\n"
+"대개 문제가 되지 않으므로 자막 파일의 레이아웃 해상도를 그대로 두어도 됩니"
+"다.\n"
+"자막 파일에 중요한 서식이 없고 새로 불러온 영상에 맞춰 서식 작업을 하려는 경"
+"우에는,\n"
+"스크립트의 레이아웃 해상도를\n"
+"영상의 표시 해상도로 설정하는 것이 좋습니다."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"불러온 영상의 해상도와 자막에 지정된 레이아웃 해상도의 화면 비율이 다릅니"
+"다.\n"
+"\n"
+"영상 해상도 :    %d × %d\n"
+"자막 레이아웃 해상도 :    %d × %d\n"
+"\n"
+"자막의 레이아웃 해상도를 영상에 맞게 바꿀까요?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "레이아웃 해상도 불일치"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "레이아웃 해상도를 그대로 두기 (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "YCbCr 매트릭스 변경"
+
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "스크립트 해상도 변경"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "레이아웃 해상도 변경"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5756,13 +6006,53 @@ msgstr "기본 높이"
 msgid "Always resample"
 msgstr "항상 재표본화"
 
+#: ../src/preferences.cpp:242
+msgid "Match video resolution on open"
+msgstr "영상 해상도 맞추기"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "레이아웃 해상도"
+
 #: ../src/preferences.cpp:240
 msgid "Always set"
 msgstr "항상 설정"
 
-#: ../src/preferences.cpp:242
-msgid "Match video resolution on open"
-msgstr "영상 해상도 맞추기"
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "항상 스크립트 해상도로 설정"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "열 때 영상에서 레이아웃 해상도 설정"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "화면 비율이 바뀔 때"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "레이아웃 해상도가 일치하지 않으면 묻기"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "YCbCr 매트릭스"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "영상에 색 매트릭스가 지정되지 않으면 경고"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "HDR/WCG 영상이면 경고"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "스크립트에 매트릭스가 없으면 영상의 YCbCr 매트릭스 사용"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "열 때 영상의 YCbCr 매트릭스에 맞추기"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5843,6 +6133,14 @@ msgstr "음향 화면"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "커서 재생"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "현재 프레임 범위"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "이전 프레임 범위"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -7252,3 +7550,7 @@ msgstr "음향 영상"
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
 msgstr "음향 타이밍"
+
+#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
+#~ msgid "Set to video resolution"
+#~ msgstr "영상 해상도로 설정"
