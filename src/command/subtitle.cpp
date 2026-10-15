@@ -435,6 +435,24 @@ struct subtitle_select_visible final : public Command {
 	}
 };
 
+struct subtitle_transcribe final : public Command {
+	CMD_NAME("subtitle/transcribe")
+	CMD_ICON(translation_toolbutton)
+	STR_MENU("&Transcribe Audio...")
+	STR_DISP("Transcribe Audio")
+	STR_HELP("Create subtitle lines from the speech in the loaded audio, offline with whisper.cpp")
+	CMD_TYPE(COMMAND_VALIDATE)
+
+	bool Validate(const agi::Context *c) override {
+		return !!c->project->AudioProvider();
+	}
+
+	void operator()(agi::Context *c) override {
+		c->videoController->Stop();
+		ShowTranscribeDialog(c);
+	}
+};
+
 struct subtitle_spellcheck final : public Command {
 	CMD_NAME("subtitle/spellcheck")
 	CMD_ICON(spellcheck_toolbutton)
@@ -470,5 +488,6 @@ namespace cmd {
 		reg(std::make_unique<subtitle_select_all>());
 		reg(std::make_unique<subtitle_select_visible>());
 		reg(std::make_unique<subtitle_spellcheck>());
+		reg(std::make_unique<subtitle_transcribe>());
 	}
 }
