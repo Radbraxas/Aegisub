@@ -7419,7 +7419,7 @@ msgstr "为电影和视频创建和编辑字幕。"
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "字幕;字幕文件;隐藏式字幕;听障字幕;视频;音频;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
