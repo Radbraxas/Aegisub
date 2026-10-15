@@ -27,18 +27,92 @@
 //
 // Aegisub Project http://www.aegisub.org/
 
+#include "about_backdrop.h"
 #include "libresrc/libresrc.h"
 #include "format.h"
 #include "version.h"
 
+#include <chrono>
+#include <vector>
+
 #include <wx/button.h>
+#include <wx/dcbuffer.h>
 #include <wx/dialog.h>
+#include <wx/image.h>
 #include <wx/panel.h>
 #include <wx/sizer.h>
-#include <wx/statbmp.h>
 #include <wx/statline.h>
 #include <wx/stattext.h>
 #include <wx/textctrl.h>
+#include <wx/timer.h>
+#include <wx/window.h>
+
+namespace {
+/// Header of the About dialog: drifting pixel clouds behind the logo, with a
+/// burst of pixels wherever it is clicked
+class AboutAnimation final : public wxWindow {
+	AboutBackdrop backdrop;
+	wxTimer timer;
+	std::chrono::steady_clock::time_point last_tick = std::chrono::steady_clock::now();
+	std::vector<uint8_t> pixels;
+
+	wxImage logo_source;
+	wxBitmap logo;
+	wxSize logo_size;
+
+	void OnPaint(wxPaintEvent &) {
+		wxAutoBufferedPaintDC dc(this);
+		const wxSize size = GetClientSize();
+		if (size.x <= 0 || size.y <= 0) return;
+
+		backdrop.Render(pixels, size.x, size.y);
+		wxImage frame(size.x, size.y, pixels.data(), true);
+		dc.DrawBitmap(wxBitmap(frame), 0, 0);
+
+		// The logo is drawn at the display's full resolution so it stays sharp
+		if (logo_size != size) {
+			const double scale = GetContentScaleFactor();
+			logo = wxBitmap(logo_source.Scale(static_cast<int>(size.x * scale), static_cast<int>(size.y * scale),
+				wxIMAGE_QUALITY_HIGH), -1, scale);
+			logo_size = size;
+		}
+		dc.DrawBitmap(logo, 0, 0, true);
+	}
+
+	void OnTimer(wxTimerEvent &) {
+		const auto now = std::chrono::steady_clock::now();
+		backdrop.Step(std::chrono::duration<double>(now - last_tick).count());
+		last_tick = now;
+		Refresh(false);
+	}
+
+	void OnClick(wxMouseEvent &evt) {
+		backdrop.AddBurst(evt.GetX(), evt.GetY());
+		evt.Skip();
+	}
+
+public:
+	AboutAnimation(wxWindow *parent)
+	: wxWindow(parent, -1, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE)
+	, backdrop(FromDIP(4))
+	, timer(this)
+	, logo_source(GETIMAGE(about_logo).ConvertToImage())
+	{
+		SetBackgroundStyle(wxBG_STYLE_PAINT);
+		SetInitialSize(FromDIP(wxSize(420, 240)));
+		SetCursor(wxCursor(wxCURSOR_HAND));
+
+		Bind(wxEVT_PAINT, &AboutAnimation::OnPaint, this);
+		Bind(wxEVT_TIMER, &AboutAnimation::OnTimer, this);
+		Bind(wxEVT_LEFT_DOWN, &AboutAnimation::OnClick, this);
+		timer.Start(33);
+	}
+
+	~AboutAnimation() {
+		timer.Stop();
+	}
+};
+}
 
 void ShowAboutDialog(wxWindow *parent) {
 	wxDialog d(parent, -1, _("About Aegisub"), wxDefaultPosition, wxDefaultSize, wxCAPTION | wxCLOSE_BOX);
@@ -141,7 +215,7 @@ void ShowAboutDialog(wxWindow *parent) {
 	wxTextCtrl *textctrl = new wxTextCtrl(&d, -1, aboutString, wxDefaultPosition, wxSize(-1, 200), wxTE_MULTILINE | wxTE_READONLY | wxBORDER_NONE);
 
 	wxSizer *MainSizer = new wxBoxSizer(wxVERTICAL);
-	MainSizer->Add(new wxStaticBitmap(&d, -1, GETIMAGE(splash)), 0, wxCENTER, 0);
+	MainSizer->Add(new AboutAnimation(&d), 0, wxCENTER, 0);
 	MainSizer->Add(new wxStaticLine(&d, wxID_ANY), 0, wxEXPAND, 0);
 	MainSizer->Add(textctrl, 0, wxEXPAND, 0);
 	MainSizer->Add(new wxStaticLine(&d, wxID_ANY), 0, wxEXPAND, 0);
