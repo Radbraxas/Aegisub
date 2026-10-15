@@ -4169,7 +4169,7 @@ msgstr "همه"
 #: ../src/dialog_shift_times.cpp:114
 #, c-format
 msgid "from %d onward"
-msgstr " به جلو % i از  "
+msgstr "از %d به بعد"
 
 #: ../src/dialog_shift_times.cpp:117
 msgid "sel "
@@ -4488,11 +4488,11 @@ msgstr "سبک حاشیه:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
-msgstr ":% Xاندازه در محور "
+msgstr "مقیاس X%:"
 
 #: ../src/dialog_style_editor.cpp:331
 msgid "Scale Y%:"
-msgstr ":%Yاندازه در محور "
+msgstr "مقیاس Y%:"
 
 #: ../src/dialog_style_editor.cpp:332
 msgid "Rotation:"
