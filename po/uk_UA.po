@@ -19,14 +19,12 @@ msgid "Language"
 msgstr "Мова"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "Виберіть теку:"
+msgstr "Виберіть мову:"
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
-msgstr ""
+msgstr "Автоматично визначати базовий напрямок тексту (лише libass)"
 
 #: ../src/ass_style.cpp:197
 msgid "ANSI"
@@ -173,6 +171,9 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Не вдалося завантажити скрипт із теки автозавантаження Автоматизації.\n"
+"Перегляньте помилки, виправте їх і скористайтеся кнопкою «Пересканувати теку "
+"автозавантаження» в Менеджері автоматизації, щоб завантажити скрипти знову."
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -180,6 +181,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Не вдалося завантажити кілька скриптів із теки автозавантаження "
+"Автоматизації.\n"
+"Перегляньте помилки, виправте їх і скористайтеся кнопкою «Пересканувати теку "
+"автозавантаження» в Менеджері автоматизації, щоб завантажити скрипти знову."
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -187,6 +192,10 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Скрипт із теки автозавантаження Автоматизації завантажено з попередженнями.\n"
+"Перегляньте попередження, виправте їх і скористайтеся кнопкою «Пересканувати "
+"теку автозавантаження» в Менеджері автоматизації, щоб завантажити скрипти "
+"знову."
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -194,6 +203,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Кілька скриптів із теки автозавантаження Автоматизації завантажено з "
+"попередженнями.\n"
+"Перегляньте попередження, виправте їх і скористайтеся кнопкою «Пересканувати "
+"теку автозавантаження» в Менеджері автоматизації, щоб завантажити скрипти "
+"знову."
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -202,6 +216,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"Скрипт Автоматизації вказано з невідомим символом розташування.\n"
+"Знайдений символ розташування: %c\n"
+"Вказане ім'я файлу: %s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -216,28 +233,32 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"Відкритий файл субтитрів містить локальні скрипти Автоматизації. Завантажити "
+"пов'язані скрипти Автоматизації?\n"
+"\n"
+"Список скриптів:\n"
+"\n"
+"%s\n"
+"\n"
+"Завантажуйте пов'язані скрипти Автоматизації, лише якщо довіряєте їхнім "
+"авторам! Вони не потрібні для перегляду чи редагування файлу субтитрів."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Макрос: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Перезавантажити автозавантажувані скрипти автоматизації"
+msgstr "Завантажити пов'язані скрипти Автоматизації?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "Глобальні автозавантажувані скрипти"
+msgstr "Довіряти авторам && завантажити скрипти"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -247,6 +268,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"Не вдалося знайти вказаний скрипт Автоматизації.\n"
+"Вказане ім'я файлу: %s\n"
+"Шукали відносно: %s\n"
+"Остаточне ім'я файлу: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -258,15 +283,12 @@ msgstr ""
 "%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
 msgstr ""
-"Помилка під час завантаження скрипта автоматизації '%s':\n"
+"Попередження під час завантаження скрипту Автоматизації '%s':\n"
 "%s"
 
 #: ../src/auto4_base.cpp:508
@@ -290,22 +312,17 @@ msgid "File was not recognized as a script"
 msgstr "Файл не вдалося розпізнати як скрипт"
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
 msgstr ""
-"Помилка під час завантаження скрипта автоматизації '%s':\n"
+"Попередження у скрипті Автоматизації '%s':\n"
 "%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Не вдалося прочитати стиль"
+msgstr "Не вдалося ініціалізувати стан Lua"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -314,12 +331,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Помилка ініціалізації Lua-скрипту \"%s\":\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"Спроба завантажити скрипт Automation 3 як Lua-скрипт Automation 4. "
+"Automation 3 більше не підтримується."
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -327,22 +349,23 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Помилка виконання у функції перевірки Lua-макросу:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Активний рядок %d поза межами (має бути 1-%u)"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Вибраний рядок %d поза межами (має бути 1-%u)"
 
 #: ../src/auto4_lua.cpp:907
-#, fuzzy, c-format
-#| msgid "Select all dialogue lines"
+#, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr "Виділити всі рядки"
+msgstr "Вибраний рядок %d не є рядком діалогу"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -350,6 +373,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Помилка виконання у функції IsActive Lua-макросу:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -357,6 +382,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Помилка виконання у функції діалогу налаштувань Lua:\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -455,12 +482,12 @@ msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
 msgstr ""
+"Щоб застосувати нову мову, потрібно перезапустити Aegisub. Перезапустити "
+"зараз?"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "Про Aegisub"
+msgstr "Перезапустити Aegisub?"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -534,27 +561,27 @@ msgstr "Перевірити, чи наявна нова версія Aegisub"
 
 #: ../src/command/app.cpp:270 ../src/command/app.cpp:271
 msgid "Minimize"
-msgstr ""
+msgstr "Згорнути"
 
 #: ../src/command/app.cpp:272
 msgid "Minimize the active window"
-msgstr ""
+msgstr "Згорнути активне вікно"
 
 #: ../src/command/app.cpp:281 ../src/command/app.cpp:282
 msgid "Zoom"
-msgstr ""
+msgstr "Масштабувати"
 
 #: ../src/command/app.cpp:283
 msgid "Maximize the active window"
-msgstr ""
+msgstr "Розгорнути активне вікно"
 
 #: ../src/command/app.cpp:292 ../src/command/app.cpp:293
 msgid "Bring All to Front"
-msgstr ""
+msgstr "Усі на передній план"
 
 #: ../src/command/app.cpp:294
 msgid "Bring forward all open documents to the front"
-msgstr ""
+msgstr "Перемістити всі відкриті документи на передній план"
 
 #: ../src/command/audio.cpp:65
 msgid "&Close Audio"
@@ -589,8 +616,6 @@ msgid "Video Formats"
 msgstr "Формати відео"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
 msgstr "Відкрити аудіофайл"
@@ -656,8 +681,6 @@ msgid "Save an audio clip of the selected line"
 msgstr "Створює відрізок аудіо з вибраного рядка"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
 msgstr "Зберегти аудіокліп"
 
@@ -774,30 +797,24 @@ msgid "Scroll the audio display to center on the current audio selection"
 msgstr "Вирівняти виділення по центру екрана аудіо"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "Перейти до виділення"
+msgstr "Перейти до початку виділення"
 
 #: ../src/command/audio.cpp:410
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
-msgstr "Вирівняти виділення по центру екрана аудіо"
+msgstr ""
+"Прокрутити аудіодисплей, щоб центрувати початок поточного аудіовиділення"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Перейти до виділення"
+msgstr "Перейти до кінця виділення"
 
 #: ../src/command/audio.cpp:421
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
-msgstr "Вирівняти виділення по центру екрана аудіо"
+msgstr ""
+"Прокрутити аудіодисплей, щоб центрувати кінець поточного аудіовиділення"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -1685,10 +1702,8 @@ msgid "Open a keyframe list file"
 msgstr "Відкрити файл з переліком ключових кадрів"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open keyframes file"
 msgid "Open Keyframes File"
-msgstr "Відкрити файл з ключовими кадрами"
+msgstr "Відкрити файл ключових кадрів"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1703,17 +1718,13 @@ msgid "Save the current list of keyframes to a file"
 msgstr "Зберегти перелік ключових кадрів у файл"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Save Keyframes File"
 msgstr "Зберегти файл ключових кадрів"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "Файлів"
+msgstr "Текстові файли"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1857,10 +1868,8 @@ msgstr "Відкрити файл субтитрів"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
-msgstr "Виберіть файл субтитрів"
+msgstr "Відкрити файл субтитрів"
 
 #: ../src/command/subtitle.cpp:282
 msgid "Open A&utosaved Subtitles..."
@@ -1919,10 +1928,8 @@ msgid "Open script properties window"
 msgstr "Відкрити вікно властивостей файла субтитрів"
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
-msgstr "Вкажіть шлях збереження"
+msgstr "Зберегти файл субтитрів"
 
 #: ../src/command/subtitle.cpp:357 ../src/command/subtitle.cpp:360
 #: ../src/dialog_fonts_collector.cpp:312 ../src/dialog_fonts_collector.cpp:317
@@ -1939,7 +1946,7 @@ msgstr "Помилка"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "Невідома помилка"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -2200,11 +2207,9 @@ msgid "Open a VFR timecodes v1 or v2 file"
 msgstr "Відкрити файл з таймкодами VFR версії 1 або 2"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Відкрити файл з таймкодами"
+msgstr "Відкрити файл таймкодів"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2219,17 +2224,13 @@ msgid "Save a VFR timecodes v2 file"
 msgstr "Зберегти таймкоди VFR v2 у файл"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
-msgstr "Зберегти файл з таймкодами"
+msgstr "Зберегти файл таймкодів"
 
 #: ../src/command/timecode.cpp:103
-#, fuzzy
-#| msgid "Unload timecodes"
 msgid "Error saving timecodes"
-msgstr "Вивантажити файл таймкодів"
+msgstr "Помилка збереження таймкодів"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2575,13 +2576,13 @@ msgstr "Копіює поточний кадр до буфера обміну б
 
 #: ../src/command/video.cpp:321 ../src/command/video.cpp:322
 msgid "Copy image to Clipboard (only subtitles)"
-msgstr ""
+msgstr "Копіювати зображення в буфер обміну (лише субтитри)"
 
 #: ../src/command/video.cpp:323
 msgid ""
 "Copy the currently displayed subtitles to the clipboard, with transparent "
 "background"
-msgstr ""
+msgstr "Копіювати показані зараз субтитри в буфер обміну з прозорим тлом"
 
 #: ../src/command/video.cpp:332 ../src/command/video.cpp:333
 msgid "Next Frame"
@@ -2662,13 +2663,14 @@ msgstr "Зберегти поточний кадр без субтитрів ф�
 
 #: ../src/command/video.cpp:534 ../src/command/video.cpp:535
 msgid "Save PNG snapshot (only subtitles)"
-msgstr ""
+msgstr "Зберегти знімок PNG (лише субтитри)"
 
 #: ../src/command/video.cpp:536
 msgid ""
 "Save the currently displayed subtitles with transparent background to a PNG "
 "file in the video's directory"
 msgstr ""
+"Зберегти показані зараз субтитри з прозорим тлом у файл PNG у теці відео"
 
 #: ../src/command/video.cpp:546
 msgid "&Jump to..."
@@ -2719,10 +2721,8 @@ msgid "Open a video file"
 msgstr "Відкрити відеофайл"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
-msgstr "Відрити відеофайл"
+msgstr "Відкрити відеофайл"
 
 #: ../src/command/video.cpp:602
 msgid "&Use Dummy Video..."
@@ -2749,20 +2749,16 @@ msgid "Play"
 msgstr "Відтворити"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "Відтворити відео з поточної позиції"
+msgstr "Відтворити відео з цієї позиції"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "Відтворити рядок"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play the audio for the current line"
 msgid "Play the video for the current line"
-msgstr "Відтворити аудіо поточного рядка"
+msgstr "Відтворити відео поточного рядка"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2780,17 +2776,15 @@ msgstr "Замаскувати площу, яку на телебаченні м
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "Скинути &панорамування відео"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "Закрити відео"
+msgstr "Скинути панорамування відео"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "Скинути положення відео на відеодисплеї"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2918,70 +2912,56 @@ msgid "Line"
 msgstr "Пряма"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Додає пряму"
+msgstr "Додати лінію"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Бікубічна крива"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Додає бікубічну криву Безьє"
+msgstr "Додати бікубічну криву Безьє"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Перетворити"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Перетворює відрізок із прямої на криву і навпаки"
+msgstr "Перетворити сегмент між лінією та бікубічною кривою"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Вставити"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "Вставляє опорну точку"
+msgstr "Вставити контрольну точку"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "Видалити"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "Видаляє опорну точку"
+msgstr "Видалити контрольну точку"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "Вільне малювання"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "Малювати довільну фігуру"
+msgstr "Намалювати довільну фігуру"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "Вільне малювання зі згладженням"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Малювати довільну фігуру зі згладженням"
+msgstr "Намалювати згладжену довільну фігуру"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3043,20 +3023,16 @@ msgid "Choose file to be attached"
 msgstr "Виберіть файл, який буде вкладено"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Шрифт"
+msgstr "Файли шрифтів"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "вкладення шрифту"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "вкладення графічного файла"
+msgstr "Графічні файли"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3117,7 +3093,7 @@ msgstr "Додати скрипт автоматизації"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "Скрипт '%s' уже завантажено"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3135,18 +3111,7 @@ msgid "Scripting engines installed:"
 msgstr "Встановлені рушії скриптів:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3164,9 +3129,7 @@ msgstr ""
 "Автор: %s\n"
 "Версія: %s\n"
 "Повний шлях: %s\n"
-"Статус: %s\n"
-"\n"
-"Функції, які виконує цей скрипт:"
+"Стан: %s\n"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3178,17 +3141,16 @@ msgstr "Не вдалося завантажити"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "Завантажено з попередженнями"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: попередження"
+msgstr "Попередження: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "Функції, що надає скрипт:\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3313,51 +3275,51 @@ msgstr "Відео: %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480 (SD повноекранне)"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480 (SD анаморфне)"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360 (SD широкоекранне)"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396 (SD широкоекранне)"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352 (SD широкоекранне MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400 (SD широкоекранне MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576 (SuperPAL широкоекранне)"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720 (HD 720p)"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080 (FHD 1080p)"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440 (QHD 1440p)"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160 (4K UHD 2160p)"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920 (FHD вертикальне)"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3422,17 +3384,13 @@ msgid "Export..."
 msgstr "Експортувати..."
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
 msgstr "Експортувати файл субтитрів"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Помилка під час імпортування стилів"
+msgstr "Помилка експорту субтитрів"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3565,7 +3523,7 @@ msgstr "Зміщення таймкодів:"
 #: ../src/dialog_fonts_collector.cpp:101
 #, c-format
 msgid "* An error occurred when enumerating the used fonts: %s.\n"
-msgstr ""
+msgstr "* Під час переліку використаних шрифтів сталася помилка: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:115
 msgid "Symlinking fonts to folder...\n"
@@ -3685,7 +3643,7 @@ msgstr "Виберіть ім'я файла архіву"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Архіви ZIP"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3728,8 +3686,6 @@ msgid "Dest: "
 msgstr "Призн.:"
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "Таймінґ канджі"
 
@@ -3751,10 +3707,8 @@ msgid "Commands"
 msgstr "Команди"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Намагатися розпізнати &канджі."
+msgstr "Спробувати &інтерполювати канджі"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3931,6 +3885,18 @@ msgstr "Роздільна здатність"
 #: ../src/export_framerate.cpp:70
 msgid "From &video"
 msgstr "З &відео"
+
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Скрипт: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "З відео"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Макет: "
 
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
@@ -4202,14 +4168,12 @@ msgid "unsaved"
 msgstr "незбережене"
 
 #: ../src/dialog_shift_times.cpp:96
-#, fuzzy, c-format
-#| msgid "1 frame"
-#| msgid_plural "%d frames (%s)"
+#, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
-msgstr[0] "%d кадр (%s)"
-msgstr[1] "%d кадри (%s)"
-msgstr[2] "%d кадрів (%s)"
+msgstr[0] "%s кадр"
+msgstr[1] "%s кадри"
+msgstr[2] "%s кадрів"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4341,16 +4305,12 @@ msgid "Misspelled word:"
 msgstr "Слово з помилкою:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Підказки відсутні"
+msgstr "Перевірка правопису недоступна."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Підказки відсутні"
+msgstr "Немає доступних словників перевірки правопису."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
@@ -4398,7 +4358,7 @@ msgstr "Редактор стилів"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "Рамки-прямокутники"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4407,7 +4367,7 @@ msgstr "Обведення"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "Прямокутник тіні (лише libass)"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4491,7 +4451,7 @@ msgstr "Відстань від верхньої та нижньої межі в
 
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
-msgstr ""
+msgstr "Малювати навколо тексту звичайний контур чи непрозорі прямокутники"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4562,10 +4522,8 @@ msgid "Shadow:"
 msgstr "Тінь:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "Сортувати стилі"
+msgstr "Стиль рамки:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4789,10 +4747,8 @@ msgid "style delete"
 msgstr "видалення стилю"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Експортувати файл субтитрів"
+msgstr "Непідтримуваний формат субтитрів"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -5134,12 +5090,12 @@ msgstr "Нагадати через &тиждень"
 
 #: ../src/dialog_version_check.cpp:295
 msgid "Curl could not be initialized."
-msgstr ""
+msgstr "Не вдалося ініціалізувати Curl."
 
 #: ../src/dialog_version_check.cpp:317
 #, c-format
 msgid "Checking for updates failed: %s."
-msgstr ""
+msgstr "Не вдалося перевірити оновлення: %s."
 
 #: ../src/dialog_version_check.cpp:345
 msgid "An update to Aegisub was found."
@@ -5194,21 +5150,143 @@ msgid "Resolution:"
 msgstr "Роздільна здатність:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "%s кадрів"
-msgstr[1] "%s кадрів"
-msgstr[2] "%s кадрів"
+msgstr[0] "%d кадр (%s)"
+msgstr[1] "%d кадри (%s)"
+msgstr[2] "%d кадрів (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "Тривалість:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Фактична колірна матриця:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Примусова колірна матриця:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Фактичний колірний діапазон:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Примусовий колірний діапазон:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Декодер:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"У завантаженому відео не вказано колірну матрицю. Aegisub припускає, що "
+"матриця — %s, але немає гарантії, що інші програми зроблять таке саме "
+"припущення. Через це відео може мати різні кольори в різних "
+"медіапрогравачах, а кольори субтитрів можуть не збігатися з кольорами "
+"відео.\n"
+" \n"
+"Радимо вказати у відео колірну матрицю, щоб воно однаково показувалося в "
+"усіх програвачах, а кольори субтитрів надійно збігалися з кольорами відео."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Відео без позначки матриці"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"Завантажене відео має кольори HDR та/або WCG. Звичайні субтитри діалогів "
+"працюватимуть із таким відео без проблем, але підібрати кольори субтитрів "
+"під кольори відео HDR та/або WCG неможливо."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "Відео HDR та/або WCG"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"У поточному файлі субтитрів не задано матрицю YCbCr.\n"
+"\n"
+"Якщо ви плануєте використовувати цей файл субтитрів із щойно завантаженим "
+"відео,\n"
+"задайте для файлу субтитрів матрицю YCbCr за колірним простором відео "
+"(«%s»).\n"
+"\n"
+"Якщо ви плануєте використовувати інший відеофайл, можна\n"
+"залишити матрицю YCbCr незаданою, доки не завантажите потрібне відео.\n"
+"\n"
+"Цей запит можна налаштувати в параметрах."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Задати матрицю YCbCr скрипту?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "Залишити матрицю YCbCr незаданою"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "Задати для скрипту матрицю YCbCr відео («%s»)"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"Рекомендована матриця YCbCr цього відео («%s») відрізняється від матриці "
+"YCbCr файлу субтитрів («%s»).\n"
+"\n"
+"Якщо кольори нового відео виглядають так само, як у відео, для якого "
+"спочатку створювали субтитри,\n"
+"тоді матрицю YCbCr файлу субтитрів слід встановити як у відео."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "Матриці YCbCr не збігаються"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "Залишити матрицю YCbCr скрипту без змін («%s»)"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5233,9 +5311,10 @@ msgstr ""
 "\n"
 "Встановити роздільну здатність скрипта, як у відео?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr "Встановити, як у відео"
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Залишити роздільну здатність без змін"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
@@ -5253,9 +5332,132 @@ msgstr "Перерахувати (прибрати рамку)"
 msgid "Resample script"
 msgstr "Перерахувати скрипт"
 
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"У поточному файлі субтитрів не задано роздільну здатність макета.\n"
+"\n"
+"Якщо ви плануєте використовувати цей файл субтитрів із щойно завантаженим "
+"відео,\n"
+"задайте роздільну здатність макета як роздільну здатність показу відео.\n"
+"\n"
+"Якщо ви плануєте використовувати інший відеофайл, можна\n"
+"залишити роздільну здатність макета незаданою, доки не завантажите потрібне "
+"відео.\n"
+"\n"
+"Якщо ви адаптуєте старий файл субтитрів, у якому ще не задано\n"
+"роздільну здатність макета, задайте її як роздільну здатність\n"
+"відео, для відтворення з яким призначалися субтитри.\n"
+"Часто вона збігається з роздільною здатністю скрипту. (%d × %d)\n"
+"\n"
+"Цей запит можна налаштувати в параметрах."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Задати роздільну здатність макета скрипту?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Залишити роздільну здатність макета незаданою"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "Задати роздільну здатність макета як у відео (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr ""
+"Задати роздільну здатність макета як роздільну здатність скрипту (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"Роздільна здатність завантаженого відео не збігається з роздільною здатністю "
+"макета субтитрів.\n"
+"\n"
+"Роздільна здатність відео:    %d × %d\n"
+"Роздільна здатність макета субтитрів:    %d × %d\n"
+"\n"
+"Зазвичай це не проблема, і роздільну здатність макета можна залишити без "
+"змін.\n"
+"Якщо у файлі субтитрів немає значного форматування, а ви збираєтеся\n"
+"форматувати субтитри під щойно завантажене відео, варто задати роздільну "
+"здатність\n"
+"макета скрипту як роздільну здатність показу відео."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"Роздільна здатність завантаженого відео та роздільна здатність макета "
+"субтитрів мають різні пропорції.\n"
+"\n"
+"Роздільна здатність відео:    %d × %d\n"
+"Роздільна здатність макета субтитрів:    %d × %d\n"
+"\n"
+"Змінити роздільну здатність макета субтитрів під відео?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Роздільні здатності макета не збігаються"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Залишити роздільну здатність макета без змін (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "зміна матриці YCbCr"
+
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "змінити роздільну здатність скрипта"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "зміна роздільної здатності макета"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5348,7 +5550,7 @@ msgstr "Стилю '%s' не існує\n"
 #: ../src/font_file_lister.cpp:154
 #, c-format
 msgid "Font '%s' is used in a drawing, but not in any text.\n"
-msgstr ""
+msgstr "Шрифт '%s' використано в малюнку, але не в тексті.\n"
 
 #: ../src/font_file_lister.cpp:160
 #, c-format
@@ -5482,6 +5684,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"Файл налаштувань недійсний. Повідомлена помилка:\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5516,15 +5720,15 @@ msgstr ""
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "Помилка збереження файлу налаштувань"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "Критична помилка під час ініціалізації"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "Необроблений виняток"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5537,6 +5741,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Aegisub аварійно завершився під час запуску!\n"
+"\n"
+"Останній крок запуску: %s."
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5552,7 +5759,7 @@ msgstr ""
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "Виняток в обробнику подій"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5797,53 +6004,43 @@ msgstr "Автоматично відкривати аудіо разом з в�
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "Нічого не робить"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Відтворити відео"
+msgstr "Панорамує відео"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "Панорамує відео (X/Y поміняно)"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "Змінює розмір відеовікна"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "Змінює розмір відеовікна (навпаки)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Збільшити масштаб відео"
+msgstr "Масштабує відео"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "Масштабує відео (навпаки)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "Пересунутися вліво екраном аудіо"
+msgstr "Прокручування на відеодисплеї"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "Пересунутися вліво екраном аудіо"
+msgstr "Ctrl+прокручування на відеодисплеї"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "Пересунутися вліво екраном аудіо"
+msgstr "Shift+прокручування на відеодисплеї"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5877,13 +6074,53 @@ msgstr "Висота за промовчанням"
 msgid "Always resample"
 msgstr "Завжди перераховувати"
 
+#: ../src/preferences.cpp:242
+msgid "Match video resolution on open"
+msgstr "Зміна роздільної здатності при відкритті файла"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Роздільна здатність макета"
+
 #: ../src/preferences.cpp:240
 msgid "Always set"
 msgstr "Вказувати"
 
-#: ../src/preferences.cpp:242
-msgid "Match video resolution on open"
-msgstr "Зміна роздільної здатності при відкритті файла"
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Завжди брати з роздільної здатності скрипту"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Задавати роздільну здатність макета з відео під час відкриття"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Коли змінюються пропорції"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Питати, якщо роздільні здатності макета не збігаються"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "Матриця YCbCr"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Попереджати про відео без позначки колірної матриці"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Попереджати про відео HDR/WCG"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "Використовувати матрицю YCbCr відео, якщо в скрипті її не задано"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Узгоджувати матрицю YCbCr із відео під час відкриття"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5903,7 +6140,7 @@ msgstr "Заборонити стирання у полі відображенн
 
 #: ../src/preferences.cpp:254
 msgid "Shift+Enter adds \\n"
-msgstr ""
+msgstr "Shift+Enter додає \\n"
 
 #: ../src/preferences.cpp:255
 msgid "Enable syntax highlighting"
@@ -5955,7 +6192,7 @@ msgstr "Символ спрощених теґів"
 
 #: ../src/preferences.cpp:273
 msgid "Skip over whitespace"
-msgstr ""
+msgstr "Пропускати пробіли"
 
 #: ../src/preferences.cpp:288
 msgid "Audio Display"
@@ -5964,6 +6201,14 @@ msgstr "Екран аудіо"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Курсор аудіо"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Поточний діапазон кадрів"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Попередній діапазон кадрів"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -5999,19 +6244,19 @@ msgstr "Коментарі"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
-msgstr ""
+msgstr "Команди малювання"
 
 #: ../src/preferences.cpp:301
 msgid "Drawing X Coords"
-msgstr ""
+msgstr "Координати X малювання"
 
 #: ../src/preferences.cpp:302
 msgid "Drawing Y Coords"
-msgstr ""
+msgstr "Координати Y малювання"
 
 #: ../src/preferences.cpp:303
 msgid "Underline Spline Endpoints"
-msgstr ""
+msgstr "Підкреслювати кінцеві точки сплайнів"
 
 #: ../src/preferences.cpp:305
 msgid "Brackets"
@@ -6115,31 +6360,31 @@ msgstr "Помилка Симв./с"
 
 #: ../src/preferences.cpp:339
 msgid "Visual Typesetting Tools"
-msgstr ""
+msgstr "Візуальні інструменти верстки"
 
 #: ../src/preferences.cpp:340
 msgid "Primary Lines"
-msgstr ""
+msgstr "Основні лінії"
 
 #: ../src/preferences.cpp:341
 msgid "Secondary Lines"
-msgstr ""
+msgstr "Додаткові лінії"
 
 #: ../src/preferences.cpp:342
 msgid "Primary Highlight"
-msgstr ""
+msgstr "Основне підсвічування"
 
 #: ../src/preferences.cpp:343
 msgid "Secondary Highlight"
-msgstr ""
+msgstr "Додаткове підсвічування"
 
 #: ../src/preferences.cpp:346
 msgid "Visual Typesetting Tools Alpha"
-msgstr ""
+msgstr "Прозорість візуальних інструментів верстки"
 
 #: ../src/preferences.cpp:347
 msgid "Shaded Area"
-msgstr ""
+msgstr "Затінена область"
 
 #: ../src/preferences.cpp:356
 msgid "Backup"
@@ -6235,16 +6480,12 @@ msgid "Advanced"
 msgstr "Розширені"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"Зміна цих налашувань може призвести до баґів і/або краху. Не чіпайте їх, "
-"якщо не усвідомлюєте своїх дій."
+"Зміна цих параметрів може спричинити помилки та/або збої. Не змінюйте їх, "
+"якщо не знаєте, що робите."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6300,27 +6541,27 @@ msgstr "Якість"
 
 #: ../src/preferences.cpp:436
 msgid "Compressed"
-msgstr ""
+msgstr "Стиснений"
 
 #: ../src/preferences.cpp:436
 msgid "Extended"
-msgstr ""
+msgstr "Розширений"
 
 #: ../src/preferences.cpp:436
 msgid "Linear"
-msgstr ""
+msgstr "Лінійний"
 
 #: ../src/preferences.cpp:436
 msgid "Logarithmic"
-msgstr ""
+msgstr "Логарифмічний"
 
 #: ../src/preferences.cpp:436
 msgid "Medium"
-msgstr ""
+msgstr "Середній"
 
 #: ../src/preferences.cpp:438
 msgid "Frequency mapping"
-msgstr ""
+msgstr "Відображення частот"
 
 #: ../src/preferences.cpp:440
 msgid "Cache memory max (MB)"
@@ -6387,38 +6628,32 @@ msgid "Avisynth memory limit"
 msgstr "Обсяг пам'яті Avisynth"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "4: дебаґер"
+msgstr "Налагодження"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "0: фатальні"
+msgstr "Критична"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "Інформація"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "Паніка"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "Тихо"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "Докладно"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "2: попередження"
+msgstr "Попередження"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6438,19 +6673,15 @@ msgstr "Гарячі клавіші"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Гарячі клавіші"
+msgstr "Гаряча клавіша"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "Команди"
+msgstr "Команда"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6489,16 +6720,13 @@ msgid "Font Size"
 msgstr "Розмір шрифту"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "Помилка під час імпортування стилів"
+msgstr "Помилка завантаження файлу"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "Усі шрифти знайдено.\n"
+msgstr "%s не знайдено."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6573,20 +6801,16 @@ msgstr ""
 "Було випробувано такі постачальники:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Load timecodes file: %s"
 msgid "Failed to parse timecodes file: "
-msgstr "Завантажити файл таймкодів: %s"
+msgstr "Не вдалося розібрати файл таймкодів: "
 
 #: ../src/project.cpp:407
-#, fuzzy
-#| msgid "Load keyframes file: %s"
 msgid "Failed to parse keyframes file: "
-msgstr "Завантажити файл з ключовими кадрами: %s"
+msgstr "Не вдалося розібрати файл ключових кадрів: "
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "Файл ключових кадрів невідомого формату: "
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6628,11 +6852,11 @@ msgstr "Резервну копію збережено в  \"%s\"."
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "Виняток під час спроби автозбереження файлу: "
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
-msgstr ""
+msgstr "Необроблений виняток під час спроби автозбереження файлу."
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6822,12 +7046,12 @@ msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
 msgstr ""
+"Не вдалося отримати жодного постачальника субтитрів для вікна попереднього "
+"перегляду. Переконайтеся, що постачальника встановлено."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "Постачальник субтитрів"
+msgstr "Немає постачальника субтитрів"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6925,6 +7149,8 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"Не вдалося перейти у відео. Можливо, відеофайл пошкоджено або він неповний.\n"
+"Повідомлення про помилку: %s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -6932,6 +7158,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"Не вдалося відобразити субтитри.\n"
+"Повідомлення про помилку: %s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -6940,6 +7168,9 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"Не вдалося ініціалізувати відеодисплей. Можливо, допоможе закриття інших "
+"запущених програм і оновлення драйверів відеокарти.\n"
+"Повідомлення про помилку: %s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -6947,6 +7178,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"Не вдалося передати кадр відео на відеокарту.\n"
+"Повідомлення про помилку: %s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -6954,22 +7187,20 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"Під час спроби показати кадр відео на екрані сталася помилка.\n"
+"Повідомлення про помилку: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "Усі шрифти знайдено.\n"
+msgstr "файл не знайдено."
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "відео має непідтримуваний формат."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Не вдалося прочитати стиль"
+msgstr "Не вдалося відкрити "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7126,7 +7357,7 @@ msgstr "Авт&оматизація"
 
 #: default_menu.json:0
 msgid "Window"
-msgstr ""
+msgstr "Вікно"
 
 #: default_menu.json:0
 msgid "&Help"
@@ -7134,23 +7365,23 @@ msgstr "&Довідка"
 
 #: default_menu.json:0
 msgid "Open..."
-msgstr ""
+msgstr "Відкрити…"
 
 #: default_menu.json:0
 msgid "Open Recent"
-msgstr ""
+msgstr "Відкрити недавні"
 
 #: default_menu.json:0
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: default_menu.json:0
 msgid "Save As..."
-msgstr ""
+msgstr "Зберегти як…"
 
 #: default_menu.json:0
 msgid "Export As..."
-msgstr ""
+msgstr "Експортувати як…"
 
 #: default_hotkey.json:244
 msgid "Subtitle Edit Box"
@@ -7220,16 +7451,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "Додає теґ \\be1 до всіх виділених рядків"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Зробити літери широкими"
+msgstr "Зробити текст повноширинним"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"Показує, як за допомогою unicode include перебирати символи та перетворювати "
+"їх на інші за таблицею відповідності."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7242,11 +7473,13 @@ msgstr "Конвертувати латинські літери у широкі
 
 #: ../automation/autoload/select-overlaps.moon:17
 msgid "Select overlaps"
-msgstr ""
+msgstr "Вибрати накладання"
 
 #: ../automation/autoload/select-overlaps.moon:18
 msgid "Select lines which begin while another non-comment line is active"
 msgstr ""
+"Вибрати рядки, що починаються, поки активний інший рядок, який не є "
+"коментарем"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7305,19 +7538,23 @@ msgstr "Створюйте і редагуйте субтитри для філ�
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "субтитри;субтитр;титри;відео;аудіо;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
-msgstr ""
+msgstr "Створення та редагування субтитрів"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:9
 msgid ""
 "Aegisub is a free, cross-platform open source tool for creating and "
 "modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
+"audio, and features many powerful tools for styling them, including a "
+"built-in real-time video preview."
 msgstr ""
+"Aegisub — безкоштовний кросплатформний інструмент із відкритим кодом для "
+"створення та редагування субтитрів. Aegisub дає змогу швидко й легко "
+"синхронізувати субтитри зі звуком і має багато потужних інструментів для їх "
+"оформлення, зокрема вбудований попередній перегляд відео в реальному часі."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:10
 msgid ""
@@ -7329,6 +7566,12 @@ msgid ""
 "unrelated to Aegisub) many vital functions, or were too buggy and/or "
 "unreliable to be really useful."
 msgstr ""
+"Aegisub спочатку створили як інструмент, що мав полегшити верстку, особливо "
+"у фансабах аніме. На момент початку проєкту багатьом іншим програмам із "
+"підтримкою формату Advanced SubStation Alpha бракувало багатьох важливих "
+"функцій (і багатьом бракує досі; розробку кількох конкурентних програм "
+"відтоді припинено з різних причин, зовсім не пов'язаних з Aegisub), або вони "
+"були надто нестабільними чи ненадійними, щоб бути справді корисними."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:11
 msgid ""
@@ -7339,46 +7582,57 @@ msgid ""
 "for creating karaoke effects, Automation can now be used much else, "
 "including creating macros and various other convenient tools)."
 msgstr ""
+"Відтоді Aegisub перетворився на повноцінний редактор субтитрів із широкими "
+"можливостями налаштування. Він має багато зручних інструментів для таймінгу, "
+"верстки, редагування й перекладу субтитрів, а також потужне середовище "
+"скриптів під назвою Automation (спочатку його задумували переважно для "
+"караоке-ефектів, але тепер Automation можна використовувати для багато чого "
+"іншого, зокрема для макросів і різних зручних інструментів)."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:12
 msgid "Some highlights of Aegisub:"
-msgstr ""
+msgstr "Деякі переваги Aegisub:"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:14
 msgid "Simple and intuitive yet powerful interface for editing subtitles"
 msgstr ""
+"Простий та інтуїтивний, але потужний інтерфейс для редагування субтитрів"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:15
 msgid "Support for many formats and character sets"
-msgstr ""
+msgstr "Підтримка багатьох форматів і кодувань"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:16
 msgid "Powerful video mode"
-msgstr ""
+msgstr "Потужний режим відео"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:17
 msgid "Visual typesetting tools"
-msgstr ""
+msgstr "Візуальні інструменти верстки"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:18
 msgid "Intuitive and customizable audio timing mode"
-msgstr ""
+msgstr "Інтуїтивний і гнучкий режим таймінгу за звуком"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:19
 msgid "Fully scriptable through the Automation module"
-msgstr ""
+msgstr "Повна підтримка скриптів через модуль Automation"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:43
 msgid "Typesetting"
-msgstr ""
+msgstr "Верстка"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:47
 msgid "Audio video"
-msgstr ""
+msgstr "Аудіо й відео"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
-msgstr ""
+msgstr "Таймінг за звуком"
+
+#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
+#~ msgid "Set to video resolution"
+#~ msgstr "Встановити, як у відео"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Таймінґ канджі"

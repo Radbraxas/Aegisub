@@ -19,14 +19,12 @@ msgid "Language"
 msgstr "Nyelv"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "Mappa kiválasztása:"
+msgstr "Válasszon nyelvet:"
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
-msgstr ""
+msgstr "Alap szövegirány automatikus felismerése (csak libass)"
 
 #: ../src/ass_style.cpp:197
 msgid "ANSI"
@@ -173,6 +171,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Az automatizáció automatikus betöltési mappájában lévő egyik szkriptet nem "
+"sikerült betölteni.\n"
+"Nézze át és javítsa a hibákat, majd az Automatizációkezelő „Automatikus "
+"betöltési mappa újraolvasása” gombjával töltse be újra a szkripteket."
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -180,6 +182,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Az automatizáció automatikus betöltési mappájában lévő több szkriptet nem "
+"sikerült betölteni.\n"
+"Nézze át és javítsa a hibákat, majd az Automatizációkezelő „Automatikus "
+"betöltési mappa újraolvasása” gombjával töltse be újra a szkripteket."
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -187,6 +193,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Az automatizáció automatikus betöltési mappájában lévő egyik szkript "
+"figyelmeztetésekkel töltődött be.\n"
+"Nézze át és javítsa a figyelmeztetéseket, majd az Automatizációkezelő "
+"„Automatikus betöltési mappa újraolvasása” gombjával töltse be újra a "
+"szkripteket."
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -194,6 +205,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Az automatizáció automatikus betöltési mappájában lévő több szkript "
+"figyelmeztetésekkel töltődött be.\n"
+"Nézze át és javítsa a figyelmeztetéseket, majd az Automatizációkezelő "
+"„Automatikus betöltési mappa újraolvasása” gombjával töltse be újra a "
+"szkripteket."
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -202,6 +218,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"A hivatkozott automatizációs szkript helymegadó karaktere ismeretlen.\n"
+"Talált helymegadó: %c\n"
+"Megadott fájlnév: %s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -216,28 +235,33 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"A megnyitott feliratfájl helyi automatizációs szkripteket tartalmaz. Betölti "
+"a hozzá tartozó automatizációs szkripteket?\n"
+"\n"
+"Szkriptek listája:\n"
+"\n"
+"%s\n"
+"\n"
+"Csak akkor töltse be a hozzá tartozó automatizációs szkripteket, ha megbízik "
+"a szerzőikben! A feliratfájl megtekintéséhez vagy szerkesztéséhez nincs "
+"szükség rájuk."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Makró: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Az automatikusan betöltődő scriptek mappájának újratöltése."
+msgstr "Betölti a hozzá tartozó automatizációs szkripteket?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "Nem"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "Automatikusan betöltődő globális scripteket"
+msgstr "Megbízom a szerzőkben && betöltöm a szkripteket"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -247,6 +271,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"A hivatkozott automatizációs szkript nem található.\n"
+"Megadott fájlnév: %s\n"
+"Keresés ehhez viszonyítva: %s\n"
+"Feloldott fájlnév: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -258,15 +286,12 @@ msgstr ""
 "%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
 msgstr ""
-"Nem sikerült betölteni az alábbi automatizációs scriptet: '%s':\n"
+"Figyelmeztetés a(z) '%s' automatizációs szkript betöltésekor:\n"
 "%s"
 
 #: ../src/auto4_base.cpp:508
@@ -290,22 +315,17 @@ msgid "File was not recognized as a script"
 msgstr "Ez nem script fájl."
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
 msgstr ""
-"Nem sikerült betölteni az alábbi automatizációs scriptet: '%s':\n"
+"Figyelmeztetés a(z) '%s' automatizációs szkriptben:\n"
 "%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Stílus nem beilleszthető"
+msgstr "Nem sikerült inicializálni a Lua állapotot"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -314,12 +334,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Hiba a(z) \"%s\" Lua szkript inicializálásakor:\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"Automation 3 szkriptet próbált betölteni Automation 4 Lua szkriptként. Az "
+"Automation 3 már nem támogatott."
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -327,22 +352,24 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Futásidejű hiba a Lua makró ellenőrző függvényében:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "A(z) %d. aktív sor a tartományon kívül esik (1-%u között kell lennie)"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
 msgstr ""
+"A(z) %d. kijelölt sor a tartományon kívül esik (1-%u között kell lennie)"
 
 #: ../src/auto4_lua.cpp:907
-#, fuzzy, c-format
-#| msgid "Select all dialogue lines"
+#, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr "Minden parbeszéd sor kiválasztása."
+msgstr "A(z) %d. kijelölt sor nem párbeszédsor"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -350,6 +377,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Futásidejű hiba a Lua makró IsActive függvényében:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -357,6 +386,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Futásidejű hiba a Lua beállítóablak függvényében:\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -455,12 +486,11 @@ msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
 msgstr ""
+"Az új nyelv alkalmazásához újra kell indítani az Aegisubot. Újraindítja most?"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "Az Aegisub névjegye"
+msgstr "Újraindítja az Aegisubot?"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -534,27 +564,27 @@ msgstr "Ellenőrzi, hogy az Aegisubnak van-e frissebb verziója."
 
 #: ../src/command/app.cpp:270 ../src/command/app.cpp:271
 msgid "Minimize"
-msgstr ""
+msgstr "Kis méret"
 
 #: ../src/command/app.cpp:272
 msgid "Minimize the active window"
-msgstr ""
+msgstr "Az aktív ablak kis méretre állítása"
 
 #: ../src/command/app.cpp:281 ../src/command/app.cpp:282
 msgid "Zoom"
-msgstr ""
+msgstr "Nagyítás"
 
 #: ../src/command/app.cpp:283
 msgid "Maximize the active window"
-msgstr ""
+msgstr "Az aktív ablak teljes méretre állítása"
 
 #: ../src/command/app.cpp:292 ../src/command/app.cpp:293
 msgid "Bring All to Front"
-msgstr ""
+msgstr "Mind előtérbe"
 
 #: ../src/command/app.cpp:294
 msgid "Bring forward all open documents to the front"
-msgstr ""
+msgstr "Az összes megnyitott dokumentum előtérbe hozása"
 
 #: ../src/command/audio.cpp:65
 msgid "&Close Audio"
@@ -589,11 +619,9 @@ msgid "Video Formats"
 msgstr "Videó formátumok"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
-msgstr "Audió megnyitása"
+msgstr "Hangfájl megnyitása"
 
 #: ../src/command/audio.cpp:93 ../src/command/audio.cpp:94
 msgid "Open 2h30 Blank Audio"
@@ -658,10 +686,8 @@ msgid "Save an audio clip of the selected line"
 msgstr "Audioklipet készít a kiválasztott sorhoz."
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
-msgstr "Audioklip mentése"
+msgstr "Hangrészlet mentése"
 
 #: ../src/command/audio.cpp:192 ../src/command/audio.cpp:193
 msgid "Play current audio selection"
@@ -774,30 +800,26 @@ msgid "Scroll the audio display to center on the current audio selection"
 msgstr "A kijelölt szakaszhoz ugrik az audió képi megjelenítésén."
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "Ugorjon a kijelölthöz"
+msgstr "Ugrás a kijelölés elejére"
 
 #: ../src/command/audio.cpp:410
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
-msgstr "A kijelölt szakaszhoz ugrik az audió képi megjelenítésén."
+msgstr ""
+"A hangmegjelenítő görgetése, hogy a jelenlegi hangkijelölés eleje középre "
+"kerüljön"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Ugorjon a kijelölthöz"
+msgstr "Ugrás a kijelölés végére"
 
 #: ../src/command/audio.cpp:421
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
-msgstr "A kijelölt szakaszhoz ugrik az audió képi megjelenítésén."
+msgstr ""
+"A hangmegjelenítő görgetése, hogy a jelenlegi hangkijelölés vége középre "
+"kerüljön"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -1678,10 +1700,8 @@ msgid "Open a keyframe list file"
 msgstr "Megnyit egy kulcskocka listát tartalmazó fájlt."
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open keyframes file"
 msgid "Open Keyframes File"
-msgstr "Kulcskocka fájl megnyitása"
+msgstr "Kulcskockafájl megnyitása"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1696,17 +1716,13 @@ msgid "Save the current list of keyframes to a file"
 msgstr "Lementi a jelenlegi kulcskocka listát."
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Save Keyframes File"
-msgstr "Kulcskocka fájl mentése"
+msgstr "Kulcskockafájl mentése"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "Mostanában megnyitott fájlok"
+msgstr "Szövegfájlok"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1848,8 +1864,6 @@ msgstr "Megnyit egy feliratfájlt."
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
 msgstr "Feliratfájl megnyitása"
 
@@ -1911,8 +1925,6 @@ msgid "Open script properties window"
 msgstr "Feliratfájl adatainak megnyitása."
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
 msgstr "Feliratfájl mentése"
 
@@ -1931,7 +1943,7 @@ msgstr "Hiba"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "Ismeretlen hiba"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -2195,11 +2207,9 @@ msgid "Open a VFR timecodes v1 or v2 file"
 msgstr "Megnyit egy VFR időkódokat tartalmazó fájlt (v1 vagy v2)."
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Időkód megnyitása"
+msgstr "Időkódfájl megnyitása"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2214,17 +2224,13 @@ msgid "Save a VFR timecodes v2 file"
 msgstr "Elmenti a VFR időkódokat tartalmazó fájlt v2-es formátumban."
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
-msgstr "Időkód mentése"
+msgstr "Időkódfájl mentése"
 
 #: ../src/command/timecode.cpp:103
-#, fuzzy
-#| msgid "Unload timecodes"
 msgid "Error saving timecodes"
-msgstr "Időkódok bezárása"
+msgstr "Hiba az időkódok mentésekor"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2569,13 +2575,13 @@ msgstr "Feliratok nélkül lementi a jelenlegi képkockát a vágólapra."
 
 #: ../src/command/video.cpp:321 ../src/command/video.cpp:322
 msgid "Copy image to Clipboard (only subtitles)"
-msgstr ""
+msgstr "Kép másolása a vágólapra (csak feliratok)"
 
 #: ../src/command/video.cpp:323
 msgid ""
 "Copy the currently displayed subtitles to the clipboard, with transparent "
 "background"
-msgstr ""
+msgstr "A most látható feliratok másolása a vágólapra átlátszó háttérrel"
 
 #: ../src/command/video.cpp:332 ../src/command/video.cpp:333
 msgid "Next Frame"
@@ -2658,13 +2664,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:534 ../src/command/video.cpp:535
 msgid "Save PNG snapshot (only subtitles)"
-msgstr ""
+msgstr "PNG pillanatkép mentése (csak feliratok)"
 
 #: ../src/command/video.cpp:536
 msgid ""
 "Save the currently displayed subtitles with transparent background to a PNG "
 "file in the video's directory"
 msgstr ""
+"A most látható feliratok mentése átlátszó háttérrel PNG-fájlba a videó "
+"mappájába"
 
 #: ../src/command/video.cpp:546
 msgid "&Jump to..."
@@ -2715,8 +2723,6 @@ msgid "Open a video file"
 msgstr "Megnyit egy videofájlt."
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
 msgstr "Videofájl megnyitása"
 
@@ -2745,20 +2751,16 @@ msgid "Play"
 msgstr "Lejátszás"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "Videó lejátszása a jelenlegi pozíciótól."
+msgstr "A videó lejátszása ettől a pozíciótól"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "Sor lejátszása"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play the audio for the current line"
 msgid "Play the video for the current line"
-msgstr "Jelenlegi sor hangjának lejátszása"
+msgstr "A jelenlegi sor videójának lejátszása"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2778,17 +2780,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "Videó &eltolásának visszaállítása"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "Videó bezárása"
+msgstr "Videó eltolásának visszaállítása"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "A videó pozíciójának visszaállítása a videómegjelenítőben"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2916,38 +2916,30 @@ msgid "Line"
 msgstr "Egyenes"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Egyenes beszúrása"
+msgstr "Egyenes hozzáfűzése"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Ív"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Ív beszúrása"
+msgstr "Köbös Bézier-görbe hozzáfűzése"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Váltás"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Egyenes és ív típusú szegmens közötti váltás"
+msgstr "Szakasz átalakítása egyenes és köbös görbe között"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Beszúrás"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
 msgstr "Vezérlőpont beszúrása"
 
@@ -2956,8 +2948,6 @@ msgid "Remove"
 msgstr "Eltávolítás"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
 msgstr "Vezérlőpont eltávolítása"
 
@@ -2966,20 +2956,16 @@ msgid "Freehand"
 msgstr "Szabadkézi"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "Szabadkézi forma rajzolása"
+msgstr "Szabadkézi alakzat rajzolása"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "Szabadkézi ívelt"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Ívelt szabadkézi forma rajzolása"
+msgstr "Simított szabadkézi alakzat rajzolása"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3041,20 +3027,16 @@ msgid "Choose file to be attached"
 msgstr "Válassza ki a csatolni kívánt fájlt"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Betűtípus"
+msgstr "Betűtípusfájlok"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "betűtípus csatolás"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "grafika csatolás"
+msgstr "Képfájlok"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3115,7 +3097,7 @@ msgstr "Automatizációs script hozzáadása"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "A(z) '%s' szkript már be van töltve"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3133,18 +3115,7 @@ msgid "Scripting engines installed:"
 msgstr "Scriptkezelők telepítve:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3156,15 +3127,13 @@ msgid ""
 "State: %s\n"
 msgstr ""
 "\n"
-"Script adatai\n"
+"Szkript adatai:\n"
 "Név: %s\n"
 "Leírás: %s\n"
 "Szerző: %s\n"
-"Verziószám: %s\n"
-"Elérési út: %s\n"
+"Verzió: %s\n"
+"Teljes elérési út: %s\n"
 "Állapot: %s\n"
-"\n"
-"A script által nyújtott lehetőségek:"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3176,17 +3145,16 @@ msgstr "nem sikerült betölteni"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "Figyelmeztetésekkel betöltve"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: Figyelmeztetés (warning)"
+msgstr "Figyelmeztetés: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "A szkript által biztosított funkciók:\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3311,51 +3279,51 @@ msgstr "Videó: %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480 (SD teljes képernyő)"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480 (SD anamorf)"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360 (SD szélesvásznú)"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396 (SD szélesvásznú)"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352 (SD szélesvásznú MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400 (SD szélesvásznú MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576 (SuperPAL szélesvásznú)"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720 (HD 720p)"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080 (FHD 1080p)"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440 (QHD 1440p)"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160 (4K UHD 2160p)"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920 (FHD álló)"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3420,17 +3388,13 @@ msgid "Export..."
 msgstr "Exportálás..."
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
 msgstr "Feliratfájl exportálása"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Hiba a stílusok importálásakor"
+msgstr "Hiba a feliratok exportálásakor"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3563,7 +3527,7 @@ msgstr "Időkód eltolás:"
 #: ../src/dialog_fonts_collector.cpp:101
 #, c-format
 msgid "* An error occurred when enumerating the used fonts: %s.\n"
-msgstr ""
+msgstr "* Hiba történt a használt betűtípusok felsorolásakor: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:115
 msgid "Symlinking fonts to folder...\n"
@@ -3683,7 +3647,7 @@ msgstr "Archívum nevének kiválasztása"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Zip-archívumok"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3726,8 +3690,6 @@ msgid "Dest: "
 msgstr "Cél:"
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "Kandzsi időzítő"
 
@@ -3749,10 +3711,8 @@ msgid "Commands"
 msgstr "Parancsok"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Kandzsi i&nterpolálása"
+msgstr "Kandzsik &interpolálásának megkísérlése"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3928,6 +3888,18 @@ msgstr "Felbontás"
 #: ../src/export_framerate.cpp:70
 msgid "From &video"
 msgstr "&Videóból"
+
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Szkript: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "A videóból"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Elrendezés: "
 
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
@@ -4197,13 +4169,11 @@ msgid "unsaved"
 msgstr "nincs elmentve"
 
 #: ../src/dialog_shift_times.cpp:96
-#, fuzzy, c-format
-#| msgid "1 frame"
-#| msgid_plural "%d frames (%s)"
+#, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
 msgstr[0] "1 képkocka"
-msgstr[1] "%d képkocka (%s)"
+msgstr[1] "%s képkocka"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4331,16 +4301,12 @@ msgid "Misspelled word:"
 msgstr "Hibás szó:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Nincs helyesírás-ellenőrzői javaslat"
+msgstr "Nincs elérhető helyesírás-ellenőrző."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Nincs helyesírás-ellenőrzői javaslat"
+msgstr "Nincsenek elérhető helyesírás-ellenőrző szótárak."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
@@ -4388,7 +4354,7 @@ msgstr "Stílusszerkesztő"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "Szegélydobozok"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4397,7 +4363,7 @@ msgstr "Körvonal"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "Árnyékdoboz (csak libass)"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4481,7 +4447,7 @@ msgstr "Távolság az alsó/felső széltől, pixelekben"
 
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
-msgstr ""
+msgstr "Normál körvonal vagy átlátszatlan dobozok rajzolása a szöveg köré"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4552,10 +4518,8 @@ msgid "Shadow:"
 msgstr "Árnyék:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "stílusok rendezése"
+msgstr "Szegély stílusa:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4779,10 +4743,8 @@ msgid "style delete"
 msgstr "stílus törlés"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Feliratfájl exportálása"
+msgstr "Nem támogatott feliratformátum"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -5124,12 +5086,12 @@ msgstr "Emlékeztessen egy &hét múlva"
 
 #: ../src/dialog_version_check.cpp:295
 msgid "Curl could not be initialized."
-msgstr ""
+msgstr "A Curl nem inicializálható."
 
 #: ../src/dialog_version_check.cpp:317
 #, c-format
 msgid "Checking for updates failed: %s."
-msgstr ""
+msgstr "A frissítések keresése sikertelen: %s."
 
 #: ../src/dialog_version_check.cpp:345
 msgid "An update to Aegisub was found."
@@ -5184,20 +5146,141 @@ msgid "Resolution:"
 msgstr "Felbontás:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "%s képkocka"
-msgstr[1] "%s képkocka"
+msgstr[0] "%d képkocka (%s)"
+msgstr[1] "%d képkocka (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "Hossz:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Tényleges színmátrix:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Kényszerített színmátrix:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Tényleges színtartomány:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Kényszerített színtartomány:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Megjelenítő:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"A betöltött videóhoz nincs megadva színmátrix. Az Aegisub %s színmátrixot "
+"feltételez, de nincs garancia rá, hogy más programok ugyanezt feltételezik. "
+"Emiatt a videó különböző médialejátszókban eltérő színekkel jelenhet meg, és "
+"a feliratok színei nem feltétlenül egyeznek a videó színeivel.\n"
+" \n"
+"Érdemes színmátrix-címkét adni a videónak, hogy minden lejátszóban egyformán "
+"jelenjen meg, és a feliratok színei megbízhatóan egyezzenek a videó "
+"színeivel."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Címkézetlen videó"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"A betöltött videó HDR és/vagy WCG színeket tartalmaz. A hagyományos "
+"párbeszéd-feliratok jól működnek az ilyen videókon, de a videó színeinek "
+"feliratokkal való egyeztetése HDR és/vagy WCG anyagon nem lehetséges."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "HDR és/vagy WCG videó"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"A jelenlegi feliratfájlhoz nincs beállítva YCbCr mátrix.\n"
+"\n"
+"Ha ezt a feliratfájlt az imént betöltött videóval szeretné használni,\n"
+"állítsa a feliratfájl YCbCr mátrixát a videó színterére (\"%s\").\n"
+"\n"
+"Ha másik videofájlt szeretne használni,\n"
+"hagyhatja beállítatlanul az YCbCr mátrixot, amíg be nem tölti a megfelelő "
+"videót.\n"
+"\n"
+"Ez a kérdés a beállításokban módosítható."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Beállítja a szkript YCbCr mátrixát?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "YCbCr mátrix beállítatlanul hagyása"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "A szkript YCbCr mátrixának beállítása a videóéra (\"%s\")"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"A videó ajánlott YCbCr mátrixa (\"%s\") eltér a feliratfájl YCbCr mátrixától "
+"(\"%s\").\n"
+"\n"
+"Ha az új videó színei ugyanolyannak tűnnek, mint annak a videónak a színei, "
+"amelyhez a feliratot eredetileg készítették,\n"
+"akkor a feliratfájl YCbCr mátrixát a videó YCbCr mátrixára kell állítani."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "Eltérő YCbCr mátrixok"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "A szkript YCbCr mátrixának megtartása (\"%s\")"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5221,9 +5304,10 @@ msgstr ""
 "\n"
 "Megváltoztatja a felirat felbontását, hogy az egyezzen a videóval?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr "Videó felbontásához igazít"
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Felbontás megtartása"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
@@ -5241,9 +5325,132 @@ msgstr "Felirat felbontásának módosítása (keret eltávolítása)"
 msgid "Resample script"
 msgstr "Felbontás módosítása"
 
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"A jelenlegi feliratfájlhoz nincs beállítva elrendezési felbontás.\n"
+"\n"
+"Ha ezt a feliratfájlt az imént betöltött videóval szeretné használni,\n"
+"állítsa a feliratfájl elrendezési felbontását a videó megjelenítési "
+"felbontására.\n"
+"\n"
+"Ha másik videofájlt szeretne használni,\n"
+"hagyhatja beállítatlanul az elrendezési felbontást, amíg be nem tölti a "
+"megfelelő videót.\n"
+"\n"
+"Ha olyan régi feliratfájlt alakít át, amelynek még nincs\n"
+"elrendezési felbontása, állítsa azt annak a videónak a felbontására,\n"
+"amelyen a feliratot eredetileg lejátszani szánták.\n"
+"Ez gyakran megegyezik a fájl szkriptfelbontásával. (%d × %d)\n"
+"\n"
+"Ez a kérdés a beállításokban módosítható."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Beállítja a szkript elrendezési felbontását?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Elrendezési felbontás beállítatlanul hagyása"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "A szkript elrendezési felbontásának beállítása a videóéra (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr ""
+"A szkript elrendezési felbontásának beállítása a szkriptfelbontásra (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"A betöltött videó felbontása és a feliratokhoz megadott elrendezési "
+"felbontás nem egyezik.\n"
+"\n"
+"Videó felbontása:    %d × %d\n"
+"Feliratok elrendezési felbontása:    %d × %d\n"
+"\n"
+"Ez általában nem probléma, a feliratfájl elrendezési felbontását "
+"meghagyhatja.\n"
+"Ha a feliratfájl nem tartalmaz jelentős formázást, és most az újonnan "
+"betöltött videóhoz\n"
+"szeretne formázni, érdemes a szkript elrendezési felbontását\n"
+"a videó megjelenítési felbontására állítani."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"A betöltött videó felbontásának és a feliratokhoz megadott elrendezési "
+"felbontásnak eltér a képaránya.\n"
+"\n"
+"Videó felbontása:    %d × %d\n"
+"Feliratok elrendezési felbontása:    %d × %d\n"
+"\n"
+"Módosítja a feliratok elrendezési felbontását a videóhoz igazítva?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Eltérő elrendezési felbontások"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Elrendezési felbontás megtartása (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "YCbCr mátrix módosítása"
+
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "felirat felbontás változtatás"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "elrendezési felbontás módosítása"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5334,7 +5541,7 @@ msgstr "A(z) '%s' stílus nem létezik\n"
 #: ../src/font_file_lister.cpp:154
 #, c-format
 msgid "Font '%s' is used in a drawing, but not in any text.\n"
-msgstr ""
+msgstr "A(z) '%s' betűtípust egy rajz használja, de egyetlen szöveg sem.\n"
 
 #: ../src/font_file_lister.cpp:160
 #, c-format
@@ -5467,6 +5674,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"A konfigurációs fájl érvénytelen. Jelentett hiba:\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5501,15 +5710,15 @@ msgstr ""
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "Hiba a konfigurációs fájl mentésekor"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "Végzetes hiba az inicializálás során"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "Kezeletlen kivétel"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5522,6 +5731,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Az Aegisub indítás közben összeomlott!\n"
+"\n"
+"Az utoljára megkísérelt indítási lépés: %s."
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5538,7 +5750,7 @@ msgstr ""
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "Kivétel az eseménykezelőben"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5785,53 +5997,43 @@ msgstr "Videó megnyitása hangsávval együtt"
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "Nem csinál semmit"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Videó lejátszása"
+msgstr "Eltolja a videót"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "Eltolja a videót (X/Y felcserélve)"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "Átméretezi a videódobozt"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "Átméretezi a videódobozt (fordítva)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Nagyítja a videót."
+msgstr "Nagyítja a videót"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "Nagyítja a videót (fordítva)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "Balra tekeri a hangsáv képi megjelenítését."
+msgstr "Görgetés a videómegjelenítőn"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "Balra tekeri a hangsáv képi megjelenítését."
+msgstr "Ctrl+görgetés a videómegjelenítőn"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "Balra tekeri a hangsáv képi megjelenítését."
+msgstr "Shift+görgetés a videómegjelenítőn"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5865,13 +6067,53 @@ msgstr "Alapértelmezett hosszúság"
 msgid "Always resample"
 msgstr "Mindig módosít"
 
+#: ../src/preferences.cpp:242
+msgid "Match video resolution on open"
+msgstr "Videó és felirat felbontásának egyezése"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Elrendezési felbontás"
+
 #: ../src/preferences.cpp:240
 msgid "Always set"
 msgstr "Mindig beállít"
 
-#: ../src/preferences.cpp:242
-msgid "Match video resolution on open"
-msgstr "Videó és felirat felbontásának egyezése"
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Mindig a szkriptfelbontásból"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Elrendezési felbontás beállítása a videóból megnyitáskor"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Ha változik a képarány"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Kérdezzen, ha eltérnek az elrendezési felbontások"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "YCbCr mátrix"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Figyelmeztetés címkézetlen videó-színmátrix esetén"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Figyelmeztetés HDR/WCG videónál"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "A videó YCbCr mátrixának használata, ha a szkriptnek nincs mátrixa"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Igazítás a videó YCbCr mátrixához megnyitáskor"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5891,7 +6133,7 @@ msgstr "Időpont értékek felülírása"
 
 #: ../src/preferences.cpp:254
 msgid "Shift+Enter adds \\n"
-msgstr ""
+msgstr "Shift+Enter \\n-t szúr be"
 
 #: ../src/preferences.cpp:255
 msgid "Enable syntax highlighting"
@@ -5943,7 +6185,7 @@ msgstr "Felülíró címke helyettesítője"
 
 #: ../src/preferences.cpp:273
 msgid "Skip over whitespace"
-msgstr ""
+msgstr "Szóközök átugrása"
 
 #: ../src/preferences.cpp:288
 msgid "Audio Display"
@@ -5952,6 +6194,14 @@ msgstr "Hangsáv megjelenítés"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Lejátszási kurzor"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Jelenlegi képkocka-tartomány"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Előző képkocka-tartomány"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -5987,19 +6237,19 @@ msgstr "Megjegyzések"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
-msgstr ""
+msgstr "Rajzparancsok"
 
 #: ../src/preferences.cpp:301
 msgid "Drawing X Coords"
-msgstr ""
+msgstr "Rajz X koordinátái"
 
 #: ../src/preferences.cpp:302
 msgid "Drawing Y Coords"
-msgstr ""
+msgstr "Rajz Y koordinátái"
 
 #: ../src/preferences.cpp:303
 msgid "Underline Spline Endpoints"
-msgstr ""
+msgstr "Spline-végpontok aláhúzása"
 
 #: ../src/preferences.cpp:305
 msgid "Brackets"
@@ -6103,31 +6353,31 @@ msgstr "Karakterszám hiba"
 
 #: ../src/preferences.cpp:339
 msgid "Visual Typesetting Tools"
-msgstr ""
+msgstr "Vizuális szedőeszközök"
 
 #: ../src/preferences.cpp:340
 msgid "Primary Lines"
-msgstr ""
+msgstr "Elsődleges vonalak"
 
 #: ../src/preferences.cpp:341
 msgid "Secondary Lines"
-msgstr ""
+msgstr "Másodlagos vonalak"
 
 #: ../src/preferences.cpp:342
 msgid "Primary Highlight"
-msgstr ""
+msgstr "Elsődleges kiemelés"
 
 #: ../src/preferences.cpp:343
 msgid "Secondary Highlight"
-msgstr ""
+msgstr "Másodlagos kiemelés"
 
 #: ../src/preferences.cpp:346
 msgid "Visual Typesetting Tools Alpha"
-msgstr ""
+msgstr "Vizuális szedőeszközök átlátszósága"
 
 #: ../src/preferences.cpp:347
 msgid "Shaded Area"
-msgstr ""
+msgstr "Árnyékolt terület"
 
 #: ../src/preferences.cpp:356
 msgid "Backup"
@@ -6223,17 +6473,12 @@ msgid "Advanced"
 msgstr "Haladó"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"Az itt felsorolt beállítások megváltoztatása hibákat, lefagyásokat, nem "
-"megszokott működést eredményezhet.\n"
-"Ne nyúljon ezekhez csak, ha tudja, mit csinál!"
+"Ezeknek a beállításoknak a módosítása hibákat és/vagy összeomlást okozhat. "
+"Ne módosítsa őket, ha nem tudja pontosan, mit csinál."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6289,27 +6534,27 @@ msgstr "Minőség"
 
 #: ../src/preferences.cpp:436
 msgid "Compressed"
-msgstr ""
+msgstr "Tömörített"
 
 #: ../src/preferences.cpp:436
 msgid "Extended"
-msgstr ""
+msgstr "Kiterjesztett"
 
 #: ../src/preferences.cpp:436
 msgid "Linear"
-msgstr ""
+msgstr "Lineáris"
 
 #: ../src/preferences.cpp:436
 msgid "Logarithmic"
-msgstr ""
+msgstr "Logaritmikus"
 
 #: ../src/preferences.cpp:436
 msgid "Medium"
-msgstr ""
+msgstr "Közepes"
 
 #: ../src/preferences.cpp:438
 msgid "Frequency mapping"
-msgstr ""
+msgstr "Frekvencialeképezés"
 
 #: ../src/preferences.cpp:440
 msgid "Cache memory max (MB)"
@@ -6376,38 +6621,32 @@ msgid "Avisynth memory limit"
 msgstr "Avisynth memóriakorlát"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "4: Hibakeresés (debug)"
+msgstr "Hibakeresés"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "0: Súlyos (fatal)"
+msgstr "Végzetes"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "Információ"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "Pánik"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "Csendes"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "Részletes"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "2: Figyelmeztetés (warning)"
+msgstr "Figyelmeztetés"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6427,19 +6666,15 @@ msgstr "Gyorsgombok"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "Keresés"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Gyorsgombok"
+msgstr "Gyorsbillentyű"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "Parancsok"
+msgstr "Parancs"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6478,16 +6713,13 @@ msgid "Font Size"
 msgstr "Betűméret"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "Hiba a stílusok importálásakor"
+msgstr "Hiba a fájl betöltésekor"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "Minden betűtípust sikerült megtalálni.\n"
+msgstr "%s nem található."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6561,20 +6793,16 @@ msgstr ""
 "Az alábbi kimeneti vezérlők kerültek kipróbálásra:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Load timecodes file: %s"
 msgid "Failed to parse timecodes file: "
-msgstr "Időkód fájl: %s"
+msgstr "Nem sikerült feldolgozni az időkódfájlt: "
 
 #: ../src/project.cpp:407
-#, fuzzy
-#| msgid "Load keyframes file: %s"
 msgid "Failed to parse keyframes file: "
-msgstr "Kulcskocka fájl: %s"
+msgstr "Nem sikerült feldolgozni a kulcskockafájlt: "
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "Ismeretlen formátumú kulcskockafájl: "
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6615,11 +6843,11 @@ msgstr "Automatikus mentés: \"%s\"."
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "Kivétel a fájl automatikus mentésekor: "
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
-msgstr ""
+msgstr "Kezeletlen kivétel a fájl automatikus mentésekor."
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6813,12 +7041,12 @@ msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
 msgstr ""
+"Nem található feliratszolgáltató az előnézeti mezőhöz. Győződjön meg róla, "
+"hogy telepítve van egy szolgáltató."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "Felirat kimeneti vezérlő"
+msgstr "Nincs feliratszolgáltató"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6918,6 +7146,9 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"Nem sikerült a videóban pozicionálni. Lehet, hogy a videofájl sérült vagy "
+"hiányos.\n"
+"Jelentett hibaüzenet: %s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -6925,6 +7156,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"Nem sikerült megjeleníteni a feliratokat.\n"
+"Jelentett hibaüzenet: %s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -6933,6 +7166,9 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"Nem sikerült inicializálni a videómegjelenítőt. Segíthet, ha bezár más futó "
+"programokat, és frissíti a videokártya illesztőprogramjait.\n"
+"Jelentett hibaüzenet: %s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -6940,6 +7176,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"Nem sikerült a videóképkockát a videokártyára tölteni.\n"
+"Jelentett hibaüzenet: %s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -6947,22 +7185,20 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"Hiba történt a videóképkocka képernyőre rajzolásakor.\n"
+"Jelentett hibaüzenet: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "Minden betűtípust sikerült megtalálni.\n"
+msgstr "a fájl nem található."
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "a videó formátuma nem támogatott."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Stílus nem beilleszthető"
+msgstr "Nem nyitható meg: "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7119,7 +7355,7 @@ msgstr "A&utomatizáció"
 
 #: default_menu.json:0
 msgid "Window"
-msgstr ""
+msgstr "Ablak"
 
 #: default_menu.json:0
 msgid "&Help"
@@ -7127,11 +7363,11 @@ msgstr "&Súgó"
 
 #: default_menu.json:0
 msgid "Open..."
-msgstr ""
+msgstr "Megnyitás…"
 
 #: default_menu.json:0
 msgid "Open Recent"
-msgstr ""
+msgstr "Legutóbbiak megnyitása"
 
 #: default_menu.json:0
 msgid "Save"
@@ -7139,11 +7375,11 @@ msgstr "Mentés"
 
 #: default_menu.json:0
 msgid "Save As..."
-msgstr ""
+msgstr "Mentés másként…"
 
 #: default_menu.json:0
 msgid "Export As..."
-msgstr ""
+msgstr "Exportálás másként…"
 
 #: default_hotkey.json:244
 msgid "Subtitle Edit Box"
@@ -7216,16 +7452,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "A kiválasztott sorokat \\be1 címkével látja el."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Teljes szélességűvé alakítás"
+msgstr "Szöveg teljes szélességűvé alakítása"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"Bemutatja, hogyan lehet a unicode include segítségével végigmenni a "
+"karaktereken, és egy keresőtáblával valami mássá alakítani őket."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7238,11 +7474,13 @@ msgstr "A latin betűket teljes szélességű SJIS betűkké alakítja."
 
 #: ../automation/autoload/select-overlaps.moon:17
 msgid "Select overlaps"
-msgstr ""
+msgstr "Átfedések kijelölése"
 
 #: ../automation/autoload/select-overlaps.moon:18
 msgid "Select lines which begin while another non-comment line is active"
 msgstr ""
+"Azon sorok kijelölése, amelyek egy másik, nem megjegyzés sor aktív ideje "
+"alatt kezdődnek"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7302,19 +7540,23 @@ msgstr "Feliratok készítése filmekhez és videókhoz."
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "feliratok;felirat;feliratozás;videó;hang;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
-msgstr ""
+msgstr "Feliratok készítése és szerkesztése"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:9
 msgid ""
 "Aegisub is a free, cross-platform open source tool for creating and "
 "modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
+"audio, and features many powerful tools for styling them, including a "
+"built-in real-time video preview."
 msgstr ""
+"Az Aegisub ingyenes, platformfüggetlen, nyílt forráskódú eszköz feliratok "
+"készítéséhez és szerkesztéséhez. Az Aegisubbal gyorsan és egyszerűen "
+"időzítheti a feliratokat a hanghoz, és számos hatékony eszközt kínál a "
+"formázásukhoz, köztük beépített valós idejű videó-előnézetet."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:10
 msgid ""
@@ -7326,6 +7568,13 @@ msgid ""
 "unrelated to Aegisub) many vital functions, or were too buggy and/or "
 "unreliable to be really useful."
 msgstr ""
+"Az Aegisub eredetileg azért készült, hogy a feliratszedést, különösen az "
+"anime fansubok esetében, kevésbé fáradságossá tegye. A projekt indulásakor "
+"sok más, az Advanced SubStation Alpha formátumot támogató programból számos "
+"fontos funkció hiányzott (és sokból máig hiányzik; több versenytárs program "
+"fejlesztését azóta az Aegisubtól teljesen független okokból leállították), "
+"vagy túl hibásak és/vagy megbízhatatlanok voltak ahhoz, hogy igazán "
+"hasznosak legyenek."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:11
 msgid ""
@@ -7336,46 +7585,57 @@ msgid ""
 "for creating karaoke effects, Automation can now be used much else, "
 "including creating macros and various other convenient tools)."
 msgstr ""
+"Azóta az Aegisub teljes értékű, rendkívül testreszabható feliratszerkesztővé "
+"nőtte ki magát. Számos kényelmes eszközt kínál a feliratok időzítéséhez, "
+"szedéséhez, szerkesztéséhez és fordításához, valamint egy Automation nevű "
+"hatékony szkriptkörnyezetet (eredetileg főként karaoke-effektusok "
+"készítésére szánták, de ma már sok másra is használható, többek között "
+"makrók és különféle hasznos eszközök készítésére)."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:12
 msgid "Some highlights of Aegisub:"
-msgstr ""
+msgstr "Az Aegisub néhány fénypontja:"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:14
 msgid "Simple and intuitive yet powerful interface for editing subtitles"
 msgstr ""
+"Egyszerű és intuitív, mégis hatékony felület a feliratok szerkesztéséhez"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:15
 msgid "Support for many formats and character sets"
-msgstr ""
+msgstr "Számos formátum és karakterkészlet támogatása"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:16
 msgid "Powerful video mode"
-msgstr ""
+msgstr "Hatékony videómód"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:17
 msgid "Visual typesetting tools"
-msgstr ""
+msgstr "Vizuális szedőeszközök"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:18
 msgid "Intuitive and customizable audio timing mode"
-msgstr ""
+msgstr "Intuitív és testreszabható hangidőzítési mód"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:19
 msgid "Fully scriptable through the Automation module"
-msgstr ""
+msgstr "Teljesen szkriptelhető az Automation modulon keresztül"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:43
 msgid "Typesetting"
-msgstr ""
+msgstr "Feliratszedés"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:47
 msgid "Audio video"
-msgstr ""
+msgstr "Hang és videó"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
-msgstr ""
+msgstr "Hangidőzítés"
+
+#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
+#~ msgid "Set to video resolution"
+#~ msgstr "Videó felbontásához igazít"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Kandzsi időzítő"
