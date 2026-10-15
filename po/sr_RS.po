@@ -15,6 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.3\n"
 
@@ -23,14 +24,12 @@ msgid "Language"
 msgstr "Језик"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "Изаберите фасциклу:"
+msgstr "Изаберите језик:"
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
-msgstr ""
+msgstr "Аутоматски препознај основни смер текста (само libass)"
 
 #: ../src/ass_style.cpp:197
 msgid "ANSI"
@@ -177,6 +176,11 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Једна скрипта у фасцикли за аутоматско учитавање аутоматизације није "
+"учитана.\n"
+"Прегледајте грешке, исправите их и употребите дугме „Поново претражи "
+"фасциклу за аутоматско учитавање“ у Аутоматизационом управљачу да бисте "
+"поново учитали скрипте."
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -184,6 +188,11 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Више скрипти у фасцикли за аутоматско учитавање аутоматизације није "
+"учитано.\n"
+"Прегледајте грешке, исправите их и употребите дугме „Поново претражи "
+"фасциклу за аутоматско учитавање“ у Аутоматизационом управљачу да бисте "
+"поново учитали скрипте."
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -191,6 +200,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Једна скрипта у фасцикли за аутоматско учитавање аутоматизације учитана је "
+"уз упозорења.\n"
+"Прегледајте упозорења, исправите их и употребите дугме „Поново претражи "
+"фасциклу за аутоматско учитавање“ у Аутоматизационом управљачу да бисте "
+"поново учитали скрипте."
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -198,6 +212,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Више скрипти у фасцикли за аутоматско учитавање аутоматизације учитано је уз "
+"упозорења.\n"
+"Прегледајте упозорења, исправите их и употребите дугме „Поново претражи "
+"фасциклу за аутоматско учитавање“ у Аутоматизационом управљачу да бисте "
+"поново учитали скрипте."
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -206,6 +225,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"Наведена аутоматизациона скрипта има непознату ознаку локације.\n"
+"Пронађена ознака локације: %c\n"
+"Наведени назив датотеке: %s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -220,28 +242,32 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"Датотека титлова коју сте отворили садржи локалне аутоматизационе скрипте. "
+"Желите ли да учитате придружене аутоматизационе скрипте?\n"
+"\n"
+"Списак скрипти:\n"
+"\n"
+"%s\n"
+"\n"
+"Придружене аутоматизационе скрипте учитајте само ако верујете ауторима! Нису "
+"потребне за преглед ни уређивање датотеке титлова."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Макро: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Поново учитајте самопокретајуће аутоматизационе скриптове."
+msgstr "Учитати придружене аутоматизационе скрипте?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "Не"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "скриптови за самоучитавање"
+msgstr "Веруј ауторима && учитај скрипте"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -251,6 +277,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"Наведена аутоматизациона скрипта није пронађена.\n"
+"Наведени назив датотеке: %s\n"
+"Тражено у односу на: %s\n"
+"Разрешени назив датотеке: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -258,14 +288,17 @@ msgid ""
 "Failed to load Automation script '%s':\n"
 "%s"
 msgstr ""
+"Учитавање аутоматизационе скрипте „%s“ није успело:\n"
+"%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
-msgstr "Поново учитајте аутоматизационе скриптове."
+msgstr ""
+"Упозорење при учитавању аутоматизационе скрипте „%s“:\n"
+"%s"
 
 #: ../src/auto4_base.cpp:508
 #, c-format
@@ -288,18 +321,17 @@ msgid "File was not recognized as a script"
 msgstr "Датотека није препозната као скрипт."
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
-msgstr "Поново учитајте аутоматизационе скриптове."
+msgstr ""
+"Упозорење у аутоматизационој скрипти „%s“:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Не могу да рашчланим стил"
+msgstr "Није могуће покренути Lua стање"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -308,12 +340,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Грешка при покретању Lua скрипте „%s“:\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"Покушано је учитавање скрипте Automation 3 као Lua скрипте Automation 4. "
+"Automation 3 више није подржан."
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -321,21 +358,23 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Грешка при извршавању функције провере Lua макроа:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Активни ред %d је ван опсега (мора бити 1–%u)"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Изабрани ред %d је ван опсега (мора бити 1–%u)"
 
 #: ../src/auto4_lua.cpp:907
 #, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr ""
+msgstr "Изабрани ред %d није ред дијалога"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -343,6 +382,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Грешка при извршавању функције IsActive Lua макроа:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -350,6 +391,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Грешка при извршавању функције Lua прозорчета за подешавање:\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -385,7 +428,7 @@ msgstr "Приказ звука и титла"
 
 #: ../src/command/app.cpp:69
 msgid "Display audio and the subtitles grid only"
-msgstr ""
+msgstr "Прикажи само звук и мрежу титлова"
 
 #: ../src/command/app.cpp:87
 msgid "&Full view"
@@ -397,7 +440,7 @@ msgstr "Целокупан приказ"
 
 #: ../src/command/app.cpp:89
 msgid "Display audio, video and then subtitles grid"
-msgstr ""
+msgstr "Прикажи звук, видео и испод њих мрежу титлова"
 
 #: ../src/command/app.cpp:107
 msgid "S&ubs Only View"
@@ -409,7 +452,7 @@ msgstr "Приказ титла"
 
 #: ../src/command/app.cpp:109
 msgid "Display the subtitles grid only"
-msgstr ""
+msgstr "Прикажи само мрежу титлова"
 
 #: ../src/command/app.cpp:123
 msgid "&Video+Subs View"
@@ -421,7 +464,7 @@ msgstr "Приказ слике и титла"
 
 #: ../src/command/app.cpp:125
 msgid "Display video and the subtitles grid only"
-msgstr ""
+msgstr "Прикажи само видео и мрежу титлова"
 
 #: ../src/command/app.cpp:143
 msgid "E&xit"
@@ -448,12 +491,12 @@ msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
 msgstr ""
+"Aegisub мора поново да се покрене да би се применио нови језик. Поново "
+"покренути сада?"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "О Иџисабу"
+msgstr "Поново покренути Aegisub?"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -499,7 +542,7 @@ msgstr "Укључите/искључите глобално заобилаже�
 
 #: ../src/command/app.cpp:222
 msgid "Toggle global hotkey overrides (Medusa Mode)"
-msgstr ""
+msgstr "Укључи/искључи глобално заобилажење пречица (режим Медуза)"
 
 #: ../src/command/app.cpp:237
 msgid "Toggle the main toolbar"
@@ -527,27 +570,27 @@ msgstr "Проверите да ли је доступна нова верзиј
 
 #: ../src/command/app.cpp:270 ../src/command/app.cpp:271
 msgid "Minimize"
-msgstr ""
+msgstr "Умањи"
 
 #: ../src/command/app.cpp:272
 msgid "Minimize the active window"
-msgstr ""
+msgstr "Умањи активни прозор"
 
 #: ../src/command/app.cpp:281 ../src/command/app.cpp:282
 msgid "Zoom"
-msgstr ""
+msgstr "Зумирај"
 
 #: ../src/command/app.cpp:283
 msgid "Maximize the active window"
-msgstr ""
+msgstr "Увећај активни прозор"
 
 #: ../src/command/app.cpp:292 ../src/command/app.cpp:293
 msgid "Bring All to Front"
-msgstr ""
+msgstr "Све у први план"
 
 #: ../src/command/app.cpp:294
 msgid "Bring forward all open documents to the front"
-msgstr ""
+msgstr "Доведи све отворене документе у први план"
 
 #: ../src/command/audio.cpp:65
 msgid "&Close Audio"
@@ -559,7 +602,7 @@ msgstr "Затварање звука"
 
 #: ../src/command/audio.cpp:67
 msgid "Close the currently open audio file"
-msgstr ""
+msgstr "Затвори отворену звучну датотеку"
 
 #: ../src/command/audio.cpp:77
 msgid "&Open Audio File..."
@@ -571,7 +614,7 @@ msgstr "Отварање звучног снимка"
 
 #: ../src/command/audio.cpp:79
 msgid "Open an audio file"
-msgstr ""
+msgstr "Отвори звучну датотеку"
 
 #: ../src/command/audio.cpp:82
 msgid "Audio Formats"
@@ -582,11 +625,9 @@ msgid "Video Formats"
 msgstr "Видео-формати"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
-msgstr "Отварање звучног снимка"
+msgstr "Отварање звучне датотеке"
 
 #: ../src/command/audio.cpp:93 ../src/command/audio.cpp:94
 msgid "Open 2h30 Blank Audio"
@@ -614,7 +655,7 @@ msgstr "Отварање звука из видео-снимка"
 
 #: ../src/command/audio.cpp:118
 msgid "Open the audio from the current video file"
-msgstr ""
+msgstr "Отвори звук из тренутне видео датотеке"
 
 #: ../src/command/audio.cpp:132
 msgid "&Spectrum Display"
@@ -646,13 +687,11 @@ msgstr "Напра&ви звучни запис"
 
 #: ../src/command/audio.cpp:166
 msgid "Save an audio clip of the selected line"
-msgstr ""
+msgstr "Сачувај звучни исечак изабраног титла"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
-msgstr "Сачувај звучни снимак"
+msgstr "Чување звучног исечка"
 
 #: ../src/command/audio.cpp:192 ../src/command/audio.cpp:193
 msgid "Play current audio selection"
@@ -669,7 +708,7 @@ msgstr "Пустите изабрани титл."
 
 #: ../src/command/audio.cpp:207
 msgid "Play the audio for the current line"
-msgstr ""
+msgstr "Пусти звук тренутног титла"
 
 #: ../src/command/audio.cpp:220 ../src/command/audio.cpp:221
 msgid "Play audio selection"
@@ -685,7 +724,7 @@ msgstr "Пусти одабир звука или заустави"
 
 #: ../src/command/audio.cpp:234
 msgid "Play selection, or stop playback if it's already playing"
-msgstr ""
+msgstr "Пусти избор или заустави пуштање ако је већ у току"
 
 #: ../src/command/audio.cpp:249 ../src/command/audio.cpp:250
 msgid "Stop playing"
@@ -693,7 +732,7 @@ msgstr "Заустави извођење"
 
 #: ../src/command/audio.cpp:251
 msgid "Stop audio and video playback"
-msgstr ""
+msgstr "Заустави пуштање звука и видеа"
 
 #: ../src/command/audio.cpp:267 ../src/command/audio.cpp:268
 #: ../src/command/audio.cpp:269
@@ -762,29 +801,27 @@ msgstr "Идите на изабрани титл."
 
 #: ../src/command/audio.cpp:399
 msgid "Scroll the audio display to center on the current audio selection"
-msgstr ""
+msgstr "Помери приказ звука тако да тренутни звучни избор буде у средини"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "Идите на изабрани титл."
+msgstr "Иди на почетак избора"
 
 #: ../src/command/audio.cpp:410
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
 msgstr ""
+"Помери приказ звука тако да почетак тренутног звучног избора буде у средини"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Идите на изабрани титл."
+msgstr "Иди на крај избора"
 
 #: ../src/command/audio.cpp:421
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
 msgstr ""
+"Помери приказ звука тако да крај тренутног звучног избора буде у средини"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -805,7 +842,7 @@ msgstr "Клизајте приказ звука удесно."
 #: ../src/command/audio.cpp:457 ../src/command/audio.cpp:458
 #: ../src/command/audio.cpp:459
 msgid "Auto scroll audio display to selected line"
-msgstr ""
+msgstr "Аутоматски помери приказ звука на изабрани титл"
 
 #: ../src/command/audio.cpp:474 ../src/command/audio.cpp:475
 #: ../src/command/audio.cpp:476
@@ -814,11 +851,11 @@ msgstr "Аутоматски примењује све измене."
 
 #: ../src/command/audio.cpp:491 ../src/command/audio.cpp:492
 msgid "Auto go to next line on commit"
-msgstr ""
+msgstr "Аутоматски пређи на следећи титл после потврде"
 
 #: ../src/command/audio.cpp:493
 msgid "Automatically go to next line on commit"
-msgstr ""
+msgstr "Аутоматски пређи на следећи титл после потврде"
 
 #: ../src/command/audio.cpp:508 ../src/command/audio.cpp:509
 #: ../src/command/audio.cpp:510
@@ -887,6 +924,9 @@ msgid ""
 "Open automation manager. Ctrl: Rescan autoload folder. Ctrl+Shift: Rescan "
 "autoload folder and reload all automation scripts"
 msgstr ""
+"Отвори Аутоматизациони управљач. Ctrl: поново претражи фасциклу за "
+"аутоматско учитавање. Ctrl+Shift: поново претражи фасциклу за аутоматско "
+"учитавање и поново учитај све аутоматизационе скрипте"
 
 #: ../src/command/command.cpp:35
 #, c-format
@@ -903,60 +943,62 @@ msgstr "постављену боју"
 
 #: ../src/command/edit.cpp:391
 msgid "Primary Color..."
-msgstr ""
+msgstr "Примарна боја…"
 
 #: ../src/command/edit.cpp:392
 msgid "Primary Color"
-msgstr ""
+msgstr "Примарна боја"
 
 #: ../src/command/edit.cpp:393
 msgid "Set the primary fill color (\\c) at the cursor position"
-msgstr ""
+msgstr "Постави примарну боју испуне (\\c) на положају курсора"
 
 #: ../src/command/edit.cpp:403
 msgid "Secondary Color..."
-msgstr ""
+msgstr "Секундарна боја…"
 
 #: ../src/command/edit.cpp:404
 msgid "Secondary Color"
-msgstr ""
+msgstr "Секундарна боја"
 
 #: ../src/command/edit.cpp:405
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
-msgstr ""
+msgstr "Постави секундарну (караоке) боју испуне (\\2c) на положају курсора"
 
 #: ../src/command/edit.cpp:415
 msgid "Outline Color..."
-msgstr ""
+msgstr "Боја ивице…"
 
 #: ../src/command/edit.cpp:416
 msgid "Outline Color"
-msgstr ""
+msgstr "Боја ивице"
 
 #: ../src/command/edit.cpp:417
 msgid "Set the outline color (\\3c) at the cursor position"
-msgstr ""
+msgstr "Постави боју ивице (\\3c) на положају курсора"
 
 #: ../src/command/edit.cpp:427
 msgid "Shadow Color..."
-msgstr ""
+msgstr "Боја сенке…"
 
 #: ../src/command/edit.cpp:428
 msgid "Shadow Color"
-msgstr ""
+msgstr "Боја сенке"
 
 #: ../src/command/edit.cpp:429
 msgid "Set the shadow color (\\4c) at the cursor position"
-msgstr ""
+msgstr "Постави боју сенке (\\4c) на положају курсора"
 
 #: ../src/command/edit.cpp:439 ../src/command/edit.cpp:440
 msgid "Toggle Bold"
-msgstr ""
+msgstr "Подебљано"
 
 #: ../src/command/edit.cpp:441
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
+"Укључи/искључи подебљање (\\b) за тренутни избор или на тренутном положају "
+"курсора"
 
 #: ../src/command/edit.cpp:444
 msgid "toggle bold"
@@ -964,13 +1006,15 @@ msgstr "преклапање масних слова"
 
 #: ../src/command/edit.cpp:451 ../src/command/edit.cpp:452
 msgid "Toggle Italics"
-msgstr ""
+msgstr "Курзив"
 
 #: ../src/command/edit.cpp:453
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Укључи/искључи курзив (\\i) за тренутни избор или на тренутном положају "
+"курсора"
 
 #: ../src/command/edit.cpp:456
 msgid "toggle italic"
@@ -978,13 +1022,15 @@ msgstr "преклапање курзива"
 
 #: ../src/command/edit.cpp:463 ../src/command/edit.cpp:464
 msgid "Toggle Underline"
-msgstr ""
+msgstr "Подвучено"
 
 #: ../src/command/edit.cpp:465
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Укључи/искључи подвлачење (\\u) за тренутни избор или на тренутном положају "
+"курсора"
 
 #: ../src/command/edit.cpp:468
 msgid "toggle underline"
@@ -992,13 +1038,15 @@ msgstr "преклапање подвлачења"
 
 #: ../src/command/edit.cpp:475 ../src/command/edit.cpp:476
 msgid "Toggle Strikeout"
-msgstr ""
+msgstr "Прецртано"
 
 #: ../src/command/edit.cpp:477
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Укључи/искључи прецртавање (\\s) за тренутни избор или на тренутном положају "
+"курсора"
 
 #: ../src/command/edit.cpp:480
 msgid "toggle strikeout"
@@ -1006,7 +1054,7 @@ msgstr "преклапање прецртавања"
 
 #: ../src/command/edit.cpp:487
 msgid "Font Face..."
-msgstr ""
+msgstr "Фонт…"
 
 #: ../src/command/edit.cpp:488 ../src/preferences_base.cpp:277
 msgid "Font Face"
@@ -1014,7 +1062,7 @@ msgstr "Лик фонта"
 
 #: ../src/command/edit.cpp:489
 msgid "Select a font face and size"
-msgstr ""
+msgstr "Изабери фонт и величину"
 
 #: ../src/command/edit.cpp:516
 msgid "set font"
@@ -1042,7 +1090,7 @@ msgstr "Умножавање"
 
 #: ../src/command/edit.cpp:608
 msgid "Copy subtitles to the clipboard"
-msgstr ""
+msgstr "Умножи титлове у оставу"
 
 #: ../src/command/edit.cpp:629
 msgid "Cu&t Lines"
@@ -1058,7 +1106,7 @@ msgstr "Исеците титлове."
 
 #: ../src/command/edit.cpp:638
 msgid "cut lines"
-msgstr ""
+msgstr "исецање титлова"
 
 #: ../src/command/edit.cpp:646
 msgid "De&lete Lines"
@@ -1074,7 +1122,7 @@ msgstr "Обришите изабране титлове."
 
 #: ../src/command/edit.cpp:651
 msgid "delete lines"
-msgstr ""
+msgstr "брисање титлова"
 
 #: ../src/command/edit.cpp:716
 msgid "duplicate lines"
@@ -1098,23 +1146,27 @@ msgstr "Удвостручите изабране титлове."
 
 #: ../src/command/edit.cpp:734 ../src/command/edit.cpp:735
 msgid "Split lines after current frame"
-msgstr ""
+msgstr "Подели титлове после тренутног кадра"
 
 #: ../src/command/edit.cpp:736
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
 msgstr ""
+"Подели тренутни титл на титл који се завршава на тренутном кадру и титл који "
+"почиње на следећем кадру"
 
 #: ../src/command/edit.cpp:746 ../src/command/edit.cpp:747
 msgid "Split lines before current frame"
-msgstr ""
+msgstr "Подели титлове пре тренутног кадра"
 
 #: ../src/command/edit.cpp:748
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
 msgstr ""
+"Подели тренутни титл на титл који се завршава на претходном кадру и титл "
+"који почиње на тренутном кадру"
 
 #: ../src/command/edit.cpp:788
 msgid "As &Karaoke"
@@ -1126,7 +1178,7 @@ msgstr "Као караоке"
 
 #: ../src/command/edit.cpp:790
 msgid "Join selected lines in a single one, as karaoke"
-msgstr ""
+msgstr "Споји изабране титлове у један, као караоке"
 
 #: ../src/command/edit.cpp:793
 msgid "join as karaoke"
@@ -1142,7 +1194,7 @@ msgstr "Стапање"
 
 #: ../src/command/edit.cpp:801
 msgid "Join selected lines in a single one, concatenating text together"
-msgstr ""
+msgstr "Споји изабране титлове у један, надовезујући текст"
 
 #: ../src/command/edit.cpp:804 ../src/command/edit.cpp:815
 msgid "join lines"
@@ -1161,6 +1213,7 @@ msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
 "remaining"
 msgstr ""
+"Споји изабране титлове у један, задржавајући текст првог и одбацујући остале"
 
 #: ../src/command/edit.cpp:853
 msgid "&Paste Lines"
@@ -1196,7 +1249,7 @@ msgstr "Поновно сједињавање"
 
 #: ../src/command/edit.cpp:970
 msgid "Recombine subtitles which have been split and merged"
-msgstr ""
+msgstr "Поново сједини титлове који су подељени и спојени"
 
 #: ../src/command/edit.cpp:1040
 msgid "combining"
@@ -1208,7 +1261,7 @@ msgstr "&Раздвој титлове (караоке)"
 
 #: ../src/command/edit.cpp:1048
 msgid "Use karaoke timing to split line into multiple smaller lines"
-msgstr ""
+msgstr "Подели титл на више мањих титлова према караоке времену"
 
 #: ../src/command/edit.cpp:1082
 msgid "splitting"
@@ -1224,6 +1277,8 @@ msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
+"Подели тренутни титл на положају курсора и расподели трајање првобитног "
+"титла на нове"
 
 #: ../src/command/edit.cpp:1130 ../src/command/edit.cpp:1131
 #: ../src/subs_edit_ctrl.cpp:416
@@ -1235,20 +1290,24 @@ msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr ""
+"Подели тренутни титл на положају курсора и задржи оба титла са временима "
+"првобитног"
 
 #: ../src/command/edit.cpp:1141 ../src/command/edit.cpp:1142
 msgid "Split at cursor (at video frame)"
-msgstr ""
+msgstr "Подели на курсору (на видео кадру)"
 
 #: ../src/command/edit.cpp:1143
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr ""
+"Подели тренутни титл на положају курсора и подели његово трајање на "
+"тренутном видео кадру"
 
 #: ../src/command/edit.cpp:1159
 msgid "Redo last undone action"
-msgstr ""
+msgstr "Понови последњу опозвану радњу"
 
 #: ../src/command/edit.cpp:1164
 msgid "Nothing to &redo"
@@ -1270,7 +1329,7 @@ msgstr "Понови %s"
 
 #: ../src/command/edit.cpp:1185
 msgid "Undo last action"
-msgstr ""
+msgstr "Опозови последњу радњу"
 
 #: ../src/command/edit.cpp:1190
 msgid "Nothing to &undo"
@@ -1292,15 +1351,15 @@ msgstr "Опозови %s"
 
 #: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1211
 msgid "Revert"
-msgstr ""
+msgstr "Врати"
 
 #: ../src/command/edit.cpp:1212
 msgid "Revert the active line to its initial state (shown in the upper editor)"
-msgstr ""
+msgstr "Врати активни титл у почетно стање (приказано у горњем уређивачу)"
 
 #: ../src/command/edit.cpp:1217
 msgid "revert line"
-msgstr ""
+msgstr "враћање титла"
 
 #: ../src/command/edit.cpp:1223 ../src/command/edit.cpp:1224
 #: ../src/preferences.cpp:453
@@ -1309,19 +1368,19 @@ msgstr "Очисти"
 
 #: ../src/command/edit.cpp:1225
 msgid "Clear the current line's text"
-msgstr ""
+msgstr "Очисти текст тренутног титла"
 
 #: ../src/command/edit.cpp:1230 ../src/command/edit.cpp:1249
 msgid "clear line"
-msgstr ""
+msgstr "чишћење титла"
 
 #: ../src/command/edit.cpp:1237 ../src/command/edit.cpp:1238
 msgid "Clear Text"
-msgstr ""
+msgstr "Очисти текст"
 
 #: ../src/command/edit.cpp:1239
 msgid "Clear the current line's text, leaving override tags"
-msgstr ""
+msgstr "Очисти текст тренутног титла и задржи ознаке за преписивање"
 
 #: ../src/command/edit.cpp:1255 ../src/command/edit.cpp:1256
 #: ../src/command/tool.cpp:256
@@ -1330,11 +1389,11 @@ msgstr "Унеси изворни"
 
 #: ../src/command/edit.cpp:1257
 msgid "Insert the original line text at the cursor"
-msgstr ""
+msgstr "Убаци изворни текст титла на положају курсора"
 
 #: ../src/command/edit.cpp:1265
 msgid "insert original"
-msgstr ""
+msgstr "убацивање изворника"
 
 #: ../src/command/grid.cpp:50 ../src/command/grid.cpp:51
 #: ../src/command/grid.cpp:62 ../src/command/grid.cpp:63
@@ -1561,7 +1620,7 @@ msgstr "Зам&ени титлове"
 
 #: ../src/command/grid.cpp:384
 msgid "Swap the two selected lines"
-msgstr ""
+msgstr "Замени два изабрана титла"
 
 #: ../src/command/grid.cpp:395
 msgid "swap lines"
@@ -1635,7 +1694,7 @@ msgstr "Затвори кључ&не кадрове"
 #: ../src/command/keyframe.cpp:51
 msgid ""
 "Discard the currently loaded keyframes and use those from the video, if any"
-msgstr ""
+msgstr "Одбаци учитане кључне кадрове и употреби оне из видеа, ако постоје"
 
 #: ../src/command/keyframe.cpp:66
 msgid "Open Keyframes..."
@@ -1647,13 +1706,11 @@ msgstr "Отварање кључних кадрова"
 
 #: ../src/command/keyframe.cpp:68
 msgid "Open a keyframe list file"
-msgstr ""
+msgstr "Отвори датотеку са списком кључних кадрова"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open Keyframes"
 msgid "Open Keyframes File"
-msgstr "Отварање кључних кадрова"
+msgstr "Отварање датотеке кључних кадрова"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1665,20 +1722,16 @@ msgstr "Чување кључних кадрова"
 
 #: ../src/command/keyframe.cpp:89
 msgid "Save the current list of keyframes to a file"
-msgstr ""
+msgstr "Сачувај тренутни списак кључних кадрова у датотеку"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save Keyframes"
 msgid "Save Keyframes File"
-msgstr "Чување кључних кадрова"
+msgstr "Чување датотеке кључних кадрова"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "Датотеке"
+msgstr "Текстуалне датотеке"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1722,7 +1775,7 @@ msgstr "Прилози"
 
 #: ../src/command/subtitle.cpp:81
 msgid "Open the attachment manager dialog"
-msgstr ""
+msgstr "Отвори прозорче за управљање прилозима"
 
 #: ../src/command/subtitle.cpp:92
 msgid "&Find..."
@@ -1734,7 +1787,7 @@ msgstr "Проналажење"
 
 #: ../src/command/subtitle.cpp:94
 msgid "Search for text in the subtitles"
-msgstr ""
+msgstr "Тражи текст у титловима"
 
 #: ../src/command/subtitle.cpp:105
 msgid "Find &Next"
@@ -1746,7 +1799,7 @@ msgstr "Проналажење следећег"
 
 #: ../src/command/subtitle.cpp:107
 msgid "Find next match of last search"
-msgstr ""
+msgstr "Пронађи следеће подударање последње претраге"
 
 #: ../src/command/subtitle.cpp:134
 msgid "&After Current"
@@ -1758,7 +1811,7 @@ msgstr "после изабраног"
 
 #: ../src/command/subtitle.cpp:136
 msgid "Insert a new line after the current one"
-msgstr ""
+msgstr "Убаци нови титл после тренутног"
 
 #: ../src/command/subtitle.cpp:168 ../src/command/subtitle.cpp:169
 msgid "After Current, at Video Time"
@@ -1766,7 +1819,7 @@ msgstr "после изабраног, уз време на снимку"
 
 #: ../src/command/subtitle.cpp:170
 msgid "Insert a new line after the current one, starting at video time"
-msgstr ""
+msgstr "Убаци нови титл после тренутног, са почетком у времену видеа"
 
 #: ../src/command/subtitle.cpp:179
 msgid "&Before Current"
@@ -1778,7 +1831,7 @@ msgstr "пре изабраног"
 
 #: ../src/command/subtitle.cpp:181
 msgid "Insert a new line before the current one"
-msgstr ""
+msgstr "Убаци нови титл пре тренутног"
 
 #: ../src/command/subtitle.cpp:210 ../src/command/subtitle.cpp:211
 msgid "Before Current, at Video Time"
@@ -1786,7 +1839,7 @@ msgstr "пре изабраног, уз време на снимку"
 
 #: ../src/command/subtitle.cpp:212
 msgid "Insert a new line before the current one, starting at video time"
-msgstr ""
+msgstr "Убаци нови титл пре тренутног, са почетком у времену видеа"
 
 #: ../src/command/subtitle.cpp:238
 msgid "&New Subtitles"
@@ -1816,26 +1869,24 @@ msgstr "Отварање титла"
 
 #: ../src/command/subtitle.cpp:269
 msgid "Open a subtitles file"
-msgstr ""
+msgstr "Отвори датотеку титлова"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
-msgstr "Отварање титла"
+msgstr "Отварање датотеке титлова"
 
 #: ../src/command/subtitle.cpp:282
 msgid "Open A&utosaved Subtitles..."
-msgstr ""
+msgstr "Отвори а&утоматски сачуване титлове…"
 
 #: ../src/command/subtitle.cpp:283
 msgid "Open Autosaved Subtitles"
-msgstr ""
+msgstr "Отвори аутоматски сачуване титлове"
 
 #: ../src/command/subtitle.cpp:284
 msgid "Open a previous version of a file which was autosaved by Aegisub"
-msgstr ""
+msgstr "Отвори претходно издање датотеке коју је Aegisub аутоматски сачувао"
 
 #: ../src/command/subtitle.cpp:297
 msgid "Open Subtitles with &Charset..."
@@ -1847,7 +1898,7 @@ msgstr "Отварање титла са знаковима"
 
 #: ../src/command/subtitle.cpp:299
 msgid "Open a subtitles file with a specific file encoding"
-msgstr ""
+msgstr "Отвори датотеку титлова са одређеним кодирањем"
 
 #: ../src/command/subtitle.cpp:307
 msgid "Charset"
@@ -1867,7 +1918,7 @@ msgstr "Отварање титла из видео-снимка"
 
 #: ../src/command/subtitle.cpp:318
 msgid "Open the subtitles from the current video file"
-msgstr ""
+msgstr "Отвори титлове из тренутне видео датотеке"
 
 #: ../src/command/subtitle.cpp:334
 msgid "&Properties..."
@@ -1882,10 +1933,8 @@ msgid "Open script properties window"
 msgstr "Отворите својства скрипта."
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
-msgstr "Чување титла"
+msgstr "Чување датотеке титлова"
 
 #: ../src/command/subtitle.cpp:357 ../src/command/subtitle.cpp:360
 #: ../src/dialog_fonts_collector.cpp:312 ../src/dialog_fonts_collector.cpp:317
@@ -1902,7 +1951,7 @@ msgstr "грешка"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "Непозната грешка"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -1914,7 +1963,7 @@ msgstr "Чување титла"
 
 #: ../src/command/subtitle.cpp:369
 msgid "Save the current subtitles"
-msgstr ""
+msgstr "Сачувај тренутне титлове"
 
 #: ../src/command/subtitle.cpp:384
 msgid "Save Subtitles &as..."
@@ -1926,7 +1975,7 @@ msgstr "Чување титла"
 
 #: ../src/command/subtitle.cpp:386
 msgid "Save subtitles with another name"
-msgstr ""
+msgstr "Сачувај титлове под другим називом"
 
 #: ../src/command/subtitle.cpp:395 ../src/dialog_export.cpp:127
 #: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:411
@@ -1939,7 +1988,7 @@ msgstr "Одабир свега"
 
 #: ../src/command/subtitle.cpp:397
 msgid "Select all dialogue lines"
-msgstr ""
+msgstr "Изабери све титлове дијалога"
 
 #: ../src/command/subtitle.cpp:409 ../src/command/subtitle.cpp:410
 msgid "Select Visible"
@@ -1947,7 +1996,7 @@ msgstr "Изабери видљиво"
 
 #: ../src/command/subtitle.cpp:411
 msgid "Select all dialogue lines that are visible on the current video frame"
-msgstr ""
+msgstr "Изабери све титлове дијалога који се виде на тренутном видео кадру"
 
 #: ../src/command/subtitle.cpp:441
 msgid "Spell &Checker..."
@@ -1975,7 +2024,7 @@ msgstr "Промена завршетка"
 
 #: ../src/command/time.cpp:107
 msgid "Change end times of lines to the next line's start time"
-msgstr ""
+msgstr "Промени завршна времена титлова на почетно време следећег титла"
 
 #: ../src/command/time.cpp:116
 msgid "Change &Start"
@@ -1987,7 +2036,7 @@ msgstr "Промена почетка"
 
 #: ../src/command/time.cpp:118
 msgid "Change start times of lines to the previous line's end time"
-msgstr ""
+msgstr "Промени почетна времена титлова на завршно време претходног титла"
 
 #: ../src/command/time.cpp:128
 msgid "Shift to &Current Frame"
@@ -2052,7 +2101,7 @@ msgstr "Проширите почетно и завршно време:"
 
 #: ../src/command/time.cpp:241
 msgid "Add both lead in and out to the selected lines"
-msgstr ""
+msgstr "Додај изабраним титловима и почетно и завршно проширење"
 
 #: ../src/command/time.cpp:253 ../src/command/time.cpp:254
 msgid "Add lead in"
@@ -2060,7 +2109,7 @@ msgstr "Почетак:"
 
 #: ../src/command/time.cpp:255
 msgid "Add the lead in time to the selected lines"
-msgstr ""
+msgstr "Додај изабраним титловима почетно проширење"
 
 #: ../src/command/time.cpp:265 ../src/command/time.cpp:266
 msgid "Add lead out"
@@ -2068,7 +2117,7 @@ msgstr "Завршетак:"
 
 #: ../src/command/time.cpp:267
 msgid "Add the lead out time to the selected lines"
-msgstr ""
+msgstr "Додај изабраним титловима завршно проширење"
 
 #: ../src/command/time.cpp:276 ../src/command/time.cpp:277
 msgid "Increase length"
@@ -2146,7 +2195,7 @@ msgstr "З&атвори временске кодове"
 
 #: ../src/command/timecode.cpp:53
 msgid "Close the currently open timecodes file"
-msgstr ""
+msgstr "Затвори отворену датотеку временских кодова"
 
 #: ../src/command/timecode.cpp:68
 msgid "Open Timecodes File..."
@@ -2158,14 +2207,12 @@ msgstr "Отварање временских кодова"
 
 #: ../src/command/timecode.cpp:70
 msgid "Open a VFR timecodes v1 or v2 file"
-msgstr ""
+msgstr "Отвори датотеку VFR временских кодова v1 или v2"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Отварање временских кодова"
+msgstr "Отварање датотеке временских кодова"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2177,18 +2224,16 @@ msgstr "Чување временских кодова"
 
 #: ../src/command/timecode.cpp:85
 msgid "Save a VFR timecodes v2 file"
-msgstr ""
+msgstr "Сачувај датотеку VFR временских кодова v2"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
-msgstr "Чување временских кодова"
+msgstr "Чување датотеке временских кодова"
 
 #: ../src/command/timecode.cpp:103
 msgid "Error saving timecodes"
-msgstr ""
+msgstr "Грешка при чувању временских кодова"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2202,7 +2247,7 @@ msgstr "Извоз титла"
 msgid ""
 "Save a copy of subtitles in a different format or with processing applied to "
 "it"
-msgstr ""
+msgstr "Сачувај копију титлова у другом формату или са примењеном обрадом"
 
 #: ../src/command/tool.cpp:69
 msgid "&Fonts Collector..."
@@ -2226,7 +2271,7 @@ msgstr "Одабир титлова"
 
 #: ../src/command/tool.cpp:83
 msgid "Select lines based on defined criteria"
-msgstr ""
+msgstr "Изабери титлове према задатим условима"
 
 #: ../src/command/tool.cpp:93
 msgid "&Resample Resolution..."
@@ -2241,6 +2286,8 @@ msgid ""
 "Resample subtitles to maintain their current appearance at a different "
 "script resolution"
 msgstr ""
+"Преузоркуј титлове тако да задрже тренутни изглед при другој резолуцији "
+"скрипта"
 
 #: ../src/command/tool.cpp:108
 msgid "St&yling Assistant..."
@@ -2291,7 +2338,7 @@ msgstr "Управљач стиловима"
 
 #: ../src/command/tool.cpp:152
 msgid "Open the styles manager"
-msgstr ""
+msgstr "Отвори управљач стиловима"
 
 #: ../src/command/tool.cpp:162
 msgid "&Kanji Timer..."
@@ -2303,7 +2350,7 @@ msgstr "Канџи бројач"
 
 #: ../src/command/tool.cpp:164
 msgid "Open the Kanji timer copier"
-msgstr ""
+msgstr "Отвори умножавач Канџи бројача"
 
 #: ../src/command/tool.cpp:174
 msgid "&Timing Post-Processor..."
@@ -2318,6 +2365,8 @@ msgid ""
 "Post-process the subtitle timing to add lead-ins and lead-outs, snap timing "
 "to scene changes, etc."
 msgstr ""
+"Накнадно обради време титлова: додај почетно и завршно проширење, поравнај "
+"време са променама сцене итд."
 
 #: ../src/command/tool.cpp:186
 msgid "&Translation Assistant..."
@@ -2370,7 +2419,7 @@ msgstr "Биоскопска (2.35)"
 
 #: ../src/command/video.cpp:84
 msgid "Force video to 2.35 aspect ratio"
-msgstr ""
+msgstr "Наметни видеу размеру 2,35"
 
 #: ../src/command/video.cpp:100
 msgid "C&ustom..."
@@ -2382,7 +2431,7 @@ msgstr "Прилагоди…"
 
 #: ../src/command/video.cpp:102
 msgid "Force video to a custom aspect ratio"
-msgstr ""
+msgstr "Наметни видеу прилагођену размеру"
 
 #: ../src/command/video.cpp:113
 msgid ""
@@ -2410,7 +2459,7 @@ msgstr "&подразумевана"
 
 #: ../src/command/video.cpp:145
 msgid "Use video's original aspect ratio"
-msgstr ""
+msgstr "Користи изворну размеру видеа"
 
 #: ../src/command/video.cpp:161
 msgid "&Fullscreen (4:3)"
@@ -2422,7 +2471,7 @@ msgstr "Преко целог екрана"
 
 #: ../src/command/video.cpp:163
 msgid "Force video to 4:3 aspect ratio"
-msgstr ""
+msgstr "Наметни видеу размеру 4:3"
 
 #: ../src/command/video.cpp:179
 msgid "&Widescreen (16:9)"
@@ -2434,7 +2483,7 @@ msgstr "Широки екран"
 
 #: ../src/command/video.cpp:181
 msgid "Force video to 16:9 aspect ratio"
-msgstr ""
+msgstr "Наметни видеу размеру 16:9"
 
 #: ../src/command/video.cpp:198
 msgid "&Close Video"
@@ -2446,7 +2495,7 @@ msgstr "Затварање видео-снимка"
 
 #: ../src/command/video.cpp:200
 msgid "Close the currently open video file"
-msgstr ""
+msgstr "Затвори отворену видео датотеку"
 
 #: ../src/command/video.cpp:209 ../src/command/video.cpp:210
 msgid "Copy coordinates to Clipboard"
@@ -2459,16 +2508,16 @@ msgstr "Умножите текуће координате миша преко �
 
 #: ../src/command/video.cpp:220 ../src/command/video.cpp:221
 msgid "Cycle active subtitles provider"
-msgstr ""
+msgstr "Промени активног пружаоца титлова"
 
 #: ../src/command/video.cpp:222
 msgid "Cycle through the available subtitles providers"
-msgstr ""
+msgstr "Кружи кроз доступне пружаоце титлова"
 
 #: ../src/command/video.cpp:233
 #, c-format
 msgid "Subtitles provider set to %s"
-msgstr ""
+msgstr "Пружалац титлова постављен на %s"
 
 #: ../src/command/video.cpp:240
 msgid "&Detach Video"
@@ -2482,7 +2531,7 @@ msgstr "Откачивање видео-снимка"
 msgid ""
 "Detach the video display from the main window, displaying it in a separate "
 "Window"
-msgstr ""
+msgstr "Одвоји приказ видеа од главног прозора и прикажи га у засебном прозору"
 
 #: ../src/command/video.cpp:260
 msgid "Show &Video Details"
@@ -2494,7 +2543,7 @@ msgstr "Приказ података о видео-снимку"
 
 #: ../src/command/video.cpp:262
 msgid "Show video details"
-msgstr ""
+msgstr "Прикажи податке о видеу"
 
 #: ../src/command/video.cpp:272 ../src/command/video.cpp:273
 msgid "Toggle video slider focus"
@@ -2503,7 +2552,7 @@ msgstr "Укључи/искључи фокус на видео-клизачу"
 #: ../src/command/video.cpp:274
 msgid ""
 "Toggle focus between the video slider and the previous thing to have focus"
-msgstr ""
+msgstr "Пребацуј фокус између клизача видеа и претходног елемента са фокусом"
 
 #: ../src/command/video.cpp:299 ../src/command/video.cpp:300
 msgid "Copy image to Clipboard"
@@ -2524,13 +2573,13 @@ msgstr "Умножите тренутно приказани кадар (без 
 
 #: ../src/command/video.cpp:321 ../src/command/video.cpp:322
 msgid "Copy image to Clipboard (only subtitles)"
-msgstr ""
+msgstr "Умножи слику у оставу (само титлови)"
 
 #: ../src/command/video.cpp:323
 msgid ""
 "Copy the currently displayed subtitles to the clipboard, with transparent "
 "background"
-msgstr ""
+msgstr "Умножи тренутно приказане титлове са провидном позадином у оставу"
 
 #: ../src/command/video.cpp:332 ../src/command/video.cpp:333
 msgid "Next Frame"
@@ -2546,7 +2595,7 @@ msgstr "Следећа граница"
 
 #: ../src/command/video.cpp:345
 msgid "Seek to the next beginning or end of a subtitle"
-msgstr ""
+msgstr "Иди на следећи почетак или крај титла"
 
 #: ../src/command/video.cpp:372 ../src/command/video.cpp:373
 msgid "Next Keyframe"
@@ -2575,7 +2624,7 @@ msgstr "Претходна граница"
 
 #: ../src/command/video.cpp:412
 msgid "Seek to the previous beginning or end of a subtitle"
-msgstr ""
+msgstr "Иди на претходни почетак или крај титла"
 
 #: ../src/command/video.cpp:439 ../src/command/video.cpp:440
 msgid "Previous Keyframe"
@@ -2613,13 +2662,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:534 ../src/command/video.cpp:535
 msgid "Save PNG snapshot (only subtitles)"
-msgstr ""
+msgstr "Сачувај PNG снимак (само титлови)"
 
 #: ../src/command/video.cpp:536
 msgid ""
 "Save the currently displayed subtitles with transparent background to a PNG "
 "file in the video's directory"
 msgstr ""
+"Сачувај тренутно приказане титлове са провидном позадином као PNG датотеку у "
+"фасциклу видеа"
 
 #: ../src/command/video.cpp:546
 msgid "&Jump to..."
@@ -2643,7 +2694,7 @@ msgstr "Премотавање видео-снимка на крај"
 
 #: ../src/command/video.cpp:562
 msgid "Jump the video to the end frame of current subtitle"
-msgstr ""
+msgstr "Премести видео на завршни кадар тренутног титла"
 
 #: ../src/command/video.cpp:573
 msgid "Jump Video to &Start"
@@ -2655,7 +2706,7 @@ msgstr "Премотавање видео-снимка на почетак"
 
 #: ../src/command/video.cpp:575
 msgid "Jump the video to the start frame of current subtitle"
-msgstr ""
+msgstr "Премести видео на почетни кадар тренутног титла"
 
 #: ../src/command/video.cpp:586
 msgid "&Open Video..."
@@ -2667,13 +2718,11 @@ msgstr "Отварање видео-снимка"
 
 #: ../src/command/video.cpp:588
 msgid "Open a video file"
-msgstr ""
+msgstr "Отвори видео датотеку"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
-msgstr "Отварање видео-снимка"
+msgstr "Отварање видео датотеке"
 
 #: ../src/command/video.cpp:602
 msgid "&Use Dummy Video..."
@@ -2685,7 +2734,7 @@ msgstr "Отварање пробног видео-снимка"
 
 #: ../src/command/video.cpp:604
 msgid "Open a placeholder video clip with solid color"
-msgstr ""
+msgstr "Отвори привремени видео-снимак једнобојне позадине"
 
 #: ../src/command/video.cpp:616 ../src/command/video.cpp:617
 msgid "Toggle autoscroll of video"
@@ -2694,26 +2743,23 @@ msgstr "Укључите/искључите праћење снимка."
 #: ../src/command/video.cpp:618
 msgid "Toggle automatically seeking video to the start time of selected lines"
 msgstr ""
+"Укључи/искључи аутоматско премештање видеа на почетно време изабраних титлова"
 
 #: ../src/command/video.cpp:633 ../src/command/video.cpp:634
 msgid "Play"
 msgstr "Пусти"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "Пустите видео-снимак почев од овог положаја."
+msgstr "Пусти видео од овог положаја"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "Пусти титл"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play current line"
 msgid "Play the video for the current line"
-msgstr "Пустите изабрани титл."
+msgstr "Пусти видео тренутног титла"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2733,17 +2779,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "Поништи &померање видеа"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "Затварање видео-снимка"
+msgstr "Поништи померање видеа"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "Поништи положај видеа у приказу видеа"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2871,70 +2915,56 @@ msgid "Line"
 msgstr "Титл"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Закачите титл."
+msgstr "Додај праву"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Бикубно"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Закачите Безијерове и кубне криве."
+msgstr "Додај кубну Безијеову криву"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Претвори"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Претворите делове између титла и куба."
+msgstr "Претвори одсечак између праве и кубне криве"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Унеси"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "Унесите управљачку тачку."
+msgstr "Убаци контролну тачку"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "Уклони"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "Уклоните управљачку тачку."
+msgstr "Уклони контролну тачку"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "Слободном руком"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "Нацртајте облик слободном руком."
+msgstr "Цртај слободан облик"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "Углади слободном руком"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Нацртајте углађени облик слободном руком."
+msgstr "Цртај углађен слободан облик"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -2996,20 +3026,16 @@ msgid "Choose file to be attached"
 msgstr "Одабир датотеке за качење"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Лик фонта"
+msgstr "Датотеке фонтова"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "качење фонта"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "качење цртежа"
+msgstr "Датотеке слика"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3070,7 +3096,7 @@ msgstr "Додавање скрипта"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "Скрипта „%s“ је већ учитана"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3089,18 +3115,7 @@ msgid "Scripting engines installed:"
 msgstr "Инсталирани механизми за скриптовање:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3112,15 +3127,13 @@ msgid ""
 "State: %s\n"
 msgstr ""
 "\n"
-"Подаци о скрипту:\n"
+"Подаци о скрипти:\n"
 "Назив: %s\n"
 "Опис: %s\n"
 "Аутор: %s\n"
-"Верзија: %s\n"
-"Путања: %s\n"
+"Издање: %s\n"
+"Пуна путања: %s\n"
 "Стање: %s\n"
-"\n"
-"Могућности пружају скриптови:"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3132,17 +3145,16 @@ msgstr "неисправно"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "Учитано уз упозорења"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "упозорење"
+msgstr "Упозорење: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "Могућности које пружа скрипта:\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3160,7 +3172,7 @@ msgstr "Подаци о скрипту"
 
 #: ../src/dialog_autosave.cpp:67
 msgid "Open autosave file"
-msgstr ""
+msgstr "Отвори аутоматски сачувану датотеку"
 
 #: ../src/dialog_autosave.cpp:71 ../src/preferences.cpp:113
 msgid "Files"
@@ -3168,7 +3180,7 @@ msgstr "Датотеке"
 
 #: ../src/dialog_autosave.cpp:76
 msgid "Versions"
-msgstr ""
+msgstr "Издања"
 
 #: ../src/dialog_autosave.cpp:86
 msgid "Open"
@@ -3177,12 +3189,12 @@ msgstr "Отвори"
 #: ../src/dialog_autosave.cpp:95
 #, c-format
 msgid "%s [ORIGINAL BACKUP]"
-msgstr ""
+msgstr "%s [ИЗВОРНА РЕЗЕРВНА КОПИЈА]"
 
 #: ../src/dialog_autosave.cpp:96
 #, c-format
 msgid "%s [RECOVERED]"
-msgstr ""
+msgstr "%s [ОПОРАВЉЕНО]"
 
 #: ../src/dialog_colorpicker.cpp:527
 msgid "Select Color"
@@ -3242,7 +3254,7 @@ msgstr "Црвена:"
 
 #: ../src/dialog_colorpicker.cpp:609
 msgid "Alpha:"
-msgstr ""
+msgstr "Алфа:"
 
 #: ../src/dialog_colorpicker.cpp:616 ../src/dialog_colorpicker.cpp:619
 msgid "Hue:"
@@ -3267,51 +3279,51 @@ msgstr "Видео: %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480 (SD цео екран)"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480 (SD анаморфно)"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360 (SD широки екран)"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396 (SD широки екран)"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352 (SD широки екран MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400 (SD широки екран MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576 (SuperPAL широки екран)"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720 (HD 720p)"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080 (FHD 1080p)"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440 (QHD 1440p)"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160 (4K UHD 2160p)"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920 (FHD усправно)"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3345,7 +3357,7 @@ msgstr "Трајање (у кадровима):"
 #: ../src/dialog_dummy_video.cpp:180
 #, c-format
 msgid "Resulting duration: %s"
-msgstr ""
+msgstr "Резултујуће трајање: %s"
 
 #: ../src/dialog_export.cpp:102
 msgid "Export"
@@ -3376,17 +3388,13 @@ msgid "Export..."
 msgstr "Извези…"
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
-msgstr "Извоз титла"
+msgstr "Извоз датотеке титлова"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Грешка при увозу стилова"
+msgstr "Грешка при извозу титлова"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3519,7 +3527,7 @@ msgstr "Одмак временског кода:"
 #: ../src/dialog_fonts_collector.cpp:101
 #, c-format
 msgid "* An error occurred when enumerating the used fonts: %s.\n"
-msgstr ""
+msgstr "* Дошло је до грешке при набрајању коришћених фонтова: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:115
 msgid "Symlinking fonts to folder...\n"
@@ -3536,12 +3544,12 @@ msgstr "Умножавам фонтове у архиву…\n"
 #: ../src/dialog_fonts_collector.cpp:134
 #, c-format
 msgid "* Failed to create directory '%s': %s.\n"
-msgstr ""
+msgstr "* Прављење фасцикле „%s“ није успело: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:145
 #, c-format
 msgid "* Failed to open %s.\n"
-msgstr ""
+msgstr "* Отварање %s није успело.\n"
 
 #: ../src/dialog_fonts_collector.cpp:200
 #, c-format
@@ -3639,7 +3647,7 @@ msgstr "Изаберите назив архиве"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Zip архиве"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3682,8 +3690,6 @@ msgid "Dest: "
 msgstr "Одредиште:"
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "Канџи бројач"
 
@@ -3705,10 +3711,8 @@ msgid "Commands"
 msgstr "Наредбе"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Поку&шај да утопиш канџи"
+msgstr "Покушај &уметање канџија"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3788,7 +3792,7 @@ msgstr "Изаберите жељена поља."
 
 #: ../src/dialog_paste_over.cpp:65
 msgid "Comment"
-msgstr ""
+msgstr "Коментар"
 
 #: ../src/dialog_paste_over.cpp:69 ../src/grid_column.cpp:202
 #: ../src/grid_column.cpp:203
@@ -3885,10 +3889,22 @@ msgstr "Резолуција"
 msgid "From &video"
 msgstr "Из &видео-снимка"
 
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Скрипта: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "Из видеа"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Распоред: "
+
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
 msgid "YCbCr Matrix:"
-msgstr ""
+msgstr "YCbCr матрица:"
 
 #: ../src/dialog_properties.cpp:155
 msgid "0: Smart wrapping, top line is wider"
@@ -3928,11 +3944,11 @@ msgstr "измене својства"
 
 #: ../src/dialog_resample.cpp:114
 msgid "Source Resolution"
-msgstr ""
+msgstr "Изворна резолуција"
 
 #: ../src/dialog_resample.cpp:115
 msgid "Destination Resolution"
-msgstr ""
+msgstr "Одредишна резолуција"
 
 #: ../src/dialog_resample.cpp:116
 msgid "Margin offset"
@@ -3944,27 +3960,27 @@ msgstr "&Симетрично"
 
 #: ../src/dialog_resample.cpp:152
 msgid "From s&cript"
-msgstr ""
+msgstr "Из с&крипта"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Add borders"
-msgstr ""
+msgstr "Додај ивице"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Manual"
-msgstr ""
+msgstr "Ручно"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Remove borders"
-msgstr ""
+msgstr "Уклони ивице"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Stretch"
-msgstr ""
+msgstr "Развуци"
 
 #: ../src/dialog_resample.cpp:156
 msgid "Aspect Ratio Handling"
-msgstr ""
+msgstr "Поступање са размером"
 
 #: ../src/dialog_search_replace.cpp:47
 msgid "Replace"
@@ -3992,7 +4008,7 @@ msgstr "Прескочи &коментаре"
 
 #: ../src/dialog_search_replace.cpp:81
 msgid "S&kip Override Tags"
-msgstr ""
+msgstr "Прес&кочи ознаке за преписивање"
 
 #: ../src/dialog_search_replace.cpp:87 ../src/dialog_selection.cpp:139
 msgid "&Text"
@@ -4000,15 +4016,15 @@ msgstr "&Текст"
 
 #: ../src/dialog_search_replace.cpp:87
 msgid "A&ctor"
-msgstr ""
+msgstr "&Глумац"
 
 #: ../src/dialog_search_replace.cpp:87
 msgid "St&yle"
-msgstr ""
+msgstr "С&тил"
 
 #: ../src/dialog_search_replace.cpp:88
 msgid "A&ll rows"
-msgstr ""
+msgstr "Св&и редови"
 
 #: ../src/dialog_search_replace.cpp:88 ../src/dialog_shift_times.cpp:170
 msgid "Selected &rows"
@@ -4111,33 +4127,36 @@ msgid "Set se&lection"
 msgstr "&Постави одабир"
 
 #: ../src/dialog_selection.cpp:215
-#, fuzzy, c-format
+#, c-format
 msgid "Selection was set to one line"
 msgid_plural "Selection was set to %u lines"
-msgstr[0] "Изабран је један титл"
-msgstr[1] "Изабран је један титл"
+msgstr[0] "Избор је постављен на један титл"
+msgstr[1] "Избор је постављен на %u титла"
+msgstr[2] "Избор је постављен на %u титлова"
 
 #: ../src/dialog_selection.cpp:216
 msgid "Selection was set to no lines"
 msgstr "Нема изабраних титлова"
 
 #: ../src/dialog_selection.cpp:222
-#, fuzzy, c-format
+#, c-format
 msgid "One line was added to selection"
 msgid_plural "%u lines were added to selection"
-msgstr[0] "Један титл је додат у одабир"
-msgstr[1] "Један титл је додат у одабир"
+msgstr[0] "Један титл је додат у избор"
+msgstr[1] "%u титла су додата у избор"
+msgstr[2] "%u титлова је додато у избор"
 
 #: ../src/dialog_selection.cpp:223
 msgid "No lines were added to selection"
 msgstr "У одабир није додат ниједан титл"
 
 #: ../src/dialog_selection.cpp:234
-#, fuzzy, c-format
+#, c-format
 msgid "One line was removed from selection"
 msgid_plural "%u lines were removed from selection"
-msgstr[0] "Један титл је уклоњен из одабира"
-msgstr[1] "Један титл је уклоњен из одабира"
+msgstr[0] "Један титл је уклоњен из избора"
+msgstr[1] "%u титла су уклоњена из избора"
+msgstr[2] "%u титлова је уклоњено из избора"
 
 #: ../src/dialog_selection.cpp:235
 msgid "No lines were removed from selection"
@@ -4155,8 +4174,9 @@ msgstr "несачувано"
 #, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 кадар"
+msgstr[1] "%s кадра"
+msgstr[2] "%s кадрова"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4284,20 +4304,16 @@ msgid "Misspelled word:"
 msgstr "Неисправна реч:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Нема предлога"
+msgstr "Провера правописа није доступна."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Нема предлога"
+msgstr "Речници за проверу правописа нису доступни."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
-msgstr ""
+msgstr "Занемари речи &ВЕЛИКИМ СЛОВИМА"
 
 #: ../src/dialog_spellchecker.cpp:187
 msgid "&Replace"
@@ -4317,7 +4333,7 @@ msgstr "&Додај у речник"
 
 #: ../src/dialog_spellchecker.cpp:212
 msgid "Remove fro&m dictionary"
-msgstr ""
+msgstr "Уклони из ре&чника"
 
 #: ../src/dialog_spellchecker.cpp:279
 msgid "Aegisub has finished checking spelling of this script."
@@ -4341,7 +4357,7 @@ msgstr "Уређивач стила"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "Оквири ивице"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4350,7 +4366,7 @@ msgstr "Контура"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "Оквир сенке (само libass)"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4434,7 +4450,7 @@ msgstr "Растојање од горње и доње ивице (у пиксе
 
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
-msgstr ""
+msgstr "Да ли се око текста црта обична ивица или непрозирни оквири"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4503,10 +4519,8 @@ msgid "Shadow:"
 msgstr "Сенка:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "Разврставање стилова"
+msgstr "Стил ивице:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4542,11 +4556,11 @@ msgstr "Боја позадине"
 
 #: ../src/dialog_style_editor.cpp:431
 msgid "Style name conflict"
-msgstr ""
+msgstr "Сукоб назива стилова"
 
 #: ../src/dialog_style_editor.cpp:431
 msgid "There is already a style with this name. Please choose another name."
-msgstr ""
+msgstr "Стил са овим називом већ постоји. Изаберите други назив."
 
 #: ../src/dialog_style_editor.cpp:443
 msgid ""
@@ -4611,11 +4625,12 @@ msgid "Could not parse style"
 msgstr "Не могу да рашчланим стил"
 
 #: ../src/dialog_style_manager.cpp:248
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete this style?"
 msgid_plural "Are you sure you want to delete these %d styles?"
-msgstr[0] "Желите ли да обришете стил?"
-msgstr[1] "Желите ли да обришете стил?"
+msgstr[0] "Желите ли заиста да обришете овај стил?"
+msgstr[1] "Желите ли заиста да обришете ова %d стила?"
+msgstr[2] "Желите ли заиста да обришете ових %d стилова?"
 
 #: ../src/dialog_style_manager.cpp:273
 msgid "Catalog of available storages"
@@ -4729,10 +4744,8 @@ msgid "style delete"
 msgstr "брисање стила"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Извоз титла"
+msgstr "Неподржан формат титлова"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -4841,7 +4854,7 @@ msgstr "Покретач коментара:"
 
 #: ../src/dialog_text_import.cpp:61
 msgid "Include blank lines"
-msgstr ""
+msgstr "Укључи празне титлове"
 
 #: ../src/dialog_timing_processor.cpp:157
 msgid "Apply to styles"
@@ -5074,12 +5087,12 @@ msgstr "Подсети ме поново за &недељу дана"
 
 #: ../src/dialog_version_check.cpp:295
 msgid "Curl could not be initialized."
-msgstr ""
+msgstr "Покретање Curl-а није успело."
 
 #: ../src/dialog_version_check.cpp:317
 #, c-format
 msgid "Checking for updates failed: %s."
-msgstr ""
+msgstr "Провера ажурирања није успела: %s."
 
 #: ../src/dialog_version_check.cpp:345
 msgid "An update to Aegisub was found."
@@ -5134,20 +5147,143 @@ msgid "Resolution:"
 msgstr "Резолуција:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "%s кадрова"
-msgstr[1] "%s кадрова"
+msgstr[0] "%d кадар (%s)"
+msgstr[1] "%d кадра (%s)"
+msgstr[2] "%d кадрова (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "Дужина:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Стварна матрица боја:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Наметнута матрица боја:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Стварни опсег боја:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Наметнути опсег боја:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Декодер:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"Учитани видео не наводи своју матрицу боја. Aegisub ће претпоставити матрицу "
+"боја %s, али није загарантовано да ће други програми претпоставити исту. "
+"Због тога видео може имати различите боје у различитим плејерима, а боје "
+"титлова се неће поклапати са бојама видеа.\n"
+" \n"
+"Размислите о томе да видеу доделите ознаку матрице боја, како би изгледао "
+"исто у свим плејерима и како би се боје титлова поуздано поклапале са бојама "
+"видеа."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Видео без ознаке"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"Учитани видео има HDR и/или WCG боје. Обични титлови дијалога ће радити без "
+"проблема са таквим видеом, али опонашање боја видеа титловима није могуће на "
+"HDR и/или WCG сликама."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "HDR и/или WCG видео"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Тренутна датотека титлова нема постављену YCbCr матрицу.\n"
+"\n"
+"Ако ову датотеку титлова намеравате да користите са управо учитаном видео "
+"датотеком,\n"
+"поставите YCbCr матрицу датотеке титлова на простор боја видеа („%s“).\n"
+"\n"
+"Ако намеравате да користите другу видео датотеку, можете\n"
+"оставити YCbCr матрицу непостављену док не учитате одговарајућу видео "
+"датотеку.\n"
+"\n"
+"Ово питање се може подесити у поставкама."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Поставити YCbCr матрицу скрипта?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "Не постављај YCbCr матрицу"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "Постави YCbCr матрицу скрипта на матрицу видеа („%s“)"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"Препоручена YCbCr матрица овог видеа („%s“) разликује се од YCbCr матрице "
+"датотеке титлова („%s“).\n"
+"\n"
+"Ако боје овог новог видеа изгледају исто као боје видеа за који је датотека "
+"титлова првобитно направљена,\n"
+"YCbCr матрицу датотеке титлова треба поставити на матрицу видеа."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "YCbCr матрице се не поклапају"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "Задржи YCbCr матрицу скрипта („%s“)"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5171,29 +5307,152 @@ msgstr ""
 "\n"
 "Променити резолуцију титла тако да се поклапа са снимком?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr ""
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Задржи резолуцију"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
-msgstr ""
+msgstr "Преузоркуј скрипт (развуци на нову размеру)"
 
 #: ../src/dialog_video_properties.cpp:60
 msgid "Resample script (add borders)"
-msgstr ""
+msgstr "Преузоркуј скрипт (додај ивице)"
 
 #: ../src/dialog_video_properties.cpp:61
 msgid "Resample script (remove borders)"
-msgstr ""
+msgstr "Преузоркуј скрипт (уклони ивице)"
 
 #: ../src/dialog_video_properties.cpp:68
 msgid "Resample script"
+msgstr "Преузоркуј скрипт"
+
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
 msgstr ""
+"Тренутна датотека титлова нема постављену резолуцију распореда.\n"
+"\n"
+"Ако ову датотеку титлова намеравате да користите са управо учитаном видео "
+"датотеком,\n"
+"поставите резолуцију распореда датотеке титлова на резолуцију приказа "
+"видеа.\n"
+"\n"
+"Ако намеравате да користите другу видео датотеку, можете\n"
+"оставити резолуцију распореда непостављену док не учитате одговарајућу видео "
+"датотеку.\n"
+"\n"
+"Ако прилагођавате старију датотеку титлова која још нема\n"
+"резолуцију распореда, поставите је на резолуцију\n"
+"видеа уз који су титлови били намењени.\n"
+"Обично је иста као резолуција скрипта датотеке. (%d × %d)\n"
+"\n"
+"Ово питање се може подесити у поставкама."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Поставити резолуцију распореда скрипта?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Не постављај резолуцију распореда"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "Постави резолуцију распореда скрипта на резолуцију видеа (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr ""
+"Постави резолуцију распореда скрипта на његову резолуцију скрипта (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"Резолуција учитаног видеа и резолуција распореда титлова се не поклапају.\n"
+"\n"
+"Резолуција видеа:    %d × %d\n"
+"Резолуција распореда титлова:    %d × %d\n"
+"\n"
+"Обично то није проблем и можете задржати резолуцију распореда датотеке "
+"титлова.\n"
+"Ако датотека титлова нема важно форматирање, а сада намеравате\n"
+"да форматирате за управо учитани видео, можете поставити резолуцију\n"
+"распореда скрипта на резолуцију приказа видеа."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"Резолуција учитаног видеа и резолуција распореда титлова имају различиту "
+"размеру.\n"
+"\n"
+"Резолуција видеа:    %d × %d\n"
+"Резолуција распореда титлова:    %d × %d\n"
+"\n"
+"Променити резолуцију распореда титлова тако да одговара видеу?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Резолуције распореда се не поклапају"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Задржи резолуцију распореда (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "промена YCbCr матрице"
 
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "Промени резолуцију скрипта"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "промена резолуције распореда"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5277,12 +5536,12 @@ msgstr "Изаберите видео-запис"
 #: ../src/font_file_lister.cpp:67
 #, c-format
 msgid "Style '%s' does not exist\n"
-msgstr ""
+msgstr "Стил „%s“ не постоји\n"
 
 #: ../src/font_file_lister.cpp:154
 #, c-format
 msgid "Font '%s' is used in a drawing, but not in any text.\n"
-msgstr ""
+msgstr "Фонт „%s“ се користи у цртежу, али ни у једном тексту.\n"
 
 #: ../src/font_file_lister.cpp:160
 #, c-format
@@ -5297,12 +5556,12 @@ msgstr "Пронађен је „%s“ у „%s“\n"
 #: ../src/font_file_lister.cpp:174
 #, c-format
 msgid "'%s' does not have a bold variant.\n"
-msgstr ""
+msgstr "„%s“ нема подебљану варијанту.\n"
 
 #: ../src/font_file_lister.cpp:176
 #, c-format
 msgid "'%s' does not have an italic variant.\n"
-msgstr ""
+msgstr "„%s“ нема курзивну варијанту.\n"
 
 #: ../src/font_file_lister.cpp:180
 #, c-format
@@ -5346,8 +5605,9 @@ msgstr "Пронађени су сви фонтови.\n"
 #, c-format
 msgid "One font could not be found\n"
 msgid_plural "%d fonts could not be found.\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Један фонт није пронађен\n"
+msgstr[1] "%d фонта нису пронађена.\n"
+msgstr[2] "%d фонтова није пронађено.\n"
 
 #: ../src/font_file_lister.cpp:239
 #, c-format
@@ -5355,7 +5615,11 @@ msgid "One font was found, but was missing glyphs used in the script.\n"
 msgid_plural ""
 "%d fonts were found, but were missing glyphs used in the script.\n"
 msgstr[0] ""
+"Један фонт је пронађен, али му недостају знаци коришћени у скрипту.\n"
 msgstr[1] ""
+"%d фонта су пронађена, али им недостају знаци коришћени у скрипту.\n"
+msgstr[2] ""
+"%d фонтова је пронађено, али им недостају знаци коришћени у скрипту.\n"
 
 #: ../src/font_file_lister_fontconfig.cpp:55
 msgid "Updating font cache\n"
@@ -5383,27 +5647,27 @@ msgstr "Крај"
 
 #: ../src/grid_column.cpp:266
 msgid "Left Margin"
-msgstr ""
+msgstr "Лева маргина"
 
 #: ../src/grid_column.cpp:272
 msgid "Right Margin"
-msgstr ""
+msgstr "Десна маргина"
 
 #: ../src/grid_column.cpp:278
 msgid "Vertical Margin"
-msgstr ""
+msgstr "Усправна маргина"
 
 #: ../src/grid_column.cpp:296
 msgid "CPS"
-msgstr ""
+msgstr "ЗПС"
 
 #: ../src/grid_column.cpp:297
 msgid "Characters Per Second"
-msgstr ""
+msgstr "Знакова по секунди"
 
 #: ../src/hotkey.cpp:261
 msgid "Invalid command name for hotkey"
-msgstr ""
+msgstr "Неважећи назив наредбе за пречицу"
 
 #: ../src/main.cpp:202
 #, c-format
@@ -5411,6 +5675,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"Датотека подешавања је неважећа. Пријављена грешка:\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5443,15 +5709,15 @@ msgstr "Желите ли да програм проверава доградњ�
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "Грешка при чувању датотеке подешавања"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "Кобна грешка при покретању"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "Необрађени изузетак"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5464,6 +5730,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Aegisub се срушио при покретању!\n"
+"\n"
+"Последњи покушани корак покретања: %s."
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5473,10 +5742,14 @@ msgid ""
 "\n"
 "Error Message: %s"
 msgstr ""
+"Дошло је до неочекиване грешке. Сачувајте свој рад и поново покрените "
+"Aegisub.\n"
+"\n"
+"Порука о грешци: %s"
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "Изузетак у обрађивачу догађаја"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5521,7 +5794,7 @@ msgstr "&Главна алатна трака"
 
 #: ../src/preferences.cpp:103
 msgid "Save UI state in subtitles files"
-msgstr ""
+msgstr "Чувај стање сучеља у датотекама титлова"
 
 #: ../src/preferences.cpp:106
 msgid "Toolbar Icon Size"
@@ -5557,11 +5830,11 @@ msgstr "Проналажење/замена"
 
 #: ../src/preferences.cpp:120
 msgid "Default styles"
-msgstr ""
+msgstr "Подразумевани стилови"
 
 #: ../src/preferences.cpp:122
 msgid "Default style catalogs"
-msgstr ""
+msgstr "Подразумевани каталози стилова"
 
 #: ../src/preferences.cpp:126
 msgid ""
@@ -5570,26 +5843,30 @@ msgid ""
 "\n"
 "You can set up style catalogs in the Style Manager."
 msgstr ""
+"Изабрани каталози стилова биће учитани када започнете нову датотеку или "
+"увезете датотеке у различитим форматима.\n"
+"\n"
+"Каталоге стилова можете подесити у Управљачу стиловима."
 
 #: ../src/preferences.cpp:153
 msgid "New files"
-msgstr ""
+msgstr "Нове датотеке"
 
 #: ../src/preferences.cpp:154
 msgid "MicroDVD import"
-msgstr ""
+msgstr "Увоз MicroDVD"
 
 #: ../src/preferences.cpp:155
 msgid "SRT import"
-msgstr ""
+msgstr "Увоз SRT"
 
 #: ../src/preferences.cpp:156
 msgid "TTXT import"
-msgstr ""
+msgstr "Увоз TTXT"
 
 #: ../src/preferences.cpp:157
 msgid "Plain text import"
-msgstr ""
+msgstr "Увоз обичног текста"
 
 #: ../src/preferences.cpp:164 ../src/preferences.cpp:414 default_hotkey.json:37
 msgid "Audio"
@@ -5717,53 +5994,43 @@ msgstr "Аутоматски учитај звук при отварању ви�
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "Не ради ништа"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Пусти видео"
+msgstr "Помера видео"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "Помера видео (замењени X/Y)"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "Мења величину оквира видеа"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "Мења величину оквира видеа (обрнуто)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Увећајте видео-снимак."
+msgstr "Зумира видео"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "Зумира видео (обрнуто)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "Клизајте приказ звука улево."
+msgstr "Помицање точкићем преко приказа видеа"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "Клизајте приказ звука улево."
+msgstr "Ctrl+помицање точкићем преко приказа видеа"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "Клизајте приказ звука улево."
+msgstr "Shift+помицање точкићем преко приказа видеа"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5795,15 +6062,55 @@ msgstr "Подразумевана висина"
 
 #: ../src/preferences.cpp:240
 msgid "Always resample"
-msgstr ""
-
-#: ../src/preferences.cpp:240
-msgid "Always set"
-msgstr ""
+msgstr "Увек преузоркуј"
 
 #: ../src/preferences.cpp:242
 msgid "Match video resolution on open"
 msgstr "Усклађивање резолуције видео-снимка по отварању"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Резолуција распореда"
+
+#: ../src/preferences.cpp:240
+msgid "Always set"
+msgstr "Увек постави"
+
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Увек постави из резолуције скрипта"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Постави резолуцију распореда из видеа при отварању"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Ако се размера промени"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Питај ако се резолуције распореда не поклапају"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "YCbCr матрица"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Упозори на видео без ознаке матрице боја"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Упозори на HDR/WCG видео"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "Користи YCbCr матрицу видеа ако је скрипт нема"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Усклади YCbCr матрицу са видеом при отварању"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5823,7 +6130,7 @@ msgstr "&Замени при уносу времена"
 
 #: ../src/preferences.cpp:254
 msgid "Shift+Enter adds \\n"
-msgstr ""
+msgstr "Shift+Enter додаје \\n"
 
 #: ../src/preferences.cpp:255
 msgid "Enable syntax highlighting"
@@ -5835,27 +6142,27 @@ msgstr "Путања за речнике"
 
 #: ../src/preferences.cpp:259
 msgid "Character Counter"
-msgstr ""
+msgstr "Бројач знакова"
 
 #: ../src/preferences.cpp:260
 msgid "Maximum characters per line"
-msgstr ""
+msgstr "Највише знакова по реду"
 
 #: ../src/preferences.cpp:261
 msgid "Characters Per Second Warning Threshold"
-msgstr ""
+msgstr "Праг упозорења за знакове по секунди"
 
 #: ../src/preferences.cpp:262
 msgid "Characters Per Second Error Threshold"
-msgstr ""
+msgstr "Праг грешке за знакове по секунди"
 
 #: ../src/preferences.cpp:263
 msgid "Ignore whitespace"
-msgstr ""
+msgstr "Занемари размаке"
 
 #: ../src/preferences.cpp:264
 msgid "Ignore punctuation"
-msgstr ""
+msgstr "Занемари интерпункцију"
 
 #: ../src/preferences.cpp:266
 msgid "Grid"
@@ -5863,7 +6170,7 @@ msgstr "Мрежа"
 
 #: ../src/preferences.cpp:267
 msgid "Focus grid on click"
-msgstr ""
+msgstr "Фокусирај мрежу при клику"
 
 #: ../src/preferences.cpp:268
 msgid "Highlight visible subtitles"
@@ -5875,7 +6182,7 @@ msgstr "Сакриј симбол за заобилажење"
 
 #: ../src/preferences.cpp:273
 msgid "Skip over whitespace"
-msgstr ""
+msgstr "Прескочи размаке"
 
 #: ../src/preferences.cpp:288
 msgid "Audio Display"
@@ -5884,6 +6191,14 @@ msgstr "Приказ звука"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Показивач при извођењу"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Тренутни опсег кадрова"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Претходни опсег кадрова"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -5907,7 +6222,7 @@ msgstr "Истицање синтаксе"
 
 #: ../src/preferences.cpp:297
 msgid "Background"
-msgstr ""
+msgstr "Позадина"
 
 #: ../src/preferences.cpp:298
 msgid "Normal"
@@ -5915,23 +6230,23 @@ msgstr "обично"
 
 #: ../src/preferences.cpp:299
 msgid "Comments"
-msgstr ""
+msgstr "Коментари"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
-msgstr ""
+msgstr "Наредбе за цртање"
 
 #: ../src/preferences.cpp:301
 msgid "Drawing X Coords"
-msgstr ""
+msgstr "X координате цртежа"
 
 #: ../src/preferences.cpp:302
 msgid "Drawing Y Coords"
-msgstr ""
+msgstr "Y координате цртежа"
 
 #: ../src/preferences.cpp:303
 msgid "Underline Spline Endpoints"
-msgstr ""
+msgstr "Подвуци крајње тачке сплајнова"
 
 #: ../src/preferences.cpp:305
 msgid "Brackets"
@@ -5963,7 +6278,7 @@ msgstr "шаблони за караоке"
 
 #: ../src/preferences.cpp:313
 msgid "Karaoke variables"
-msgstr ""
+msgstr "Караоке променљиве"
 
 #: ../src/preferences.cpp:319
 msgid "Audio Color Schemes"
@@ -6031,35 +6346,35 @@ msgstr "Титлови"
 
 #: ../src/preferences.cpp:337
 msgid "CPS Error"
-msgstr ""
+msgstr "ЗПС грешка"
 
 #: ../src/preferences.cpp:339
 msgid "Visual Typesetting Tools"
-msgstr ""
+msgstr "Алати за визуелно слагање"
 
 #: ../src/preferences.cpp:340
 msgid "Primary Lines"
-msgstr ""
+msgstr "Примарне линије"
 
 #: ../src/preferences.cpp:341
 msgid "Secondary Lines"
-msgstr ""
+msgstr "Секундарне линије"
 
 #: ../src/preferences.cpp:342
 msgid "Primary Highlight"
-msgstr ""
+msgstr "Примарно истицање"
 
 #: ../src/preferences.cpp:343
 msgid "Secondary Highlight"
-msgstr ""
+msgstr "Секундарно истицање"
 
 #: ../src/preferences.cpp:346
 msgid "Visual Typesetting Tools Alpha"
-msgstr ""
+msgstr "Провидност алата за визуелно слагање"
 
 #: ../src/preferences.cpp:347
 msgid "Shaded Area"
-msgstr ""
+msgstr "Шрафирана површина"
 
 #: ../src/preferences.cpp:356
 msgid "Backup"
@@ -6155,17 +6470,12 @@ msgid "Advanced"
 msgstr "Напредно"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"Мењање ових поставки може проузроковати\n"
-"грешке, падове и кварове програма.\n"
-"Не дирајте их осим ако знате шта радите."
+"Промена ових поставки може изазвати грешке и/или рушења. Не дирајте их ако "
+"не знате шта радите."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6221,27 +6531,27 @@ msgstr "Квалитет"
 
 #: ../src/preferences.cpp:436
 msgid "Compressed"
-msgstr ""
+msgstr "Збијено"
 
 #: ../src/preferences.cpp:436
 msgid "Extended"
-msgstr ""
+msgstr "Проширено"
 
 #: ../src/preferences.cpp:436
 msgid "Linear"
-msgstr ""
+msgstr "Линеарно"
 
 #: ../src/preferences.cpp:436
 msgid "Logarithmic"
-msgstr ""
+msgstr "Логаритамско"
 
 #: ../src/preferences.cpp:436
 msgid "Medium"
-msgstr ""
+msgstr "Средње"
 
 #: ../src/preferences.cpp:438
 msgid "Frequency mapping"
-msgstr ""
+msgstr "Мапирање фреквенција"
 
 #: ../src/preferences.cpp:440
 msgid "Cache memory max (MB)"
@@ -6308,38 +6618,32 @@ msgid "Avisynth memory limit"
 msgstr "Меморијско ограничење Ависинта"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "отклањање грешака"
+msgstr "Отклањање грешака"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "кобна грешка"
+msgstr "Кобно"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "Подаци"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "Паника"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "Тихо"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "Опширно"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "упозорење"
+msgstr "Упозорење"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6359,19 +6663,15 @@ msgstr "Пречице"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "Претрага"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Пречице"
+msgstr "Пречица"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "Наредбе"
+msgstr "Наредба"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6410,16 +6710,13 @@ msgid "Font Size"
 msgstr "Величина фонта"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "Грешка при увозу стилова"
+msgstr "Грешка при учитавању датотеке"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "Пронађени су сви фонтови.\n"
+msgstr "%s није пронађен."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6428,38 +6725,38 @@ msgstr "Желите ли да затворите учитану датотек�
 #: ../src/project.cpp:210
 #, c-format
 msgid "Load audio file: %s"
-msgstr ""
+msgstr "Учитавање звучне датотеке: %s"
 
 #: ../src/project.cpp:210
 msgid "Unload audio"
-msgstr ""
+msgstr "Уклањање звука"
 
 #: ../src/project.cpp:212
 #, c-format
 msgid "Load video file: %s"
-msgstr ""
+msgstr "Учитавање видео датотеке: %s"
 
 #: ../src/project.cpp:212
 msgid "Unload video"
-msgstr ""
+msgstr "Уклањање видеа"
 
 #: ../src/project.cpp:214
 #, c-format
 msgid "Load timecodes file: %s"
-msgstr ""
+msgstr "Учитавање датотеке временских кодова: %s"
 
 #: ../src/project.cpp:214
 msgid "Unload timecodes"
-msgstr ""
+msgstr "Уклањање временских кодова"
 
 #: ../src/project.cpp:216
 #, c-format
 msgid "Load keyframes file: %s"
-msgstr ""
+msgstr "Учитавање датотеке кључних кадрова: %s"
 
 #: ../src/project.cpp:216
 msgid "Unload keyframes"
-msgstr ""
+msgstr "Уклањање кључних кадрова"
 
 #: ../src/project.cpp:218
 msgid "(Un)Load files?"
@@ -6467,7 +6764,7 @@ msgstr "Затварање датотеке"
 
 #: ../src/project.cpp:267
 msgid "The audio file was not found: "
-msgstr ""
+msgstr "Звучна датотека није пронађена: "
 
 #: ../src/project.cpp:275
 msgid ""
@@ -6476,6 +6773,10 @@ msgid ""
 "\n"
 "The following providers were tried:\n"
 msgstr ""
+"Ниједан од доступних пружалаца звука није препознао звучне податке у "
+"изабраној датотеци.\n"
+"\n"
+"Испробани су следећи пружаоци:\n"
 
 #: ../src/project.cpp:278
 msgid ""
@@ -6484,20 +6785,21 @@ msgid ""
 "\n"
 "The following providers were tried:\n"
 msgstr ""
+"Ниједан од доступних пружалаца звука нема кодек за изабрану датотеку.\n"
+"\n"
+"Испробани су следећи пружаоци:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Close Timecodes File"
 msgid "Failed to parse timecodes file: "
-msgstr "З&атвори временске кодове"
+msgstr "Није могуће рашчланити датотеку временских кодова: "
 
 #: ../src/project.cpp:407
 msgid "Failed to parse keyframes file: "
-msgstr ""
+msgstr "Није могуће рашчланити датотеку кључних кадрова: "
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "Датотека кључних кадрова у непознатом формату: "
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6511,8 +6813,9 @@ msgstr "замену"
 #, c-format
 msgid "One match was replaced."
 msgid_plural "%d matches were replaced."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Замењено је једно подударање."
+msgstr[1] "Замењена су %d подударања."
+msgstr[2] "Замењено је %d подударања."
 
 #: ../src/search_replace_engine.cpp:277
 msgid "No matches found."
@@ -6538,11 +6841,11 @@ msgstr "Резерва датотеке је сачувана као „%s“."
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "Изузетак при аутоматском чувању датотеке: "
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
-msgstr ""
+msgstr "Необрађени изузетак при аутоматском чувању датотеке."
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6584,7 +6887,7 @@ msgstr ""
 
 #: ../src/subs_edit_box.cpp:147
 msgid "Number of characters in the longest line of this subtitle."
-msgstr ""
+msgstr "Број знакова у најдужем реду овог титла."
 
 #: ../src/subs_edit_box.cpp:154
 msgid "Layer number"
@@ -6604,27 +6907,27 @@ msgstr "Трајање титла"
 
 #: ../src/subs_edit_box.cpp:164
 msgid "Left Margin (0 = default from style)"
-msgstr ""
+msgstr "Лева маргина (0 = подразумевано из стила)"
 
 #: ../src/subs_edit_box.cpp:164
 msgid "left margin change"
-msgstr ""
+msgstr "промена леве маргине"
 
 #: ../src/subs_edit_box.cpp:165
 msgid "Right Margin (0 = default from style)"
-msgstr ""
+msgstr "Десна маргина (0 = подразумевано из стила)"
 
 #: ../src/subs_edit_box.cpp:165
 msgid "right margin change"
-msgstr ""
+msgstr "промена десне маргине"
 
 #: ../src/subs_edit_box.cpp:166
 msgid "Vertical Margin (0 = default from style)"
-msgstr ""
+msgstr "Усправна маргина (0 = подразумевано из стила)"
 
 #: ../src/subs_edit_box.cpp:166
 msgid "vertical margin change"
-msgstr ""
+msgstr "промена усправне маргине"
 
 #: ../src/subs_edit_box.cpp:185
 msgid "T&ime"
@@ -6644,7 +6947,7 @@ msgstr "Време према броју кадрова."
 
 #: ../src/subs_edit_box.cpp:189
 msgid "Show Original"
-msgstr ""
+msgstr "Прикажи изворник"
 
 #: ../src/subs_edit_box.cpp:190
 msgid ""
@@ -6652,6 +6955,9 @@ msgid ""
 "edit box. This is sometimes useful when editing subtitles or translating "
 "subtitles into another language."
 msgstr ""
+"Изнад поља за уређивање прикажи садржај титла какав је био када је први пут "
+"изабран. Понекад је корисно при уређивању титлова или њиховом превођењу на "
+"други језик."
 
 #: ../src/subs_edit_box.cpp:446
 msgid "modify text"
@@ -6692,7 +6998,7 @@ msgstr "У&баци"
 #: ../src/subs_edit_ctrl.cpp:444
 #, c-format
 msgid "Remove \"%s\" from dictionary"
-msgstr ""
+msgstr "Уклони „%s“ из речника"
 
 #: ../src/subs_edit_ctrl.cpp:449
 msgid "No spell checker suggestions"
@@ -6734,12 +7040,12 @@ msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
 msgstr ""
+"Није могуће добити пружаоца титлова за поље прегледа. Уверите се да је неки "
+"инсталиран."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "Добављач титлова"
+msgstr "Нема пружаоца титлова"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6813,11 +7119,11 @@ msgstr "Титл који прелази највећу дужину: %s"
 
 #: ../src/subtitles_provider_libass.cpp:102
 msgid "Updating font index"
-msgstr ""
+msgstr "Ажурирање индекса фонтова"
 
 #: ../src/subtitles_provider_libass.cpp:103
 msgid "This may take several minutes"
-msgstr ""
+msgstr "Ово може потрајати неколико минута"
 
 #: ../src/video_box.cpp:57
 msgid "Seek video"
@@ -6839,6 +7145,9 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"Премотавање видеа није успело. Видео датотека је можда оштећена или "
+"непотпуна.\n"
+"Пријављена порука о грешци: %s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -6846,6 +7155,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"Исцртавање титлова није успело.\n"
+"Пријављена порука о грешци: %s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -6854,6 +7165,9 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"Покретање приказа видеа није успело. Затварање других покренутих програма и "
+"ажурирање управљачких програма графичке картице може помоћи.\n"
+"Пријављена порука о грешци: %s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -6861,6 +7175,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"Није могуће послати видео кадар графичкој картици.\n"
+"Пријављена порука о грешци: %s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -6868,22 +7184,20 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"Дошло је до грешке при исцртавању видео кадра на екрану.\n"
+"Пријављена порука о грешци: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "Пронађени су сви фонтови.\n"
+msgstr "датотека није пронађена."
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "видео није у подржаном формату."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Не могу да рашчланим стил"
+msgstr "Није могуће отворити "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7040,7 +7354,7 @@ msgstr "&Аутоматизација"
 
 #: default_menu.json:0
 msgid "Window"
-msgstr ""
+msgstr "Прозор"
 
 #: default_menu.json:0
 msgid "&Help"
@@ -7048,11 +7362,11 @@ msgstr "&Помоћ"
 
 #: default_menu.json:0
 msgid "Open..."
-msgstr ""
+msgstr "Отвори…"
 
 #: default_menu.json:0
 msgid "Open Recent"
-msgstr ""
+msgstr "Отвори недавно"
 
 #: default_menu.json:0
 msgid "Save"
@@ -7060,11 +7374,11 @@ msgstr "Сачувај"
 
 #: default_menu.json:0
 msgid "Save As..."
-msgstr ""
+msgstr "Сачувај као…"
 
 #: default_menu.json:0
 msgid "Export As..."
-msgstr ""
+msgstr "Извези као…"
 
 #: default_hotkey.json:244
 msgid "Subtitle Edit Box"
@@ -7138,16 +7452,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "Додаје \\be1 ознаке на све изабране титлове"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Пуна ширина"
+msgstr "Претвори текст у пуну ширину"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"Показује како се помоћу unicode include пролази кроз знакове и како се они "
+"табелом претраге претварају у нешто друго."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7160,11 +7474,12 @@ msgstr "Претворите латиничка слова у SJIS слова п
 
 #: ../automation/autoload/select-overlaps.moon:17
 msgid "Select overlaps"
-msgstr ""
+msgstr "Изабери преклапања"
 
 #: ../automation/autoload/select-overlaps.moon:18
 msgid "Select lines which begin while another non-comment line is active"
 msgstr ""
+"Изабери титлове који почињу док је активан неки други титл који није коментар"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7180,28 +7495,33 @@ msgstr "одбацивање ознака"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Installing runtime libraries..."
-msgstr ""
+msgstr "Инсталирање извршних библиотека…"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Create a start menu icon"
-msgstr ""
+msgstr "Направи иконицу у менију Старт"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Automatically check for new versions of Aegisub"
-msgstr ""
+msgstr "Аутоматски проверавај нова издања Aegisub-а"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Update Checker:"
-msgstr ""
+msgstr "Провера ажурирања:"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid ""
-"This will install Aegisub {#BUILD_GIT_VERSION_STRING} on your computer."
-"%n%nAegisub is covered by the GNU General Public License version 2. This "
-"means you may use the application for any purpose without charge, but that "
-"no warranties of any kind are given either.%n%nSee the Aegisub website for "
-"information on obtaining the source code."
+"This will install Aegisub {#BUILD_GIT_VERSION_STRING} on your "
+"computer.%n%nAegisub is covered by the GNU General Public License version 2. "
+"This means you may use the application for any purpose without charge, but "
+"that no warranties of any kind are given either.%n%nSee the Aegisub website "
+"for information on obtaining the source code."
 msgstr ""
+"Овим ћете инсталирати Aegisub {#BUILD_GIT_VERSION_STRING} на "
+"рачунар.%n%nAegisub је обухваћен ГНУ-овом општом јавном лиценцом, издање 2. "
+"То значи да програм можете бесплатно користити у било коју сврху, али и да "
+"се не даје никаква гаранција.%n%nПодатке о преузимању изворног кода "
+"потражите на веб-сајту Aegisub-а."
 
 #: ../packages/desktop/aegisub.desktop.in.in:4
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:6
@@ -7218,19 +7538,23 @@ msgstr "Правите и уређујте титлове за филмове и
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "титлови;титл;титловање;видео;звук;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
-msgstr ""
+msgstr "Правите и уређујте титлове"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:9
 msgid ""
 "Aegisub is a free, cross-platform open source tool for creating and "
 "modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
+"audio, and features many powerful tools for styling them, including a "
+"built-in real-time video preview."
 msgstr ""
+"Aegisub је бесплатан алат отвореног кода за више платформи, намењен прављењу "
+"и мењању титлова. Aegisub омогућава брзо и лако усклађивање титлова са "
+"звуком и нуди много моћних алата за њихово стилизовање, укључујући уграђени "
+"преглед видеа у стварном времену."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:10
 msgid ""
@@ -7242,6 +7566,13 @@ msgid ""
 "unrelated to Aegisub) many vital functions, or were too buggy and/or "
 "unreliable to be really useful."
 msgstr ""
+"Aegisub је првобитно настао као алат који је требало да слагање титлова, "
+"нарочито у аниме фансабовима, учини мање мукотрпним. Када је пројекат почео, "
+"многим другим програмима који су подржавали формат Advanced SubStation Alpha "
+"недостајале су многе битне функције (а у многим случајевима и даље "
+"недостају; развој неколико конкурентских програма је у међувремену "
+"обустављен из разних разлога који немају везе са Aegisub-ом), или су имали "
+"превише грешака и/или били превише непоуздани да би заиста били употребљиви."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:11
 msgid ""
@@ -7252,46 +7583,51 @@ msgid ""
 "for creating karaoke effects, Automation can now be used much else, "
 "including creating macros and various other convenient tools)."
 msgstr ""
+"Од тада је Aegisub прерастао у потпуни уређивач титлова који се може веома "
+"прилагодити. Садржи много корисних алата за усклађивање времена, слагање, "
+"уређивање и превођење титлова, као и моћно окружење за скрипте под називом "
+"Automation (првобитно намењено углавном прављењу караоке ефеката, а данас "
+"употребљиво и за много више, као што су макрои и разни други корисни алати)."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:12
 msgid "Some highlights of Aegisub:"
-msgstr ""
+msgstr "Неке од предности Aegisub-а:"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:14
 msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
+msgstr "Једноставно и интуитивно, а ипак моћно сучеље за уређивање титлова"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:15
 msgid "Support for many formats and character sets"
-msgstr ""
+msgstr "Подршка за многе формате и скупове знакова"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:16
 msgid "Powerful video mode"
-msgstr ""
+msgstr "Моћан видео режим"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:17
 msgid "Visual typesetting tools"
-msgstr ""
+msgstr "Алати за визуелно слагање"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:18
 msgid "Intuitive and customizable audio timing mode"
-msgstr ""
+msgstr "Интуитиван и прилагодљив режим усклађивања са звуком"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:19
 msgid "Fully scriptable through the Automation module"
-msgstr ""
+msgstr "Потпуно програмабилно помоћу модула Automation"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:43
 msgid "Typesetting"
-msgstr ""
+msgstr "Слагање"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:47
 msgid "Audio video"
-msgstr ""
+msgstr "Звук и видео"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
-msgstr ""
+msgstr "Усклађивање са звуком"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Канџи бројач"
