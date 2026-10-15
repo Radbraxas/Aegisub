@@ -53,3 +53,14 @@ with open(cppfile, 'w') as cpp:
 
         for group in sorted(groups):
             h.write('const LibresrcBlob {}[] = {{{}}};\n'.format(group, ', '.join('{{{}, sizeof({}), {}}}'.format(file, file, file.split('_')[-1]) for file in groups[group])))
+
+        # Alternative icon themes: a group "mdl_<name>" (icons for light UIs) together with
+        # "mdd_<name>" (icons for dark UIs) provides the Material variant of "<name>".
+        # The base group is identified by the data of its first image, since the group
+        # arrays themselves are defined per translation unit.
+        themed = sorted(g for g in groups if 'mdl_' + g in groups and 'mdd_' + g in groups)
+        if themed:
+            cpp.write('\nconst LibresrcIconTheme libresrc_icon_themes[] = {\n')
+            for g in themed:
+                cpp.write('\t{{{0}, mdl_{1}, sizeof(mdl_{1}) / sizeof(*mdl_{1}), mdd_{1}, sizeof(mdd_{1}) / sizeof(*mdd_{1})}},\n'.format(groups[g][0], g))
+            cpp.write('}};\nconst size_t libresrc_icon_themes_count = {};\n'.format(len(themed)))

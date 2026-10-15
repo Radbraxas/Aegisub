@@ -33,6 +33,8 @@
 
 #include "aegisublocale.h"
 
+#include <libaegisub/signal.h>
+
 #include <vector>
 
 #ifndef wxUSE_EXCEPTIONS
@@ -62,6 +64,9 @@ class AegisubApp : public wxApp {
 	void OpenFiles(wxArrayStringsAdapter filenames);
 
 	std::vector<FrameMain *> frames;
+
+	/// Keeps the active icon theme in sync with the "App/Icon Theme" option
+	agi::signal::Connection icon_theme_slot;
 public:
 	AegisubApp();
 	AegisubLocale locale;
