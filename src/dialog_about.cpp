@@ -37,7 +37,9 @@
 
 #include <wx/button.h>
 #include <wx/dcbuffer.h>
+#include <wx/dcmemory.h>
 #include <wx/dialog.h>
+#include <wx/font.h>
 #include <wx/image.h>
 #include <wx/panel.h>
 #include <wx/sizer.h>
@@ -48,8 +50,39 @@
 #include <wx/window.h>
 
 namespace {
-/// Header of the About dialog: drifting pixel clouds behind the logo, with a
-/// burst of pixels wherever it is clicked
+/// Render the characters of the ASCII field with the system's monospace font
+void LoadGlyphs(wxWindow *window, AboutBackdrop& backdrop) {
+	static const char chars[] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	const int count = static_cast<int>(sizeof(chars) - 1);
+
+	wxBitmap probe(1, 1);
+	wxMemoryDC dc(probe);
+	dc.SetFont(wxFont(wxFontInfo(7).Family(wxFONTFAMILY_TELETYPE)));
+	const wxSize glyph = dc.GetTextExtent("M");
+	// Extra horizontal space gives the field its airy, spaced-out look
+	const int cell_w = glyph.x + window->FromDIP(3);
+	const int cell_h = glyph.y + window->FromDIP(2);
+
+	wxBitmap sheet(cell_w * count, cell_h, 24);
+	dc.SelectObject(sheet);
+	dc.SetBackground(*wxBLACK_BRUSH);
+	dc.Clear();
+	dc.SetTextForeground(*wxWHITE);
+	for (int i = 0; i < count; ++i)
+		dc.DrawText(wxString(chars[i]), i * cell_w + 1, 1);
+	dc.SelectObject(wxNullBitmap);
+
+	const wxImage image = sheet.ConvertToImage();
+	std::vector<uint8_t> coverage(static_cast<size_t>(cell_w) * cell_h * count);
+	for (int i = 0; i < count; ++i)
+		for (int y = 0; y < cell_h; ++y)
+			for (int x = 0; x < cell_w; ++x)
+				coverage[(static_cast<size_t>(i) * cell_h + y) * cell_w + x] = image.GetGreen(i * cell_w + x, y);
+	backdrop.SetGlyphs(cell_w, cell_h, std::move(coverage));
+}
+
+/// Header of the About dialog: an ASCII noise field drifting behind the logo,
+/// with a burst of characters wherever it is clicked
 class AboutAnimation final : public wxWindow {
 	AboutBackdrop backdrop;
 	wxTimer timer;
@@ -94,11 +127,11 @@ class AboutAnimation final : public wxWindow {
 public:
 	AboutAnimation(wxWindow *parent)
 	: wxWindow(parent, -1, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE)
-	, backdrop(FromDIP(4))
 	, timer(this)
 	, logo_source(GETIMAGE(about_logo).ConvertToImage())
 	{
 		SetBackgroundStyle(wxBG_STYLE_PAINT);
+		LoadGlyphs(this, backdrop);
 		SetInitialSize(FromDIP(wxSize(420, 240)));
 		SetCursor(wxCursor(wxCURSOR_HAND));
 
