@@ -79,6 +79,19 @@ if ($exactGitTag -match $semVerMatch) {
   }
 }
 
+# No vX.Y.Z tag reachable (e.g. a fork created without tags, or a shallow clone):
+# fall back to the same defaults as tools/version.sh so res.rc and the installer
+# still get RESOURCE_BASE_VERSION / INSTALLER_VERSION.
+if (-not $version.ContainsKey('RESOURCE_BASE_VERSION')) {
+  $version['RESOURCE_BASE_VERSION'] = @(0, 0, 0)
+}
+if (-not $version.ContainsKey('INSTALLER_VERSION')) {
+  $version['INSTALLER_VERSION'] = '0.0.0'
+}
+if (-not $version.ContainsKey('TAGGED_RELEASE')) {
+  $version['TAGGED_RELEASE'] = $false
+}
+
 $version['BUILD_GIT_VERSION_NUMBER'] = $gitRevision
 $version['BUILD_GIT_VERSION_STRING'] = $gitVersionString
 
