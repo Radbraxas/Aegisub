@@ -22,10 +22,8 @@ msgid "Language"
 msgstr "語言"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "請選擇資料夾："
+msgstr "請選擇語言："
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
@@ -176,6 +174,9 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"自動化自動載入資料夾中的一個腳本載入失敗。\n"
+"請檢查錯誤並修正，然後使用自動化管理員中的「重新掃描自動載入資料夾」按鈕重新"
+"載入腳本。"
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -183,6 +184,9 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"自動化自動載入資料夾中的多個腳本載入失敗。\n"
+"請檢查錯誤並修正，然後使用自動化管理員中的「重新掃描自動載入資料夾」按鈕重新"
+"載入腳本。"
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -190,6 +194,9 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"自動化自動載入資料夾中的一個腳本載入時出現警告。\n"
+"請檢查警告並修正，然後使用自動化管理員中的「重新掃描自動載入資料夾」按鈕重新"
+"載入腳本。"
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -197,6 +204,9 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"自動化自動載入資料夾中的多個腳本載入時出現警告。\n"
+"請檢查警告並修正，然後使用自動化管理員中的「重新掃描自動載入資料夾」按鈕重新"
+"載入腳本。"
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -205,6 +215,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"參照的自動化腳本使用了未知的位置指定字元。\n"
+"找到的位置指定字元：%c\n"
+"指定的檔案名稱：%s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -219,28 +232,31 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"您開啟的字幕檔包含本機自動化腳本。要載入相關的自動化腳本嗎？\n"
+"\n"
+"腳本清單：\n"
+"\n"
+"%s\n"
+"\n"
+"只有在信任作者的情況下才應載入相關的自動化腳本！檢視或編輯字幕檔並不需要它"
+"們。"
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    巨集：  %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "重新載入自動載入的自動化腳本"
+msgstr "要載入相關的自動化腳本嗎？"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "全域自動載入腳本"
+msgstr "信任作者 && 載入腳本"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -250,6 +266,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"找不到參照的自動化腳本。\n"
+"指定的檔案名稱：%s\n"
+"相對搜尋位置：%s\n"
+"解析後的檔案名稱：%s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -261,16 +281,13 @@ msgstr ""
 " %s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
 msgstr ""
-"一個自動化腳本載入失敗，檔案名稱： '%s'，錯誤報告：\n"
-" %s"
+"載入自動化腳本「%s」時出現警告：\n"
+"%s"
 
 #: ../src/auto4_base.cpp:508
 #, c-format
@@ -293,22 +310,17 @@ msgid "File was not recognized as a script"
 msgstr "檔案未被識別為腳本"
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
 msgstr ""
-"一個自動化腳本載入失敗，檔案名稱： '%s'，錯誤報告：\n"
-" %s"
+"自動化腳本「%s」中的警告：\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Curl could not be initialized."
 msgid "Could not initialize Lua state"
-msgstr "無法初始化 Curl。"
+msgstr "無法初始化 Lua 狀態"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -317,12 +329,16 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"初始化 Lua 腳本「%s」時發生錯誤：\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"嘗試以 Automation 4 Lua 腳本載入 Automation 3 腳本。已不再支援 Automation 3。"
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -330,22 +346,23 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Lua 巨集驗證函式發生執行階段錯誤：\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "作用中的第 %d 行超出範圍（必須介於 1-%u）"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "選取的第 %d 行超出範圍（必須介於 1-%u）"
 
 #: ../src/auto4_lua.cpp:907
-#, fuzzy, c-format
-#| msgid "Select all dialogue lines"
+#, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr "選擇所有行"
+msgstr "選取的第 %d 行不是對話行"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -353,6 +370,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Lua 巨集 IsActive 函式發生執行階段錯誤：\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -360,6 +379,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Lua 設定對話方塊函式發生執行階段錯誤：\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -457,13 +478,11 @@ msgstr "選擇Aegisub介面語言"
 msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
-msgstr ""
+msgstr "必須重新啟動 Aegisub 才能套用新語言。要立即重新啟動嗎？"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "關於 Aegisub"
+msgstr "要重新啟動 Aegisub 嗎？"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -592,11 +611,9 @@ msgid "Video Formats"
 msgstr "視訊格式"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
-msgstr "打開音訊檔案"
+msgstr "開啟音訊檔"
 
 #: ../src/command/audio.cpp:93 ../src/command/audio.cpp:94
 msgid "Open 2h30 Blank Audio"
@@ -659,10 +676,8 @@ msgid "Save an audio clip of the selected line"
 msgstr "建立所選行的音訊剪輯"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
-msgstr "儲存音訊剪輯"
+msgstr "儲存音訊片段"
 
 #: ../src/command/audio.cpp:192 ../src/command/audio.cpp:193
 msgid "Play current audio selection"
@@ -772,30 +787,22 @@ msgid "Scroll the audio display to center on the current audio selection"
 msgstr "捲動音訊使所選部分顯示在中間"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "轉至所選部分"
+msgstr "移至選取範圍開頭"
 
 #: ../src/command/audio.cpp:410
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
-msgstr "捲動音訊使所選部分顯示在中間"
+msgstr "捲動音訊顯示區，將目前音訊選取範圍的開頭置中"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "轉至所選部分"
+msgstr "移至選取範圍結尾"
 
 #: ../src/command/audio.cpp:421
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
-msgstr "捲動音訊使所選部分顯示在中間"
+msgstr "捲動音訊顯示區，將目前音訊選取範圍的結尾置中"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -1665,10 +1672,8 @@ msgid "Open a keyframe list file"
 msgstr "打開一個關鍵影格列表檔"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open keyframes file"
 msgid "Open Keyframes File"
-msgstr "打開一個關鍵影格列表檔"
+msgstr "開啟關鍵影格檔"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1683,17 +1688,13 @@ msgid "Save the current list of keyframes to a file"
 msgstr "儲存目前的關鍵影格列表"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Save Keyframes File"
-msgstr "儲存關鍵影格…"
+msgstr "儲存關鍵影格檔"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "檔案"
+msgstr "文字檔"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1835,10 +1836,8 @@ msgstr "打開字幕檔案"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
-msgstr "打開字幕檔案"
+msgstr "開啟字幕檔"
 
 #: ../src/command/subtitle.cpp:282
 msgid "Open A&utosaved Subtitles..."
@@ -1897,8 +1896,6 @@ msgid "Open script properties window"
 msgstr "打開腳本屬性視窗"
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
 msgstr "儲存字幕檔"
 
@@ -1917,7 +1914,7 @@ msgstr "錯誤"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "未知錯誤"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -2176,11 +2173,9 @@ msgid "Open a VFR timecodes v1 or v2 file"
 msgstr "打開一個可變影格時間碼(VFR timecode)v1或v2檔"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "打開時間碼檔…"
+msgstr "開啟時間碼檔"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2195,17 +2190,13 @@ msgid "Save a VFR timecodes v2 file"
 msgstr "儲存一個可變影格時間碼(VFR timecode)v1或v2檔"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
 msgstr "儲存時間碼檔"
 
 #: ../src/command/timecode.cpp:103
-#, fuzzy
-#| msgid "Unload timecodes"
 msgid "Error saving timecodes"
-msgstr "關閉時間碼"
+msgstr "儲存時間碼時發生錯誤"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2687,10 +2678,8 @@ msgid "Open a video file"
 msgstr "打開一個視訊檔案"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
-msgstr "打開視訊檔案"
+msgstr "開啟視訊檔"
 
 #: ../src/command/video.cpp:602
 msgid "&Use Dummy Video..."
@@ -2717,20 +2706,16 @@ msgid "Play"
 msgstr "播放"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "從該位置開始播放視訊"
+msgstr "從此位置開始播放視訊"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "播放字幕行"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play the audio for the current line"
 msgid "Play the video for the current line"
-msgstr "播放目前行"
+msgstr "播放目前行的視訊"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2748,17 +2733,15 @@ msgstr "在視訊上顯示一個遮罩，表示這些區域可能在一些電視
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "重設視訊平移(&P)"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "關閉視訊"
+msgstr "重設視訊平移"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "重設視訊在顯示區中的位置"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2886,70 +2869,56 @@ msgid "Line"
 msgstr "直線"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "新增一條直線"
+msgstr "新增直線"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "兩次立方曲線"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "新增一條雙三次貝茲曲線"
+msgstr "新增三次貝茲曲線"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "轉換"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "將一條線段在直線和曲線之間轉換"
+msgstr "在直線與三次曲線之間轉換線段"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "插入"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "插入一個控制點"
+msgstr "插入控制點"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "移除"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "移除一個控制點"
+msgstr "移除控制點"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "手繪"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "畫一個手繪形狀"
+msgstr "繪製自由形狀"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "平滑手繪"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "畫一個平滑的手繪形狀"
+msgstr "繪製平滑的自由形狀"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3014,20 +2983,16 @@ msgid "Choose file to be attached"
 msgstr "選擇要附加的檔案"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "字型"
+msgstr "字型檔"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "附加字型檔案"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "附加圖片檔案"
+msgstr "圖片檔"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3088,7 +3053,7 @@ msgstr "新增自動化腳本"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "腳本「%s」已載入"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3106,18 +3071,7 @@ msgid "Scripting engines installed:"
 msgstr "已安裝的腳本引擎："
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3130,14 +3084,12 @@ msgid ""
 msgstr ""
 "\n"
 "腳本資訊：\n"
-"名稱： %s\n"
-"描述： %s\n"
-"作者： %s\n"
-"版本： %s\n"
-"完整路徑： %s\n"
-"狀態： %s\n"
-"\n"
-"腳本功能特性："
+"名稱：%s\n"
+"說明：%s\n"
+"作者：%s\n"
+"版本：%s\n"
+"完整路徑：%s\n"
+"狀態：%s\n"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3149,17 +3101,16 @@ msgstr "載入失敗"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "已載入（有警告）"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: 警告"
+msgstr "警告：%s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "腳本提供的功能：\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3284,51 +3235,51 @@ msgstr "視訊： %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480（SD 全螢幕）"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480（SD 變形寬螢幕）"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360（SD 寬螢幕）"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396（SD 寬螢幕）"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352（SD 寬螢幕 MOD16）"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400（SD 寬螢幕 MOD16）"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576（SuperPAL 寬螢幕）"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720（HD 720p）"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080（FHD 1080p）"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440（QHD 1440p）"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160（4K UHD 2160p）"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920（FHD 直式）"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3393,17 +3344,13 @@ msgid "Export..."
 msgstr "匯出…"
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
-msgstr "匯出字幕檔案"
+msgstr "匯出字幕檔"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "匯入樣式出錯"
+msgstr "匯出字幕時發生錯誤"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3654,7 +3601,7 @@ msgstr "選擇壓縮檔名"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Zip 封存檔"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3693,8 +3640,6 @@ msgid "Dest: "
 msgstr "目標："
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "漢字計時器"
 
@@ -3716,10 +3661,8 @@ msgid "Commands"
 msgstr "指令"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "嘗試插入漢字。(&I)"
+msgstr "嘗試內插漢字(&I)"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3895,6 +3838,18 @@ msgstr "解析度"
 #: ../src/export_framerate.cpp:70
 msgid "From &video"
 msgstr "從視訊獲得(&V)"
+
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "腳本："
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "來自視訊"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "版面："
 
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
@@ -4160,12 +4115,10 @@ msgid "unsaved"
 msgstr "未儲存"
 
 #: ../src/dialog_shift_times.cpp:96
-#, fuzzy, c-format
-#| msgid "1 frame"
-#| msgid_plural "%d frames (%s)"
+#, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
-msgstr[0] "%d 影格(%s)"
+msgstr[0] "%s 個影格"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4293,16 +4246,12 @@ msgid "Misspelled word:"
 msgstr "拼寫錯誤詞語："
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "沒有拼寫檢查器建議"
+msgstr "沒有可用的拼字檢查工具。"
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "沒有拼寫檢查器建議"
+msgstr "沒有可用的拼字檢查字典。"
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
@@ -4350,7 +4299,7 @@ msgstr "樣式編輯器"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "邊框方塊"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4359,7 +4308,7 @@ msgstr "邊框"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "陰影方塊（僅 libass）"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4443,7 +4392,7 @@ msgstr "與上/下邊界距離 (像素)"
 
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
-msgstr ""
+msgstr "在文字周圍繪製一般外框或不透明方塊"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4512,10 +4461,8 @@ msgid "Shadow:"
 msgstr "陰影："
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "排序樣式"
+msgstr "邊框樣式："
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4736,10 +4683,8 @@ msgid "style delete"
 msgstr "樣式刪除"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "匯出字幕檔案"
+msgstr "不支援的字幕格式"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -5126,19 +5071,134 @@ msgid "Resolution:"
 msgstr "解析度"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "影格 %s"
+msgstr[0] "%d 個影格 (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "長度"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "實際色彩矩陣："
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "強制色彩矩陣："
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "實際色彩範圍："
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "強制色彩範圍："
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "解碼器："
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"您載入的視訊未指定色彩矩陣。Aegisub 會將色彩矩陣推測為 %s，但無法保證其他程式"
+"也會推測出相同的矩陣。這可能使視訊在不同媒體播放器中顯示不同的顏色，並導致字"
+"幕顏色無法與視訊顏色相符。\n"
+" \n"
+"建議為視訊加上色彩矩陣標記，以確保視訊在所有播放器中顯示一致，且字幕顏色能可"
+"靠地與視訊顏色相符。"
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "未標記的視訊"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"您載入的視訊含有 HDR 及/或 WCG 色彩。一般對話字幕在此類視訊上可以正常運作，但"
+"無法在 HDR 及/或 WCG 影像上用字幕比對視訊顏色。"
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "HDR 及/或 WCG 視訊"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"目前的字幕檔未設定 YCbCr 矩陣。\n"
+"\n"
+"如果您打算將此字幕檔用於剛載入的視訊檔，\n"
+"應將字幕檔的 YCbCr 矩陣設為視訊的色彩空間（「%s」）。\n"
+"\n"
+"如果您打算使用其他視訊檔，\n"
+"可以先不設定 YCbCr 矩陣，直到載入正確的視訊檔。\n"
+"\n"
+"此提示可以在偏好設定中調整。"
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "要設定腳本的 YCbCr 矩陣嗎？"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "不設定 YCbCr 矩陣"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "將腳本的 YCbCr 矩陣設為視訊的矩陣（「%s」）"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"此視訊建議的 YCbCr 矩陣（「%s」）與字幕檔的 YCbCr 矩陣（「%s」）不同。\n"
+"\n"
+"如果這個新視訊的顏色看起來與字幕檔原本製作時所用的視訊相同，\n"
+"則應將字幕檔的 YCbCr 矩陣設為視訊的 YCbCr 矩陣。"
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "YCbCr 矩陣不符"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "保留腳本的 YCbCr 矩陣（「%s」）"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5162,9 +5222,10 @@ msgstr ""
 "\n"
 "是否更改腳本解析度以匹配視訊？"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr "直接設為影片解析度"
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "保留解析度"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
@@ -5182,9 +5243,125 @@ msgstr "重設腳本解析度（等比縮放鋪滿視訊）"
 msgid "Resample script"
 msgstr "重設腳本解析度"
 
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"目前的字幕檔未設定版面解析度。\n"
+"\n"
+"如果您打算將此字幕檔用於剛載入的視訊檔，\n"
+"應將字幕檔的版面解析度設為視訊的顯示解析度。\n"
+"\n"
+"如果您打算使用其他視訊檔，\n"
+"可以先不設定版面解析度，直到載入正確的視訊檔。\n"
+"\n"
+"如果您正在調整尚未設定版面解析度的舊字幕檔，\n"
+"應將其版面解析度設為\n"
+"該字幕原本預定搭配播放之視訊的解析度。\n"
+"這通常與檔案的腳本解析度相同。（%d × %d）\n"
+"\n"
+"此提示可以在偏好設定中調整。"
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "要設定腳本的版面解析度嗎？"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "不設定版面解析度"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "將腳本的版面解析度設為視訊的解析度（%d × %d）"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr "將腳本的版面解析度設為其腳本解析度（%d × %d）"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"載入的視訊解析度與字幕指定的版面解析度不符。\n"
+"\n"
+"視訊解析度：    %d × %d\n"
+"字幕版面解析度：    %d × %d\n"
+"\n"
+"通常這不是問題，您可以保留字幕檔的版面解析度。\n"
+"如果您的字幕檔沒有重要的格式設定，而您現在打算\n"
+"針對新載入的視訊進行格式設定，可以將腳本的版面解析度\n"
+"設為視訊的顯示解析度。"
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"載入的視訊解析度與字幕指定的版面解析度長寬比不同。\n"
+"\n"
+"視訊解析度：    %d × %d\n"
+"字幕版面解析度：    %d × %d\n"
+"\n"
+"要變更字幕的版面解析度以符合視訊嗎？"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "版面解析度不符"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "保留版面解析度（%d × %d）"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "變更 YCbCr 矩陣"
+
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "更改腳本解析度"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "變更版面解析度"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5399,6 +5576,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"設定檔無效。回報的錯誤：\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5430,15 +5609,15 @@ msgstr "您想讓Aegisub啟動時檢查更新嗎？您也可以夠過説明功�
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "儲存設定檔時發生錯誤"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "初始化時發生嚴重錯誤"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "未處理的例外狀況"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5451,6 +5630,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Aegisub 在啟動時當機！\n"
+"\n"
+"最後嘗試的啟動步驟：%s。"
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5466,7 +5648,7 @@ msgstr ""
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "事件處理常式中發生例外狀況"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5710,53 +5892,43 @@ msgstr "打開視訊時自動載入音訊"
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "不執行任何動作"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "播放視訊"
+msgstr "平移視訊"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "平移視訊（X/Y 互換）"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "調整視訊方塊大小"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "調整視訊方塊大小（反向）"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "放大視訊"
+msgstr "縮放視訊"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "縮放視訊（反向）"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "向左捲動音訊的顯示"
+msgstr "在視訊顯示區上捲動"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "向左捲動音訊的顯示"
+msgstr "在視訊顯示區上按 Ctrl+捲動"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "向左捲動音訊的顯示"
+msgstr "在視訊顯示區上按 Shift+捲動"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5790,13 +5962,53 @@ msgstr "預設高度"
 msgid "Always resample"
 msgstr "重設解析度"
 
+#: ../src/preferences.cpp:242
+msgid "Match video resolution on open"
+msgstr "在打開時匹配視訊解析度"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "版面解析度"
+
 #: ../src/preferences.cpp:240
 msgid "Always set"
 msgstr "使用視訊解析度"
 
-#: ../src/preferences.cpp:242
-msgid "Match video resolution on open"
-msgstr "在打開時匹配視訊解析度"
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "一律從腳本解析度設定"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "開啟時從視訊設定版面解析度"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "長寬比變更時"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "版面解析度不符時提示"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "YCbCr 矩陣"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "視訊未標記色彩矩陣時警告"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "HDR/WCG 視訊時警告"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "腳本未設定矩陣時使用視訊的 YCbCr 矩陣"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "開啟時符合視訊的 YCbCr 矩陣"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5878,6 +6090,14 @@ msgstr "音訊播放"
 msgid "Play cursor"
 msgstr "播放游標"
 
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "目前影格範圍"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "前一個影格範圍"
+
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
 msgstr "邊線色 - 起始"
@@ -5907,9 +6127,8 @@ msgid "Normal"
 msgstr "普通"
 
 #: ../src/preferences.cpp:299
-#, fuzzy
 msgid "Comments"
-msgstr "註解(&N)"
+msgstr "註解"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
@@ -6149,16 +6368,11 @@ msgid "Advanced"
 msgstr "進階"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"修改這些設定可能導致出錯，甚至異常崩潰， \n"
-"除非您知道自己在做什麼，否則請不要修改這些設定。"
+"變更這些設定可能導致錯誤及/或當機。除非您清楚自己在做什麼，否則請勿更動。"
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6301,38 +6515,32 @@ msgid "Avisynth memory limit"
 msgstr "Avisynth 記憶體限額"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "4: 偵錯"
+msgstr "偵錯"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "0: 致命"
+msgstr "嚴重"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "資訊"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "緊急"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "安靜"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "詳細"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "2: 警告"
+msgstr "警告"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6352,19 +6560,15 @@ msgstr "快捷鍵"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "搜尋"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "快捷鍵"
+msgstr "快速鍵"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "指令"
+msgstr "命令"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6401,16 +6605,13 @@ msgid "Font Size"
 msgstr "字型大小"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "匯入樣式出錯"
+msgstr "載入檔案時發生錯誤"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "所有字型已找到。\n"
+msgstr "找不到 %s。"
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6483,20 +6684,16 @@ msgstr ""
 "將嘗試下列來源：\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Load timecodes file: %s"
 msgid "Failed to parse timecodes file: "
-msgstr "載入時間碼檔案：%s"
+msgstr "無法解析時間碼檔："
 
 #: ../src/project.cpp:407
-#, fuzzy
-#| msgid "Load keyframes file: %s"
 msgid "Failed to parse keyframes file: "
-msgstr "載入關鍵影格檔案：%s"
+msgstr "無法解析關鍵影格檔："
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "關鍵影格檔格式不明："
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6536,11 +6733,11 @@ msgstr "檔案備份儲存為 \"%s\"。"
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "嘗試自動儲存檔案時發生例外狀況："
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
-msgstr ""
+msgstr "嘗試自動儲存檔案時發生未處理的例外狀況。"
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6728,13 +6925,11 @@ msgstr "停用"
 msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
-msgstr ""
+msgstr "無法為預覽方塊取得任何字幕提供者。請確認已安裝提供者。"
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "字幕來自"
+msgstr "沒有字幕提供者"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6832,6 +7027,8 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"視訊搜尋失敗。視訊檔可能已損毀或不完整。\n"
+"回報的錯誤訊息：%s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -6839,6 +7036,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"字幕轉譯失敗。\n"
+"回報的錯誤訊息：%s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -6847,6 +7046,9 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"無法初始化視訊顯示區。關閉其他執行中的程式並更新顯示卡驅動程式或許能解決此問"
+"題。\n"
+"回報的錯誤訊息：%s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -6854,6 +7056,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"無法將視訊影格上傳至顯示卡。\n"
+"回報的錯誤訊息：%s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -6861,22 +7065,20 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"嘗試在螢幕上繪製視訊影格時發生錯誤。\n"
+"回報的錯誤訊息：%s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "所有字型已找到。\n"
+msgstr "找不到檔案。"
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "視訊格式不受支援。"
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "無法貼上樣式"
+msgstr "無法開啟 "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7125,16 +7327,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "在所選行中新增 \\be1 標籤"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Make fullwidth - 轉換為全形字元"
+msgstr "將文字轉為全形"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"示範如何使用 unicode include 逐一處理字元，並透過對照表將這些字元轉換成其他字"
+"元。"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7150,9 +7352,8 @@ msgid "Select overlaps"
 msgstr "選取重疊"
 
 #: ../automation/autoload/select-overlaps.moon:18
-#, fuzzy
 msgid "Select lines which begin while another non-comment line is active"
-msgstr "選取開始時間落在其他行（非註解）運行期間內的行句"
+msgstr "選取在另一個非註解行作用期間開始的行"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7294,6 +7495,10 @@ msgstr "音訊與影片"
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
 msgstr "音訊對時"
+
+#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
+#~ msgid "Set to video resolution"
+#~ msgstr "直接設為影片解析度"
 
 #~ msgid "Kanji timing"
 #~ msgstr "漢字計時器"

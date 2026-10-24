@@ -23,6 +23,27 @@ struct LibresrcBlob {
 	int scale;
 };
 
+/// Alternative version of a built-in icon, used by non-classic icon themes
+struct LibresrcIconTheme {
+	const unsigned char *base;   ///< Data of the first image of the classic icon group
+	const LibresrcBlob *light;   ///< Variant for light user interfaces
+	size_t light_count;
+	const LibresrcBlob *dark;    ///< Variant for dark user interfaces
+	size_t dark_count;
+};
+
+extern const LibresrcIconTheme libresrc_icon_themes[];
+extern const size_t libresrc_icon_themes_count;
+
+/// Icon themes selectable with the "App/Icon Theme" option
+enum LibresrcIconThemeId {
+	ICON_THEME_CLASSIC = 0,
+	ICON_THEME_MATERIAL = 1,
+};
+
+void libresrc_set_icon_theme(int theme);
+int libresrc_get_icon_theme();
+
 #include "bitmap.h"
 #include "default_config.h"
 

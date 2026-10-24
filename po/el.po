@@ -22,14 +22,12 @@ msgid "Language"
 msgstr "Γλώσσα"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "Παρακαλώ επιλέξτε τον φάκελο:"
+msgstr "Επιλέξτε γλώσσα:"
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
-msgstr ""
+msgstr "Αυτόματος εντοπισμός βασικής κατεύθυνσης κειμένου (μόνο libass)"
 
 #: ../src/ass_style.cpp:197
 msgid "ANSI"
@@ -176,6 +174,11 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Ένα script στον φάκελο αυτόματης φόρτωσης της Αυτοματοποίησης απέτυχε να "
+"φορτωθεί.\n"
+"Ελέγξτε και διορθώστε τα σφάλματα και χρησιμοποιήστε το κουμπί «Επανασάρωση "
+"φακέλου αυτόματης φόρτωσης» στη Διαχείριση αυτοματοποίησης για να φορτώσετε "
+"ξανά τα scripts."
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -183,6 +186,11 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Πολλά scripts στον φάκελο αυτόματης φόρτωσης της Αυτοματοποίησης απέτυχαν να "
+"φορτωθούν.\n"
+"Ελέγξτε και διορθώστε τα σφάλματα και χρησιμοποιήστε το κουμπί «Επανασάρωση "
+"φακέλου αυτόματης φόρτωσης» στη Διαχείριση αυτοματοποίησης για να φορτώσετε "
+"ξανά τα scripts."
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -190,6 +198,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Ένα script στον φάκελο αυτόματης φόρτωσης της Αυτοματοποίησης φορτώθηκε με "
+"προειδοποιήσεις.\n"
+"Ελέγξτε και διορθώστε τις προειδοποιήσεις και χρησιμοποιήστε το κουμπί "
+"«Επανασάρωση φακέλου αυτόματης φόρτωσης» στη Διαχείριση αυτοματοποίησης για "
+"να φορτώσετε ξανά τα scripts."
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -197,6 +210,11 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Πολλά scripts στον φάκελο αυτόματης φόρτωσης της Αυτοματοποίησης φορτώθηκαν "
+"με προειδοποιήσεις.\n"
+"Ελέγξτε και διορθώστε τις προειδοποιήσεις και χρησιμοποιήστε το κουμπί "
+"«Επανασάρωση φακέλου αυτόματης φόρτωσης» στη Διαχείριση αυτοματοποίησης για "
+"να φορτώσετε ξανά τα scripts."
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -205,6 +223,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"Αναφορά σε script Αυτοματοποίησης με άγνωστο χαρακτήρα θέσης.\n"
+"Χαρακτήρας θέσης που βρέθηκε: %c\n"
+"Καθορισμένο όνομα αρχείου: %s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -219,28 +240,33 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"Το αρχείο υποτίτλων που ανοίξατε περιέχει τοπικά scripts αυτοματοποίησης. "
+"Θέλετε να φορτώσετε τα σχετικά scripts αυτοματοποίησης;\n"
+"\n"
+"Λίστα scripts:\n"
+"\n"
+"%s\n"
+"\n"
+"Φορτώστε σχετικά scripts αυτοματοποίησης μόνο αν εμπιστεύεστε τους "
+"δημιουργούς τους! Δεν χρειάζονται για την προβολή ή την επεξεργασία του "
+"αρχείου υποτίτλων."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Μακροεντολή: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Επαναφόρτωση των script Αυτοματοποίησης αυτόματης φόρτωσης"
+msgstr "Φόρτωση των σχετικών scripts αυτοματοποίησης;"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "Καθολικά script αυτόματης φόρτωσης"
+msgstr "Εμπιστεύομαι τους δημιουργούς && φόρτωση scripts"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -250,6 +276,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"Το script Αυτοματοποίησης που αναφέρεται δεν βρέθηκε.\n"
+"Καθορισμένο όνομα αρχείου: %s\n"
+"Αναζήτηση σε σχέση με: %s\n"
+"Τελικό όνομα αρχείου: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -261,15 +291,12 @@ msgstr ""
 "%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
 msgstr ""
-"Η φόρτωση του script Αυτοματοποίησης '%s' απέτυχε:\n"
+"Προειδοποίηση κατά τη φόρτωση του script Αυτοματοποίησης '%s':\n"
 "%s"
 
 #: ../src/auto4_base.cpp:508
@@ -293,22 +320,17 @@ msgid "File was not recognized as a script"
 msgstr "Το αρχείο δεν αναγνωρίστηκε σαν script"
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to load Automation script '%s':\n"
-#| "%s"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
 msgstr ""
-"Η φόρτωση του script Αυτοματοποίησης '%s' απέτυχε:\n"
+"Προειδοποίηση στο script Αυτοματοποίησης '%s':\n"
 "%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Αδυναμία ανάγνωσης στυλ"
+msgstr "Δεν ήταν δυνατή η αρχικοποίηση της κατάστασης Lua"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -317,12 +339,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Σφάλμα κατά την αρχικοποίηση του script Lua \"%s\":\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"Έγινε προσπάθεια φόρτωσης script Automation 3 ως script Lua Automation 4. Το "
+"Automation 3 δεν υποστηρίζεται πλέον."
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -330,22 +357,23 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Σφάλμα εκτέλεσης στη συνάρτηση επικύρωσης της μακροεντολής Lua:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Η ενεργή γραμμή %d είναι εκτός ορίων (πρέπει να είναι 1-%u)"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Η επιλεγμένη γραμμή %d είναι εκτός ορίων (πρέπει να είναι 1-%u)"
 
 #: ../src/auto4_lua.cpp:907
-#, fuzzy, c-format
-#| msgid "Select all dialogue lines"
+#, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr "Επιλογή όλων των γραμμών διαλόγων"
+msgstr "Η επιλεγμένη γραμμή %d δεν είναι γραμμή διαλόγου"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -353,6 +381,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Σφάλμα εκτέλεσης στη συνάρτηση IsActive της μακροεντολής Lua:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -360,6 +390,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Σφάλμα εκτέλεσης στη συνάρτηση παραθύρου ρυθμίσεων Lua:\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -458,12 +490,12 @@ msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
 msgstr ""
+"Το Aegisub πρέπει να επανεκκινηθεί για να εφαρμοστεί η νέα γλώσσα. "
+"Επανεκκίνηση τώρα;"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "Σχετικά με το Aegisub"
+msgstr "Επανεκκίνηση του Aegisub;"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -538,27 +570,27 @@ msgstr "Ελέγξτε αν υπάρχει διαθέσιμη μια νεότε�
 
 #: ../src/command/app.cpp:270 ../src/command/app.cpp:271
 msgid "Minimize"
-msgstr ""
+msgstr "Ελαχιστοποίηση"
 
 #: ../src/command/app.cpp:272
 msgid "Minimize the active window"
-msgstr ""
+msgstr "Ελαχιστοποίηση του ενεργού παραθύρου"
 
 #: ../src/command/app.cpp:281 ../src/command/app.cpp:282
 msgid "Zoom"
-msgstr ""
+msgstr "Ζουμ"
 
 #: ../src/command/app.cpp:283
 msgid "Maximize the active window"
-msgstr ""
+msgstr "Μεγιστοποίηση του ενεργού παραθύρου"
 
 #: ../src/command/app.cpp:292 ../src/command/app.cpp:293
 msgid "Bring All to Front"
-msgstr ""
+msgstr "Μεταφορά όλων μπροστά"
 
 #: ../src/command/app.cpp:294
 msgid "Bring forward all open documents to the front"
-msgstr ""
+msgstr "Μεταφορά όλων των ανοιχτών εγγράφων στο προσκήνιο"
 
 #: ../src/command/audio.cpp:65
 msgid "&Close Audio"
@@ -593,11 +625,9 @@ msgid "Video Formats"
 msgstr "Τύποι Βίντεο"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
-msgstr "Άνοιγμα Αρχείου Ήχου"
+msgstr "Άνοιγμα αρχείου ήχου"
 
 #: ../src/command/audio.cpp:93 ../src/command/audio.cpp:94
 msgid "Open 2h30 Blank Audio"
@@ -660,10 +690,8 @@ msgid "Save an audio clip of the selected line"
 msgstr "Αποθήκευση του ήχου της επιλεγμένης γραμμής"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
-msgstr "Αποθήκευση ήχου"
+msgstr "Αποθήκευση αποσπάσματος ήχου"
 
 #: ../src/command/audio.cpp:192 ../src/command/audio.cpp:193
 msgid "Play current audio selection"
@@ -779,30 +807,26 @@ msgid "Scroll the audio display to center on the current audio selection"
 msgstr "Κύλιση της προβολής ήχου στο κέντρο της τρέχουσας επιλογής ήχου"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "Μετατόπιση στην επιλογή"
+msgstr "Μετάβαση στην αρχή της επιλογής"
 
 #: ../src/command/audio.cpp:410
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
-msgstr "Κύλιση της προβολής ήχου στο κέντρο της τρέχουσας επιλογής ήχου"
+msgstr ""
+"Κύλιση της εμφάνισης ήχου ώστε να κεντραριστεί η αρχή της τρέχουσας επιλογής "
+"ήχου"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Μετατόπιση στην επιλογή"
+msgstr "Μετάβαση στο τέλος της επιλογής"
 
 #: ../src/command/audio.cpp:421
-#, fuzzy
-#| msgid "Scroll the audio display to center on the current audio selection"
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
-msgstr "Κύλιση της προβολής ήχου στο κέντρο της τρέχουσας επιλογής ήχου"
+msgstr ""
+"Κύλιση της εμφάνισης ήχου ώστε να κεντραριστεί το τέλος της τρέχουσας "
+"επιλογής ήχου"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -1706,10 +1730,8 @@ msgid "Open a keyframe list file"
 msgstr "Άνοιγμα ενός αρχείου με λίστα keyframe"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open keyframes file"
 msgid "Open Keyframes File"
-msgstr "Άνοιγμα αρχείου με λίστα keyframes"
+msgstr "Άνοιγμα αρχείου καρέ-κλειδιών"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1724,17 +1746,13 @@ msgid "Save the current list of keyframes to a file"
 msgstr "Αποθήκευση του τρέχοντος αρχείου με λίστα keyframe"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Save Keyframes File"
-msgstr "Αποθήκευση αρχείου με keyframes"
+msgstr "Αποθήκευση αρχείου καρέ-κλειδιών"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "Αρχεία"
+msgstr "Αρχεία κειμένου"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1880,10 +1898,8 @@ msgstr "Άνοιγμα ενός αρχείου υπότιτλων"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
-msgstr "Άνοιγμα αρχείου υπότιτλων"
+msgstr "Άνοιγμα αρχείου υποτίτλων"
 
 #: ../src/command/subtitle.cpp:282
 msgid "Open A&utosaved Subtitles..."
@@ -1944,8 +1960,6 @@ msgid "Open script properties window"
 msgstr "Άνοιγμα παραθύρου με τις ιδιότητες του script"
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
 msgstr "Αποθήκευση αρχείου υποτίτλων"
 
@@ -1964,7 +1978,7 @@ msgstr "Σφάλμα"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "Άγνωστο σφάλμα"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -2235,11 +2249,9 @@ msgid "Open a VFR timecodes v1 or v2 file"
 msgstr "Άνοιγμα ενός αρχείου με VFR timecode έκδοσης 1 ή 2"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Άνοιγμα Αρχείου Timecodes"
+msgstr "Άνοιγμα αρχείου χρονοκωδικών"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2254,15 +2266,13 @@ msgid "Save a VFR timecodes v2 file"
 msgstr "Αποθήκευση ενός αρχείου με VFR Timecode έκδοσης 2"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
-msgstr "Αποθήκευση Αρχείου Timecodes"
+msgstr "Αποθήκευση αρχείου χρονοκωδικών"
 
 #: ../src/command/timecode.cpp:103
 msgid "Error saving timecodes"
-msgstr ""
+msgstr "Σφάλμα κατά την αποθήκευση των χρονοκωδικών"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2616,13 +2626,14 @@ msgstr ""
 
 #: ../src/command/video.cpp:321 ../src/command/video.cpp:322
 msgid "Copy image to Clipboard (only subtitles)"
-msgstr ""
+msgstr "Αντιγραφή εικόνας στο πρόχειρο (μόνο υπότιτλοι)"
 
 #: ../src/command/video.cpp:323
 msgid ""
 "Copy the currently displayed subtitles to the clipboard, with transparent "
 "background"
 msgstr ""
+"Αντιγραφή των υποτίτλων που εμφανίζονται τώρα στο πρόχειρο, με διάφανο φόντο"
 
 #: ../src/command/video.cpp:332 ../src/command/video.cpp:333
 msgid "Next Frame"
@@ -2707,13 +2718,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:534 ../src/command/video.cpp:535
 msgid "Save PNG snapshot (only subtitles)"
-msgstr ""
+msgstr "Αποθήκευση στιγμιότυπου PNG (μόνο υπότιτλοι)"
 
 #: ../src/command/video.cpp:536
 msgid ""
 "Save the currently displayed subtitles with transparent background to a PNG "
 "file in the video's directory"
 msgstr ""
+"Αποθήκευση των υποτίτλων που εμφανίζονται τώρα με διάφανο φόντο σε αρχείο "
+"PNG στον φάκελο του βίντεο"
 
 #: ../src/command/video.cpp:546
 msgid "&Jump to..."
@@ -2764,8 +2777,6 @@ msgid "Open a video file"
 msgstr "Άνοιγμα ενός αρχείου βίντεο"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
 msgstr "Άνοιγμα αρχείου βίντεο"
 
@@ -2796,20 +2807,16 @@ msgid "Play"
 msgstr "Αναπαραγωγή"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "Αναπαραγωγή βίντεο ξεκινώντας από αυτή τη θέση"
+msgstr "Αναπαραγωγή του βίντεο από αυτή τη θέση"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "Αναπαραγωγή γραμμής"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play the audio for the current line"
 msgid "Play the video for the current line"
-msgstr "Αναπαραγωγή του ήχου για την τρέχουσα γραμμή"
+msgstr "Αναπαραγωγή του βίντεο για την τρέχουσα γραμμή"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2829,17 +2836,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "Επαναφορά &μετατόπισης βίντεο"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "&Κλείσιμο Βίντεο"
+msgstr "Επαναφορά μετατόπισης βίντεο"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "Επαναφορά της θέσης του βίντεο στην περιοχή εμφάνισης βίντεο"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2967,70 +2972,56 @@ msgid "Line"
 msgstr "Γραμμή"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Προσθέτει μία γραμμή"
+msgstr "Προσθήκη ευθείας"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Bicubic"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Προσθέτει μια καμπύλη bezier bicubic"
+msgstr "Προσθήκη κυβικής καμπύλης Bézier"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Μετατροπή"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Μετατρέπει ένα τμήμα ανάμεσα σε μια γραμμή και μια καμπύλη bicubic"
+msgstr "Μετατροπή τμήματος μεταξύ ευθείας και κυβικής καμπύλης"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Εισαγωγή"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "Εισάγει ένα σημείο ελέγχου"
+msgstr "Εισαγωγή σημείου ελέγχου"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "Αφαίρεση"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "Αφαιρεί ένα σημείο ελέγχου"
+msgstr "Αφαίρεση σημείου ελέγχου"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "Ελεύθερη Σχεδίαση"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "Σχεδίαση ενός σχήματος με ελεύθερη σχεδίαση"
+msgstr "Σχεδίαση ελεύθερου σχήματος"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "Ελεύθερη σχεδίαση ομαλού σχήματος"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Σχεδίαση ενός ομαλού σχήματος με ελεύθερη σχεδίαση"
+msgstr "Σχεδίαση εξομαλυμένου ελεύθερου σχήματος"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3092,20 +3083,16 @@ msgid "Choose file to be attached"
 msgstr "Επιλέξτε αρχείο προς επισύναψη"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Όνομα γραμματοσειράς"
+msgstr "Αρχεία γραμματοσειρών"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "επισύναψη αρχείου γραμματοσειράς"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "επισύναψη αρχείου γραφικών"
+msgstr "Αρχεία γραφικών"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3166,7 +3153,7 @@ msgstr "Προσθήκη script Αυτοματοποίησης"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "Το script '%s' έχει ήδη φορτωθεί"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3184,18 +3171,7 @@ msgid "Scripting engines installed:"
 msgstr "Εγκατεστημένες μηχανές scripting:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3214,8 +3190,6 @@ msgstr ""
 "Έκδοση: %s\n"
 "Πλήρης διαδρομή: %s\n"
 "Κατάσταση: %s\n"
-"\n"
-"Δυνατότητες που προσφέρει το script:"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3227,17 +3201,16 @@ msgstr "Αποτυχία φόρτωσης"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "Φορτώθηκε με προειδοποιήσεις"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: Προειδοποίηση"
+msgstr "Προειδοποίηση: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "Λειτουργίες που παρέχει το script:\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3362,51 +3335,51 @@ msgstr "Βίντεο: %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480 (SD πλήρης οθόνη)"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480 (SD αναμορφικό)"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360 (SD ευρεία οθόνη)"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396 (SD ευρεία οθόνη)"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352 (SD ευρεία οθόνη MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400 (SD ευρεία οθόνη MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576 (SuperPAL ευρεία οθόνη)"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720 (HD 720p)"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080 (FHD 1080p)"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440 (QHD 1440p)"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160 (4K UHD 2160p)"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920 (FHD κάθετο)"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3471,17 +3444,13 @@ msgid "Export..."
 msgstr "Εξαγωγή..."
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
-msgstr "Εξαγωγή αρχείου υπότιτλου"
+msgstr "Εξαγωγή αρχείου υποτίτλων"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Σφάλμα στην εισαγωγή στυλ"
+msgstr "Σφάλμα κατά την εξαγωγή υποτίτλων"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3615,6 +3584,8 @@ msgstr "Offset κωδικών χρόνου:"
 #, c-format
 msgid "* An error occurred when enumerating the used fonts: %s.\n"
 msgstr ""
+"* Παρουσιάστηκε σφάλμα κατά την απαρίθμηση των γραμματοσειρών που "
+"χρησιμοποιούνται: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:115
 msgid "Symlinking fonts to folder...\n"
@@ -3735,7 +3706,7 @@ msgstr "Επιλέξτε όνομα συμπιεσμένου αρχείου"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Αρχεία Zip"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3779,8 +3750,6 @@ msgid "Dest: "
 msgstr "Προορισμός: "
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "Χρονιστής Kanji"
 
@@ -3802,10 +3771,8 @@ msgid "Commands"
 msgstr "Εντολές"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Απόπειρα εισαγωγής kanji."
+msgstr "Απόπειρα &παρεμβολής kanji"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3983,10 +3950,22 @@ msgstr "Ανάλυση"
 msgid "From &video"
 msgstr "Από το βίντεο"
 
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Script: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "Από το βίντεο"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Διάταξη: "
+
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
 msgid "YCbCr Matrix:"
-msgstr ""
+msgstr "Πίνακας YCbCr:"
 
 #: ../src/dialog_properties.cpp:155
 msgid "0: Smart wrapping, top line is wider"
@@ -4028,11 +4007,11 @@ msgstr "αλλαγές ιδιοτήτων"
 
 #: ../src/dialog_resample.cpp:114
 msgid "Source Resolution"
-msgstr ""
+msgstr "Ανάλυση προέλευσης"
 
 #: ../src/dialog_resample.cpp:115
 msgid "Destination Resolution"
-msgstr ""
+msgstr "Ανάλυση προορισμού"
 
 #: ../src/dialog_resample.cpp:116
 msgid "Margin offset"
@@ -4044,27 +4023,27 @@ msgstr "Συμμετρικό"
 
 #: ../src/dialog_resample.cpp:152
 msgid "From s&cript"
-msgstr ""
+msgstr "Από το s&cript"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Add borders"
-msgstr ""
+msgstr "Προσθήκη περιθωρίων"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Manual"
-msgstr ""
+msgstr "Χειροκίνητα"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Remove borders"
-msgstr ""
+msgstr "Αφαίρεση περιθωρίων"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Stretch"
-msgstr ""
+msgstr "Τέντωμα"
 
 #: ../src/dialog_resample.cpp:156
 msgid "Aspect Ratio Handling"
-msgstr ""
+msgstr "Χειρισμός αναλογίας διαστάσεων"
 
 #: ../src/dialog_search_replace.cpp:47
 msgid "Replace"
@@ -4255,8 +4234,8 @@ msgstr "μη αποθηκευμένο"
 #, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 καρέ"
+msgstr[1] "%s καρέ"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4388,16 +4367,12 @@ msgid "Misspelled word:"
 msgstr "Ανορθόγραφη λέξη:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Δεν υπάρχουν προτάσεις ελέγχου ορθογραφίας"
+msgstr "Δεν υπάρχει διαθέσιμος ορθογραφικός έλεγχος."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Δεν υπάρχουν προτάσεις ελέγχου ορθογραφίας"
+msgstr "Δεν υπάρχουν διαθέσιμα λεξικά ορθογραφικού ελέγχου."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
@@ -4445,7 +4420,7 @@ msgstr "Επεξεργαστής Στυλ"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "Πλαίσια περιγράμματος"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4454,7 +4429,7 @@ msgstr "Περίγραμμα"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "Πλαίσιο σκιάς (μόνο libass)"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4539,6 +4514,7 @@ msgstr "Απόσταση από το ανώτερο/κατώτερο άκρο, �
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
 msgstr ""
+"Αν θα σχεδιάζεται κανονικό περίγραμμα ή αδιαφανή πλαίσια γύρω από το κείμενο"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4609,10 +4585,8 @@ msgid "Shadow:"
 msgstr "Σκιά:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "Ταξινόμηση στυλ"
+msgstr "Στυλ περιγράμματος:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4842,10 +4816,8 @@ msgid "style delete"
 msgstr "διαγραφή στυλ"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Εξαγωγή αρχείου υπότιτλου"
+msgstr "Μη υποστηριζόμενη μορφή υποτίτλων"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -5191,12 +5163,12 @@ msgstr "Υπενθύμιση ξανά σε μία ε&βδομάδα"
 
 #: ../src/dialog_version_check.cpp:295
 msgid "Curl could not be initialized."
-msgstr ""
+msgstr "Δεν ήταν δυνατή η αρχικοποίηση του Curl."
 
 #: ../src/dialog_version_check.cpp:317
 #, c-format
 msgid "Checking for updates failed: %s."
-msgstr ""
+msgstr "Ο έλεγχος για ενημερώσεις απέτυχε: %s."
 
 #: ../src/dialog_version_check.cpp:345
 msgid "An update to Aegisub was found."
@@ -5251,20 +5223,146 @@ msgid "Resolution:"
 msgstr "Ανάλυση:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "%s frame"
-msgstr[1] "%s frame"
+msgstr[0] "%d καρέ (%s)"
+msgstr[1] "%d καρέ (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "Διάρκεια:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Πραγματικός πίνακας χρωμάτων:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Επιβαλλόμενος πίνακας χρωμάτων:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Πραγματικό εύρος χρωμάτων:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Επιβαλλόμενο εύρος χρωμάτων:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Αποκωδικοποιητής:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"Το βίντεο που φορτώσατε δεν ορίζει πίνακα χρωμάτων. Το Aegisub θα υποθέσει "
+"ότι ο πίνακας χρωμάτων είναι %s, αλλά δεν υπάρχει εγγύηση ότι άλλα "
+"προγράμματα θα υποθέσουν τον ίδιο πίνακα. Αυτό μπορεί να κάνει το βίντεο να "
+"εμφανίζεται με διαφορετικά χρώματα σε διαφορετικά προγράμματα αναπαραγωγής "
+"και να εμποδίσει τα χρώματα των υποτίτλων να ταιριάζουν με τα χρώματα του "
+"βίντεο.\n"
+" \n"
+"Σκεφτείτε να επισημάνετε το βίντεό σας με πίνακα χρωμάτων, ώστε να "
+"εμφανίζεται με τον ίδιο τρόπο σε όλα τα προγράμματα αναπαραγωγής και τα "
+"χρώματα των υποτίτλων να ταιριάζουν αξιόπιστα με τα χρώματα του βίντεο."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Βίντεο χωρίς επισήμανση"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"Το βίντεο που φορτώσατε έχει χρώματα HDR ή/και WCG. Οι συνηθισμένοι "
+"υπότιτλοι διαλόγου θα λειτουργούν κανονικά σε τέτοια βίντεο, αλλά η "
+"αντιστοίχιση χρωμάτων του βίντεο με υπότιτλους δεν θα είναι δυνατή σε υλικό "
+"HDR ή/και WCG."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "Βίντεο HDR ή/και WCG"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Το τρέχον αρχείο υποτίτλων δεν έχει ορισμένο πίνακα YCbCr.\n"
+"\n"
+"Αν σκοπεύετε να χρησιμοποιήσετε αυτό το αρχείο υποτίτλων με το βίντεο που "
+"μόλις φορτώθηκε,\n"
+"ορίστε τον πίνακα YCbCr του αρχείου υποτίτλων στον χρωματικό χώρο του βίντεο "
+"(«%s»).\n"
+"\n"
+"Αν σκοπεύετε να χρησιμοποιήσετε άλλο αρχείο βίντεο, μπορείτε να\n"
+"αφήσετε τον πίνακα YCbCr μη ορισμένο μέχρι να φορτώσετε το σωστό βίντεο.\n"
+"\n"
+"Αυτή η ερώτηση μπορεί να ρυθμιστεί στις προτιμήσεις."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Ορισμός του πίνακα YCbCr του script;"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "Ο πίνακας YCbCr να μείνει μη ορισμένος"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "Ορισμός του πίνακα YCbCr του script σε αυτόν του βίντεο («%s»)"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"Ο προτεινόμενος πίνακας YCbCr αυτού του βίντεο («%s») διαφέρει από τον "
+"πίνακα YCbCr του αρχείου υποτίτλων («%s»).\n"
+"\n"
+"Αν τα χρώματα του νέου βίντεο φαίνονται ίδια με εκείνα του βίντεο για το "
+"οποίο δημιουργήθηκε αρχικά το αρχείο υποτίτλων,\n"
+"τότε ο πίνακας YCbCr του αρχείου υποτίτλων πρέπει να οριστεί σε αυτόν του "
+"βίντεο."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "Αναντιστοιχία πίνακα YCbCr"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "Ο πίνακας YCbCr του script να μείνει ως έχει («%s»)"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5289,29 +5387,154 @@ msgstr ""
 "\n"
 "Επιθυμείτε αλλαγή της ανάλυσης των υποτίτλων σε αυτήν του βίντεο;"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr ""
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Η ανάλυση να μείνει ως έχει"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
-msgstr ""
+msgstr "Επαναδειγματοληψία script (τέντωμα στη νέα αναλογία διαστάσεων)"
 
 #: ../src/dialog_video_properties.cpp:60
 msgid "Resample script (add borders)"
-msgstr ""
+msgstr "Επαναδειγματοληψία script (προσθήκη περιθωρίων)"
 
 #: ../src/dialog_video_properties.cpp:61
 msgid "Resample script (remove borders)"
-msgstr ""
+msgstr "Επαναδειγματοληψία script (αφαίρεση περιθωρίων)"
 
 #: ../src/dialog_video_properties.cpp:68
 msgid "Resample script"
+msgstr "Επαναδειγματοληψία script"
+
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
 msgstr ""
+"Το τρέχον αρχείο υποτίτλων δεν έχει ορισμένη ανάλυση διάταξης.\n"
+"\n"
+"Αν σκοπεύετε να χρησιμοποιήσετε αυτό το αρχείο υποτίτλων με το βίντεο που "
+"μόλις φορτώθηκε,\n"
+"ορίστε την ανάλυση διάταξης του αρχείου υποτίτλων στην ανάλυση προβολής του "
+"βίντεο.\n"
+"\n"
+"Αν σκοπεύετε να χρησιμοποιήσετε άλλο αρχείο βίντεο, μπορείτε να\n"
+"αφήσετε την ανάλυση διάταξης μη ορισμένη μέχρι να φορτώσετε το σωστό "
+"βίντεο.\n"
+"\n"
+"Αν προσαρμόζετε ένα παλιό αρχείο υποτίτλων που δεν έχει ακόμη\n"
+"ανάλυση διάταξης, ορίστε την στην ανάλυση\n"
+"του βίντεο με το οποίο προοριζόταν να αναπαράγονται οι υπότιτλοι.\n"
+"Συχνά είναι ίδια με την ανάλυση script του αρχείου. (%d × %d)\n"
+"\n"
+"Αυτή η ερώτηση μπορεί να ρυθμιστεί στις προτιμήσεις."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Ορισμός της ανάλυσης διάταξης του script;"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Η ανάλυση διάταξης να μείνει μη ορισμένη"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "Ορισμός της ανάλυσης διάταξης του script σε αυτή του βίντεο (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr "Ορισμός της ανάλυσης διάταξης του script στην ανάλυση script (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"Η ανάλυση του βίντεο που φορτώθηκε και η ανάλυση διάταξης των υποτίτλων δεν "
+"ταιριάζουν.\n"
+"\n"
+"Ανάλυση βίντεο:    %d × %d\n"
+"Ανάλυση διάταξης υποτίτλων:    %d × %d\n"
+"\n"
+"Συνήθως αυτό δεν είναι πρόβλημα και μπορείτε να αφήσετε την ανάλυση διάταξης "
+"ως έχει.\n"
+"Αν το αρχείο υποτίτλων δεν περιέχει σημαντική μορφοποίηση και σκοπεύετε τώρα "
+"να\n"
+"μορφοποιήσετε για το βίντεο που μόλις φορτώθηκε, μπορείτε να ορίσετε την "
+"ανάλυση διάταξης\n"
+"του script στην ανάλυση προβολής του βίντεο."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"Η ανάλυση του βίντεο που φορτώθηκε και η ανάλυση διάταξης των υποτίτλων "
+"έχουν διαφορετικές αναλογίες διαστάσεων.\n"
+"\n"
+"Ανάλυση βίντεο:    %d × %d\n"
+"Ανάλυση διάταξης υποτίτλων:    %d × %d\n"
+"\n"
+"Αλλαγή της ανάλυσης διάταξης των υποτίτλων ώστε να ταιριάζει με το βίντεο;"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Αναντιστοιχία ανάλυσης διάταξης"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Η ανάλυση διάταξης να μείνει ως έχει (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "αλλαγή πίνακα ycbcr"
 
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "αλλαγή της ανάλυσης του script"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "αλλαγή ανάλυσης διάταξης"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5408,7 +5631,7 @@ msgstr "Το στυλ '%s' δεν υπάρχει\n"
 #: ../src/font_file_lister.cpp:154
 #, c-format
 msgid "Font '%s' is used in a drawing, but not in any text.\n"
-msgstr ""
+msgstr "Η γραμματοσειρά '%s' χρησιμοποιείται σε σχέδιο, αλλά όχι σε κείμενο.\n"
 
 #: ../src/font_file_lister.cpp:160
 #, c-format
@@ -5541,6 +5764,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"Το αρχείο ρυθμίσεων δεν είναι έγκυρο. Αναφερόμενο σφάλμα:\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5575,15 +5800,15 @@ msgstr ""
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "Σφάλμα κατά την αποθήκευση του αρχείου ρυθμίσεων"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "Ανεπανόρθωτο σφάλμα κατά την αρχικοποίηση"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "Μη χειριζόμενη εξαίρεση"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5596,6 +5821,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Το Aegisub κατέρρευσε κατά την εκκίνηση!\n"
+"\n"
+"Το τελευταίο βήμα εκκίνησης που επιχειρήθηκε ήταν: %s."
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5612,7 +5840,7 @@ msgstr ""
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "Εξαίρεση σε χειριστή συμβάντων"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5859,53 +6087,43 @@ msgstr "Αυτόματα άνοιγμα ήχου με το άνοιγμα του
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "Δεν κάνει τίποτα"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Αναπαραγωγή βίντεο"
+msgstr "Μετατοπίζει το βίντεο"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "Μετατοπίζει το βίντεο (X/Y ανεστραμμένα)"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "Αλλάζει το μέγεθος του πλαισίου βίντεο"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "Αλλάζει το μέγεθος του πλαισίου βίντεο (αντίστροφα)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Μεγέθυνση βίντεο"
+msgstr "Κάνει ζουμ στο βίντεο"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "Κάνει ζουμ στο βίντεο (αντίστροφα)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "Κύλιση της προβολής του ήχου προς τα αριστερά"
+msgstr "Κύλιση στην εμφάνιση βίντεο"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "Κύλιση της προβολής του ήχου προς τα αριστερά"
+msgstr "Ctrl+κύλιση στην εμφάνιση βίντεο"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "Κύλιση της προβολής του ήχου προς τα αριστερά"
+msgstr "Shift+κύλιση στην εμφάνιση βίντεο"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5937,15 +6155,55 @@ msgstr "Προεπιλεγμένο ύψος"
 
 #: ../src/preferences.cpp:240
 msgid "Always resample"
-msgstr ""
-
-#: ../src/preferences.cpp:240
-msgid "Always set"
-msgstr ""
+msgstr "Πάντα επαναδειγματοληψία"
 
 #: ../src/preferences.cpp:242
 msgid "Match video resolution on open"
 msgstr "Ταύτιση ανάλυσης βίντεο κατά το άνοιγμα"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Ανάλυση διάταξης"
+
+#: ../src/preferences.cpp:240
+msgid "Always set"
+msgstr "Πάντα ορισμός"
+
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Πάντα ορισμός από την ανάλυση script"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Ορισμός ανάλυσης διάταξης από το βίντεο κατά το άνοιγμα"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Όταν αλλάζει η αναλογία διαστάσεων"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Ερώτηση όταν η ανάλυση διάταξης δεν ταιριάζει"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "Πίνακας YCbCr"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Προειδοποίηση για βίντεο χωρίς επισήμανση πίνακα χρωμάτων"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Προειδοποίηση για βίντεο HDR/WCG"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "Χρήση του πίνακα YCbCr του βίντεο όταν το script δεν έχει πίνακα"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Αντιστοίχιση με τον πίνακα YCbCr του βίντεο κατά το άνοιγμα"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5965,7 +6223,7 @@ msgstr "Αντικατάσταση στα πεδία χρόνων"
 
 #: ../src/preferences.cpp:254
 msgid "Shift+Enter adds \\n"
-msgstr ""
+msgstr "Το Shift+Enter προσθέτει \\n"
 
 #: ../src/preferences.cpp:255
 msgid "Enable syntax highlighting"
@@ -6017,7 +6275,7 @@ msgstr "Απόκρυψη συμβόλου ετικετών"
 
 #: ../src/preferences.cpp:273
 msgid "Skip over whitespace"
-msgstr ""
+msgstr "Παράλειψη κενών"
 
 #: ../src/preferences.cpp:288
 msgid "Audio Display"
@@ -6026,6 +6284,14 @@ msgstr "Προβολή ήχου"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Κέρσορας αναπαραγωγής"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Τρέχον εύρος καρέ"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Προηγούμενο εύρος καρέ"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -6049,7 +6315,7 @@ msgstr "Επισήμανση Σύνταξης"
 
 #: ../src/preferences.cpp:297
 msgid "Background"
-msgstr ""
+msgstr "Φόντο"
 
 #: ../src/preferences.cpp:298
 msgid "Normal"
@@ -6057,23 +6323,23 @@ msgstr "Κανονική"
 
 #: ../src/preferences.cpp:299
 msgid "Comments"
-msgstr ""
+msgstr "Σχόλια"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
-msgstr ""
+msgstr "Εντολές σχεδίασης"
 
 #: ../src/preferences.cpp:301
 msgid "Drawing X Coords"
-msgstr ""
+msgstr "Συντεταγμένες X σχεδίου"
 
 #: ../src/preferences.cpp:302
 msgid "Drawing Y Coords"
-msgstr ""
+msgstr "Συντεταγμένες Y σχεδίου"
 
 #: ../src/preferences.cpp:303
 msgid "Underline Spline Endpoints"
-msgstr ""
+msgstr "Υπογράμμιση άκρων spline"
 
 #: ../src/preferences.cpp:305
 msgid "Brackets"
@@ -6105,7 +6371,7 @@ msgstr "Πρότυπα καραόκε"
 
 #: ../src/preferences.cpp:313
 msgid "Karaoke variables"
-msgstr ""
+msgstr "Μεταβλητές karaoke"
 
 #: ../src/preferences.cpp:319
 msgid "Audio Color Schemes"
@@ -6177,31 +6443,31 @@ msgstr "Σφάλμα ΧΑΔ"
 
 #: ../src/preferences.cpp:339
 msgid "Visual Typesetting Tools"
-msgstr ""
+msgstr "Οπτικά εργαλεία στοιχειοθεσίας"
 
 #: ../src/preferences.cpp:340
 msgid "Primary Lines"
-msgstr ""
+msgstr "Κύριες γραμμές"
 
 #: ../src/preferences.cpp:341
 msgid "Secondary Lines"
-msgstr ""
+msgstr "Δευτερεύουσες γραμμές"
 
 #: ../src/preferences.cpp:342
 msgid "Primary Highlight"
-msgstr ""
+msgstr "Κύρια επισήμανση"
 
 #: ../src/preferences.cpp:343
 msgid "Secondary Highlight"
-msgstr ""
+msgstr "Δευτερεύουσα επισήμανση"
 
 #: ../src/preferences.cpp:346
 msgid "Visual Typesetting Tools Alpha"
-msgstr ""
+msgstr "Διαφάνεια οπτικών εργαλείων στοιχειοθεσίας"
 
 #: ../src/preferences.cpp:347
 msgid "Shaded Area"
-msgstr ""
+msgstr "Σκιασμένη περιοχή"
 
 #: ../src/preferences.cpp:356
 msgid "Backup"
@@ -6297,17 +6563,12 @@ msgid "Advanced"
 msgstr "Για προχωρημένους"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"Η αλλαγή αυτών των ρυθμίσεων μπορεί να προκαλέσει σφάλματα και/η "
-"κρασαρίσματα. Μην τις αλλάζετε αν δεν είστε απόλυτα σίγουροι για το τι "
-"κάνετε."
+"Η αλλαγή αυτών των ρυθμίσεων μπορεί να προκαλέσει σφάλματα ή/και "
+"καταρρεύσεις. Μην τις αγγίζετε αν δεν ξέρετε τι κάνετε."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6363,27 +6624,27 @@ msgstr "Ποιότητα"
 
 #: ../src/preferences.cpp:436
 msgid "Compressed"
-msgstr ""
+msgstr "Συμπιεσμένο"
 
 #: ../src/preferences.cpp:436
 msgid "Extended"
-msgstr ""
+msgstr "Εκτεταμένο"
 
 #: ../src/preferences.cpp:436
 msgid "Linear"
-msgstr ""
+msgstr "Γραμμικό"
 
 #: ../src/preferences.cpp:436
 msgid "Logarithmic"
-msgstr ""
+msgstr "Λογαριθμικό"
 
 #: ../src/preferences.cpp:436
 msgid "Medium"
-msgstr ""
+msgstr "Μεσαίο"
 
 #: ../src/preferences.cpp:438
 msgid "Frequency mapping"
-msgstr ""
+msgstr "Αντιστοίχιση συχνοτήτων"
 
 #: ../src/preferences.cpp:440
 msgid "Cache memory max (MB)"
@@ -6450,38 +6711,32 @@ msgid "Avisynth memory limit"
 msgstr "Όριο μνήμης Avisynth"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "4: Εντοπισμός Σφαλμάτων"
+msgstr "Αποσφαλμάτωση"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "0: Ολέθριο"
+msgstr "Ανεπανόρθωτο"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "Πληροφορίες"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "Πανικός"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "Σιωπηλό"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "Αναλυτικό"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "2: Προειδοποίηση"
+msgstr "Προειδοποίηση"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6501,19 +6756,15 @@ msgstr "Πλήκτρα συντόμευσης"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "Αναζήτηση"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Πλήκτρα συντόμευσης"
+msgstr "Συντόμευση"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "Εντολές"
+msgstr "Εντολή"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6552,16 +6803,13 @@ msgid "Font Size"
 msgstr "Μέγεθος γραμματοσειράς"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "Σφάλμα στην εισαγωγή στυλ"
+msgstr "Σφάλμα κατά τη φόρτωση του αρχείου"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "Βρέθηκαν όλες οι γραμματοσειρές.\n"
+msgstr "Το %s δεν βρέθηκε."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6570,38 +6818,38 @@ msgstr "Θέλετε να φορτώσετε/αποφορτώσετε τα σχ�
 #: ../src/project.cpp:210
 #, c-format
 msgid "Load audio file: %s"
-msgstr ""
+msgstr "Φόρτωση αρχείου ήχου: %s"
 
 #: ../src/project.cpp:210
 msgid "Unload audio"
-msgstr ""
+msgstr "Αποφόρτωση ήχου"
 
 #: ../src/project.cpp:212
 #, c-format
 msgid "Load video file: %s"
-msgstr ""
+msgstr "Φόρτωση αρχείου βίντεο: %s"
 
 #: ../src/project.cpp:212
 msgid "Unload video"
-msgstr ""
+msgstr "Αποφόρτωση βίντεο"
 
 #: ../src/project.cpp:214
 #, c-format
 msgid "Load timecodes file: %s"
-msgstr ""
+msgstr "Φόρτωση αρχείου χρονοκωδικών: %s"
 
 #: ../src/project.cpp:214
 msgid "Unload timecodes"
-msgstr ""
+msgstr "Αποφόρτωση χρονοκωδικών"
 
 #: ../src/project.cpp:216
 #, c-format
 msgid "Load keyframes file: %s"
-msgstr ""
+msgstr "Φόρτωση αρχείου καρέ-κλειδιών: %s"
 
 #: ../src/project.cpp:216
 msgid "Unload keyframes"
-msgstr ""
+msgstr "Αποφόρτωση καρέ-κλειδιών"
 
 #: ../src/project.cpp:218
 msgid "(Un)Load files?"
@@ -6636,20 +6884,16 @@ msgstr ""
 "Χρησιμοποιήθηκαν οι παρακάτω παροχείς:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Close Timecodes File"
 msgid "Failed to parse timecodes file: "
-msgstr "Κλείσιμο Αρχείου Timecodes"
+msgstr "Αποτυχία ανάλυσης του αρχείου χρονοκωδικών: "
 
 #: ../src/project.cpp:407
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Failed to parse keyframes file: "
-msgstr "Αποθήκευση αρχείου με keyframes"
+msgstr "Αποτυχία ανάλυσης του αρχείου καρέ-κλειδιών: "
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "Αρχείο καρέ-κλειδιών σε άγνωστη μορφή: "
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6663,8 +6907,8 @@ msgstr "αντικατάσταση"
 #, c-format
 msgid "One match was replaced."
 msgid_plural "%d matches were replaced."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Αντικαταστάθηκε μία αντιστοιχία."
+msgstr[1] "Αντικαταστάθηκαν %d αντιστοιχίες."
 
 #: ../src/search_replace_engine.cpp:277
 msgid "No matches found."
@@ -6690,11 +6934,12 @@ msgstr "Το αντίγραφο ασφαλείας του αρχείου απο�
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "Εξαίρεση κατά την απόπειρα αυτόματης αποθήκευσης του αρχείου: "
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
 msgstr ""
+"Μη χειριζόμενη εξαίρεση κατά την απόπειρα αυτόματης αποθήκευσης του αρχείου."
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6890,12 +7135,12 @@ msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
 msgstr ""
+"Δεν βρέθηκε πάροχος υποτίτλων για το πλαίσιο προεπισκόπησης. Βεβαιωθείτε ότι "
+"έχετε εγκαταστήσει έναν πάροχο."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "Παροχέας υπότιτλων"
+msgstr "Δεν υπάρχει πάροχος υποτίτλων"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6995,6 +7240,9 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"Αποτυχία μετάβασης στο βίντεο. Το αρχείο βίντεο μπορεί να είναι "
+"κατεστραμμένο ή ημιτελές.\n"
+"Αναφερόμενο μήνυμα σφάλματος: %s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -7002,6 +7250,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"Αποτυχία απόδοσης υποτίτλων.\n"
+"Αναφερόμενο μήνυμα σφάλματος: %s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -7010,6 +7260,10 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"Αποτυχία αρχικοποίησης της εμφάνισης βίντεο. Το κλείσιμο άλλων προγραμμάτων "
+"που εκτελούνται και η ενημέρωση των προγραμμάτων οδήγησης της κάρτας "
+"γραφικών μπορεί να το διορθώσει.\n"
+"Αναφερόμενο μήνυμα σφάλματος: %s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -7017,6 +7271,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"Δεν ήταν δυνατή η μεταφόρτωση του καρέ βίντεο στην κάρτα γραφικών.\n"
+"Αναφερόμενο μήνυμα σφάλματος: %s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -7024,22 +7280,20 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"Παρουσιάστηκε σφάλμα κατά την απόπειρα απόδοσης του καρέ βίντεο στην οθόνη.\n"
+"Αναφερόμενο μήνυμα σφάλματος: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "Βρέθηκαν όλες οι γραμματοσειρές.\n"
+msgstr "το αρχείο δεν βρέθηκε."
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "το βίντεο δεν είναι σε υποστηριζόμενη μορφή."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Αδυναμία ανάγνωσης στυλ"
+msgstr "Δεν ήταν δυνατό το άνοιγμα του "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7196,7 +7450,7 @@ msgstr "Αυτοματοποίηση"
 
 #: default_menu.json:0
 msgid "Window"
-msgstr ""
+msgstr "Παράθυρο"
 
 #: default_menu.json:0
 msgid "&Help"
@@ -7204,11 +7458,11 @@ msgstr "&Βοήθεια"
 
 #: default_menu.json:0
 msgid "Open..."
-msgstr ""
+msgstr "Άνοιγμα…"
 
 #: default_menu.json:0
 msgid "Open Recent"
-msgstr ""
+msgstr "Άνοιγμα πρόσφατου"
 
 #: default_menu.json:0
 msgid "Save"
@@ -7216,11 +7470,11 @@ msgstr "Αποθήκευση"
 
 #: default_menu.json:0
 msgid "Save As..."
-msgstr ""
+msgstr "Αποθήκευση ως…"
 
 #: default_menu.json:0
 msgid "Export As..."
-msgstr ""
+msgstr "Εξαγωγή ως…"
 
 #: default_hotkey.json:244
 msgid "Subtitle Edit Box"
@@ -7296,16 +7550,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "Προσθέτει ετικέτες \\be1 σε όλες τις επιλεγμένες γραμμές"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Μετατροπή σε πλήρες πλάτος"
+msgstr "Μετατροπή κειμένου σε πλήρους πλάτους"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"Δείχνει πώς να χρησιμοποιείτε το unicode include για να διατρέχετε "
+"χαρακτήρες και έναν πίνακα αναζήτησης για να τους μετατρέπετε σε κάτι άλλο."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7318,11 +7572,13 @@ msgstr "Μετατροπή Λατινικής γραφής σε γράμματα
 
 #: ../automation/autoload/select-overlaps.moon:17
 msgid "Select overlaps"
-msgstr ""
+msgstr "Επιλογή επικαλύψεων"
 
 #: ../automation/autoload/select-overlaps.moon:18
 msgid "Select lines which begin while another non-comment line is active"
 msgstr ""
+"Επιλογή γραμμών που ξεκινούν όσο είναι ενεργή άλλη γραμμή που δεν είναι "
+"σχόλιο"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7382,19 +7638,24 @@ msgstr "Δημιουργία κι επεξεργασία υπότιτλων γι
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "υπότιτλοι;υπότιτλος;λεζάντες;υποτιτλισμός;βίντεο;ήχος;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
-msgstr ""
+msgstr "Δημιουργία και τροποποίηση υποτίτλων"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:9
 msgid ""
 "Aegisub is a free, cross-platform open source tool for creating and "
 "modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
+"audio, and features many powerful tools for styling them, including a "
+"built-in real-time video preview."
 msgstr ""
+"Το Aegisub είναι ένα δωρεάν εργαλείο ανοιχτού κώδικα για πολλές πλατφόρμες, "
+"για τη δημιουργία και τροποποίηση υποτίτλων. Με το Aegisub ο συγχρονισμός "
+"υποτίτλων με τον ήχο γίνεται γρήγορα και εύκολα, ενώ διαθέτει πολλά ισχυρά "
+"εργαλεία για τη μορφοποίησή τους, όπως ενσωματωμένη προεπισκόπηση βίντεο σε "
+"πραγματικό χρόνο."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:10
 msgid ""
@@ -7406,6 +7667,13 @@ msgid ""
 "unrelated to Aegisub) many vital functions, or were too buggy and/or "
 "unreliable to be really useful."
 msgstr ""
+"Το Aegisub δημιουργήθηκε αρχικά ως εργαλείο για να γίνει η στοιχειοθεσία, "
+"ιδίως στους fansubs anime, λιγότερο επίπονη. Όταν ξεκίνησε το έργο, πολλά "
+"άλλα προγράμματα που υποστήριζαν τη μορφή Advanced SubStation Alpha δεν "
+"είχαν (και πολλά εξακολουθούν να μην έχουν· η ανάπτυξη αρκετών "
+"ανταγωνιστικών προγραμμάτων έχει έκτοτε σταματήσει για διάφορους λόγους "
+"εντελώς άσχετους με το Aegisub) πολλές βασικές λειτουργίες, ή είχαν πάρα "
+"πολλά σφάλματα ή/και ήταν αναξιόπιστα για να είναι πραγματικά χρήσιμα."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:11
 msgid ""
@@ -7416,46 +7684,53 @@ msgid ""
 "for creating karaoke effects, Automation can now be used much else, "
 "including creating macros and various other convenient tools)."
 msgstr ""
+"Από τότε, το Aegisub εξελίχθηκε σε έναν πλήρη, ιδιαίτερα παραμετροποιήσιμο "
+"επεξεργαστή υποτίτλων. Διαθέτει πολλά βολικά εργαλεία για συγχρονισμό, "
+"στοιχειοθεσία, επεξεργασία και μετάφραση υποτίτλων, καθώς και ένα ισχυρό "
+"περιβάλλον scripting που ονομάζεται Automation (αρχικά προοριζόταν κυρίως "
+"για τη δημιουργία εφέ karaoke, αλλά πλέον το Automation μπορεί να "
+"χρησιμοποιηθεί για πολλά άλλα, όπως τη δημιουργία μακροεντολών και διάφορων "
+"άλλων βολικών εργαλείων)."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:12
 msgid "Some highlights of Aegisub:"
-msgstr ""
+msgstr "Μερικά από τα δυνατά σημεία του Aegisub:"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:14
 msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
+msgstr "Απλό και διαισθητικό αλλά ισχυρό περιβάλλον επεξεργασίας υποτίτλων"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:15
 msgid "Support for many formats and character sets"
-msgstr ""
+msgstr "Υποστήριξη πολλών μορφών και συνόλων χαρακτήρων"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:16
 msgid "Powerful video mode"
-msgstr ""
+msgstr "Ισχυρή λειτουργία βίντεο"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:17
 msgid "Visual typesetting tools"
-msgstr ""
+msgstr "Οπτικά εργαλεία στοιχειοθεσίας"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:18
 msgid "Intuitive and customizable audio timing mode"
-msgstr ""
+msgstr "Διαισθητική και παραμετροποιήσιμη λειτουργία συγχρονισμού ήχου"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:19
 msgid "Fully scriptable through the Automation module"
-msgstr ""
+msgstr "Πλήρης δυνατότητα scripting μέσω της μονάδας Automation"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:43
 msgid "Typesetting"
-msgstr ""
+msgstr "Στοιχειοθεσία"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:47
 msgid "Audio video"
-msgstr ""
+msgstr "Ήχος και βίντεο"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
-msgstr ""
+msgstr "Συγχρονισμός ήχου"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Χρονισμός Kanji"

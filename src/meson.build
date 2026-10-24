@@ -2,6 +2,7 @@ subdir('libresrc')
 
 aegisub_src = files(
     'MatroskaParser.c',
+    'about_backdrop.cpp',
     'aegisublocale.cpp',
     'ass_attachment.cpp',
     'ass_dialogue.cpp',
@@ -81,6 +82,7 @@ aegisub_src = files(
     'dialog_styling_assistant.cpp',
     'dialog_text_import.cpp',
     'dialog_timing_processor.cpp',
+    'dialog_transcribe.cpp',
     'dialog_translation.cpp',
     'dialog_version_check.cpp',
     'dialog_video_details.cpp',
@@ -136,6 +138,7 @@ aegisub_src = files(
     'toggle_bitmap.cpp',
     'toolbar.cpp',
     'tooltip_binding.cpp',
+    'transcription.cpp',
     'utils.cpp',
     'validators.cpp',
     'vector2d.cpp',

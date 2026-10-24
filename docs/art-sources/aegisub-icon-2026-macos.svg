@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 64 64">
+  <title>Aegisub</title>
+  <defs>
+    <linearGradient id="ared" gradientUnits="userSpaceOnUse" x1="14" y1="4" x2="50" y2="60"><stop offset="0" stop-color="#FF8A78"/><stop offset="0.5" stop-color="#E8344F"/><stop offset="1" stop-color="#A2123A"/></linearGradient>
+    <linearGradient id="awhite" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E2E7EE"/></linearGradient>
+    <radialGradient id="airis" cx="0.42" cy="0.38" r="0.7"><stop offset="0" stop-color="#8CCBFF"/><stop offset="0.45" stop-color="#3A6CF0"/><stop offset="1" stop-color="#16278F"/></radialGradient>
+    <clipPath id="aeye"><path d="M9 32 Q32 13 55 32 Q32 51 9 32Z"/></clipPath>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A515D"/><stop offset="1" stop-color="#16191E"/></linearGradient><linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.05"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.2"/></linearGradient><radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E8344F" stop-opacity="0.45"/><stop offset="1" stop-color="#E8344F" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g transform="translate(3.2 3.2) scale(0.9)"><rect x="0" y="0" width="64" height="64" rx="18" fill="url(#tile)"/><rect x="0.5" y="0.5" width="63" height="63" rx="17.5" fill="none" stroke="url(#rim)" stroke-width="0.8"/><circle cx="32" cy="32" r="30" fill="url(#glow)"/></g>
+  <g transform="translate(3.2 3.2) scale(0.9)"><g transform="translate(9 9) scale(0.71875)"><path d="M34.32 33.34 L58.68 33.34 L46.50 54.44Z" fill="url(#ared)" stroke="url(#ared)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M32.00 34.68 L44.18 55.78 L19.82 55.78Z" fill="url(#ared)" stroke="url(#ared)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M32.00 34.68 L44.18 55.78 L19.82 55.78Z" fill="#FFFFFF" opacity="0.1" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M29.68 33.34 L17.50 54.44 L5.32 33.34Z" fill="url(#ared)" stroke="url(#ared)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M29.68 33.34 L17.50 54.44 L5.32 33.34Z" fill="#FFFFFF" opacity="0.22" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M29.68 30.66 L5.32 30.66 L17.50 9.56Z" fill="url(#ared)" stroke="url(#ared)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M32.00 29.32 L19.82 8.22 L44.18 8.22Z" fill="url(#ared)" stroke="url(#ared)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M32.00 29.32 L19.82 8.22 L44.18 8.22Z" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M34.32 30.66 L46.50 9.56 L58.68 30.66Z" fill="url(#ared)" stroke="url(#ared)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M34.32 30.66 L46.50 9.56 L58.68 30.66Z" fill="#FFFFFF" opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M9 32 Q32 13 55 32 Q32 51 9 32Z" fill="url(#awhite)" stroke="#3A0D1C" stroke-opacity="0.55" stroke-width="1.1" stroke-linejoin="round"/>
+  <g clip-path="url(#aeye)"><circle cx="32" cy="32" r="10" fill="url(#airis)"/><circle cx="32" cy="32" r="4.6" fill="#0B0E1A"/><circle cx="35.2" cy="28.8" r="1.7" fill="#FFFFFF" opacity="0.95"/><path d="M9 32 Q32 13 55 32 L55 26 L9 26Z" fill="#0B0E1A" opacity="0.08"/></g></g></g>
+</svg>

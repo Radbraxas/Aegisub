@@ -19,8 +19,6 @@ msgid "Language"
 msgstr "Lingua"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
 msgstr "Scegli una lingua:"
 
@@ -242,26 +240,21 @@ msgstr ""
 "se ti fidi dell'autore! Non sono essenziali a vedere o modificare un sottotitolo."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Macro: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Ricarica script Automation autocaricate"
+msgstr "Caricare gli script Automation associati?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
 msgstr "No"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "Carica gli script e fidati degli autori"
+msgstr "Mi fido degli autori && carica gli script"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -286,12 +279,13 @@ msgstr ""
 "%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
-msgstr "Ricarica script Automation"
+msgstr ""
+"Avviso durante il caricamento dello script Automation '%s':\n"
+"%s"
 
 #: ../src/auto4_base.cpp:508
 #, c-format
@@ -314,18 +308,17 @@ msgid "File was not recognized as a script"
 msgstr "Il file non è riconosciuto come script"
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
-msgstr "Ricarica script Automation"
+msgstr ""
+"Avviso nello script Automation '%s':\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Impossibile analizzare lo stile"
+msgstr "Impossibile inizializzare lo stato Lua"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -489,10 +482,8 @@ msgstr ""
 "Vuoi farlo adesso?"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "Info su Aegisub"
+msgstr "Riavviare Aegisub?"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -621,11 +612,9 @@ msgid "Video Formats"
 msgstr "Formati Video"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
-msgstr "Apri File Audio"
+msgstr "Apri file audio"
 
 #: ../src/command/audio.cpp:93 ../src/command/audio.cpp:94
 msgid "Open 2h30 Blank Audio"
@@ -688,8 +677,6 @@ msgid "Save an audio clip of the selected line"
 msgstr "Salva una clip audio della riga selezionata"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
 msgstr "Salva clip audio"
 
@@ -805,8 +792,6 @@ msgid "Scroll the audio display to center on the current audio selection"
 msgstr "Scorri la visualizzazione dell'audio per centrarla sulla selezione audio corrente"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
 msgstr "Vai all'inizio della selezione"
 
@@ -817,10 +802,8 @@ msgstr ""
 "Scorri la visualizzazione dell'audio per centrarla all'inizio della selezione audio corrente"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Vai alla selezione"
+msgstr "Vai alla fine della selezione"
 
 #: ../src/command/audio.cpp:421
 msgid ""
@@ -1714,10 +1697,8 @@ msgid "Open a keyframe list file"
 msgstr "Apri keyframe"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open Keyframes"
 msgid "Open Keyframes File"
-msgstr "Apri Keyframe"
+msgstr "Apri file keyframe"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1732,17 +1713,13 @@ msgid "Save the current list of keyframes to a file"
 msgstr "Salva i keyframe attuali in un file"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save Keyframes"
 msgid "Save Keyframes File"
-msgstr "Salva Keyframe"
+msgstr "Salva file keyframe"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "File"
+msgstr "File di testo"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1884,8 +1861,6 @@ msgstr "Apri un file di sottitoli"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
 msgstr "Apri file sottotitoli"
 
@@ -1946,10 +1921,8 @@ msgid "Open script properties window"
 msgstr "Apre la finestra delle proprietà"
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
-msgstr "Salva file di sottotitoli"
+msgstr "Salva file sottotitoli"
 
 #: ../src/command/subtitle.cpp:357 ../src/command/subtitle.cpp:360
 #: ../src/dialog_fonts_collector.cpp:312 ../src/dialog_fonts_collector.cpp:317
@@ -2228,11 +2201,9 @@ msgid "Open a VFR timecodes v1 or v2 file"
 msgstr "Apri File Timecode VFR v1 o v2"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Apri File Timecode"
+msgstr "Apri file timecode"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2247,11 +2218,9 @@ msgid "Save a VFR timecodes v2 file"
 msgstr "Salva File Timecode VFR v2"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
-msgstr "Salva File Timecode"
+msgstr "Salva file timecode"
 
 #: ../src/command/timecode.cpp:103
 msgid "Error saving timecodes"
@@ -2755,8 +2724,6 @@ msgid "Open a video file"
 msgstr "Apri un file video"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
 msgstr "Apri file video"
 
@@ -2785,20 +2752,16 @@ msgid "Play"
 msgstr "Riproduci"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "Riproduci video iniziando da questo punto"
+msgstr "Riproduci il video a partire da questa posizione"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "Riproduci riga"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play current line"
 msgid "Play the video for the current line"
-msgstr "Riproduci riga corrente"
+msgstr "Riproduci il video della riga corrente"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2821,10 +2784,8 @@ msgid "Reset Video &Pan"
 msgstr "Resetta Video &Pan"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "Chiudi Video"
+msgstr "Reimposta panoramica video"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
@@ -2956,58 +2917,46 @@ msgid "Line"
 msgstr "Linea"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Aggiunge una linea"
+msgstr "Aggiungi una linea"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Bicubic"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Aggiunge una curva bezier bicubic"
+msgstr "Aggiungi una curva di Bézier bicubica"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Converti"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Converte un segmento tra linea e bicubic"
+msgstr "Converti un segmento tra linea e curva bicubica"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Inserisci"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "Inserisce un punto di controllo"
+msgstr "Inserisci un punto di controllo"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "Rimuovi"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "Rimuove un punto di controllo"
+msgstr "Rimuovi un punto di controllo"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "A mano libera"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
 msgstr "Disegna una forma a mano libera"
 
@@ -3016,10 +2965,8 @@ msgid "Freehand smooth"
 msgstr "A mano libera morbida"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Disegna una forma arrotondata (ammorbidita) a mano libera"
+msgstr "Disegna una forma a mano libera smussata"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3081,20 +3028,16 @@ msgid "Choose file to be attached"
 msgstr "Segli file da allegare"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Tipo di font"
+msgstr "File di font"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "Allega file font"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "Allega file immagini"
+msgstr "File di immagine"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3173,18 +3116,7 @@ msgid "Scripting engines installed:"
 msgstr "Motore di scripting installato:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3203,8 +3135,6 @@ msgstr ""
 "Versione: %s\n"
 "Percorso completo: %s\n"
 "Stato: %s\n"
-"\n"
-"Features provided by script:"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3219,10 +3149,9 @@ msgid "Loaded with warnings"
 msgstr "Caricato con dei warning"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: Attenzione"
+msgstr "Avviso: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
@@ -3460,17 +3389,13 @@ msgid "Export..."
 msgstr "Esporta..."
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
-msgstr "Esporta file di sottotitoli"
+msgstr "Esporta file sottotitoli"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Errore nell'importazione degli stili"
+msgstr "Errore nell'esportazione dei sottotitoli"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3766,10 +3691,8 @@ msgid "Dest: "
 msgstr "Dest.:"
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
-msgstr "Kanji Timer"
+msgstr "Kanji timer"
 
 #: ../src/dialog_kara_timing_copy.cpp:391 ../src/dialog_paste_over.cpp:75
 #: ../src/grid_column.cpp:364 ../src/grid_column.cpp:365
@@ -3789,10 +3712,8 @@ msgid "Commands"
 msgstr "Comandi"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Tenta di &interpolare kanji."
+msgstr "Tenta di &interpolare i kanji"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3968,6 +3889,18 @@ msgstr "Risoluzione"
 #: ../src/export_framerate.cpp:70
 msgid "From &video"
 msgstr "Prendi dal &video"
+
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Script: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "Dal video"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Layout: "
 
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
@@ -4196,33 +4129,33 @@ msgid "Set se&lection"
 msgstr "Imposta se&lezione"
 
 #: ../src/dialog_selection.cpp:215
-#, fuzzy, c-format
+#, c-format
 msgid "Selection was set to one line"
 msgid_plural "Selection was set to %u lines"
 msgstr[0] "Selezione impostata su una riga"
-msgstr[1] "Selezione impostata su una riga"
+msgstr[1] "Selezione impostata su %u righe"
 
 #: ../src/dialog_selection.cpp:216
 msgid "Selection was set to no lines"
 msgstr "Selezione impostata su nessuna riga"
 
 #: ../src/dialog_selection.cpp:222
-#, fuzzy, c-format
+#, c-format
 msgid "One line was added to selection"
 msgid_plural "%u lines were added to selection"
-msgstr[0] "Aggiunta una riga alla selezione"
-msgstr[1] "Aggiunta una riga alla selezione"
+msgstr[0] "Una riga aggiunta alla selezione"
+msgstr[1] "%u righe aggiunte alla selezione"
 
 #: ../src/dialog_selection.cpp:223
 msgid "No lines were added to selection"
 msgstr "Nessuna riga aggiunta alla selezione"
 
 #: ../src/dialog_selection.cpp:234
-#, fuzzy, c-format
+#, c-format
 msgid "One line was removed from selection"
 msgid_plural "%u lines were removed from selection"
-msgstr[0] "Rimossa una riga dalla selezione"
-msgstr[1] "Rimossa una riga dalla selezione"
+msgstr[0] "Una riga rimossa dalla selezione"
+msgstr[1] "%u righe rimosse dalla selezione"
 
 #: ../src/dialog_selection.cpp:235
 msgid "No lines were removed from selection"
@@ -4373,16 +4306,12 @@ msgid "Misspelled word:"
 msgstr "Parole errate:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Nessun suggerimento dal controllo ortografico"
+msgstr "Nessun controllo ortografico disponibile."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Nessun suggerimento dal controllo ortografico"
+msgstr "Nessun dizionario per il controllo ortografico disponibile."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
@@ -4594,10 +4523,8 @@ msgid "Shadow:"
 msgstr "Ombra:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "Ordina stili"
+msgstr "Stile del bordo:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4704,11 +4631,11 @@ msgid "Could not parse style"
 msgstr "Impossibile analizzare lo stile"
 
 #: ../src/dialog_style_manager.cpp:248
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete this style?"
 msgid_plural "Are you sure you want to delete these %d styles?"
-msgstr[0] "Sei sicuro di voler cancellare questo stile?"
-msgstr[1] "Sei sicuro di voler cancellare questi %d stili?"
+msgstr[0] "Sei sicuro di voler eliminare questo stile?"
+msgstr[1] "Sei sicuro di voler eliminare questi %d stili?"
 
 #: ../src/dialog_style_manager.cpp:273
 msgid "Catalog of available storages"
@@ -4823,10 +4750,8 @@ msgid "style delete"
 msgstr "stile cancellato"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Esporta file di sottotitoli"
+msgstr "Formato di sottotitoli non supportato"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -5229,8 +5154,7 @@ msgid "Resolution:"
 msgstr "Risoluzione:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
 msgstr[0] "%d frame (%s)"
@@ -5241,8 +5165,132 @@ msgid "Length:"
 msgstr "Lunghezza:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Matrice colore effettiva:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Matrice colore forzata:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Gamma colore effettiva:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Gamma colore forzata:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Decoder:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"Il video caricato non specifica una matrice colore. Aegisub supporrà che la "
+"matrice sia %s, ma non c'è garanzia che altri programmi facciano la stessa "
+"supposizione. Il video potrebbe quindi apparire con colori diversi nei vari "
+"lettori multimediali e i colori dei sottotitoli potrebbero non corrispondere "
+"a quelli del video.\n"
+" \n"
+"Valuta di indicare la matrice colore nel video, così che venga visualizzato "
+"allo stesso modo in tutti i lettori e i colori dei sottotitoli possano "
+"corrispondere in modo affidabile a quelli del video."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Video senza matrice colore indicata"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"Il video caricato ha colori HDR e/o WCG. I normali sottotitoli di dialogo "
+"funzioneranno senza problemi, ma non sarà possibile far corrispondere i "
+"colori dei sottotitoli a quelli di un video HDR e/o WCG."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "Video HDR e/o WCG"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Il file di sottotitoli corrente non ha una matrice YCbCr impostata.\n"
+"\n"
+"Se intendi usare questo file di sottotitoli con il video appena caricato,\n"
+"dovresti impostare la matrice YCbCr del file sullo spazio colore del video "
+"(\"%s\").\n"
+"\n"
+"Se intendi usare un altro video, puoi lasciare\n"
+"la matrice YCbCr non impostata finché non carichi il video corretto.\n"
+"\n"
+"Questa richiesta si può configurare nelle preferenze."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Impostare la matrice YCbCr dello script?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "Lascia la matrice YCbCr non impostata"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "Imposta la matrice YCbCr dello script su quella del video (\"%s\")"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"La matrice YCbCr consigliata per questo video (\"%s\") è diversa da quella "
+"del file di sottotitoli (\"%s\").\n"
+"\n"
+"Se i colori di questo nuovo video sono identici a quelli del video per cui i "
+"sottotitoli sono stati creati,\n"
+"la matrice YCbCr del file di sottotitoli dovrebbe essere impostata su quella "
+"del video."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "Discordanza tra matrici YCbCr"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "Lascia la matrice YCbCr dello script com'è (\"%s\")"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5267,9 +5315,10 @@ msgstr ""
 "\n"
 "Eguagliare la risoluzione dei sottotitoli a quella del video?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr "Imposta a risoluzione video"
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Lascia la risoluzione com'è"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
@@ -5287,9 +5336,136 @@ msgstr "Ricampiona script (rimuovi bordi)"
 msgid "Resample script"
 msgstr "Ricampiona script"
 
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Il file di sottotitoli corrente non ha una risoluzione di layout impostata.\n"
+"\n"
+"Se intendi usare questo file di sottotitoli con il video appena caricato,\n"
+"dovresti impostare la risoluzione di layout del file sulla risoluzione di "
+"visualizzazione del video.\n"
+"\n"
+"Se intendi usare un altro video, puoi lasciare\n"
+"la risoluzione di layout non impostata finché non carichi il video "
+"corretto.\n"
+"\n"
+"Se stai adattando un vecchio file di sottotitoli che non ha ancora\n"
+"una risoluzione di layout, dovresti impostarla sulla risoluzione\n"
+"del video su cui i sottotitoli dovevano essere riprodotti.\n"
+"Spesso coincide con la risoluzione dello script del file. (%d × %d)\n"
+"\n"
+"Questa richiesta si può configurare nelle preferenze."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Impostare la risoluzione di layout dello script?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Lascia la risoluzione di layout non impostata"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr ""
+"Imposta la risoluzione di layout dello script su quella del video (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr ""
+"Imposta la risoluzione di layout dello script sulla sua risoluzione script "
+"(%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"La risoluzione del video caricato e la risoluzione di layout indicata nei "
+"sottotitoli non corrispondono.\n"
+"\n"
+"Risoluzione video:    %d × %d\n"
+"Risoluzione di layout dei sottotitoli:    %d × %d\n"
+"\n"
+"Di solito non è un problema e puoi lasciare la risoluzione di layout del "
+"file com'è.\n"
+"Se il file di sottotitoli non contiene formattazioni importanti e intendi "
+"formattarlo\n"
+"per il video appena caricato, puoi impostare la risoluzione di layout dello "
+"script\n"
+"sulla risoluzione di visualizzazione del video."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"La risoluzione del video caricato e la risoluzione di layout indicata nei "
+"sottotitoli hanno proporzioni diverse.\n"
+"\n"
+"Risoluzione video:    %d × %d\n"
+"Risoluzione di layout dei sottotitoli:    %d × %d\n"
+"\n"
+"Modificare la risoluzione di layout dei sottotitoli per farla corrispondere "
+"al video?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Discordanza tra risoluzioni di layout"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Lascia la risoluzione di layout com'è (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "modifica matrice YCbCr"
+
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "cambia risoluzione script"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "modifica risoluzione di layout"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5835,10 +6011,8 @@ msgid "Does nothing"
 msgstr "Non fa nulla"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Riproduci video"
+msgstr "Sposta la visuale del video"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
@@ -5853,32 +6027,24 @@ msgid "Resizes the video box (reversed)"
 msgstr "Ridimensiona il quadrante video (invertito)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Zoom video avanti"
+msgstr "Ingrandisce il video"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
 msgstr "Zoom video (invertito)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "Scorri display audio a sinistra"
+msgstr "Scorrimento sul video"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "Scorri display audio a sinistra"
+msgstr "Ctrl+scorrimento sul video"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "Scorri display audio a sinistra"
+msgstr "Maiusc+scorrimento sul video"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5912,13 +6078,53 @@ msgstr "Altezza predefinita"
 msgid "Always resample"
 msgstr "Ricampiona sempre"
 
+#: ../src/preferences.cpp:242
+msgid "Match video resolution on open"
+msgstr "Confronta risoluzione video all'apertura"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Risoluzione di layout"
+
 #: ../src/preferences.cpp:240
 msgid "Always set"
 msgstr "Imposta sempre"
 
-#: ../src/preferences.cpp:242
-msgid "Match video resolution on open"
-msgstr "Confronta risoluzione video all'apertura"
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Imposta sempre dalla risoluzione dello script"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Imposta la risoluzione di layout dal video all'apertura"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Quando cambiano le proporzioni"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Chiedi se le risoluzioni di layout non corrispondono"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "Matrice YCbCr"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Avvisa se il video non indica la matrice colore"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Avvisa per video HDR/WCG"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "Usa la matrice YCbCr del video se lo script non ne ha una"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Fai corrispondere la matrice YCbCr del video all'apertura"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5999,6 +6205,14 @@ msgstr "Riquadro Audio"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Colore cursore riproduci"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Intervallo di frame corrente"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Intervallo di frame precedente"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -6270,15 +6484,11 @@ msgid "Advanced"
 msgstr "Avanzate"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"Cambiare queste impostazioni potrebbe creare bug e/o crash. Non modificarli "
+"Cambiare queste impostazioni potrebbe causare bug e/o crash. Non modificarle "
 "se non sai cosa stai facendo."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
@@ -6422,14 +6632,10 @@ msgid "Avisynth memory limit"
 msgstr "Limite di memoria di Avisynth"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
 msgstr "Debug"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
 msgstr "Fatale"
 
@@ -6450,10 +6656,8 @@ msgid "Verbose"
 msgstr "Dettagliato"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "Attenzione"
+msgstr "Avviso"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6476,14 +6680,10 @@ msgid "Search"
 msgstr "Ricerca"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Hotkey"
+msgstr "Scorciatoia"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
 msgstr "Comando"
 
@@ -6524,16 +6724,13 @@ msgid "Font Size"
 msgstr "Grandezza font"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
 msgstr "Errore nel caricamento del file"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "%s non trovato"
+msgstr "%s non trovato."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6608,10 +6805,8 @@ msgstr ""
 "Sono stati utilizzati i seguenti provider:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Close Timecodes File"
 msgid "Failed to parse timecodes file: "
-msgstr "Errore nel parsing del file di timecode: "
+msgstr "Impossibile analizzare il file di timecode: "
 
 #: ../src/project.cpp:407
 msgid "Failed to parse keyframes file: "
@@ -6863,8 +7058,6 @@ msgstr ""
 "di aver almeno un provider installato."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
 msgstr "Nessun provider di sottotitoli"
 
@@ -7007,8 +7200,6 @@ msgstr ""
 "Errore riscontrato: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
 msgstr "file non trovato."
 
@@ -7017,10 +7208,8 @@ msgid "video is not in a supported format."
 msgstr "il video non è in un formato supportato."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Impossibile analizzare lo stile"
+msgstr "Impossibile aprire "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7277,10 +7466,8 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "Aggiunge tag \\be1 a tutte le righe selezionate"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Rendi il testo fullwidth"
+msgstr "Rendi il testo a larghezza piena"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
@@ -7453,6 +7640,10 @@ msgstr "Audio video"
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
 msgstr "Timing Audio"
+
+#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
+#~ msgid "Set to video resolution"
+#~ msgstr "Imposta a risoluzione video"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Kanji timing"

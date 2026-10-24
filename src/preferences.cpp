@@ -104,6 +104,9 @@ void General(wxTreebook *book, Preferences *parent) {
 	p->CellSkip(general);
 
 	p->OptionAdd(general, _("Toolbar Icon Size"), "App/Toolbar Icon Size");
+	wxString icon_themes[] = { _("Classic"), _("Material") };
+	wxArrayString icon_themes_arr(2, icon_themes);
+	p->OptionChoice(general, _("Icon theme"), icon_themes_arr, "App/Icon Theme");
 	wxString autoload_modes[] = { _("Never"), _("Always"), _("Ask") };
 	wxArrayString autoload_modes_arr(3, autoload_modes);
 	p->OptionChoice(general, _("Automatically load linked files"), autoload_modes_arr, "App/Auto/Load Linked Files");

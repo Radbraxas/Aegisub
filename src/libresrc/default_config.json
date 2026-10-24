@@ -11,6 +11,7 @@
 		"Call Tips" : false,
 		"First Start" : true,
 		"Hotkey Migrations" : [{"string": "placeholder since empty arrays aren't supported"}],
+		"Icon Theme" : 0,
 		"Language" : "",
 		"Maximized" : false,
 		"Save Charset" : "UTF-8",
@@ -586,6 +587,15 @@
 			},
 			"Maximized" : false,
 			"Skip Whitespace" : true
+		},
+		"Transcription" : {
+			"Executable" : "",
+			"Language" : "auto",
+			"Max Line Length" : 42,
+			"Model" : "",
+			"Replace Lines" : false,
+			"Threads" : 0,
+			"Translate" : false
 		},
 		"Visual" : {
 			"Autohide": false
