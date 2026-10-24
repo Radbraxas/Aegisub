@@ -7740,3 +7740,126 @@ msgstr "Sincronización de audio"
 
 #~ msgid "Drawings"
 #~ msgstr "Dibujos"
+
+msgid "Preparing the audio..."
+msgstr "Preparando el audio..."
+
+msgid "Recognizing speech with whisper.cpp..."
+msgstr "Reconociendo la voz con whisper.cpp..."
+
+msgid "Transcribe Audio"
+msgstr "Transcribir audio"
+
+msgid "Creates subtitle lines from the speech in the loaded audio. Everything runs on this computer using whisper.cpp; no audio is sent anywhere."
+msgstr "Crea líneas de subtítulos a partir de la voz del audio cargado. Todo se procesa en este equipo con whisper.cpp; el audio no se envía a ningún lado."
+
+msgid "Download whisper.cpp and its models"
+msgstr "Descargar whisper.cpp y sus modelos"
+
+msgid "Programs"
+msgstr "Programas"
+
+msgid "Select the whisper.cpp program (whisper-cli)"
+msgstr "Selecciona el programa de whisper.cpp (whisper-cli)"
+
+msgid "Select a whisper model"
+msgstr "Selecciona un modelo de whisper"
+
+msgid "Whisper models"
+msgstr "Modelos de whisper"
+
+msgid "All files"
+msgstr "Todos los archivos"
+
+msgid "Detect automatically"
+msgstr "Detectar automáticamente"
+
+msgid "English"
+msgstr "Inglés"
+
+msgid "Spanish"
+msgstr "Español"
+
+msgid "Portuguese"
+msgstr "Portugués"
+
+msgid "French"
+msgstr "Francés"
+
+msgid "German"
+msgstr "Alemán"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "Japanese"
+msgstr "Japonés"
+
+msgid "Korean"
+msgstr "Coreano"
+
+msgid "Chinese"
+msgstr "Chino"
+
+msgid "Hindi"
+msgstr "Hindi"
+
+msgid "Indonesian"
+msgstr "Indonesio"
+
+msgid "Polish"
+msgstr "Polaco"
+
+msgid "Ukrainian"
+msgstr "Ucraniano"
+
+msgid "Dutch"
+msgstr "Neerlandés"
+
+msgid "Translate the speech to English"
+msgstr "Traducir la voz al inglés"
+
+msgid "Add after the existing lines"
+msgstr "Añadir después de las líneas existentes"
+
+msgid "Replace all existing lines"
+msgstr "Reemplazar todas las líneas existentes"
+
+msgid "New lines"
+msgstr "Líneas nuevas"
+
+msgid "whisper.cpp program:"
+msgstr "Programa whisper.cpp:"
+
+msgid "Model:"
+msgstr "Modelo:"
+
+msgid "Spoken language:"
+msgstr "Idioma hablado:"
+
+msgid "Max. characters per line (0 = no limit):"
+msgstr "Máx. caracteres por línea (0 = sin límite):"
+
+msgid "Transcribe"
+msgstr "Transcribir"
+
+msgid "Please select the whisper.cpp program and a model file."
+msgstr "Selecciona el programa de whisper.cpp y un archivo de modelo."
+
+msgid "transcription"
+msgstr "transcripción"
+
+msgid "Open an audio or video file with audio first."
+msgstr "Primero abre un archivo de audio o un video con audio."
+
+msgid "Transcription failed"
+msgstr "La transcripción falló"
+
+msgid "No speech was recognized in the audio."
+msgstr "No se reconoció ninguna voz en el audio."
+
+msgid "&Transcribe Audio..."
+msgstr "&Transcribir audio..."
+
+msgid "Create subtitle lines from the speech in the loaded audio, offline with whisper.cpp"
+msgstr "Crea líneas de subtítulos a partir de la voz del audio cargado, sin conexión, con whisper.cpp"
