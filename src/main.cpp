@@ -214,6 +214,12 @@ bool AegisubApp::OnInit() {
 	}
 #endif
 
+	// Select the icon theme before any icon is loaded
+	libresrc_set_icon_theme(OPT_GET("App/Icon Theme")->GetInt());
+	icon_theme_slot = OPT_SUB("App/Icon Theme", [](agi::OptionValue const& opt) {
+		libresrc_set_icon_theme(opt.GetInt());
+	});
+
 	// Init commands.
 	cmd::init_builtin_commands();
 
