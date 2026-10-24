@@ -3750,9 +3750,8 @@ msgid "Dest: "
 msgstr "Cible : "
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
 msgid "Kanji timer"
-msgstr "Minutage kanji"
+msgstr "Minuteur kanji"
 
 #: ../src/dialog_kara_timing_copy.cpp:391 ../src/dialog_paste_over.cpp:75
 #: ../src/grid_column.cpp:364 ../src/grid_column.cpp:365
@@ -3772,9 +3771,8 @@ msgid "Commands"
 msgstr "Commandes"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
 msgid "Attempt to &interpolate kanji"
-msgstr "Tenter d'&interpoler kanji"
+msgstr "Tenter d'&interpoler les kanji"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3951,6 +3949,18 @@ msgstr "Définition vidéo"
 #: ../src/export_framerate.cpp:70
 msgid "From &video"
 msgstr "De la &vidéo"
+
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Script : "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "Depuis la vidéo"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Mise en page : "
 
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
@@ -5214,8 +5224,134 @@ msgid "Length:"
 msgstr "Durée :"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Matrice de couleurs réelle :"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Matrice de couleurs forcée :"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Plage de couleurs réelle :"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Plage de couleurs forcée :"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Décodeur :"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"La vidéo chargée n'indique pas de matrice de couleurs. Aegisub supposera que "
+"la matrice est %s, mais rien ne garantit que d'autres programmes feront la "
+"même supposition. La vidéo peut alors s'afficher avec des couleurs "
+"différentes selon le lecteur, et les couleurs des sous-titres peuvent ne pas "
+"correspondre à celles de la vidéo.\n"
+" \n"
+"Pensez à indiquer la matrice de couleurs dans votre vidéo pour qu'elle "
+"s'affiche de la même façon dans tous les lecteurs et que les couleurs des "
+"sous-titres puissent correspondre de manière fiable à celles de la vidéo."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Vidéo sans indication de matrice"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"La vidéo chargée contient des couleurs HDR et/ou WCG. Les sous-titres de "
+"dialogue ordinaires fonctionneront sans problème, mais il ne sera pas "
+"possible de faire correspondre les couleurs des sous-titres à celles d'une "
+"vidéo HDR et/ou WCG."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "Vidéo HDR et/ou WCG"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Le fichier de sous-titres actuel n'a pas de matrice YCbCr définie.\n"
+"\n"
+"Si vous comptez utiliser ce fichier de sous-titres avec la vidéo que vous "
+"venez de charger,\n"
+"définissez sa matrice YCbCr sur l'espace colorimétrique de la vidéo (« %s "
+"»).\n"
+"\n"
+"Si vous comptez utiliser une autre vidéo, vous pouvez laisser\n"
+"la matrice YCbCr non définie jusqu'à ce que vous chargiez la bonne vidéo.\n"
+"\n"
+"Cette question peut être configurée dans les préférences."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Définir la matrice YCbCr du script ?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "Laisser la matrice YCbCr non définie"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "Utiliser pour le script la matrice YCbCr de la vidéo (« %s »)"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"La matrice YCbCr recommandée pour cette vidéo (« %s ») diffère de celle du "
+"fichier de sous-titres (« %s »).\n"
+"\n"
+"Si les couleurs de cette nouvelle vidéo sont identiques à celles de la vidéo "
+"pour laquelle les sous-titres ont été créés,\n"
+"la matrice YCbCr du fichier de sous-titres doit être réglée sur celle de la "
+"vidéo."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "Matrices YCbCr différentes"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "Laisser la matrice YCbCr du script telle quelle (« %s »)"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5239,9 +5375,10 @@ msgstr ""
 "\n"
 "Changer la définition des sous-titres pour correspondre à la vidéo ?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr "Définir la définition vidéo"
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Laisser la définition telle quelle"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
@@ -5259,9 +5396,134 @@ msgstr "Rééchantillonner le script (supprimer les bordures)"
 msgid "Resample script"
 msgstr "Rééchantillonner le script"
 
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Le fichier de sous-titres actuel n'a pas de définition de mise en page.\n"
+"\n"
+"Si vous comptez utiliser ce fichier de sous-titres avec la vidéo que vous "
+"venez de charger,\n"
+"définissez sa définition de mise en page sur la définition d'affichage de la "
+"vidéo.\n"
+"\n"
+"Si vous comptez utiliser une autre vidéo, vous pouvez laisser\n"
+"la définition de mise en page non définie jusqu'à ce que vous chargiez la "
+"bonne vidéo.\n"
+"\n"
+"Si vous adaptez un ancien fichier de sous-titres qui n'a pas encore\n"
+"de définition de mise en page, réglez-la sur la définition\n"
+"de la vidéo sur laquelle les sous-titres devaient être lus.\n"
+"C'est souvent la même que la définition du script. (%d × %d)\n"
+"\n"
+"Cette question peut être configurée dans les préférences."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Définir la définition de mise en page du script ?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Laisser la définition de mise en page non définie"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "Utiliser pour la mise en page la définition de la vidéo (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr "Utiliser pour la mise en page la définition du script (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"La définition de la vidéo chargée et la définition de mise en page des "
+"sous-titres ne correspondent pas.\n"
+"\n"
+"Définition de la vidéo :    %d × %d\n"
+"Définition de mise en page des sous-titres :    %d × %d\n"
+"\n"
+"En général, ce n'est pas un problème et vous pouvez laisser la définition de "
+"mise en page telle quelle.\n"
+"Si votre fichier de sous-titres ne contient pas de mise en forme importante "
+"et que vous comptez\n"
+"mettre en forme les sous-titres pour la nouvelle vidéo, vous pouvez régler "
+"la définition de mise en page\n"
+"du script sur la définition d'affichage de la vidéo."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"La définition de la vidéo chargée et la définition de mise en page des "
+"sous-titres n'ont pas le même rapport d'aspect.\n"
+"\n"
+"Définition de la vidéo :    %d × %d\n"
+"Définition de mise en page des sous-titres :    %d × %d\n"
+"\n"
+"Modifier la définition de mise en page des sous-titres pour correspondre à "
+"la vidéo ?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Définitions de mise en page différentes"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Laisser la définition de mise en page telle quelle (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "modification de la matrice YCbCr"
+
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "changer la définition vidéo du script"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "modification de la définition de mise en page"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5882,13 +6144,53 @@ msgstr "Hauteur par défaut"
 msgid "Always resample"
 msgstr "Toujours ré-échantillonner"
 
+#: ../src/preferences.cpp:242
+msgid "Match video resolution on open"
+msgstr "Faire correspondre à la définition vidéo à l'ouverture"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Définition de mise en page"
+
 #: ../src/preferences.cpp:240
 msgid "Always set"
 msgstr "Toujours activer"
 
-#: ../src/preferences.cpp:242
-msgid "Match video resolution on open"
-msgstr "Faire correspondre à la définition vidéo à l'ouverture"
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Toujours reprendre la définition du script"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Prendre la définition de la vidéo à l'ouverture"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Quand le rapport d'aspect change"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Demander si les définitions de mise en page diffèrent"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "Matrice YCbCr"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Avertir si la vidéo n'indique pas de matrice de couleurs"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Avertir pour les vidéos HDR/WCG"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "Utiliser la matrice YCbCr de la vidéo si le script n'en a pas"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Faire correspondre la matrice YCbCr de la vidéo à l'ouverture"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5969,6 +6271,14 @@ msgstr "Affichage audio"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Curseur du lecteur"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Plage d'images actuelle"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Plage d'images précédente"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -7411,6 +7721,10 @@ msgstr "Audio et vidéo"
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
 msgstr "Synchronisation audio"
+
+#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
+#~ msgid "Set to video resolution"
+#~ msgstr "Définir la définition vidéo"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Synchronisation kanji"
