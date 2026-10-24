@@ -24,14 +24,12 @@ msgid "Language"
 msgstr "Taal"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "Gelieve de map de kiezen:"
+msgstr "Kies een taal:"
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
-msgstr ""
+msgstr "Basisrichting van tekst automatisch detecteren (alleen libass)"
 
 #: ../src/ass_style.cpp:197
 msgid "ANSI"
@@ -178,6 +176,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Een script in de map voor automatisch laden van Automatisatie kon niet "
+"worden geladen.\n"
+"Bekijk de fouten, los ze op en gebruik de knop 'Map voor automatisch laden "
+"opnieuw scannen' in Automatisatiebeheer om de scripts opnieuw te laden."
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -185,6 +187,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Meerdere scripts in de map voor automatisch laden van Automatisatie konden "
+"niet worden geladen.\n"
+"Bekijk de fouten, los ze op en gebruik de knop 'Map voor automatisch laden "
+"opnieuw scannen' in Automatisatiebeheer om de scripts opnieuw te laden."
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -192,6 +198,10 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Een script in de map voor automatisch laden van Automatisatie is geladen met "
+"waarschuwingen.\n"
+"Bekijk de waarschuwingen, los ze op en gebruik de knop 'Map voor automatisch "
+"laden opnieuw scannen' in Automatisatiebeheer om de scripts opnieuw te laden."
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -199,6 +209,10 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Meerdere scripts in de map voor automatisch laden van Automatisatie zijn "
+"geladen met waarschuwingen.\n"
+"Bekijk de waarschuwingen, los ze op en gebruik de knop 'Map voor automatisch "
+"laden opnieuw scannen' in Automatisatiebeheer om de scripts opnieuw te laden."
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -207,6 +221,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"Automatisatiescript verwezen met onbekend locatieteken.\n"
+"Gevonden locatieteken: %c\n"
+"Opgegeven bestandsnaam: %s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -221,28 +238,32 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"Het geopende ondertitelbestand bevat lokale automatisatiescripts. Wilt u de "
+"bijbehorende automatisatiescripts laden?\n"
+"\n"
+"Lijst met scripts:\n"
+"\n"
+"%s\n"
+"\n"
+"Laad bijbehorende automatisatiescripts alleen als u de auteurs vertrouwt! Ze "
+"zijn niet nodig om het ondertitelbestand te bekijken of te bewerken."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Macro: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Automatisch geladen automatisatiescripts opnieuw laden"
+msgstr "Bijbehorende automatisatiescripts laden?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "Nee"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "Globale autoladen-scripts"
+msgstr "Auteurs vertrouwen && scripts laden"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -252,6 +273,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"Het verwezen automatisatiescript is niet gevonden.\n"
+"Opgegeven bestandsnaam: %s\n"
+"Gezocht ten opzichte van: %s\n"
+"Opgeloste bestandsnaam: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -259,14 +284,17 @@ msgid ""
 "Failed to load Automation script '%s':\n"
 "%s"
 msgstr ""
+"Kan automatisatiescript '%s' niet laden:\n"
+"%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
-msgstr "Automatisatiescripts opnieuw laden"
+msgstr ""
+"Waarschuwing bij het laden van automatisatiescript '%s':\n"
+"%s"
 
 #: ../src/auto4_base.cpp:508
 #, c-format
@@ -289,18 +317,17 @@ msgid "File was not recognized as a script"
 msgstr "Bestand werd niet als script herkend"
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
-msgstr "Automatisatiescripts opnieuw laden"
+msgstr ""
+"Waarschuwing in automatisatiescript '%s':\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Kon stijl niet verwerken"
+msgstr "Kan de Lua-status niet initialiseren"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -309,12 +336,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Fout bij het initialiseren van Lua-script \"%s\":\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"Er werd geprobeerd een Automation 3-script te laden als Automation 4 "
+"Lua-script. Automation 3 wordt niet meer ondersteund."
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -322,21 +354,23 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Uitvoeringsfout in de validatiefunctie van de Lua-macro:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Actieve regel %d valt buiten het bereik (moet 1-%u zijn)"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Geselecteerde regel %d valt buiten het bereik (moet 1-%u zijn)"
 
 #: ../src/auto4_lua.cpp:907
 #, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr ""
+msgstr "Geselecteerde regel %d is geen dialoogregel"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -344,6 +378,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Uitvoeringsfout in de IsActive-functie van de Lua-macro:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -351,6 +387,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Uitvoeringsfout in de Lua-functie voor het configuratievenster:\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -386,7 +424,7 @@ msgstr "Audio + ondertitels"
 
 #: ../src/command/app.cpp:69
 msgid "Display audio and the subtitles grid only"
-msgstr ""
+msgstr "Alleen audio en het ondertitelraster weergeven"
 
 #: ../src/command/app.cpp:87
 msgid "&Full view"
@@ -398,7 +436,7 @@ msgstr "Volledige weergave"
 
 #: ../src/command/app.cpp:89
 msgid "Display audio, video and then subtitles grid"
-msgstr ""
+msgstr "Audio, video en daarna het ondertitelraster weergeven"
 
 #: ../src/command/app.cpp:107
 msgid "S&ubs Only View"
@@ -410,7 +448,7 @@ msgstr "Alleen ondertitels"
 
 #: ../src/command/app.cpp:109
 msgid "Display the subtitles grid only"
-msgstr ""
+msgstr "Alleen het ondertitelraster weergeven"
 
 #: ../src/command/app.cpp:123
 msgid "&Video+Subs View"
@@ -422,7 +460,7 @@ msgstr "Video + ondertitels"
 
 #: ../src/command/app.cpp:125
 msgid "Display video and the subtitles grid only"
-msgstr ""
+msgstr "Alleen video en het ondertitelraster weergeven"
 
 #: ../src/command/app.cpp:143
 msgid "E&xit"
@@ -449,12 +487,12 @@ msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
 msgstr ""
+"Aegisub moet opnieuw worden gestart om de nieuwe taal toe te passen. Nu "
+"opnieuw starten?"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "Over Aegisub"
+msgstr "Aegisub opnieuw starten?"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -500,7 +538,7 @@ msgstr "Globale sneltoets-overrides in-/uitschakelen"
 
 #: ../src/command/app.cpp:222
 msgid "Toggle global hotkey overrides (Medusa Mode)"
-msgstr ""
+msgstr "Globale sneltoets-overrides in-/uitschakelen (Medusa-modus)"
 
 #: ../src/command/app.cpp:237
 msgid "Toggle the main toolbar"
@@ -528,27 +566,27 @@ msgstr "Controleer of er een nieuwe versie van Aegisub beschikbaar is"
 
 #: ../src/command/app.cpp:270 ../src/command/app.cpp:271
 msgid "Minimize"
-msgstr ""
+msgstr "Minimaliseer"
 
 #: ../src/command/app.cpp:272
 msgid "Minimize the active window"
-msgstr ""
+msgstr "Het actieve venster minimaliseren"
 
 #: ../src/command/app.cpp:281 ../src/command/app.cpp:282
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: ../src/command/app.cpp:283
 msgid "Maximize the active window"
-msgstr ""
+msgstr "Het actieve venster maximaliseren"
 
 #: ../src/command/app.cpp:292 ../src/command/app.cpp:293
 msgid "Bring All to Front"
-msgstr ""
+msgstr "Alles naar voorgrond"
 
 #: ../src/command/app.cpp:294
 msgid "Bring forward all open documents to the front"
-msgstr ""
+msgstr "Alle geopende documenten naar de voorgrond brengen"
 
 #: ../src/command/audio.cpp:65
 msgid "&Close Audio"
@@ -560,7 +598,7 @@ msgstr "Audio sluiten"
 
 #: ../src/command/audio.cpp:67
 msgid "Close the currently open audio file"
-msgstr ""
+msgstr "Het geopende audiobestand sluiten"
 
 #: ../src/command/audio.cpp:77
 msgid "&Open Audio File..."
@@ -572,7 +610,7 @@ msgstr "Audiobestand openen"
 
 #: ../src/command/audio.cpp:79
 msgid "Open an audio file"
-msgstr ""
+msgstr "Een audiobestand openen"
 
 #: ../src/command/audio.cpp:82
 msgid "Audio Formats"
@@ -583,8 +621,6 @@ msgid "Video Formats"
 msgstr "Videoformaten"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
 msgstr "Audiobestand openen"
@@ -615,7 +651,7 @@ msgstr "Audio van video openen"
 
 #: ../src/command/audio.cpp:118
 msgid "Open the audio from the current video file"
-msgstr ""
+msgstr "De audio uit het huidige videobestand openen"
 
 #: ../src/command/audio.cpp:132
 msgid "&Spectrum Display"
@@ -647,13 +683,11 @@ msgstr "Audioclip aanmaken"
 
 #: ../src/command/audio.cpp:166
 msgid "Save an audio clip of the selected line"
-msgstr ""
+msgstr "Een audiofragment van de geselecteerde regel opslaan"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
-msgstr "Audioclip opslaan"
+msgstr "Audiofragment opslaan"
 
 #: ../src/command/audio.cpp:192 ../src/command/audio.cpp:193
 msgid "Play current audio selection"
@@ -671,7 +705,7 @@ msgstr "Huidige regel afspelen"
 
 #: ../src/command/audio.cpp:207
 msgid "Play the audio for the current line"
-msgstr ""
+msgstr "De audio van de huidige regel afspelen"
 
 #: ../src/command/audio.cpp:220 ../src/command/audio.cpp:221
 msgid "Play audio selection"
@@ -687,7 +721,7 @@ msgstr "Audioselectie afspelen of stoppen"
 
 #: ../src/command/audio.cpp:234
 msgid "Play selection, or stop playback if it's already playing"
-msgstr ""
+msgstr "Selectie afspelen, of het afspelen stoppen als het al bezig is"
 
 #: ../src/command/audio.cpp:249 ../src/command/audio.cpp:250
 msgid "Stop playing"
@@ -695,7 +729,7 @@ msgstr "Afspelen stoppen"
 
 #: ../src/command/audio.cpp:251
 msgid "Stop audio and video playback"
-msgstr ""
+msgstr "Afspelen van audio en video stoppen"
 
 #: ../src/command/audio.cpp:267 ../src/command/audio.cpp:268
 #: ../src/command/audio.cpp:269
@@ -769,28 +803,29 @@ msgstr "Ga naar selectie"
 #: ../src/command/audio.cpp:399
 msgid "Scroll the audio display to center on the current audio selection"
 msgstr ""
+"De audioweergave scrollen zodat de huidige audioselectie in het midden staat"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "Ga naar selectie"
+msgstr "Naar begin van selectie"
 
 #: ../src/command/audio.cpp:410
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
 msgstr ""
+"De audioweergave scrollen zodat het begin van de huidige audioselectie in "
+"het midden staat"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Ga naar selectie"
+msgstr "Naar einde van selectie"
 
 #: ../src/command/audio.cpp:421
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
 msgstr ""
+"De audioweergave scrollen zodat het einde van de huidige audioselectie in "
+"het midden staat"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -811,7 +846,7 @@ msgstr "De audioweergave naar rechts scrollen"
 #: ../src/command/audio.cpp:457 ../src/command/audio.cpp:458
 #: ../src/command/audio.cpp:459
 msgid "Auto scroll audio display to selected line"
-msgstr ""
+msgstr "Audioweergave automatisch naar geselecteerde regel scrollen"
 
 #: ../src/command/audio.cpp:474 ../src/command/audio.cpp:475
 #: ../src/command/audio.cpp:476
@@ -820,11 +855,11 @@ msgstr "Alle veranderingen automatisch toepassen"
 
 #: ../src/command/audio.cpp:491 ../src/command/audio.cpp:492
 msgid "Auto go to next line on commit"
-msgstr ""
+msgstr "Automatisch naar volgende regel bij bevestigen"
 
 #: ../src/command/audio.cpp:493
 msgid "Automatically go to next line on commit"
-msgstr ""
+msgstr "Bij bevestigen automatisch naar de volgende regel gaan"
 
 #: ../src/command/audio.cpp:508 ../src/command/audio.cpp:509
 #: ../src/command/audio.cpp:510
@@ -891,6 +926,9 @@ msgid ""
 "Open automation manager. Ctrl: Rescan autoload folder. Ctrl+Shift: Rescan "
 "autoload folder and reload all automation scripts"
 msgstr ""
+"Automatisatiebeheer openen. Ctrl: map voor automatisch laden opnieuw "
+"scannen. Ctrl+Shift: map voor automatisch laden opnieuw scannen en alle "
+"automatisatiescripts opnieuw laden"
 
 #: ../src/command/command.cpp:35
 #, c-format
@@ -907,60 +945,62 @@ msgstr "kleur instellen"
 
 #: ../src/command/edit.cpp:391
 msgid "Primary Color..."
-msgstr ""
+msgstr "Primaire kleur..."
 
 #: ../src/command/edit.cpp:392
 msgid "Primary Color"
-msgstr ""
+msgstr "Primaire kleur"
 
 #: ../src/command/edit.cpp:393
 msgid "Set the primary fill color (\\c) at the cursor position"
-msgstr ""
+msgstr "De primaire vulkleur (\\c) instellen op de cursorpositie"
 
 #: ../src/command/edit.cpp:403
 msgid "Secondary Color..."
-msgstr ""
+msgstr "Secundaire kleur..."
 
 #: ../src/command/edit.cpp:404
 msgid "Secondary Color"
-msgstr ""
+msgstr "Secundaire kleur"
 
 #: ../src/command/edit.cpp:405
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
-msgstr ""
+msgstr "De secundaire (karaoke-)vulkleur (\\2c) instellen op de cursorpositie"
 
 #: ../src/command/edit.cpp:415
 msgid "Outline Color..."
-msgstr ""
+msgstr "Randkleur..."
 
 #: ../src/command/edit.cpp:416
 msgid "Outline Color"
-msgstr ""
+msgstr "Randkleur"
 
 #: ../src/command/edit.cpp:417
 msgid "Set the outline color (\\3c) at the cursor position"
-msgstr ""
+msgstr "De randkleur (\\3c) instellen op de cursorpositie"
 
 #: ../src/command/edit.cpp:427
 msgid "Shadow Color..."
-msgstr ""
+msgstr "Schaduwkleur..."
 
 #: ../src/command/edit.cpp:428
 msgid "Shadow Color"
-msgstr ""
+msgstr "Schaduwkleur"
 
 #: ../src/command/edit.cpp:429
 msgid "Set the shadow color (\\4c) at the cursor position"
-msgstr ""
+msgstr "De schaduwkleur (\\4c) instellen op de cursorpositie"
 
 #: ../src/command/edit.cpp:439 ../src/command/edit.cpp:440
 msgid "Toggle Bold"
-msgstr ""
+msgstr "Vet in-/uitschakelen"
 
 #: ../src/command/edit.cpp:441
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
+"Vet (\\b) in-/uitschakelen voor de huidige selectie of op de huidige "
+"cursorpositie"
 
 #: ../src/command/edit.cpp:444
 msgid "toggle bold"
@@ -968,13 +1008,15 @@ msgstr "vet in-/uitschakelen"
 
 #: ../src/command/edit.cpp:451 ../src/command/edit.cpp:452
 msgid "Toggle Italics"
-msgstr ""
+msgstr "Cursief in-/uitschakelen"
 
 #: ../src/command/edit.cpp:453
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Cursief (\\i) in-/uitschakelen voor de huidige selectie of op de huidige "
+"cursorpositie"
 
 #: ../src/command/edit.cpp:456
 msgid "toggle italic"
@@ -982,13 +1024,15 @@ msgstr "cursief in-/uitschakelen"
 
 #: ../src/command/edit.cpp:463 ../src/command/edit.cpp:464
 msgid "Toggle Underline"
-msgstr ""
+msgstr "Onderstrepen in-/uitschakelen"
 
 #: ../src/command/edit.cpp:465
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Onderstrepen (\\u) in-/uitschakelen voor de huidige selectie of op de "
+"huidige cursorpositie"
 
 #: ../src/command/edit.cpp:468
 msgid "toggle underline"
@@ -996,13 +1040,15 @@ msgstr "Onderstrepen in-/uitschakelen"
 
 #: ../src/command/edit.cpp:475 ../src/command/edit.cpp:476
 msgid "Toggle Strikeout"
-msgstr ""
+msgstr "Doorhalen in-/uitschakelen"
 
 #: ../src/command/edit.cpp:477
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Doorhalen (\\s) in-/uitschakelen voor de huidige selectie of op de huidige "
+"cursorpositie"
 
 #: ../src/command/edit.cpp:480
 msgid "toggle strikeout"
@@ -1010,7 +1056,7 @@ msgstr "doorhalen in-/uitschakelen"
 
 #: ../src/command/edit.cpp:487
 msgid "Font Face..."
-msgstr ""
+msgstr "Lettertype..."
 
 #: ../src/command/edit.cpp:488 ../src/preferences_base.cpp:277
 msgid "Font Face"
@@ -1018,7 +1064,7 @@ msgstr "Lettertype"
 
 #: ../src/command/edit.cpp:489
 msgid "Select a font face and size"
-msgstr ""
+msgstr "Een lettertype en grootte kiezen"
 
 #: ../src/command/edit.cpp:516
 msgid "set font"
@@ -1046,7 +1092,7 @@ msgstr "Regels kopiëren"
 
 #: ../src/command/edit.cpp:608
 msgid "Copy subtitles to the clipboard"
-msgstr ""
+msgstr "Ondertitels naar het klembord kopiëren"
 
 #: ../src/command/edit.cpp:629
 msgid "Cu&t Lines"
@@ -1062,7 +1108,7 @@ msgstr "Ondertitels knippen"
 
 #: ../src/command/edit.cpp:638
 msgid "cut lines"
-msgstr ""
+msgstr "regels knippen"
 
 #: ../src/command/edit.cpp:646
 msgid "De&lete Lines"
@@ -1078,7 +1124,7 @@ msgstr "Geselecteerde regels verwijderen"
 
 #: ../src/command/edit.cpp:651
 msgid "delete lines"
-msgstr ""
+msgstr "regels verwijderen"
 
 #: ../src/command/edit.cpp:716
 msgid "duplicate lines"
@@ -1102,23 +1148,27 @@ msgstr "De geselecteerde regels dupliceren"
 
 #: ../src/command/edit.cpp:734 ../src/command/edit.cpp:735
 msgid "Split lines after current frame"
-msgstr ""
+msgstr "Regels splitsen na huidig frame"
 
 #: ../src/command/edit.cpp:736
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
 msgstr ""
+"De huidige regel splitsen in een regel die eindigt op het huidige frame en "
+"een regel die begint op het volgende frame"
 
 #: ../src/command/edit.cpp:746 ../src/command/edit.cpp:747
 msgid "Split lines before current frame"
-msgstr ""
+msgstr "Regels splitsen vóór huidig frame"
 
 #: ../src/command/edit.cpp:748
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
 msgstr ""
+"De huidige regel splitsen in een regel die eindigt op het vorige frame en "
+"een regel die begint op het huidige frame"
 
 #: ../src/command/edit.cpp:788
 msgid "As &Karaoke"
@@ -1130,7 +1180,7 @@ msgstr "Als karaoke"
 
 #: ../src/command/edit.cpp:790
 msgid "Join selected lines in a single one, as karaoke"
-msgstr ""
+msgstr "Geselecteerde regels samenvoegen tot één regel, als karaoke"
 
 #: ../src/command/edit.cpp:793
 msgid "join as karaoke"
@@ -1147,6 +1197,8 @@ msgstr "Aaneenschakelen"
 #: ../src/command/edit.cpp:801
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr ""
+"Geselecteerde regels samenvoegen tot één regel, met de tekst aan elkaar "
+"gevoegd"
 
 #: ../src/command/edit.cpp:804 ../src/command/edit.cpp:815
 msgid "join lines"
@@ -1165,6 +1217,8 @@ msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
 "remaining"
 msgstr ""
+"Geselecteerde regels samenvoegen tot één regel, met de tekst van de eerste "
+"en zonder de rest"
 
 #: ../src/command/edit.cpp:853
 msgid "&Paste Lines"
@@ -1200,7 +1254,7 @@ msgstr "Regels opnieuw combineren"
 
 #: ../src/command/edit.cpp:970
 msgid "Recombine subtitles which have been split and merged"
-msgstr ""
+msgstr "Ondertitels die zijn gesplitst en samengevoegd opnieuw combineren"
 
 #: ../src/command/edit.cpp:1040
 msgid "combining"
@@ -1213,6 +1267,7 @@ msgstr "Regels splitsen (op karaoke)"
 #: ../src/command/edit.cpp:1048
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr ""
+"Karaoketiming gebruiken om de regel in meerdere kleinere regels te splitsen"
 
 #: ../src/command/edit.cpp:1082
 msgid "splitting"
@@ -1228,6 +1283,8 @@ msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
+"De huidige regel splitsen op de cursor en de duur van de oorspronkelijke "
+"regel over de nieuwe regels verdelen"
 
 #: ../src/command/edit.cpp:1130 ../src/command/edit.cpp:1131
 #: ../src/subs_edit_ctrl.cpp:416
@@ -1239,20 +1296,24 @@ msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr ""
+"De huidige regel splitsen op de cursor en beide regels de tijden van de "
+"oorspronkelijke regel geven"
 
 #: ../src/command/edit.cpp:1141 ../src/command/edit.cpp:1142
 msgid "Split at cursor (at video frame)"
-msgstr ""
+msgstr "Splitsen op cursor (op videoframe)"
 
 #: ../src/command/edit.cpp:1143
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr ""
+"De huidige regel splitsen op de cursor en de duur van de regel verdelen op "
+"het huidige videoframe"
 
 #: ../src/command/edit.cpp:1159
 msgid "Redo last undone action"
-msgstr ""
+msgstr "Laatst ongedaan gemaakte actie opnieuw uitvoeren"
 
 #: ../src/command/edit.cpp:1164
 msgid "Nothing to &redo"
@@ -1274,7 +1335,7 @@ msgstr "%s opnieuw doen"
 
 #: ../src/command/edit.cpp:1185
 msgid "Undo last action"
-msgstr ""
+msgstr "Laatste actie ongedaan maken"
 
 #: ../src/command/edit.cpp:1190
 msgid "Nothing to &undo"
@@ -1296,15 +1357,17 @@ msgstr "%s ongedaan maken"
 
 #: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1211
 msgid "Revert"
-msgstr ""
+msgstr "Herstellen"
 
 #: ../src/command/edit.cpp:1212
 msgid "Revert the active line to its initial state (shown in the upper editor)"
 msgstr ""
+"De actieve regel herstellen naar de oorspronkelijke staat (getoond in de "
+"bovenste editor)"
 
 #: ../src/command/edit.cpp:1217
 msgid "revert line"
-msgstr ""
+msgstr "regel herstellen"
 
 #: ../src/command/edit.cpp:1223 ../src/command/edit.cpp:1224
 #: ../src/preferences.cpp:453
@@ -1313,19 +1376,19 @@ msgstr "Wissen"
 
 #: ../src/command/edit.cpp:1225
 msgid "Clear the current line's text"
-msgstr ""
+msgstr "De tekst van de huidige regel wissen"
 
 #: ../src/command/edit.cpp:1230 ../src/command/edit.cpp:1249
 msgid "clear line"
-msgstr ""
+msgstr "regel wissen"
 
 #: ../src/command/edit.cpp:1237 ../src/command/edit.cpp:1238
 msgid "Clear Text"
-msgstr ""
+msgstr "Tekst wissen"
 
 #: ../src/command/edit.cpp:1239
 msgid "Clear the current line's text, leaving override tags"
-msgstr ""
+msgstr "De tekst van de huidige regel wissen en de override-labels behouden"
 
 #: ../src/command/edit.cpp:1255 ../src/command/edit.cpp:1256
 #: ../src/command/tool.cpp:256
@@ -1334,11 +1397,11 @@ msgstr "Origineel invoegen"
 
 #: ../src/command/edit.cpp:1257
 msgid "Insert the original line text at the cursor"
-msgstr ""
+msgstr "De oorspronkelijke regeltekst op de cursor invoegen"
 
 #: ../src/command/edit.cpp:1265
 msgid "insert original"
-msgstr ""
+msgstr "origineel invoegen"
 
 #: ../src/command/grid.cpp:50 ../src/command/grid.cpp:51
 #: ../src/command/grid.cpp:62 ../src/command/grid.cpp:63
@@ -1570,7 +1633,7 @@ msgstr "Regels wisselen"
 
 #: ../src/command/grid.cpp:384
 msgid "Swap the two selected lines"
-msgstr ""
+msgstr "De twee geselecteerde regels verwisselen"
 
 #: ../src/command/grid.cpp:395
 msgid "swap lines"
@@ -1646,6 +1709,7 @@ msgstr "Keyframes sluiten"
 msgid ""
 "Discard the currently loaded keyframes and use those from the video, if any"
 msgstr ""
+"De geladen keyframes verwerpen en die van de video gebruiken, indien aanwezig"
 
 #: ../src/command/keyframe.cpp:66
 msgid "Open Keyframes..."
@@ -1657,13 +1721,11 @@ msgstr "Keyframes openen"
 
 #: ../src/command/keyframe.cpp:68
 msgid "Open a keyframe list file"
-msgstr ""
+msgstr "Een keyframelijstbestand openen"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open keyframes file"
 msgid "Open Keyframes File"
-msgstr "Keyframe-bestand openen"
+msgstr "Keyframebestand openen"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1675,20 +1737,16 @@ msgstr "Keyframes opslaan"
 
 #: ../src/command/keyframe.cpp:89
 msgid "Save the current list of keyframes to a file"
-msgstr ""
+msgstr "De huidige lijst met keyframes in een bestand opslaan"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Save Keyframes File"
-msgstr "Keyframes-bestand opslaan"
+msgstr "Keyframebestand opslaan"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "Bestanden"
+msgstr "Tekstbestanden"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1732,7 +1790,7 @@ msgstr "Bijlagen"
 
 #: ../src/command/subtitle.cpp:81
 msgid "Open the attachment manager dialog"
-msgstr ""
+msgstr "Het venster voor bijlagenbeheer openen"
 
 #: ../src/command/subtitle.cpp:92
 msgid "&Find..."
@@ -1744,7 +1802,7 @@ msgstr "Zoeken"
 
 #: ../src/command/subtitle.cpp:94
 msgid "Search for text in the subtitles"
-msgstr ""
+msgstr "Tekst zoeken in de ondertitels"
 
 #: ../src/command/subtitle.cpp:105
 msgid "Find &Next"
@@ -1756,7 +1814,7 @@ msgstr "Volgende zoeken"
 
 #: ../src/command/subtitle.cpp:107
 msgid "Find next match of last search"
-msgstr ""
+msgstr "Volgende overeenkomst van de laatste zoekopdracht zoeken"
 
 #: ../src/command/subtitle.cpp:134
 msgid "&After Current"
@@ -1768,7 +1826,7 @@ msgstr "Na huidige"
 
 #: ../src/command/subtitle.cpp:136
 msgid "Insert a new line after the current one"
-msgstr ""
+msgstr "Een nieuwe regel invoegen na de huidige"
 
 #: ../src/command/subtitle.cpp:168 ../src/command/subtitle.cpp:169
 msgid "After Current, at Video Time"
@@ -1776,7 +1834,7 @@ msgstr "Na huidige, op videotijd"
 
 #: ../src/command/subtitle.cpp:170
 msgid "Insert a new line after the current one, starting at video time"
-msgstr ""
+msgstr "Een nieuwe regel invoegen na de huidige, beginnend op de videotijd"
 
 #: ../src/command/subtitle.cpp:179
 msgid "&Before Current"
@@ -1788,7 +1846,7 @@ msgstr "Voor huidige"
 
 #: ../src/command/subtitle.cpp:181
 msgid "Insert a new line before the current one"
-msgstr ""
+msgstr "Een nieuwe regel invoegen vóór de huidige"
 
 #: ../src/command/subtitle.cpp:210 ../src/command/subtitle.cpp:211
 msgid "Before Current, at Video Time"
@@ -1796,7 +1854,7 @@ msgstr "Voor huidige, op videotijd"
 
 #: ../src/command/subtitle.cpp:212
 msgid "Insert a new line before the current one, starting at video time"
-msgstr ""
+msgstr "Een nieuwe regel invoegen vóór de huidige, beginnend op de videotijd"
 
 #: ../src/command/subtitle.cpp:238
 msgid "&New Subtitles"
@@ -1826,26 +1884,26 @@ msgstr "Ondertitels openen"
 
 #: ../src/command/subtitle.cpp:269
 msgid "Open a subtitles file"
-msgstr ""
+msgstr "Een ondertitelbestand openen"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
 msgstr "Ondertitelbestand openen"
 
 #: ../src/command/subtitle.cpp:282
 msgid "Open A&utosaved Subtitles..."
-msgstr ""
+msgstr "A&utomatisch opgeslagen ondertitels openen..."
 
 #: ../src/command/subtitle.cpp:283
 msgid "Open Autosaved Subtitles"
-msgstr ""
+msgstr "Automatisch opgeslagen ondertitels openen"
 
 #: ../src/command/subtitle.cpp:284
 msgid "Open a previous version of a file which was autosaved by Aegisub"
 msgstr ""
+"Een eerdere versie openen van een bestand dat Aegisub automatisch heeft "
+"opgeslagen"
 
 #: ../src/command/subtitle.cpp:297
 msgid "Open Subtitles with &Charset..."
@@ -1857,7 +1915,7 @@ msgstr "Ondertitels openen met tekenset"
 
 #: ../src/command/subtitle.cpp:299
 msgid "Open a subtitles file with a specific file encoding"
-msgstr ""
+msgstr "Een ondertitelbestand openen met een specifieke tekencodering"
 
 #: ../src/command/subtitle.cpp:307
 msgid "Charset"
@@ -1877,7 +1935,7 @@ msgstr "Ondertitels van video openen"
 
 #: ../src/command/subtitle.cpp:318
 msgid "Open the subtitles from the current video file"
-msgstr ""
+msgstr "De ondertitels uit het huidige videobestand openen"
 
 #: ../src/command/subtitle.cpp:334
 msgid "&Properties..."
@@ -1892,8 +1950,6 @@ msgid "Open script properties window"
 msgstr "Scripteigenschappen-venster openen"
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
 msgstr "Ondertitelbestand opslaan"
 
@@ -1912,7 +1968,7 @@ msgstr "Fout"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "Onbekende fout"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -1924,7 +1980,7 @@ msgstr "Ondertitels opslaan"
 
 #: ../src/command/subtitle.cpp:369
 msgid "Save the current subtitles"
-msgstr ""
+msgstr "De huidige ondertitels opslaan"
 
 #: ../src/command/subtitle.cpp:384
 msgid "Save Subtitles &as..."
@@ -1936,7 +1992,7 @@ msgstr "Ondertitels opslaan als"
 
 #: ../src/command/subtitle.cpp:386
 msgid "Save subtitles with another name"
-msgstr ""
+msgstr "Ondertitels opslaan onder een andere naam"
 
 #: ../src/command/subtitle.cpp:395 ../src/dialog_export.cpp:127
 #: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:411
@@ -1949,7 +2005,7 @@ msgstr "Alles selecteren"
 
 #: ../src/command/subtitle.cpp:397
 msgid "Select all dialogue lines"
-msgstr ""
+msgstr "Alle dialoogregels selecteren"
 
 #: ../src/command/subtitle.cpp:409 ../src/command/subtitle.cpp:410
 msgid "Select Visible"
@@ -1958,6 +2014,7 @@ msgstr "Zichtbare selecteren"
 #: ../src/command/subtitle.cpp:411
 msgid "Select all dialogue lines that are visible on the current video frame"
 msgstr ""
+"Alle dialoogregels selecteren die zichtbaar zijn op het huidige videoframe"
 
 #: ../src/command/subtitle.cpp:441
 msgid "Spell &Checker..."
@@ -1985,7 +2042,7 @@ msgstr "Einde wijzigen"
 
 #: ../src/command/time.cpp:107
 msgid "Change end times of lines to the next line's start time"
-msgstr ""
+msgstr "Eindtijden van regels wijzigen naar de begintijd van de volgende regel"
 
 #: ../src/command/time.cpp:116
 msgid "Change &Start"
@@ -1997,7 +2054,7 @@ msgstr "Begin wijzigen"
 
 #: ../src/command/time.cpp:118
 msgid "Change start times of lines to the previous line's end time"
-msgstr ""
+msgstr "Begintijden van regels wijzigen naar de eindtijd van de vorige regel"
 
 #: ../src/command/time.cpp:128
 msgid "Shift to &Current Frame"
@@ -2064,7 +2121,7 @@ msgstr "Lead-in en -out toevoegen"
 
 #: ../src/command/time.cpp:241
 msgid "Add both lead in and out to the selected lines"
-msgstr ""
+msgstr "Zowel aanloop als uitloop toevoegen aan de geselecteerde regels"
 
 #: ../src/command/time.cpp:253 ../src/command/time.cpp:254
 msgid "Add lead in"
@@ -2072,7 +2129,7 @@ msgstr "Lead-in toevoegen"
 
 #: ../src/command/time.cpp:255
 msgid "Add the lead in time to the selected lines"
-msgstr ""
+msgstr "De aanlooptijd toevoegen aan de geselecteerde regels"
 
 #: ../src/command/time.cpp:265 ../src/command/time.cpp:266
 msgid "Add lead out"
@@ -2080,7 +2137,7 @@ msgstr "Lead-out toevoegen"
 
 #: ../src/command/time.cpp:267
 msgid "Add the lead out time to the selected lines"
-msgstr ""
+msgstr "De uitlooptijd toevoegen aan de geselecteerde regels"
 
 #: ../src/command/time.cpp:276 ../src/command/time.cpp:277
 msgid "Increase length"
@@ -2164,7 +2221,7 @@ msgstr "Timecodes-bestand sluiten"
 
 #: ../src/command/timecode.cpp:53
 msgid "Close the currently open timecodes file"
-msgstr ""
+msgstr "Het geopende tijdcodebestand sluiten"
 
 #: ../src/command/timecode.cpp:68
 msgid "Open Timecodes File..."
@@ -2176,14 +2233,12 @@ msgstr "Timecodes-bestand openen"
 
 #: ../src/command/timecode.cpp:70
 msgid "Open a VFR timecodes v1 or v2 file"
-msgstr ""
+msgstr "Een VFR-tijdcodebestand v1 of v2 openen"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Timecodes-bestand openen"
+msgstr "Tijdcodebestand openen"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2195,18 +2250,16 @@ msgstr "Timecodes-bestand opslaan"
 
 #: ../src/command/timecode.cpp:85
 msgid "Save a VFR timecodes v2 file"
-msgstr ""
+msgstr "Een VFR-tijdcodebestand v2 opslaan"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
-msgstr "Timecodes-bestand opslaan"
+msgstr "Tijdcodebestand opslaan"
 
 #: ../src/command/timecode.cpp:103
 msgid "Error saving timecodes"
-msgstr ""
+msgstr "Fout bij het opslaan van tijdcodes"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2221,6 +2274,8 @@ msgid ""
 "Save a copy of subtitles in a different format or with processing applied to "
 "it"
 msgstr ""
+"Een kopie van de ondertitels opslaan in een andere indeling of met "
+"verwerking toegepast"
 
 #: ../src/command/tool.cpp:69
 msgid "&Fonts Collector..."
@@ -2244,7 +2299,7 @@ msgstr "Regels selecteren"
 
 #: ../src/command/tool.cpp:83
 msgid "Select lines based on defined criteria"
-msgstr ""
+msgstr "Regels selecteren op basis van opgegeven criteria"
 
 #: ../src/command/tool.cpp:93
 msgid "&Resample Resolution..."
@@ -2259,6 +2314,8 @@ msgid ""
 "Resample subtitles to maintain their current appearance at a different "
 "script resolution"
 msgstr ""
+"Ondertitels herschalen zodat ze er bij een andere scriptresolutie hetzelfde "
+"uitzien"
 
 #: ../src/command/tool.cpp:108
 msgid "St&yling Assistant..."
@@ -2309,7 +2366,7 @@ msgstr "Stijlbeheerder"
 
 #: ../src/command/tool.cpp:152
 msgid "Open the styles manager"
-msgstr ""
+msgstr "Stijlbeheer openen"
 
 #: ../src/command/tool.cpp:162
 msgid "&Kanji Timer..."
@@ -2321,7 +2378,7 @@ msgstr "Kanji-timer"
 
 #: ../src/command/tool.cpp:164
 msgid "Open the Kanji timer copier"
-msgstr ""
+msgstr "De kanji-timer openen"
 
 #: ../src/command/tool.cpp:174
 msgid "&Timing Post-Processor..."
@@ -2336,6 +2393,8 @@ msgid ""
 "Post-process the subtitle timing to add lead-ins and lead-outs, snap timing "
 "to scene changes, etc."
 msgstr ""
+"De ondertiteltiming nabewerken om aanlopen en uitlopen toe te voegen, timing "
+"op scènewissels af te stemmen, enz."
 
 #: ../src/command/tool.cpp:186
 msgid "&Translation Assistant..."
@@ -2388,7 +2447,7 @@ msgstr "Bioscoop (2.35)"
 
 #: ../src/command/video.cpp:84
 msgid "Force video to 2.35 aspect ratio"
-msgstr ""
+msgstr "Video forceren naar beeldverhouding 2,35"
 
 #: ../src/command/video.cpp:100
 msgid "C&ustom..."
@@ -2400,7 +2459,7 @@ msgstr "Aangepast"
 
 #: ../src/command/video.cpp:102
 msgid "Force video to a custom aspect ratio"
-msgstr ""
+msgstr "Video forceren naar een aangepaste beeldverhouding"
 
 #: ../src/command/video.cpp:113
 msgid ""
@@ -2433,7 +2492,7 @@ msgstr "Stan&daard"
 
 #: ../src/command/video.cpp:145
 msgid "Use video's original aspect ratio"
-msgstr ""
+msgstr "Oorspronkelijke beeldverhouding van de video gebruiken"
 
 #: ../src/command/video.cpp:161
 msgid "&Fullscreen (4:3)"
@@ -2445,7 +2504,7 @@ msgstr "Traditioneel (4:3)"
 
 #: ../src/command/video.cpp:163
 msgid "Force video to 4:3 aspect ratio"
-msgstr ""
+msgstr "Video forceren naar beeldverhouding 4:3"
 
 #: ../src/command/video.cpp:179
 msgid "&Widescreen (16:9)"
@@ -2457,7 +2516,7 @@ msgstr "Breedbeeld (16:9)"
 
 #: ../src/command/video.cpp:181
 msgid "Force video to 16:9 aspect ratio"
-msgstr ""
+msgstr "Video forceren naar beeldverhouding 16:9"
 
 #: ../src/command/video.cpp:198
 msgid "&Close Video"
@@ -2469,7 +2528,7 @@ msgstr "Video sluiten"
 
 #: ../src/command/video.cpp:200
 msgid "Close the currently open video file"
-msgstr ""
+msgstr "Het geopende videobestand sluiten"
 
 #: ../src/command/video.cpp:209 ../src/command/video.cpp:210
 msgid "Copy coordinates to Clipboard"
@@ -2483,16 +2542,16 @@ msgstr ""
 
 #: ../src/command/video.cpp:220 ../src/command/video.cpp:221
 msgid "Cycle active subtitles provider"
-msgstr ""
+msgstr "Actieve ondertitelprovider wisselen"
 
 #: ../src/command/video.cpp:222
 msgid "Cycle through the available subtitles providers"
-msgstr ""
+msgstr "Door de beschikbare ondertitelproviders wisselen"
 
 #: ../src/command/video.cpp:233
 #, c-format
 msgid "Subtitles provider set to %s"
-msgstr ""
+msgstr "Ondertitelprovider ingesteld op %s"
 
 #: ../src/command/video.cpp:240
 msgid "&Detach Video"
@@ -2507,6 +2566,7 @@ msgid ""
 "Detach the video display from the main window, displaying it in a separate "
 "Window"
 msgstr ""
+"De videoweergave losmaken van het hoofdvenster en in een apart venster tonen"
 
 #: ../src/command/video.cpp:260
 msgid "Show &Video Details"
@@ -2518,7 +2578,7 @@ msgstr "Videodetails weergeven"
 
 #: ../src/command/video.cpp:262
 msgid "Show video details"
-msgstr ""
+msgstr "Videodetails tonen"
 
 #: ../src/command/video.cpp:272 ../src/command/video.cpp:273
 msgid "Toggle video slider focus"
@@ -2528,6 +2588,7 @@ msgstr "Focus op videoschuifbalk schakelen"
 msgid ""
 "Toggle focus between the video slider and the previous thing to have focus"
 msgstr ""
+"Focus wisselen tussen de videoschuifbalk en het vorige element met focus"
 
 #: ../src/command/video.cpp:299 ../src/command/video.cpp:300
 msgid "Copy image to Clipboard"
@@ -2550,13 +2611,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:321 ../src/command/video.cpp:322
 msgid "Copy image to Clipboard (only subtitles)"
-msgstr ""
+msgstr "Afbeelding naar klembord kopiëren (alleen ondertitels)"
 
 #: ../src/command/video.cpp:323
 msgid ""
 "Copy the currently displayed subtitles to the clipboard, with transparent "
 "background"
 msgstr ""
+"De nu weergegeven ondertitels met transparante achtergrond naar het klembord "
+"kopiëren"
 
 #: ../src/command/video.cpp:332 ../src/command/video.cpp:333
 msgid "Next Frame"
@@ -2572,7 +2635,7 @@ msgstr "Volgende grens"
 
 #: ../src/command/video.cpp:345
 msgid "Seek to the next beginning or end of a subtitle"
-msgstr ""
+msgstr "Naar het volgende begin of einde van een ondertitel springen"
 
 #: ../src/command/video.cpp:372 ../src/command/video.cpp:373
 msgid "Next Keyframe"
@@ -2601,7 +2664,7 @@ msgstr "Vorige grens"
 
 #: ../src/command/video.cpp:412
 msgid "Seek to the previous beginning or end of a subtitle"
-msgstr ""
+msgstr "Naar het vorige begin of einde van een ondertitel springen"
 
 #: ../src/command/video.cpp:439 ../src/command/video.cpp:440
 msgid "Previous Keyframe"
@@ -2640,13 +2703,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:534 ../src/command/video.cpp:535
 msgid "Save PNG snapshot (only subtitles)"
-msgstr ""
+msgstr "PNG-momentopname opslaan (alleen ondertitels)"
 
 #: ../src/command/video.cpp:536
 msgid ""
 "Save the currently displayed subtitles with transparent background to a PNG "
 "file in the video's directory"
 msgstr ""
+"De nu weergegeven ondertitels met transparante achtergrond opslaan als "
+"PNG-bestand in de map van de video"
 
 #: ../src/command/video.cpp:546
 msgid "&Jump to..."
@@ -2670,7 +2735,7 @@ msgstr "Video naar einde springen"
 
 #: ../src/command/video.cpp:562
 msgid "Jump the video to the end frame of current subtitle"
-msgstr ""
+msgstr "De video naar het eindframe van de huidige ondertitel laten springen"
 
 #: ../src/command/video.cpp:573
 msgid "Jump Video to &Start"
@@ -2682,7 +2747,7 @@ msgstr "Video naar begin springen"
 
 #: ../src/command/video.cpp:575
 msgid "Jump the video to the start frame of current subtitle"
-msgstr ""
+msgstr "De video naar het beginframe van de huidige ondertitel laten springen"
 
 #: ../src/command/video.cpp:586
 msgid "&Open Video..."
@@ -2694,11 +2759,9 @@ msgstr "Video openen"
 
 #: ../src/command/video.cpp:588
 msgid "Open a video file"
-msgstr ""
+msgstr "Een videobestand openen"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
 msgstr "Videobestand openen"
 
@@ -2712,7 +2775,7 @@ msgstr "Dummy-video gebruiken"
 
 #: ../src/command/video.cpp:604
 msgid "Open a placeholder video clip with solid color"
-msgstr ""
+msgstr "Een tijdelijke videoclip met een effen kleur openen"
 
 #: ../src/command/video.cpp:616 ../src/command/video.cpp:617
 msgid "Toggle autoscroll of video"
@@ -2721,26 +2784,24 @@ msgstr "Autoscrollen van video in-/uitschakelen"
 #: ../src/command/video.cpp:618
 msgid "Toggle automatically seeking video to the start time of selected lines"
 msgstr ""
+"Video automatisch naar de begintijd van geselecteerde regels laten springen "
+"in-/uitschakelen"
 
 #: ../src/command/video.cpp:633 ../src/command/video.cpp:634
 msgid "Play"
 msgstr "Afspelen"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
-msgstr "Video beginnen afspelen op deze positie"
+msgstr "De video vanaf deze positie afspelen"
 
 #: ../src/command/video.cpp:645 ../src/command/video.cpp:646
 msgid "Play line"
 msgstr "Regel afspelen"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play current line"
 msgid "Play the video for the current line"
-msgstr "Huidige regel afspelen"
+msgstr "De video van de huidige regel afspelen"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2760,17 +2821,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "Video&verschuiving herstellen"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "Video sluiten"
+msgstr "Videoverschuiving herstellen"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "De positie van de video in de videoweergave herstellen"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2898,70 +2957,56 @@ msgid "Line"
 msgstr "Lijn"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Voegt een lijn in"
+msgstr "Een lijn toevoegen"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Bikubisch"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Voegt een bikubische bézierkromme toe"
+msgstr "Een bicubische bézierkromme toevoegen"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Converteren"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Converteert een segment tussen lijn en bikubisch"
+msgstr "Een segment omzetten tussen lijn en bicubische kromme"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Invoegen"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "Voegt een bedieningspunt in"
+msgstr "Een controlepunt invoegen"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "Verwijderen"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "Verwijdert een bedieningspunt"
+msgstr "Een controlepunt verwijderen"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "Vrije hand"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "Tekent een vorm met de vrije hand"
+msgstr "Een vrije vorm tekenen"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "Vrije hand effen"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Tekent een effen vrijehand-vorm"
+msgstr "Een afgevlakte vrije vorm tekenen"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3023,20 +3068,16 @@ msgid "Choose file to be attached"
 msgstr "Bij te sluiten bestand kiezen"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Lettertype"
+msgstr "Lettertypebestanden"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "lettertypebestand bijsluiten"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "afbeeldingsbestand bijsluiten"
+msgstr "Afbeeldingsbestanden"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3097,7 +3138,7 @@ msgstr "Automatisatiescript toevoegen"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "Script '%s' is al geladen"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3115,18 +3156,7 @@ msgid "Scripting engines installed:"
 msgstr "Geïnstalleerde scripting-engines:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3138,15 +3168,13 @@ msgid ""
 "State: %s\n"
 msgstr ""
 "\n"
-"Scriptinfo:\n"
+"Scriptinformatie:\n"
 "Naam: %s\n"
 "Beschrijving: %s\n"
 "Auteur: %s\n"
 "Versie: %s\n"
 "Volledig pad: %s\n"
 "Status: %s\n"
-"\n"
-"Fucties door script voorzien:"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3158,17 +3186,16 @@ msgstr "Laden mislukt"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "Geladen met waarschuwingen"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: Waarschuwing"
+msgstr "Waarschuwing: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "Functies die het script biedt:\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3186,7 +3213,7 @@ msgstr "Automatisatiescript-info"
 
 #: ../src/dialog_autosave.cpp:67
 msgid "Open autosave file"
-msgstr ""
+msgstr "Automatisch opgeslagen bestand openen"
 
 #: ../src/dialog_autosave.cpp:71 ../src/preferences.cpp:113
 msgid "Files"
@@ -3194,21 +3221,21 @@ msgstr "Bestanden"
 
 #: ../src/dialog_autosave.cpp:76
 msgid "Versions"
-msgstr ""
+msgstr "Versies"
 
 #: ../src/dialog_autosave.cpp:86
 msgid "Open"
-msgstr ""
+msgstr "Openen"
 
 #: ../src/dialog_autosave.cpp:95
 #, c-format
 msgid "%s [ORIGINAL BACKUP]"
-msgstr ""
+msgstr "%s [OORSPRONKELIJKE BACK-UP]"
 
 #: ../src/dialog_autosave.cpp:96
 #, c-format
 msgid "%s [RECOVERED]"
-msgstr ""
+msgstr "%s [HERSTELD]"
 
 #: ../src/dialog_colorpicker.cpp:527
 msgid "Select Color"
@@ -3268,7 +3295,7 @@ msgstr "Rood:"
 
 #: ../src/dialog_colorpicker.cpp:609
 msgid "Alpha:"
-msgstr ""
+msgstr "Alfa:"
 
 #: ../src/dialog_colorpicker.cpp:616 ../src/dialog_colorpicker.cpp:619
 msgid "Hue:"
@@ -3293,51 +3320,51 @@ msgstr "Video: %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480 (SD volledig scherm)"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480 (SD anamorf)"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360 (SD breedbeeld)"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396 (SD breedbeeld)"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352 (SD breedbeeld MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400 (SD breedbeeld MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576 (SuperPAL breedbeeld)"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720 (HD 720p)"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080 (FHD 1080p)"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440 (QHD 1440p)"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160 (4K UHD 2160p)"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920 (FHD staand)"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3371,7 +3398,7 @@ msgstr "Duur (frames):"
 #: ../src/dialog_dummy_video.cpp:180
 #, c-format
 msgid "Resulting duration: %s"
-msgstr ""
+msgstr "Resulterende duur: %s"
 
 #: ../src/dialog_export.cpp:102
 msgid "Export"
@@ -3402,17 +3429,13 @@ msgid "Export..."
 msgstr "Exporteren..."
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
 msgstr "Ondertitelbestand exporteren"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Fout bij importeren van stijlen"
+msgstr "Fout bij het exporteren van ondertitels"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3546,6 +3569,8 @@ msgstr "Timecode-compensatie:"
 #, c-format
 msgid "* An error occurred when enumerating the used fonts: %s.\n"
 msgstr ""
+"* Er is een fout opgetreden bij het opsommen van de gebruikte lettertypen: "
+"%s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:115
 msgid "Symlinking fonts to folder...\n"
@@ -3562,12 +3587,12 @@ msgstr "Lettertypen naar archief kopiëren...\n"
 #: ../src/dialog_fonts_collector.cpp:134
 #, c-format
 msgid "* Failed to create directory '%s': %s.\n"
-msgstr ""
+msgstr "* Kan map '%s' niet aanmaken: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:145
 #, c-format
 msgid "* Failed to open %s.\n"
-msgstr ""
+msgstr "* Kan %s niet openen.\n"
 
 #: ../src/dialog_fonts_collector.cpp:200
 #, c-format
@@ -3666,7 +3691,7 @@ msgstr "Selecteer archief-bestandsnaam"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Zip-archieven"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3709,8 +3734,6 @@ msgid "Dest: "
 msgstr "Doel:"
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "Kanji-timer"
 
@@ -3732,10 +3755,8 @@ msgid "Commands"
 msgstr "Commando's"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Kanji proberen &interpoleren."
+msgstr "Proberen kanji te &interpoleren"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3815,7 +3836,7 @@ msgstr "Selecteer de velden waar u wilt over plakken:"
 
 #: ../src/dialog_paste_over.cpp:65
 msgid "Comment"
-msgstr ""
+msgstr "Opmerking"
 
 #: ../src/dialog_paste_over.cpp:69 ../src/grid_column.cpp:202
 #: ../src/grid_column.cpp:203
@@ -3912,10 +3933,22 @@ msgstr "Resolutie"
 msgid "From &video"
 msgstr "Van &video"
 
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Script: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "Uit video"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Opmaak: "
+
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
 msgid "YCbCr Matrix:"
-msgstr ""
+msgstr "YCbCr-matrix:"
 
 #: ../src/dialog_properties.cpp:155
 msgid "0: Smart wrapping, top line is wider"
@@ -3955,11 +3988,11 @@ msgstr "eigenschappen-verandering"
 
 #: ../src/dialog_resample.cpp:114
 msgid "Source Resolution"
-msgstr ""
+msgstr "Bronresolutie"
 
 #: ../src/dialog_resample.cpp:115
 msgid "Destination Resolution"
-msgstr ""
+msgstr "Doelresolutie"
 
 #: ../src/dialog_resample.cpp:116
 msgid "Margin offset"
@@ -3971,27 +4004,27 @@ msgstr "&Symmetrisch"
 
 #: ../src/dialog_resample.cpp:152
 msgid "From s&cript"
-msgstr ""
+msgstr "Uit s&cript"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Add borders"
-msgstr ""
+msgstr "Randen toevoegen"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Manual"
-msgstr ""
+msgstr "Handmatig"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Remove borders"
-msgstr ""
+msgstr "Randen verwijderen"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Stretch"
-msgstr ""
+msgstr "Uitrekken"
 
 #: ../src/dialog_resample.cpp:156
 msgid "Aspect Ratio Handling"
-msgstr ""
+msgstr "Omgang met beeldverhouding"
 
 #: ../src/dialog_search_replace.cpp:47
 msgid "Replace"
@@ -4019,7 +4052,7 @@ msgstr "Commentaren over&slaan"
 
 #: ../src/dialog_search_replace.cpp:81
 msgid "S&kip Override Tags"
-msgstr ""
+msgstr "Override-labels &overslaan"
 
 #: ../src/dialog_search_replace.cpp:87 ../src/dialog_selection.cpp:139
 msgid "&Text"
@@ -4027,15 +4060,15 @@ msgstr "&Tekst"
 
 #: ../src/dialog_search_replace.cpp:87
 msgid "A&ctor"
-msgstr ""
+msgstr "A&cteur"
 
 #: ../src/dialog_search_replace.cpp:87
 msgid "St&yle"
-msgstr ""
+msgstr "St&ijl"
 
 #: ../src/dialog_search_replace.cpp:88
 msgid "A&ll rows"
-msgstr ""
+msgstr "A&lle rijen"
 
 #: ../src/dialog_search_replace.cpp:88 ../src/dialog_shift_times.cpp:170
 msgid "Selected &rows"
@@ -4138,33 +4171,33 @@ msgid "Set se&lection"
 msgstr "Se&lectie instellen"
 
 #: ../src/dialog_selection.cpp:215
-#, fuzzy, c-format
+#, c-format
 msgid "Selection was set to one line"
 msgid_plural "Selection was set to %u lines"
-msgstr[0] "Selectie werd op een regel ingesteld"
-msgstr[1] "Selectie werd op een regel ingesteld"
+msgstr[0] "Selectie is ingesteld op één regel"
+msgstr[1] "Selectie is ingesteld op %u regels"
 
 #: ../src/dialog_selection.cpp:216
 msgid "Selection was set to no lines"
 msgstr "Selectie werd op geen regels ingesteld"
 
 #: ../src/dialog_selection.cpp:222
-#, fuzzy, c-format
+#, c-format
 msgid "One line was added to selection"
 msgid_plural "%u lines were added to selection"
-msgstr[0] "Er werd een regel toegevoegd aan de selectie"
-msgstr[1] "Er werd een regel toegevoegd aan de selectie"
+msgstr[0] "Eén regel is aan de selectie toegevoegd"
+msgstr[1] "%u regels zijn aan de selectie toegevoegd"
 
 #: ../src/dialog_selection.cpp:223
 msgid "No lines were added to selection"
 msgstr "Er werden geen regels toegevoegd aan de selectie"
 
 #: ../src/dialog_selection.cpp:234
-#, fuzzy, c-format
+#, c-format
 msgid "One line was removed from selection"
 msgid_plural "%u lines were removed from selection"
-msgstr[0] "Er werd een regel verwijderd van de selectie"
-msgstr[1] "Er werd een regel verwijderd van de selectie"
+msgstr[0] "Eén regel is uit de selectie verwijderd"
+msgstr[1] "%u regels zijn uit de selectie verwijderd"
 
 #: ../src/dialog_selection.cpp:235
 msgid "No lines were removed from selection"
@@ -4182,8 +4215,8 @@ msgstr "niet-opgeslagen"
 #, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 frame"
+msgstr[1] "%s frames"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4315,20 +4348,16 @@ msgid "Misspelled word:"
 msgstr "Verkeerd gespeld woord:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Geen spellingscontrole-suggesties"
+msgstr "Geen spellingcontrole beschikbaar."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Geen spellingscontrole-suggesties"
+msgstr "Geen woordenboeken voor spellingcontrole beschikbaar."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
-msgstr ""
+msgstr "Woorden in &HOOFDLETTERS negeren"
 
 #: ../src/dialog_spellchecker.cpp:187
 msgid "&Replace"
@@ -4348,7 +4377,7 @@ msgstr "Aan woor&denlijst toevoegen"
 
 #: ../src/dialog_spellchecker.cpp:212
 msgid "Remove fro&m dictionary"
-msgstr ""
+msgstr "Uit woordenboek verwijdere&n"
 
 #: ../src/dialog_spellchecker.cpp:279
 msgid "Aegisub has finished checking spelling of this script."
@@ -4372,7 +4401,7 @@ msgstr "Stijl-editor"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "Randvakken"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4381,7 +4410,7 @@ msgstr "Rand"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "Schaduwvak (alleen libass)"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4466,6 +4495,7 @@ msgstr "Afstand van boven/onderrand, in pixels"
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
 msgstr ""
+"Of er een gewone rand of ondoorzichtige vakken rond de tekst worden getekend"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4536,10 +4566,8 @@ msgid "Shadow:"
 msgstr "Schaduw:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "Stijlen sorteren"
+msgstr "Randstijl:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4575,11 +4603,11 @@ msgstr "Kleur van de voorbeeld-achtergrond"
 
 #: ../src/dialog_style_editor.cpp:431
 msgid "Style name conflict"
-msgstr ""
+msgstr "Conflict in stijlnaam"
 
 #: ../src/dialog_style_editor.cpp:431
 msgid "There is already a style with this name. Please choose another name."
-msgstr ""
+msgstr "Er bestaat al een stijl met deze naam. Kies een andere naam."
 
 #: ../src/dialog_style_editor.cpp:443
 msgid ""
@@ -4645,11 +4673,11 @@ msgid "Could not parse style"
 msgstr "Kon stijl niet verwerken"
 
 #: ../src/dialog_style_manager.cpp:248
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete this style?"
 msgid_plural "Are you sure you want to delete these %d styles?"
 msgstr[0] "Weet u zeker dat u deze stijl wilt verwijderen?"
-msgstr[1] "Weet u zeker dat u deze stijl wilt verwijderen?"
+msgstr[1] "Weet u zeker dat u deze %d stijlen wilt verwijderen?"
 
 #: ../src/dialog_style_manager.cpp:273
 msgid "Catalog of available storages"
@@ -4767,10 +4795,8 @@ msgid "style delete"
 msgstr "stijl verwijderen"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Ondertitelbestand exporteren"
+msgstr "Niet-ondersteunde ondertitelindeling"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -4879,7 +4905,7 @@ msgstr "Commentaarteken:"
 
 #: ../src/dialog_text_import.cpp:61
 msgid "Include blank lines"
-msgstr ""
+msgstr "Lege regels opnemen"
 
 #: ../src/dialog_timing_processor.cpp:157
 msgid "Apply to styles"
@@ -5115,12 +5141,12 @@ msgstr "Mij over een &week herinneren"
 
 #: ../src/dialog_version_check.cpp:295
 msgid "Curl could not be initialized."
-msgstr ""
+msgstr "Curl kon niet worden geïnitialiseerd."
 
 #: ../src/dialog_version_check.cpp:317
 #, c-format
 msgid "Checking for updates failed: %s."
-msgstr ""
+msgstr "Controleren op updates mislukt: %s."
 
 #: ../src/dialog_version_check.cpp:345
 msgid "An update to Aegisub was found."
@@ -5177,20 +5203,144 @@ msgid "Resolution:"
 msgstr "Resolutie:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "%s frames"
-msgstr[1] "%s frames"
+msgstr[0] "%d frame (%s)"
+msgstr[1] "%d frames (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "Lengte:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Werkelijke kleurmatrix:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Geforceerde kleurmatrix:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Werkelijk kleurbereik:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Geforceerd kleurbereik:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Decoder:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"Voor de geladen video is geen kleurmatrix opgegeven. Aegisub gaat uit van "
+"kleurmatrix %s, maar het is niet gegarandeerd dat andere programma's "
+"dezelfde matrix aannemen. Daardoor kan de video in verschillende "
+"mediaspelers andere kleuren hebben en kunnen de kleuren van de ondertitels "
+"afwijken van die van de video.\n"
+" \n"
+"Overweeg uw video te voorzien van een kleurmatrix-label, zodat hij in alle "
+"spelers hetzelfde wordt weergegeven en de ondertitelkleuren betrouwbaar "
+"overeenkomen met de videokleuren."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Video zonder label"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"De geladen video heeft HDR- en/of WCG-kleuren. Gewone dialoogondertitels "
+"werken prima bij zulke video's, maar videokleuren nabootsen met ondertitels "
+"is bij HDR- en/of WCG-beelden niet mogelijk."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "HDR- en/of WCG-video"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Voor het huidige ondertitelbestand is geen YCbCr-matrix ingesteld.\n"
+"\n"
+"Als u dit ondertitelbestand wilt gebruiken met het zojuist geladen "
+"videobestand,\n"
+"stel de YCbCr-matrix van het ondertitelbestand dan in op de kleurruimte van "
+"de video (\"%s\").\n"
+"\n"
+"Als u een ander videobestand wilt gebruiken, kunt u\n"
+"de YCbCr-matrix leeg laten tot u het juiste videobestand laadt.\n"
+"\n"
+"Deze vraag kan worden ingesteld in de voorkeuren."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "YCbCr-matrix van het script instellen?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "YCbCr-matrix niet instellen"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "YCbCr-matrix van het script instellen op die van de video (\"%s\")"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"De aanbevolen YCbCr-matrix van deze video (\"%s\") verschilt van de "
+"YCbCr-matrix van het ondertitelbestand (\"%s\").\n"
+"\n"
+"Als de kleuren van deze nieuwe video er hetzelfde uitzien als die van de "
+"video waarvoor het ondertitelbestand oorspronkelijk is gemaakt,\n"
+"moet de YCbCr-matrix van het ondertitelbestand worden ingesteld op die van "
+"de video."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "YCbCr-matrices komen niet overeen"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "YCbCr-matrix van het script behouden (\"%s\")"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5216,29 +5366,152 @@ msgstr ""
 "Resolutie van ondertitels aanpassen zodat ze overeenkomt met die van de "
 "video?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr ""
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Resolutie behouden"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
-msgstr ""
+msgstr "Script herschalen (uitrekken naar nieuwe beeldverhouding)"
 
 #: ../src/dialog_video_properties.cpp:60
 msgid "Resample script (add borders)"
-msgstr ""
+msgstr "Script herschalen (randen toevoegen)"
 
 #: ../src/dialog_video_properties.cpp:61
 msgid "Resample script (remove borders)"
-msgstr ""
+msgstr "Script herschalen (randen verwijderen)"
 
 #: ../src/dialog_video_properties.cpp:68
 msgid "Resample script"
+msgstr "Script herschalen"
+
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
 msgstr ""
+"Voor het huidige ondertitelbestand is geen opmaakresolutie ingesteld.\n"
+"\n"
+"Als u dit ondertitelbestand wilt gebruiken met het zojuist geladen "
+"videobestand,\n"
+"stel de opmaakresolutie van het ondertitelbestand dan in op de "
+"weergaveresolutie van de video.\n"
+"\n"
+"Als u een ander videobestand wilt gebruiken, kunt u\n"
+"de opmaakresolutie leeg laten tot u het juiste videobestand laadt.\n"
+"\n"
+"Als u een bestaand oud ondertitelbestand aanpast dat nog geen\n"
+"opmaakresolutie heeft, stel die dan in op de resolutie\n"
+"van de video waarop de ondertitels bedoeld waren.\n"
+"Vaak is dat dezelfde als de scriptresolutie van het bestand. (%d × %d)\n"
+"\n"
+"Deze vraag kan worden ingesteld in de voorkeuren."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Opmaakresolutie van het script instellen?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Opmaakresolutie niet instellen"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "Opmaakresolutie van het script instellen op die van de video (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr ""
+"Opmaakresolutie van het script instellen op de scriptresolutie (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"De resolutie van de geladen video en de opmaakresolutie van de ondertitels "
+"komen niet overeen.\n"
+"\n"
+"Videoresolutie:    %d × %d\n"
+"Opmaakresolutie ondertitels:    %d × %d\n"
+"\n"
+"Meestal is dat geen probleem en kunt u de opmaakresolutie van het "
+"ondertitelbestand behouden.\n"
+"Als uw ondertitelbestand geen belangrijke opmaak bevat en u nu wilt opmaken\n"
+"voor de zojuist geladen video, kunt u de opmaakresolutie van het script\n"
+"instellen op de weergaveresolutie van de video."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"De resolutie van de geladen video en de opmaakresolutie van de ondertitels "
+"hebben een andere beeldverhouding.\n"
+"\n"
+"Videoresolutie:    %d × %d\n"
+"Opmaakresolutie ondertitels:    %d × %d\n"
+"\n"
+"Opmaakresolutie van de ondertitels aanpassen aan de video?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Opmaakresoluties komen niet overeen"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Opmaakresolutie behouden (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "YCbCr-matrix wijzigen"
 
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "scriptresolutie wijzigen"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "opmaakresolutie wijzigen"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5326,12 +5599,13 @@ msgstr "Videospoor kiezen"
 #: ../src/font_file_lister.cpp:67
 #, c-format
 msgid "Style '%s' does not exist\n"
-msgstr ""
+msgstr "Stijl '%s' bestaat niet\n"
 
 #: ../src/font_file_lister.cpp:154
 #, c-format
 msgid "Font '%s' is used in a drawing, but not in any text.\n"
 msgstr ""
+"Lettertype '%s' wordt gebruikt in een tekening, maar in geen enkele tekst.\n"
 
 #: ../src/font_file_lister.cpp:160
 #, c-format
@@ -5346,12 +5620,12 @@ msgstr "'%s' gevonden in '%s'\n"
 #: ../src/font_file_lister.cpp:174
 #, c-format
 msgid "'%s' does not have a bold variant.\n"
-msgstr ""
+msgstr "'%s' heeft geen vette variant.\n"
 
 #: ../src/font_file_lister.cpp:176
 #, c-format
 msgid "'%s' does not have an italic variant.\n"
-msgstr ""
+msgstr "'%s' heeft geen cursieve variant.\n"
 
 #: ../src/font_file_lister.cpp:180
 #, c-format
@@ -5395,8 +5669,8 @@ msgstr "Alle lettertypen gevonden.\n"
 #, c-format
 msgid "One font could not be found\n"
 msgid_plural "%d fonts could not be found.\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Eén lettertype is niet gevonden\n"
+msgstr[1] "%d lettertypen zijn niet gevonden.\n"
 
 #: ../src/font_file_lister.cpp:239
 #, c-format
@@ -5404,7 +5678,11 @@ msgid "One font was found, but was missing glyphs used in the script.\n"
 msgid_plural ""
 "%d fonts were found, but were missing glyphs used in the script.\n"
 msgstr[0] ""
+"Eén lettertype is gevonden, maar mist tekens die in het script worden "
+"gebruikt.\n"
 msgstr[1] ""
+"%d lettertypen zijn gevonden, maar missen tekens die in het script worden "
+"gebruikt.\n"
 
 #: ../src/font_file_lister_fontconfig.cpp:55
 msgid "Updating font cache\n"
@@ -5432,27 +5710,27 @@ msgstr "Einde"
 
 #: ../src/grid_column.cpp:266
 msgid "Left Margin"
-msgstr ""
+msgstr "Linkermarge"
 
 #: ../src/grid_column.cpp:272
 msgid "Right Margin"
-msgstr ""
+msgstr "Rechtermarge"
 
 #: ../src/grid_column.cpp:278
 msgid "Vertical Margin"
-msgstr ""
+msgstr "Verticale marge"
 
 #: ../src/grid_column.cpp:296
 msgid "CPS"
-msgstr ""
+msgstr "TPS"
 
 #: ../src/grid_column.cpp:297
 msgid "Characters Per Second"
-msgstr ""
+msgstr "Tekens per seconde"
 
 #: ../src/hotkey.cpp:261
 msgid "Invalid command name for hotkey"
-msgstr ""
+msgstr "Ongeldige opdrachtnaam voor sneltoets"
 
 #: ../src/main.cpp:202
 #, c-format
@@ -5460,6 +5738,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"Het configuratiebestand is ongeldig. Gemelde fout:\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5494,15 +5774,15 @@ msgstr ""
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "Fout bij het opslaan van het configuratiebestand"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "Fatale fout tijdens initialisatie"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "Onverwerkte uitzondering"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5515,6 +5795,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Aegisub is vastgelopen tijdens het opstarten!\n"
+"\n"
+"De laatst geprobeerde opstartstap was: %s."
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5524,10 +5807,14 @@ msgid ""
 "\n"
 "Error Message: %s"
 msgstr ""
+"Er is een onverwachte fout opgetreden. Sla uw werk op en start Aegisub "
+"opnieuw.\n"
+"\n"
+"Foutmelding: %s"
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "Uitzondering in gebeurtenisafhandeling"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5572,7 +5859,7 @@ msgstr "Hoofdwerkbalk weergeven"
 
 #: ../src/preferences.cpp:103
 msgid "Save UI state in subtitles files"
-msgstr ""
+msgstr "UI-status opslaan in ondertitelbestanden"
 
 #: ../src/preferences.cpp:106
 msgid "Toolbar Icon Size"
@@ -5608,11 +5895,11 @@ msgstr "Zoeken/vervangen"
 
 #: ../src/preferences.cpp:120
 msgid "Default styles"
-msgstr ""
+msgstr "Standaardstijlen"
 
 #: ../src/preferences.cpp:122
 msgid "Default style catalogs"
-msgstr ""
+msgstr "Standaard stijlcatalogi"
 
 #: ../src/preferences.cpp:126
 msgid ""
@@ -5621,26 +5908,30 @@ msgid ""
 "\n"
 "You can set up style catalogs in the Style Manager."
 msgstr ""
+"De gekozen stijlcatalogi worden geladen wanneer u een nieuw bestand begint "
+"of bestanden in de verschillende indelingen importeert.\n"
+"\n"
+"U kunt stijlcatalogi instellen in Stijlbeheer."
 
 #: ../src/preferences.cpp:153
 msgid "New files"
-msgstr ""
+msgstr "Nieuwe bestanden"
 
 #: ../src/preferences.cpp:154
 msgid "MicroDVD import"
-msgstr ""
+msgstr "MicroDVD-import"
 
 #: ../src/preferences.cpp:155
 msgid "SRT import"
-msgstr ""
+msgstr "SRT-import"
 
 #: ../src/preferences.cpp:156
 msgid "TTXT import"
-msgstr ""
+msgstr "TTXT-import"
 
 #: ../src/preferences.cpp:157
 msgid "Plain text import"
-msgstr ""
+msgstr "Import van platte tekst"
 
 #: ../src/preferences.cpp:164 ../src/preferences.cpp:414 default_hotkey.json:37
 msgid "Audio"
@@ -5769,53 +6060,43 @@ msgstr "Automatisch audio openen bij openen van video"
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "Doet niets"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Video afspelen"
+msgstr "Verschuift de video"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "Verschuift de video (X/Y verwisseld)"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "Wijzigt de grootte van het videovak"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "Wijzigt de grootte van het videovak (omgekeerd)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Video inzoomen"
+msgstr "Zoomt de video"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "Zoomt de video (omgekeerd)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "De audioweergave naar links scrollen"
+msgstr "Scrollen op de videoweergave"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "De audioweergave naar links scrollen"
+msgstr "Ctrl+scrollen op de videoweergave"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "De audioweergave naar links scrollen"
+msgstr "Shift+scrollen op de videoweergave"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5847,15 +6128,55 @@ msgstr "Standaardhoogte"
 
 #: ../src/preferences.cpp:240
 msgid "Always resample"
-msgstr ""
-
-#: ../src/preferences.cpp:240
-msgid "Always set"
-msgstr ""
+msgstr "Altijd herschalen"
 
 #: ../src/preferences.cpp:242
 msgid "Match video resolution on open"
 msgstr "Videoresolutie laten overeenkomen bij openen"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Opmaakresolutie"
+
+#: ../src/preferences.cpp:240
+msgid "Always set"
+msgstr "Altijd instellen"
+
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Altijd instellen vanuit scriptresolutie"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Opmaakresolutie bij openen instellen vanuit video"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Als de beeldverhouding verandert"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Vragen als opmaakresoluties niet overeenkomen"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "YCbCr-matrix"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Waarschuwen bij video zonder kleurmatrix-label"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Waarschuwen bij HDR/WCG-video"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "YCbCr-matrix van de video gebruiken als het script geen matrix heeft"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "YCbCr-matrix bij openen aanpassen aan de video"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5875,7 +6196,7 @@ msgstr "Overschrijven in tijdvensters"
 
 #: ../src/preferences.cpp:254
 msgid "Shift+Enter adds \\n"
-msgstr ""
+msgstr "Shift+Enter voegt \\n toe"
 
 #: ../src/preferences.cpp:255
 msgid "Enable syntax highlighting"
@@ -5887,27 +6208,27 @@ msgstr "Pad naar woordenboeken"
 
 #: ../src/preferences.cpp:259
 msgid "Character Counter"
-msgstr ""
+msgstr "Tekenteller"
 
 #: ../src/preferences.cpp:260
 msgid "Maximum characters per line"
-msgstr ""
+msgstr "Maximaal aantal tekens per regel"
 
 #: ../src/preferences.cpp:261
 msgid "Characters Per Second Warning Threshold"
-msgstr ""
+msgstr "Waarschuwingsdrempel tekens per seconde"
 
 #: ../src/preferences.cpp:262
 msgid "Characters Per Second Error Threshold"
-msgstr ""
+msgstr "Foutdrempel tekens per seconde"
 
 #: ../src/preferences.cpp:263
 msgid "Ignore whitespace"
-msgstr ""
+msgstr "Witruimte negeren"
 
 #: ../src/preferences.cpp:264
 msgid "Ignore punctuation"
-msgstr ""
+msgstr "Leestekens negeren"
 
 #: ../src/preferences.cpp:266
 msgid "Grid"
@@ -5915,7 +6236,7 @@ msgstr "Raster"
 
 #: ../src/preferences.cpp:267
 msgid "Focus grid on click"
-msgstr ""
+msgstr "Focus op raster bij klikken"
 
 #: ../src/preferences.cpp:268
 msgid "Highlight visible subtitles"
@@ -5927,7 +6248,7 @@ msgstr "Symbool voor verbergen van overrides"
 
 #: ../src/preferences.cpp:273
 msgid "Skip over whitespace"
-msgstr ""
+msgstr "Witruimte overslaan"
 
 #: ../src/preferences.cpp:288
 msgid "Audio Display"
@@ -5936,6 +6257,14 @@ msgstr "Audioweergave"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Afspeelcursor"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Huidig framebereik"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Vorig framebereik"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -5959,7 +6288,7 @@ msgstr "Syntaxmarkering"
 
 #: ../src/preferences.cpp:297
 msgid "Background"
-msgstr ""
+msgstr "Achtergrond"
 
 #: ../src/preferences.cpp:298
 msgid "Normal"
@@ -5967,23 +6296,23 @@ msgstr "Normaal"
 
 #: ../src/preferences.cpp:299
 msgid "Comments"
-msgstr ""
+msgstr "Opmerkingen"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
-msgstr ""
+msgstr "Tekenopdrachten"
 
 #: ../src/preferences.cpp:301
 msgid "Drawing X Coords"
-msgstr ""
+msgstr "X-coördinaten tekening"
 
 #: ../src/preferences.cpp:302
 msgid "Drawing Y Coords"
-msgstr ""
+msgstr "Y-coördinaten tekening"
 
 #: ../src/preferences.cpp:303
 msgid "Underline Spline Endpoints"
-msgstr ""
+msgstr "Eindpunten van splines onderstrepen"
 
 #: ../src/preferences.cpp:305
 msgid "Brackets"
@@ -6015,7 +6344,7 @@ msgstr "Karaokesjablonen"
 
 #: ../src/preferences.cpp:313
 msgid "Karaoke variables"
-msgstr ""
+msgstr "Karaokevariabelen"
 
 #: ../src/preferences.cpp:319
 msgid "Audio Color Schemes"
@@ -6083,35 +6412,35 @@ msgstr "Regels"
 
 #: ../src/preferences.cpp:337
 msgid "CPS Error"
-msgstr ""
+msgstr "TPS-fout"
 
 #: ../src/preferences.cpp:339
 msgid "Visual Typesetting Tools"
-msgstr ""
+msgstr "Visuele zethulpmiddelen"
 
 #: ../src/preferences.cpp:340
 msgid "Primary Lines"
-msgstr ""
+msgstr "Primaire lijnen"
 
 #: ../src/preferences.cpp:341
 msgid "Secondary Lines"
-msgstr ""
+msgstr "Secundaire lijnen"
 
 #: ../src/preferences.cpp:342
 msgid "Primary Highlight"
-msgstr ""
+msgstr "Primaire markering"
 
 #: ../src/preferences.cpp:343
 msgid "Secondary Highlight"
-msgstr ""
+msgstr "Secundaire markering"
 
 #: ../src/preferences.cpp:346
 msgid "Visual Typesetting Tools Alpha"
-msgstr ""
+msgstr "Transparantie van visuele zethulpmiddelen"
 
 #: ../src/preferences.cpp:347
 msgid "Shaded Area"
-msgstr ""
+msgstr "Gearceerd gebied"
 
 #: ../src/preferences.cpp:356
 msgid "Backup"
@@ -6207,16 +6536,12 @@ msgid "Advanced"
 msgstr "Geavanceerd"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"Het wijzigen van deze instellingen kan resulteren in bugs en/of crashes. Doe "
-"dit niet, tenzij u weet wat u doet."
+"Het wijzigen van deze instellingen kan fouten en/of crashes veroorzaken. "
+"Wijzig ze niet als u niet weet wat u doet."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6272,27 +6597,27 @@ msgstr "Kwaliteit"
 
 #: ../src/preferences.cpp:436
 msgid "Compressed"
-msgstr ""
+msgstr "Gecomprimeerd"
 
 #: ../src/preferences.cpp:436
 msgid "Extended"
-msgstr ""
+msgstr "Uitgebreid"
 
 #: ../src/preferences.cpp:436
 msgid "Linear"
-msgstr ""
+msgstr "Lineair"
 
 #: ../src/preferences.cpp:436
 msgid "Logarithmic"
-msgstr ""
+msgstr "Logaritmisch"
 
 #: ../src/preferences.cpp:436
 msgid "Medium"
-msgstr ""
+msgstr "Gemiddeld"
 
 #: ../src/preferences.cpp:438
 msgid "Frequency mapping"
-msgstr ""
+msgstr "Frequentietoewijzing"
 
 #: ../src/preferences.cpp:440
 msgid "Cache memory max (MB)"
@@ -6359,38 +6684,32 @@ msgid "Avisynth memory limit"
 msgstr "Geheugenlimiet Avisynth"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "4: Debuggen"
+msgstr "Debug"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "0: Fataal"
+msgstr "Fataal"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "Paniek"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "Stil"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "Uitgebreid"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "2: Waarschuwing"
+msgstr "Waarschuwing"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6410,19 +6729,15 @@ msgstr "Sneltoetsen"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Sneltoetsen"
+msgstr "Sneltoets"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "Commando's"
+msgstr "Opdracht"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6461,16 +6776,13 @@ msgid "Font Size"
 msgstr "Tekengrootte"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "Fout bij importeren van stijlen"
+msgstr "Fout bij het laden van het bestand"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "Alle lettertypen gevonden.\n"
+msgstr "%s niet gevonden."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6479,38 +6791,38 @@ msgstr "Wilt u de geassocieerde bestanden laden/unloaden?"
 #: ../src/project.cpp:210
 #, c-format
 msgid "Load audio file: %s"
-msgstr ""
+msgstr "Audiobestand laden: %s"
 
 #: ../src/project.cpp:210
 msgid "Unload audio"
-msgstr ""
+msgstr "Audio ontladen"
 
 #: ../src/project.cpp:212
 #, c-format
 msgid "Load video file: %s"
-msgstr ""
+msgstr "Videobestand laden: %s"
 
 #: ../src/project.cpp:212
 msgid "Unload video"
-msgstr ""
+msgstr "Video ontladen"
 
 #: ../src/project.cpp:214
 #, c-format
 msgid "Load timecodes file: %s"
-msgstr ""
+msgstr "Tijdcodebestand laden: %s"
 
 #: ../src/project.cpp:214
 msgid "Unload timecodes"
-msgstr ""
+msgstr "Tijdcodes ontladen"
 
 #: ../src/project.cpp:216
 #, c-format
 msgid "Load keyframes file: %s"
-msgstr ""
+msgstr "Keyframebestand laden: %s"
 
 #: ../src/project.cpp:216
 msgid "Unload keyframes"
-msgstr ""
+msgstr "Keyframes ontladen"
 
 #: ../src/project.cpp:218
 msgid "(Un)Load files?"
@@ -6518,7 +6830,7 @@ msgstr "Bestanden (un)loaden?"
 
 #: ../src/project.cpp:267
 msgid "The audio file was not found: "
-msgstr ""
+msgstr "Het audiobestand is niet gevonden: "
 
 #: ../src/project.cpp:275
 msgid ""
@@ -6527,6 +6839,10 @@ msgid ""
 "\n"
 "The following providers were tried:\n"
 msgstr ""
+"Geen van de beschikbare audioproviders herkende audiogegevens in het "
+"geselecteerde bestand.\n"
+"\n"
+"De volgende providers zijn geprobeerd:\n"
 
 #: ../src/project.cpp:278
 msgid ""
@@ -6535,22 +6851,22 @@ msgid ""
 "\n"
 "The following providers were tried:\n"
 msgstr ""
+"Geen van de beschikbare audioproviders heeft een codec voor het "
+"geselecteerde bestand.\n"
+"\n"
+"De volgende providers zijn geprobeerd:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Close Timecodes File"
 msgid "Failed to parse timecodes file: "
-msgstr "Timecodes-bestand sluiten"
+msgstr "Kan tijdcodebestand niet verwerken: "
 
 #: ../src/project.cpp:407
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Failed to parse keyframes file: "
-msgstr "Keyframes-bestand opslaan"
+msgstr "Kan keyframebestand niet verwerken: "
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "Keyframebestand in onbekende indeling: "
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6564,8 +6880,8 @@ msgstr "vervangen"
 #, c-format
 msgid "One match was replaced."
 msgid_plural "%d matches were replaced."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Eén overeenkomst is vervangen."
+msgstr[1] "%d overeenkomsten zijn vervangen."
 
 #: ../src/search_replace_engine.cpp:277
 msgid "No matches found."
@@ -6591,11 +6907,11 @@ msgstr "Bestandsbackup opgeslagen als \"%s\"."
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "Uitzondering bij het automatisch opslaan van het bestand: "
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
-msgstr ""
+msgstr "Onverwerkte uitzondering bij het automatisch opslaan van het bestand."
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6617,7 +6933,7 @@ msgstr "Stijl voor deze regel"
 
 #: ../src/subs_edit_box.cpp:124 ../src/subs_edit_box.cpp:125
 msgid "Edit"
-msgstr ""
+msgstr "Bewerken"
 
 #: ../src/subs_edit_box.cpp:135
 msgid ""
@@ -6638,7 +6954,7 @@ msgstr ""
 
 #: ../src/subs_edit_box.cpp:147
 msgid "Number of characters in the longest line of this subtitle."
-msgstr ""
+msgstr "Aantal tekens in de langste regel van deze ondertitel."
 
 #: ../src/subs_edit_box.cpp:154
 msgid "Layer number"
@@ -6658,27 +6974,27 @@ msgstr "Regelduur"
 
 #: ../src/subs_edit_box.cpp:164
 msgid "Left Margin (0 = default from style)"
-msgstr ""
+msgstr "Linkermarge (0 = standaard uit stijl)"
 
 #: ../src/subs_edit_box.cpp:164
 msgid "left margin change"
-msgstr ""
+msgstr "linkermarge wijzigen"
 
 #: ../src/subs_edit_box.cpp:165
 msgid "Right Margin (0 = default from style)"
-msgstr ""
+msgstr "Rechtermarge (0 = standaard uit stijl)"
 
 #: ../src/subs_edit_box.cpp:165
 msgid "right margin change"
-msgstr ""
+msgstr "rechtermarge wijzigen"
 
 #: ../src/subs_edit_box.cpp:166
 msgid "Vertical Margin (0 = default from style)"
-msgstr ""
+msgstr "Verticale marge (0 = standaard uit stijl)"
 
 #: ../src/subs_edit_box.cpp:166
 msgid "vertical margin change"
-msgstr ""
+msgstr "verticale marge wijzigen"
 
 #: ../src/subs_edit_box.cpp:185
 msgid "T&ime"
@@ -6698,7 +7014,7 @@ msgstr "Tijd in framenummer"
 
 #: ../src/subs_edit_box.cpp:189
 msgid "Show Original"
-msgstr ""
+msgstr "Origineel tonen"
 
 #: ../src/subs_edit_box.cpp:190
 msgid ""
@@ -6706,6 +7022,9 @@ msgid ""
 "edit box. This is sometimes useful when editing subtitles or translating "
 "subtitles into another language."
 msgstr ""
+"De inhoud van de ondertitelregel zoals die was toen hij voor het eerst werd "
+"geselecteerd boven het bewerkingsvak tonen. Dit is soms handig bij het "
+"bewerken of vertalen van ondertitels."
 
 #: ../src/subs_edit_box.cpp:446
 msgid "modify text"
@@ -6746,7 +7065,7 @@ msgstr "&Plakken"
 #: ../src/subs_edit_ctrl.cpp:444
 #, c-format
 msgid "Remove \"%s\" from dictionary"
-msgstr ""
+msgstr "\"%s\" uit woordenboek verwijderen"
 
 #: ../src/subs_edit_ctrl.cpp:449
 msgid "No spell checker suggestions"
@@ -6788,12 +7107,12 @@ msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
 msgstr ""
+"Er kon geen ondertitelprovider voor het voorbeeldvak worden gevonden. Zorg "
+"dat er een provider is geïnstalleerd."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "Ondertitelprovider"
+msgstr "Geen ondertitelprovider"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6867,11 +7186,11 @@ msgstr "Regel over maximale lengte: %s"
 
 #: ../src/subtitles_provider_libass.cpp:102
 msgid "Updating font index"
-msgstr ""
+msgstr "Lettertype-index bijwerken"
 
 #: ../src/subtitles_provider_libass.cpp:103
 msgid "This may take several minutes"
-msgstr ""
+msgstr "Dit kan enkele minuten duren"
 
 #: ../src/video_box.cpp:57
 msgid "Seek video"
@@ -6891,6 +7210,9 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"Zoeken in de video mislukt. Het videobestand is mogelijk beschadigd of "
+"onvolledig.\n"
+"Gemelde foutmelding: %s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -6898,6 +7220,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"Weergeven van ondertitels mislukt.\n"
+"Gemelde foutmelding: %s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -6906,6 +7230,9 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"Initialiseren van de videoweergave mislukt. Andere actieve programma's "
+"sluiten en de stuurprogramma's van de videokaart bijwerken kan helpen.\n"
+"Gemelde foutmelding: %s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -6913,6 +7240,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"Kan het videoframe niet naar de videokaart uploaden.\n"
+"Gemelde foutmelding: %s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -6920,22 +7249,21 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"Er is een fout opgetreden bij het weergeven van het videoframe op het "
+"scherm.\n"
+"Gemelde foutmelding: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "Alle lettertypen gevonden.\n"
+msgstr "bestand niet gevonden."
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "video heeft geen ondersteunde indeling."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Kon stijl niet verwerken"
+msgstr "Kan niet openen: "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7092,7 +7420,7 @@ msgstr "A&utomatisatie"
 
 #: default_menu.json:0
 msgid "Window"
-msgstr ""
+msgstr "Venster"
 
 #: default_menu.json:0
 msgid "&Help"
@@ -7100,23 +7428,23 @@ msgstr "&Help"
 
 #: default_menu.json:0
 msgid "Open..."
-msgstr ""
+msgstr "Open…"
 
 #: default_menu.json:0
 msgid "Open Recent"
-msgstr ""
+msgstr "Open recent"
 
 #: default_menu.json:0
 msgid "Save"
-msgstr ""
+msgstr "Bewaar"
 
 #: default_menu.json:0
 msgid "Save As..."
-msgstr ""
+msgstr "Bewaar als…"
 
 #: default_menu.json:0
 msgid "Export As..."
-msgstr ""
+msgstr "Exporteer als…"
 
 #: default_hotkey.json:244
 msgid "Subtitle Edit Box"
@@ -7191,16 +7519,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "Voegt \\be1 labels toe aan alle geselecteerde regels"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Letters breed maken"
+msgstr "Tekst omzetten naar volle breedte"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"Laat zien hoe u met de unicode-include tekens doorloopt en ze met een "
+"opzoektabel omzet in iets anders."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7214,11 +7542,13 @@ msgstr ""
 
 #: ../automation/autoload/select-overlaps.moon:17
 msgid "Select overlaps"
-msgstr ""
+msgstr "Overlappingen selecteren"
 
 #: ../automation/autoload/select-overlaps.moon:18
 msgid "Select lines which begin while another non-comment line is active"
 msgstr ""
+"Regels selecteren die beginnen terwijl een andere regel die geen opmerking "
+"is actief is"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7234,28 +7564,33 @@ msgstr "labels verwijderen"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Installing runtime libraries..."
-msgstr ""
+msgstr "Runtimebibliotheken installeren..."
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Create a start menu icon"
-msgstr ""
+msgstr "Een pictogram in het startmenu maken"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Automatically check for new versions of Aegisub"
-msgstr ""
+msgstr "Automatisch controleren op nieuwe versies van Aegisub"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Update Checker:"
-msgstr ""
+msgstr "Updatecontrole:"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid ""
-"This will install Aegisub {#BUILD_GIT_VERSION_STRING} on your computer."
-"%n%nAegisub is covered by the GNU General Public License version 2. This "
-"means you may use the application for any purpose without charge, but that "
-"no warranties of any kind are given either.%n%nSee the Aegisub website for "
-"information on obtaining the source code."
+"This will install Aegisub {#BUILD_GIT_VERSION_STRING} on your "
+"computer.%n%nAegisub is covered by the GNU General Public License version 2. "
+"This means you may use the application for any purpose without charge, but "
+"that no warranties of any kind are given either.%n%nSee the Aegisub website "
+"for information on obtaining the source code."
 msgstr ""
+"Hiermee wordt Aegisub {#BUILD_GIT_VERSION_STRING} op uw computer "
+"geïnstalleerd.%n%nAegisub valt onder de GNU General Public License versie 2. "
+"Dit betekent dat u het programma kosteloos voor elk doel mag gebruiken, maar "
+"dat er ook geen enkele garantie wordt gegeven.%n%nZie de website van Aegisub "
+"voor informatie over het verkrijgen van de broncode."
 
 #: ../packages/desktop/aegisub.desktop.in.in:4
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:6
@@ -7272,19 +7607,23 @@ msgstr "Ondertitels voor films en video's aanmaken en bewerken."
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "ondertitels;ondertitel;ondertiteling;video;audio;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
-msgstr ""
+msgstr "Ondertitels maken en bewerken"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:9
 msgid ""
 "Aegisub is a free, cross-platform open source tool for creating and "
 "modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
+"audio, and features many powerful tools for styling them, including a "
+"built-in real-time video preview."
 msgstr ""
+"Aegisub is een gratis, platformonafhankelijk opensourceprogramma om "
+"ondertitels te maken en te bewerken. Met Aegisub stemt u ondertitels snel en "
+"eenvoudig af op de audio, en het biedt veel krachtige hulpmiddelen om ze op "
+"te maken, waaronder een ingebouwde realtime videovoorvertoning."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:10
 msgid ""
@@ -7296,6 +7635,13 @@ msgid ""
 "unrelated to Aegisub) many vital functions, or were too buggy and/or "
 "unreliable to be really useful."
 msgstr ""
+"Aegisub is oorspronkelijk gemaakt als hulpmiddel om het typesetten, vooral "
+"bij anime-fansubs, minder pijnlijk te maken. Toen het project begon, "
+"ontbraken in veel andere programma's die het Advanced SubStation "
+"Alpha-formaat ondersteunden veel belangrijke functies (en in veel gevallen "
+"nog steeds; de ontwikkeling van verschillende concurrerende programma's is "
+"sindsdien gestopt om diverse redenen die niets met Aegisub te maken hebben), "
+"of ze waren te foutgevoelig en/of onbetrouwbaar om echt bruikbaar te zijn."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:11
 msgid ""
@@ -7306,46 +7652,53 @@ msgid ""
 "for creating karaoke effects, Automation can now be used much else, "
 "including creating macros and various other convenient tools)."
 msgstr ""
+"Sindsdien is Aegisub uitgegroeid tot een volwaardige, zeer aanpasbare "
+"ondertiteleditor. Het bevat veel handige hulpmiddelen voor het timen, "
+"typesetten, bewerken en vertalen van ondertitels, en een krachtige "
+"scriptomgeving genaamd Automation (oorspronkelijk vooral bedoeld voor "
+"karaoke-effecten, maar nu ook bruikbaar voor veel meer, zoals macro's en "
+"allerlei andere handige hulpmiddelen)."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:12
 msgid "Some highlights of Aegisub:"
-msgstr ""
+msgstr "Enkele hoogtepunten van Aegisub:"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:14
 msgid "Simple and intuitive yet powerful interface for editing subtitles"
 msgstr ""
+"Eenvoudige en intuïtieve maar krachtige interface om ondertitels te bewerken"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:15
 msgid "Support for many formats and character sets"
-msgstr ""
+msgstr "Ondersteuning voor veel formaten en tekensets"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:16
 msgid "Powerful video mode"
-msgstr ""
+msgstr "Krachtige videomodus"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:17
 msgid "Visual typesetting tools"
-msgstr ""
+msgstr "Visuele zethulpmiddelen"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:18
 msgid "Intuitive and customizable audio timing mode"
-msgstr ""
+msgstr "Intuïtieve en aanpasbare audiotimingmodus"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:19
 msgid "Fully scriptable through the Automation module"
-msgstr ""
+msgstr "Volledig scriptbaar via de Automation-module"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:43
 msgid "Typesetting"
-msgstr ""
+msgstr "Typesetten"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:47
 msgid "Audio video"
-msgstr ""
+msgstr "Audio en video"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
-msgstr ""
+msgstr "Audiotiming"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Kanji-timing"

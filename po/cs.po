@@ -20,14 +20,12 @@ msgid "Language"
 msgstr "Jazyk"
 
 #: ../src/aegisublocale.cpp:113
-#, fuzzy
-#| msgid "Please choose the folder:"
 msgid "Please choose a language:"
-msgstr "Prosím, vyberte adresář:"
+msgstr "Vyberte jazyk:"
 
 #: ../src/ass_style.cpp:196
 msgid "Auto-detect base direction (libass only)"
-msgstr ""
+msgstr "Automaticky rozpoznat základní směr textu (pouze libass)"
 
 #: ../src/ass_style.cpp:197
 msgid "ANSI"
@@ -174,6 +172,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Jeden skript ve složce automatického načítání Automatizace se nepodařilo "
+"načíst.\n"
+"Projděte chyby, opravte je a pomocí tlačítka „Znovu prohledat složku "
+"automatického načítání“ ve Správci Automatizace skripty znovu načtěte."
 
 #: ../src/auto4_base.cpp:349
 msgid ""
@@ -181,6 +183,10 @@ msgid ""
 "Please review the errors, fix them and use the Rescan Autoload Dir button in "
 "Automation Manager to load the scripts again."
 msgstr ""
+"Více skriptů ve složce automatického načítání Automatizace se nepodařilo "
+"načíst.\n"
+"Projděte chyby, opravte je a pomocí tlačítka „Znovu prohledat složku "
+"automatického načítání“ ve Správci Automatizace skripty znovu načtěte."
 
 #: ../src/auto4_base.cpp:352
 msgid ""
@@ -188,6 +194,10 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Jeden skript ve složce automatického načítání Automatizace byl načten s "
+"varováním.\n"
+"Projděte varování, opravte je a pomocí tlačítka „Znovu prohledat složku "
+"automatického načítání“ ve Správci Automatizace skripty znovu načtěte."
 
 #: ../src/auto4_base.cpp:355
 msgid ""
@@ -195,6 +205,10 @@ msgid ""
 "Please review the warnings, fix them and use the Rescan Autoload Dir button "
 "in Automation Manager to load the scripts again."
 msgstr ""
+"Více skriptů ve složce automatického načítání Automatizace bylo načteno s "
+"varováním.\n"
+"Projděte varování, opravte je a pomocí tlačítka „Znovu prohledat složku "
+"automatického načítání“ ve Správci Automatizace skripty znovu načtěte."
 
 #: ../src/auto4_base.cpp:394
 #, c-format
@@ -203,6 +217,9 @@ msgid ""
 "Location specifier found: %c\n"
 "Filename specified: %s"
 msgstr ""
+"Odkazovaný skript Automatizace má neznámý specifikátor umístění.\n"
+"Nalezený specifikátor umístění: %c\n"
+"Zadaný název souboru: %s"
 
 #: ../src/auto4_base.cpp:412
 #, c-format
@@ -217,28 +234,32 @@ msgid ""
 "You should only load associated automation scripts if you trust their "
 "authors! They are not required to view or edit the subtitle file."
 msgstr ""
+"Otevřený soubor titulků obsahuje místní skripty Automatizace. Chcete načíst "
+"přidružené skripty Automatizace?\n"
+"\n"
+"Seznam skriptů:\n"
+"\n"
+"%s\n"
+"\n"
+"Přidružené skripty Automatizace načítejte, jen pokud důvěřujete jejich "
+"autorům! K zobrazení ani úpravě souboru titulků nejsou potřeba."
 
 #: ../src/auto4_base.cpp:418
-#, fuzzy, c-format
-#| msgid "    Macro: %s (%s)"
+#, c-format
 msgid "    %s (%s)"
-msgstr "    Makro: %s (%s)"
+msgstr "    %s (%s)"
 
 #: ../src/auto4_base.cpp:419
-#, fuzzy
-#| msgid "Reload autoload Automation scripts"
 msgid "Load associated automation scripts?"
-msgstr "Znovu načíst automaticky načítané skripty Automatizace"
+msgstr "Načíst přidružené skripty Automatizace?"
 
 #: ../src/auto4_base.cpp:422
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: ../src/auto4_base.cpp:422
-#, fuzzy
-#| msgid "Global autoload scripts"
 msgid "Trust the authors && load scripts"
-msgstr "Globální automaticky načítané skripty"
+msgstr "Důvěřovat autorům && načíst skripty"
 
 #: ../src/auto4_base.cpp:437
 #, c-format
@@ -248,6 +269,10 @@ msgid ""
 "Searched relative to: %s\n"
 "Resolved filename: %s"
 msgstr ""
+"Odkazovaný skript Automatizace nebyl nalezen.\n"
+"Zadaný název souboru: %s\n"
+"Hledáno relativně k: %s\n"
+"Výsledný název souboru: %s"
 
 #: ../src/auto4_base.cpp:498
 #, c-format
@@ -255,14 +280,17 @@ msgid ""
 "Failed to load Automation script '%s':\n"
 "%s"
 msgstr ""
+"Nepodařilo se načíst skript Automatizace „%s“:\n"
+"%s"
 
 #: ../src/auto4_base.cpp:501
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning when loading Automation script '%s':\n"
 "%s"
-msgstr "Znovu načíst skripty Automatizace"
+msgstr ""
+"Varování při načítání skriptu Automatizace „%s“:\n"
+"%s"
 
 #: ../src/auto4_base.cpp:508
 #, c-format
@@ -285,18 +313,17 @@ msgid "File was not recognized as a script"
 msgstr "Soubor nebyl rozpoznán jako skript"
 
 #: ../src/auto4_lua.cpp:180
-#, fuzzy, c-format
-#| msgid "Reload Automation scripts"
+#, c-format
 msgid ""
 "Warning in Automation script '%s':\n"
 "%s"
-msgstr "Znovu načíst skripty Automatizace"
+msgstr ""
+"Varování ve skriptu Automatizace „%s“:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:464
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not initialize Lua state"
-msgstr "Nepodařilo se provést rozbor stylu"
+msgstr "Nelze inicializovat stav Lua"
 
 #: ../src/auto4_lua.cpp:547
 #, c-format
@@ -305,12 +332,17 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Chyba při inicializaci skriptu Lua „%s“:\n"
+"\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:557
 msgid ""
 "Attempted to load an Automation 3 script as an Automation 4 Lua script. "
 "Automation 3 is no longer supported."
 msgstr ""
+"Pokus o načtení skriptu Automation 3 jako skriptu Automation 4 Lua. "
+"Automation 3 již není podporována."
 
 #: ../src/auto4_lua.cpp:831
 #, c-format
@@ -318,21 +350,23 @@ msgid ""
 "Runtime error in Lua macro validation function:\n"
 "%s"
 msgstr ""
+"Chyba za běhu ve validační funkci makra Lua:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:885
 #, c-format
 msgid "Active row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Aktivní řádek %d je mimo rozsah (musí být 1–%u)"
 
 #: ../src/auto4_lua.cpp:901
 #, c-format
 msgid "Selected row %d is out of bounds (must be 1-%u)"
-msgstr ""
+msgstr "Vybraný řádek %d je mimo rozsah (musí být 1–%u)"
 
 #: ../src/auto4_lua.cpp:907
 #, c-format
 msgid "Selected row %d is not a dialogue line"
-msgstr ""
+msgstr "Vybraný řádek %d není dialogový řádek"
 
 #: ../src/auto4_lua.cpp:973
 #, c-format
@@ -340,6 +374,8 @@ msgid ""
 "Runtime error in Lua macro IsActive function:\n"
 "%s"
 msgstr ""
+"Chyba za běhu ve funkci IsActive makra Lua:\n"
+"%s"
 
 #: ../src/auto4_lua.cpp:1079
 #, c-format
@@ -347,6 +383,8 @@ msgid ""
 "Runtime error in Lua config dialog function:\n"
 "%s"
 msgstr ""
+"Chyba za běhu ve funkci konfiguračního dialogu Lua:\n"
+"%s"
 
 #: ../src/charset_detect.cpp:50
 msgid ""
@@ -382,7 +420,7 @@ msgstr "Zobrazení audia s titulky"
 
 #: ../src/command/app.cpp:69
 msgid "Display audio and the subtitles grid only"
-msgstr ""
+msgstr "Zobrazit pouze zvuk a mřížku titulků"
 
 #: ../src/command/app.cpp:87
 msgid "&Full view"
@@ -394,7 +432,7 @@ msgstr "Plné zobrazení"
 
 #: ../src/command/app.cpp:89
 msgid "Display audio, video and then subtitles grid"
-msgstr ""
+msgstr "Zobrazit zvuk, video a pod nimi mřížku titulků"
 
 #: ../src/command/app.cpp:107
 msgid "S&ubs Only View"
@@ -406,7 +444,7 @@ msgstr "Zobrazení samostatných titulků"
 
 #: ../src/command/app.cpp:109
 msgid "Display the subtitles grid only"
-msgstr ""
+msgstr "Zobrazit pouze mřížku titulků"
 
 #: ../src/command/app.cpp:123
 msgid "&Video+Subs View"
@@ -418,7 +456,7 @@ msgstr "Zobrazení videa s titulky"
 
 #: ../src/command/app.cpp:125
 msgid "Display video and the subtitles grid only"
-msgstr ""
+msgstr "Zobrazit pouze video a mřížku titulků"
 
 #: ../src/command/app.cpp:143
 msgid "E&xit"
@@ -445,12 +483,11 @@ msgid ""
 "Aegisub needs to be restarted so that the new language can be applied. "
 "Restart now?"
 msgstr ""
+"Aby se nový jazyk projevil, je nutné Aegisub restartovat. Restartovat nyní?"
 
 #: ../src/command/app.cpp:167
-#, fuzzy
-#| msgid "About Aegisub"
 msgid "Restart Aegisub?"
-msgstr "O aplikaci Aegisub"
+msgstr "Restartovat Aegisub?"
 
 #: ../src/command/app.cpp:180
 msgid "&Log window"
@@ -496,7 +533,7 @@ msgstr "Přepnout globální klávesové zkratky"
 
 #: ../src/command/app.cpp:222
 msgid "Toggle global hotkey overrides (Medusa Mode)"
-msgstr ""
+msgstr "Přepnout globální přepsání klávesových zkratek (režim Medúza)"
 
 #: ../src/command/app.cpp:237
 msgid "Toggle the main toolbar"
@@ -524,27 +561,27 @@ msgstr "Zkontroluje dostupnost nové verze Aegisubu"
 
 #: ../src/command/app.cpp:270 ../src/command/app.cpp:271
 msgid "Minimize"
-msgstr ""
+msgstr "Minimalizovat"
 
 #: ../src/command/app.cpp:272
 msgid "Minimize the active window"
-msgstr ""
+msgstr "Minimalizovat aktivní okno"
 
 #: ../src/command/app.cpp:281 ../src/command/app.cpp:282
 msgid "Zoom"
-msgstr ""
+msgstr "Lupa"
 
 #: ../src/command/app.cpp:283
 msgid "Maximize the active window"
-msgstr ""
+msgstr "Maximalizovat aktivní okno"
 
 #: ../src/command/app.cpp:292 ../src/command/app.cpp:293
 msgid "Bring All to Front"
-msgstr ""
+msgstr "Vše do popředí"
 
 #: ../src/command/app.cpp:294
 msgid "Bring forward all open documents to the front"
-msgstr ""
+msgstr "Přenést všechny otevřené dokumenty do popředí"
 
 #: ../src/command/audio.cpp:65
 msgid "&Close Audio"
@@ -556,7 +593,7 @@ msgstr "Zavřít audio"
 
 #: ../src/command/audio.cpp:67
 msgid "Close the currently open audio file"
-msgstr ""
+msgstr "Zavřít otevřený zvukový soubor"
 
 #: ../src/command/audio.cpp:77
 msgid "&Open Audio File..."
@@ -568,7 +605,7 @@ msgstr "Načíst audio"
 
 #: ../src/command/audio.cpp:79
 msgid "Open an audio file"
-msgstr ""
+msgstr "Otevřít zvukový soubor"
 
 #: ../src/command/audio.cpp:82
 msgid "Audio Formats"
@@ -579,11 +616,9 @@ msgid "Video Formats"
 msgstr "Formáty videa"
 
 #: ../src/command/audio.cpp:85
-#, fuzzy
-#| msgid "Open Audio File"
 msgctxt "dialog title"
 msgid "Open Audio File"
-msgstr "Načíst audio"
+msgstr "Otevřít zvukový soubor"
 
 #: ../src/command/audio.cpp:93 ../src/command/audio.cpp:94
 msgid "Open 2h30 Blank Audio"
@@ -611,7 +646,7 @@ msgstr "Načíst audio z videa"
 
 #: ../src/command/audio.cpp:118
 msgid "Open the audio from the current video file"
-msgstr ""
+msgstr "Otevřít zvuk z aktuálního video souboru"
 
 #: ../src/command/audio.cpp:132
 msgid "&Spectrum Display"
@@ -643,13 +678,11 @@ msgstr "Vytvořit audio klip"
 
 #: ../src/command/audio.cpp:166
 msgid "Save an audio clip of the selected line"
-msgstr ""
+msgstr "Uložit zvukový úsek vybraného řádku"
 
 #: ../src/command/audio.cpp:177
-#, fuzzy
-#| msgid "Save audio clip"
 msgid "Save Audio Clip"
-msgstr "Uložit audio klip"
+msgstr "Uložit zvukový úsek"
 
 #: ../src/command/audio.cpp:192 ../src/command/audio.cpp:193
 msgid "Play current audio selection"
@@ -666,7 +699,7 @@ msgstr "Přehrát řádek"
 
 #: ../src/command/audio.cpp:207
 msgid "Play the audio for the current line"
-msgstr ""
+msgstr "Přehrát zvuk aktuálního řádku"
 
 #: ../src/command/audio.cpp:220 ../src/command/audio.cpp:221
 msgid "Play audio selection"
@@ -682,7 +715,7 @@ msgstr "Přehrát audio výběr nebo zastavit"
 
 #: ../src/command/audio.cpp:234
 msgid "Play selection, or stop playback if it's already playing"
-msgstr ""
+msgstr "Přehrát výběr, nebo zastavit přehrávání, pokud již probíhá"
 
 #: ../src/command/audio.cpp:249 ../src/command/audio.cpp:250
 msgid "Stop playing"
@@ -690,7 +723,7 @@ msgstr "Zastavit přehrávání"
 
 #: ../src/command/audio.cpp:251
 msgid "Stop audio and video playback"
-msgstr ""
+msgstr "Zastavit přehrávání zvuku a videa"
 
 #: ../src/command/audio.cpp:267 ../src/command/audio.cpp:268
 #: ../src/command/audio.cpp:269
@@ -760,29 +793,29 @@ msgstr "Přejít k výběru"
 
 #: ../src/command/audio.cpp:399
 msgid "Scroll the audio display to center on the current audio selection"
-msgstr ""
+msgstr "Posunout zobrazení zvuku tak, aby byl aktuální zvukový výběr uprostřed"
 
 #: ../src/command/audio.cpp:408 ../src/command/audio.cpp:409
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection start"
-msgstr "Přejít k výběru"
+msgstr "Přejít na začátek výběru"
 
 #: ../src/command/audio.cpp:410
 msgid ""
 "Scroll the audio display to center on the start of current audio selection"
 msgstr ""
+"Posunout zobrazení zvuku tak, aby byl začátek aktuálního zvukového výběru "
+"uprostřed"
 
 #: ../src/command/audio.cpp:419 ../src/command/audio.cpp:420
-#, fuzzy
-#| msgid "Go to selection"
 msgid "Go to selection end"
-msgstr "Přejít k výběru"
+msgstr "Přejít na konec výběru"
 
 #: ../src/command/audio.cpp:421
 msgid ""
 "Scroll the audio display to center on the end of current audio selection"
 msgstr ""
+"Posunout zobrazení zvuku tak, aby byl konec aktuálního zvukového výběru "
+"uprostřed"
 
 #: ../src/command/audio.cpp:430 ../src/command/audio.cpp:431
 msgid "Scroll left"
@@ -803,7 +836,7 @@ msgstr "Posunout zobrazení audia doprava"
 #: ../src/command/audio.cpp:457 ../src/command/audio.cpp:458
 #: ../src/command/audio.cpp:459
 msgid "Auto scroll audio display to selected line"
-msgstr ""
+msgstr "Automaticky posouvat zobrazení zvuku na vybraný řádek"
 
 #: ../src/command/audio.cpp:474 ../src/command/audio.cpp:475
 #: ../src/command/audio.cpp:476
@@ -812,11 +845,11 @@ msgstr "Automaticky potvrzovat všechny změny"
 
 #: ../src/command/audio.cpp:491 ../src/command/audio.cpp:492
 msgid "Auto go to next line on commit"
-msgstr ""
+msgstr "Po potvrzení automaticky přejít na další řádek"
 
 #: ../src/command/audio.cpp:493
 msgid "Automatically go to next line on commit"
-msgstr ""
+msgstr "Po potvrzení automaticky přejít na další řádek"
 
 #: ../src/command/audio.cpp:508 ../src/command/audio.cpp:509
 #: ../src/command/audio.cpp:510
@@ -885,6 +918,9 @@ msgid ""
 "Open automation manager. Ctrl: Rescan autoload folder. Ctrl+Shift: Rescan "
 "autoload folder and reload all automation scripts"
 msgstr ""
+"Otevřít Správce Automatizace. Ctrl: znovu prohledat složku automatického "
+"načítání. Ctrl+Shift: znovu prohledat složku automatického načítání a znovu "
+"načíst všechny skripty Automatizace"
 
 #: ../src/command/command.cpp:35
 #, c-format
@@ -901,60 +937,61 @@ msgstr "nastavit barvu"
 
 #: ../src/command/edit.cpp:391
 msgid "Primary Color..."
-msgstr ""
+msgstr "Primární barva..."
 
 #: ../src/command/edit.cpp:392
 msgid "Primary Color"
-msgstr ""
+msgstr "Primární barva"
 
 #: ../src/command/edit.cpp:393
 msgid "Set the primary fill color (\\c) at the cursor position"
-msgstr ""
+msgstr "Nastavit primární barvu výplně (\\c) na pozici kurzoru"
 
 #: ../src/command/edit.cpp:403
 msgid "Secondary Color..."
-msgstr ""
+msgstr "Sekundární barva..."
 
 #: ../src/command/edit.cpp:404
 msgid "Secondary Color"
-msgstr ""
+msgstr "Sekundární barva"
 
 #: ../src/command/edit.cpp:405
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
-msgstr ""
+msgstr "Nastavit sekundární (karaoke) barvu výplně (\\2c) na pozici kurzoru"
 
 #: ../src/command/edit.cpp:415
 msgid "Outline Color..."
-msgstr ""
+msgstr "Barva obrysu..."
 
 #: ../src/command/edit.cpp:416
 msgid "Outline Color"
-msgstr ""
+msgstr "Barva obrysu"
 
 #: ../src/command/edit.cpp:417
 msgid "Set the outline color (\\3c) at the cursor position"
-msgstr ""
+msgstr "Nastavit barvu obrysu (\\3c) na pozici kurzoru"
 
 #: ../src/command/edit.cpp:427
 msgid "Shadow Color..."
-msgstr ""
+msgstr "Barva stínu..."
 
 #: ../src/command/edit.cpp:428
 msgid "Shadow Color"
-msgstr ""
+msgstr "Barva stínu"
 
 #: ../src/command/edit.cpp:429
 msgid "Set the shadow color (\\4c) at the cursor position"
-msgstr ""
+msgstr "Nastavit barvu stínu (\\4c) na pozici kurzoru"
 
 #: ../src/command/edit.cpp:439 ../src/command/edit.cpp:440
 msgid "Toggle Bold"
-msgstr ""
+msgstr "Přepnout tučné"
 
 #: ../src/command/edit.cpp:441
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
+"Přepnout tučné písmo (\\b) pro aktuální výběr nebo na aktuální pozici kurzoru"
 
 #: ../src/command/edit.cpp:444
 msgid "toggle bold"
@@ -962,13 +999,14 @@ msgstr "přepnout tučné"
 
 #: ../src/command/edit.cpp:451 ../src/command/edit.cpp:452
 msgid "Toggle Italics"
-msgstr ""
+msgstr "Přepnout kurzívu"
 
 #: ../src/command/edit.cpp:453
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Přepnout kurzívu (\\i) pro aktuální výběr nebo na aktuální pozici kurzoru"
 
 #: ../src/command/edit.cpp:456
 msgid "toggle italic"
@@ -976,13 +1014,14 @@ msgstr "přepnout kurzívu"
 
 #: ../src/command/edit.cpp:463 ../src/command/edit.cpp:464
 msgid "Toggle Underline"
-msgstr ""
+msgstr "Přepnout podtržení"
 
 #: ../src/command/edit.cpp:465
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Přepnout podtržení (\\u) pro aktuální výběr nebo na aktuální pozici kurzoru"
 
 #: ../src/command/edit.cpp:468
 msgid "toggle underline"
@@ -990,13 +1029,14 @@ msgstr "přepnout podtržení"
 
 #: ../src/command/edit.cpp:475 ../src/command/edit.cpp:476
 msgid "Toggle Strikeout"
-msgstr ""
+msgstr "Přepnout přeškrtnutí"
 
 #: ../src/command/edit.cpp:477
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr ""
+"Přepnout přeškrtnutí (\\s) pro aktuální výběr nebo na aktuální pozici kurzoru"
 
 #: ../src/command/edit.cpp:480
 msgid "toggle strikeout"
@@ -1004,7 +1044,7 @@ msgstr "přepnout přeškrtnutí"
 
 #: ../src/command/edit.cpp:487
 msgid "Font Face..."
-msgstr ""
+msgstr "Písmo..."
 
 #: ../src/command/edit.cpp:488 ../src/preferences_base.cpp:277
 msgid "Font Face"
@@ -1012,7 +1052,7 @@ msgstr "Název písma"
 
 #: ../src/command/edit.cpp:489
 msgid "Select a font face and size"
-msgstr ""
+msgstr "Vybrat písmo a velikost"
 
 #: ../src/command/edit.cpp:516
 msgid "set font"
@@ -1040,7 +1080,7 @@ msgstr "Kopírovat řádky"
 
 #: ../src/command/edit.cpp:608
 msgid "Copy subtitles to the clipboard"
-msgstr ""
+msgstr "Kopírovat titulky do schránky"
 
 #: ../src/command/edit.cpp:629
 msgid "Cu&t Lines"
@@ -1056,7 +1096,7 @@ msgstr "Vyjmout titulky"
 
 #: ../src/command/edit.cpp:638
 msgid "cut lines"
-msgstr ""
+msgstr "vyjmutí řádků"
 
 #: ../src/command/edit.cpp:646
 msgid "De&lete Lines"
@@ -1072,7 +1112,7 @@ msgstr "Smaže zvolené řádky"
 
 #: ../src/command/edit.cpp:651
 msgid "delete lines"
-msgstr ""
+msgstr "smazání řádků"
 
 #: ../src/command/edit.cpp:716
 msgid "duplicate lines"
@@ -1096,23 +1136,27 @@ msgstr "Zdvojí zvolené řádky"
 
 #: ../src/command/edit.cpp:734 ../src/command/edit.cpp:735
 msgid "Split lines after current frame"
-msgstr ""
+msgstr "Rozdělit řádky za aktuálním snímkem"
 
 #: ../src/command/edit.cpp:736
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
 msgstr ""
+"Rozdělit aktuální řádek na řádek končící na aktuálním snímku a řádek "
+"začínající na následujícím snímku"
 
 #: ../src/command/edit.cpp:746 ../src/command/edit.cpp:747
 msgid "Split lines before current frame"
-msgstr ""
+msgstr "Rozdělit řádky před aktuálním snímkem"
 
 #: ../src/command/edit.cpp:748
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
 msgstr ""
+"Rozdělit aktuální řádek na řádek končící na předchozím snímku a řádek "
+"začínající na aktuálním snímku"
 
 #: ../src/command/edit.cpp:788
 msgid "As &Karaoke"
@@ -1124,7 +1168,7 @@ msgstr "Jako karaoke"
 
 #: ../src/command/edit.cpp:790
 msgid "Join selected lines in a single one, as karaoke"
-msgstr ""
+msgstr "Spojit vybrané řádky do jednoho jako karaoke"
 
 #: ../src/command/edit.cpp:793
 msgid "join as karaoke"
@@ -1140,7 +1184,7 @@ msgstr "Zřetězit"
 
 #: ../src/command/edit.cpp:801
 msgid "Join selected lines in a single one, concatenating text together"
-msgstr ""
+msgstr "Spojit vybrané řádky do jednoho a zřetězit jejich text"
 
 #: ../src/command/edit.cpp:804 ../src/command/edit.cpp:815
 msgid "join lines"
@@ -1159,6 +1203,7 @@ msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
 "remaining"
 msgstr ""
+"Spojit vybrané řádky do jednoho, ponechat text prvního a zahodit ostatní"
 
 #: ../src/command/edit.cpp:853
 msgid "&Paste Lines"
@@ -1194,7 +1239,7 @@ msgstr "Zkombinovat řádky"
 
 #: ../src/command/edit.cpp:970
 msgid "Recombine subtitles which have been split and merged"
-msgstr ""
+msgstr "Znovu zkombinovat titulky, které byly rozděleny a sloučeny"
 
 #: ../src/command/edit.cpp:1040
 msgid "combining"
@@ -1206,7 +1251,7 @@ msgstr "Rozdělit řádky (pomocí karaoke)"
 
 #: ../src/command/edit.cpp:1048
 msgid "Use karaoke timing to split line into multiple smaller lines"
-msgstr ""
+msgstr "Rozdělit řádek podle časování karaoke na více menších řádků"
 
 #: ../src/command/edit.cpp:1082
 msgid "splitting"
@@ -1222,6 +1267,8 @@ msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
+"Rozdělit aktuální řádek na pozici kurzoru a rozdělit délku původního řádku "
+"mezi nové řádky"
 
 #: ../src/command/edit.cpp:1130 ../src/command/edit.cpp:1131
 #: ../src/subs_edit_ctrl.cpp:416
@@ -1233,20 +1280,24 @@ msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr ""
+"Rozdělit aktuální řádek na pozici kurzoru a ponechat oběma řádkům časy "
+"původního řádku"
 
 #: ../src/command/edit.cpp:1141 ../src/command/edit.cpp:1142
 msgid "Split at cursor (at video frame)"
-msgstr ""
+msgstr "Rozdělit na kurzoru (na snímku videa)"
 
 #: ../src/command/edit.cpp:1143
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr ""
+"Rozdělit aktuální řádek na pozici kurzoru a rozdělit jeho délku na aktuálním "
+"snímku videa"
 
 #: ../src/command/edit.cpp:1159
 msgid "Redo last undone action"
-msgstr ""
+msgstr "Opakovat poslední vrácenou akci"
 
 #: ../src/command/edit.cpp:1164
 msgid "Nothing to &redo"
@@ -1268,7 +1319,7 @@ msgstr "Znovu %s"
 
 #: ../src/command/edit.cpp:1185
 msgid "Undo last action"
-msgstr ""
+msgstr "Vrátit poslední akci"
 
 #: ../src/command/edit.cpp:1190
 msgid "Nothing to &undo"
@@ -1290,15 +1341,16 @@ msgstr "Zpět %s"
 
 #: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1211
 msgid "Revert"
-msgstr ""
+msgstr "Obnovit"
 
 #: ../src/command/edit.cpp:1212
 msgid "Revert the active line to its initial state (shown in the upper editor)"
 msgstr ""
+"Obnovit aktivní řádek do původního stavu (zobrazeného v horním editoru)"
 
 #: ../src/command/edit.cpp:1217
 msgid "revert line"
-msgstr ""
+msgstr "obnovení řádku"
 
 #: ../src/command/edit.cpp:1223 ../src/command/edit.cpp:1224
 #: ../src/preferences.cpp:453
@@ -1307,19 +1359,19 @@ msgstr "Vymazat"
 
 #: ../src/command/edit.cpp:1225
 msgid "Clear the current line's text"
-msgstr ""
+msgstr "Vymazat text aktuálního řádku"
 
 #: ../src/command/edit.cpp:1230 ../src/command/edit.cpp:1249
 msgid "clear line"
-msgstr ""
+msgstr "vymazání řádku"
 
 #: ../src/command/edit.cpp:1237 ../src/command/edit.cpp:1238
 msgid "Clear Text"
-msgstr ""
+msgstr "Vymazat text"
 
 #: ../src/command/edit.cpp:1239
 msgid "Clear the current line's text, leaving override tags"
-msgstr ""
+msgstr "Vymazat text aktuálního řádku a ponechat přepisovací tagy"
 
 #: ../src/command/edit.cpp:1255 ../src/command/edit.cpp:1256
 #: ../src/command/tool.cpp:256
@@ -1328,11 +1380,11 @@ msgstr "Vložit originál"
 
 #: ../src/command/edit.cpp:1257
 msgid "Insert the original line text at the cursor"
-msgstr ""
+msgstr "Vložit původní text řádku na pozici kurzoru"
 
 #: ../src/command/edit.cpp:1265
 msgid "insert original"
-msgstr ""
+msgstr "vložení originálu"
 
 #: ../src/command/grid.cpp:50 ../src/command/grid.cpp:51
 #: ../src/command/grid.cpp:62 ../src/command/grid.cpp:63
@@ -1559,7 +1611,7 @@ msgstr "Zaměnit řádky"
 
 #: ../src/command/grid.cpp:384
 msgid "Swap the two selected lines"
-msgstr ""
+msgstr "Prohodit dva vybrané řádky"
 
 #: ../src/command/grid.cpp:395
 msgid "swap lines"
@@ -1632,7 +1684,7 @@ msgstr "Zavřít klíčové snímky"
 #: ../src/command/keyframe.cpp:51
 msgid ""
 "Discard the currently loaded keyframes and use those from the video, if any"
-msgstr ""
+msgstr "Zahodit načtené klíčové snímky a použít ty z videa, pokud existují"
 
 #: ../src/command/keyframe.cpp:66
 msgid "Open Keyframes..."
@@ -1644,13 +1696,11 @@ msgstr "Načíst klíčové snímky"
 
 #: ../src/command/keyframe.cpp:68
 msgid "Open a keyframe list file"
-msgstr ""
+msgstr "Otevřít soubor se seznamem klíčových snímků"
 
 #: ../src/command/keyframe.cpp:72
-#, fuzzy
-#| msgid "Open keyframes file"
 msgid "Open Keyframes File"
-msgstr "Načte soubor s klíčovými snímky"
+msgstr "Otevřít soubor klíčových snímků"
 
 #: ../src/command/keyframe.cpp:87
 msgid "Save Keyframes..."
@@ -1662,20 +1712,16 @@ msgstr "Uložit klíčové snímky"
 
 #: ../src/command/keyframe.cpp:89
 msgid "Save the current list of keyframes to a file"
-msgstr ""
+msgstr "Uložit aktuální seznam klíčových snímků do souboru"
 
 #: ../src/command/keyframe.cpp:97
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Save Keyframes File"
-msgstr "Uložit klíčové snímky"
+msgstr "Uložit soubor klíčových snímků"
 
 #: ../src/command/keyframe.cpp:97 ../src/command/timecode.cpp:73
 #: ../src/command/timecode.cpp:93
-#, fuzzy
-#| msgid "Files"
 msgid "Text Files"
-msgstr "Soubory"
+msgstr "Textové soubory"
 
 #: ../src/command/recent.cpp:43 ../src/command/recent.cpp:53
 msgid "Open recent audio"
@@ -1719,7 +1765,7 @@ msgstr "Přílohy"
 
 #: ../src/command/subtitle.cpp:81
 msgid "Open the attachment manager dialog"
-msgstr ""
+msgstr "Otevřít dialog správce příloh"
 
 #: ../src/command/subtitle.cpp:92
 msgid "&Find..."
@@ -1731,7 +1777,7 @@ msgstr "Najít"
 
 #: ../src/command/subtitle.cpp:94
 msgid "Search for text in the subtitles"
-msgstr ""
+msgstr "Hledat text v titulcích"
 
 #: ../src/command/subtitle.cpp:105
 msgid "Find &Next"
@@ -1743,7 +1789,7 @@ msgstr "Najít další"
 
 #: ../src/command/subtitle.cpp:107
 msgid "Find next match of last search"
-msgstr ""
+msgstr "Najít další výskyt posledního hledání"
 
 #: ../src/command/subtitle.cpp:134
 msgid "&After Current"
@@ -1755,7 +1801,7 @@ msgstr "Za aktuální"
 
 #: ../src/command/subtitle.cpp:136
 msgid "Insert a new line after the current one"
-msgstr ""
+msgstr "Vložit nový řádek za aktuální"
 
 #: ../src/command/subtitle.cpp:168 ../src/command/subtitle.cpp:169
 msgid "After Current, at Video Time"
@@ -1763,7 +1809,7 @@ msgstr "Za aktuální, čas z videa"
 
 #: ../src/command/subtitle.cpp:170
 msgid "Insert a new line after the current one, starting at video time"
-msgstr ""
+msgstr "Vložit nový řádek za aktuální, začínající v čase videa"
 
 #: ../src/command/subtitle.cpp:179
 msgid "&Before Current"
@@ -1775,7 +1821,7 @@ msgstr "Před aktuální"
 
 #: ../src/command/subtitle.cpp:181
 msgid "Insert a new line before the current one"
-msgstr ""
+msgstr "Vložit nový řádek před aktuální"
 
 #: ../src/command/subtitle.cpp:210 ../src/command/subtitle.cpp:211
 msgid "Before Current, at Video Time"
@@ -1783,7 +1829,7 @@ msgstr "Před aktuální, čas z videa"
 
 #: ../src/command/subtitle.cpp:212
 msgid "Insert a new line before the current one, starting at video time"
-msgstr ""
+msgstr "Vložit nový řádek před aktuální, začínající v čase videa"
 
 #: ../src/command/subtitle.cpp:238
 msgid "&New Subtitles"
@@ -1813,26 +1859,24 @@ msgstr "Otevřít titulky"
 
 #: ../src/command/subtitle.cpp:269
 msgid "Open a subtitles file"
-msgstr ""
+msgstr "Otevřít soubor titulků"
 
 #: ../src/command/subtitle.cpp:274 ../src/command/subtitle.cpp:304
 #: ../src/dialog_style_manager.cpp:674
-#, fuzzy
-#| msgid "Open subtitles file"
 msgid "Open Subtitles File"
-msgstr "Otevřít titulky"
+msgstr "Otevřít soubor titulků"
 
 #: ../src/command/subtitle.cpp:282
 msgid "Open A&utosaved Subtitles..."
-msgstr ""
+msgstr "Otevřít automaticky uložené titulky (&U)..."
 
 #: ../src/command/subtitle.cpp:283
 msgid "Open Autosaved Subtitles"
-msgstr ""
+msgstr "Otevřít automaticky uložené titulky"
 
 #: ../src/command/subtitle.cpp:284
 msgid "Open a previous version of a file which was autosaved by Aegisub"
-msgstr ""
+msgstr "Otevřít předchozí verzi souboru, kterou Aegisub automaticky uložil"
 
 #: ../src/command/subtitle.cpp:297
 msgid "Open Subtitles with &Charset..."
@@ -1844,7 +1888,7 @@ msgstr "Otevřít titulky se specifickou znakovou sadou..."
 
 #: ../src/command/subtitle.cpp:299
 msgid "Open a subtitles file with a specific file encoding"
-msgstr ""
+msgstr "Otevřít soubor titulků s určitým kódováním"
 
 #: ../src/command/subtitle.cpp:307
 msgid "Charset"
@@ -1864,7 +1908,7 @@ msgstr "Otevřít titulky z videa"
 
 #: ../src/command/subtitle.cpp:318
 msgid "Open the subtitles from the current video file"
-msgstr ""
+msgstr "Otevřít titulky z aktuálního video souboru"
 
 #: ../src/command/subtitle.cpp:334
 msgid "&Properties..."
@@ -1879,10 +1923,8 @@ msgid "Open script properties window"
 msgstr "Otevře okno s vlastnostmi ASS skriptu"
 
 #: ../src/command/subtitle.cpp:347
-#, fuzzy
-#| msgid "Save subtitles file"
 msgid "Save Subtitles File"
-msgstr "Uložit titulky"
+msgstr "Uložit soubor titulků"
 
 #: ../src/command/subtitle.cpp:357 ../src/command/subtitle.cpp:360
 #: ../src/dialog_fonts_collector.cpp:312 ../src/dialog_fonts_collector.cpp:317
@@ -1899,7 +1941,7 @@ msgstr "Chyba"
 #: ../src/command/subtitle.cpp:360 ../src/dialog_export.cpp:211
 #: ../src/dialog_style_manager.cpp:698 ../src/project.cpp:142
 msgid "Unknown error"
-msgstr ""
+msgstr "Neznámá chyba"
 
 #: ../src/command/subtitle.cpp:367
 msgid "&Save Subtitles"
@@ -1911,7 +1953,7 @@ msgstr "Uložit titulky"
 
 #: ../src/command/subtitle.cpp:369
 msgid "Save the current subtitles"
-msgstr ""
+msgstr "Uložit aktuální titulky"
 
 #: ../src/command/subtitle.cpp:384
 msgid "Save Subtitles &as..."
@@ -1923,7 +1965,7 @@ msgstr "Uložit titulky jako"
 
 #: ../src/command/subtitle.cpp:386
 msgid "Save subtitles with another name"
-msgstr ""
+msgstr "Uložit titulky pod jiným názvem"
 
 #: ../src/command/subtitle.cpp:395 ../src/dialog_export.cpp:127
 #: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:411
@@ -1936,7 +1978,7 @@ msgstr "Vybrat vše"
 
 #: ../src/command/subtitle.cpp:397
 msgid "Select all dialogue lines"
-msgstr ""
+msgstr "Vybrat všechny dialogové řádky"
 
 #: ../src/command/subtitle.cpp:409 ../src/command/subtitle.cpp:410
 msgid "Select Visible"
@@ -1944,7 +1986,7 @@ msgstr "Označit viditelné"
 
 #: ../src/command/subtitle.cpp:411
 msgid "Select all dialogue lines that are visible on the current video frame"
-msgstr ""
+msgstr "Vybrat všechny dialogové řádky viditelné na aktuálním snímku videa"
 
 #: ../src/command/subtitle.cpp:441
 msgid "Spell &Checker..."
@@ -1972,7 +2014,7 @@ msgstr "Změnit konec"
 
 #: ../src/command/time.cpp:107
 msgid "Change end times of lines to the next line's start time"
-msgstr ""
+msgstr "Změnit časy konce řádků na čas začátku následujícího řádku"
 
 #: ../src/command/time.cpp:116
 msgid "Change &Start"
@@ -1984,7 +2026,7 @@ msgstr "Změnit počátek"
 
 #: ../src/command/time.cpp:118
 msgid "Change start times of lines to the previous line's end time"
-msgstr ""
+msgstr "Změnit časy začátku řádků na čas konce předchozího řádku"
 
 #: ../src/command/time.cpp:128
 msgid "Shift to &Current Frame"
@@ -2051,7 +2093,7 @@ msgstr "Přidat nástup a zakončení"
 
 #: ../src/command/time.cpp:241
 msgid "Add both lead in and out to the selected lines"
-msgstr ""
+msgstr "Přidat vybraným řádkům nástup i zakončení"
 
 #: ../src/command/time.cpp:253 ../src/command/time.cpp:254
 msgid "Add lead in"
@@ -2059,7 +2101,7 @@ msgstr "Přidat nástup"
 
 #: ../src/command/time.cpp:255
 msgid "Add the lead in time to the selected lines"
-msgstr ""
+msgstr "Přidat vybraným řádkům čas nástupu"
 
 #: ../src/command/time.cpp:265 ../src/command/time.cpp:266
 msgid "Add lead out"
@@ -2067,7 +2109,7 @@ msgstr "Přidat zakončení"
 
 #: ../src/command/time.cpp:267
 msgid "Add the lead out time to the selected lines"
-msgstr ""
+msgstr "Přidat vybraným řádkům čas zakončení"
 
 #: ../src/command/time.cpp:276 ../src/command/time.cpp:277
 msgid "Increase length"
@@ -2146,7 +2188,7 @@ msgstr "Zavřít časový kód"
 
 #: ../src/command/timecode.cpp:53
 msgid "Close the currently open timecodes file"
-msgstr ""
+msgstr "Zavřít otevřený soubor časových kódů"
 
 #: ../src/command/timecode.cpp:68
 msgid "Open Timecodes File..."
@@ -2158,14 +2200,12 @@ msgstr "Načíst soubor časových kódů"
 
 #: ../src/command/timecode.cpp:70
 msgid "Open a VFR timecodes v1 or v2 file"
-msgstr ""
+msgstr "Otevřít soubor časových kódů VFR v1 nebo v2"
 
 #: ../src/command/timecode.cpp:74
-#, fuzzy
-#| msgid "Open Timecodes File"
 msgctxt "dialog title"
 msgid "Open Timecodes File"
-msgstr "Načíst soubor časových kódů"
+msgstr "Otevřít soubor časových kódů"
 
 #: ../src/command/timecode.cpp:83
 msgid "Save Timecodes File..."
@@ -2177,18 +2217,16 @@ msgstr "Uložit soubor časových kódů"
 
 #: ../src/command/timecode.cpp:85
 msgid "Save a VFR timecodes v2 file"
-msgstr ""
+msgstr "Uložit soubor časových kódů VFR v2"
 
 #: ../src/command/timecode.cpp:94
-#, fuzzy
-#| msgid "Save Timecodes File"
 msgctxt "dialog title"
 msgid "Save Timecodes File"
 msgstr "Uložit soubor časových kódů"
 
 #: ../src/command/timecode.cpp:103
 msgid "Error saving timecodes"
-msgstr ""
+msgstr "Chyba při ukládání časových kódů"
 
 #: ../src/command/tool.cpp:56
 msgid "&Export Subtitles..."
@@ -2202,7 +2240,7 @@ msgstr "Export titulků"
 msgid ""
 "Save a copy of subtitles in a different format or with processing applied to "
 "it"
-msgstr ""
+msgstr "Uložit kopii titulků v jiném formátu nebo s použitým zpracováním"
 
 #: ../src/command/tool.cpp:69
 msgid "&Fonts Collector..."
@@ -2226,7 +2264,7 @@ msgstr "Zvolit řádky"
 
 #: ../src/command/tool.cpp:83
 msgid "Select lines based on defined criteria"
-msgstr ""
+msgstr "Vybrat řádky podle zadaných kritérií"
 
 #: ../src/command/tool.cpp:93
 msgid "&Resample Resolution..."
@@ -2241,6 +2279,8 @@ msgid ""
 "Resample subtitles to maintain their current appearance at a different "
 "script resolution"
 msgstr ""
+"Převzorkovat titulky tak, aby si zachovaly současný vzhled při jiném "
+"rozlišení skriptu"
 
 #: ../src/command/tool.cpp:108
 msgid "St&yling Assistant..."
@@ -2291,7 +2331,7 @@ msgstr "Správce stylů"
 
 #: ../src/command/tool.cpp:152
 msgid "Open the styles manager"
-msgstr ""
+msgstr "Otevřít správce stylů"
 
 #: ../src/command/tool.cpp:162
 msgid "&Kanji Timer..."
@@ -2303,7 +2343,7 @@ msgstr "Časovač Kanji"
 
 #: ../src/command/tool.cpp:164
 msgid "Open the Kanji timer copier"
-msgstr ""
+msgstr "Otevřít kopírovač časovače Kanji"
 
 #: ../src/command/tool.cpp:174
 msgid "&Timing Post-Processor..."
@@ -2318,6 +2358,8 @@ msgid ""
 "Post-process the subtitle timing to add lead-ins and lead-outs, snap timing "
 "to scene changes, etc."
 msgstr ""
+"Dodatečně zpracovat časování titulků: přidat nástupy a zakončení, přichytit "
+"časy ke změnám scény atd."
 
 #: ../src/command/tool.cpp:186
 msgid "&Translation Assistant..."
@@ -2370,7 +2412,7 @@ msgstr "Filmový pás (2.35)"
 
 #: ../src/command/video.cpp:84
 msgid "Force video to 2.35 aspect ratio"
-msgstr ""
+msgstr "Vynutit poměr stran videa 2,35"
 
 #: ../src/command/video.cpp:100
 msgid "C&ustom..."
@@ -2382,7 +2424,7 @@ msgstr "Vlastní"
 
 #: ../src/command/video.cpp:102
 msgid "Force video to a custom aspect ratio"
-msgstr ""
+msgstr "Vynutit vlastní poměr stran videa"
 
 #: ../src/command/video.cpp:113
 msgid ""
@@ -2414,7 +2456,7 @@ msgstr "&Výchozí"
 
 #: ../src/command/video.cpp:145
 msgid "Use video's original aspect ratio"
-msgstr ""
+msgstr "Použít původní poměr stran videa"
 
 #: ../src/command/video.cpp:161
 msgid "&Fullscreen (4:3)"
@@ -2426,7 +2468,7 @@ msgstr "Obrazovka (4:3)"
 
 #: ../src/command/video.cpp:163
 msgid "Force video to 4:3 aspect ratio"
-msgstr ""
+msgstr "Vynutit poměr stran videa 4:3"
 
 #: ../src/command/video.cpp:179
 msgid "&Widescreen (16:9)"
@@ -2438,7 +2480,7 @@ msgstr "Širokoúhlé (16:9)"
 
 #: ../src/command/video.cpp:181
 msgid "Force video to 16:9 aspect ratio"
-msgstr ""
+msgstr "Vynutit poměr stran videa 16:9"
 
 #: ../src/command/video.cpp:198
 msgid "&Close Video"
@@ -2450,7 +2492,7 @@ msgstr "Zavřít video"
 
 #: ../src/command/video.cpp:200
 msgid "Close the currently open video file"
-msgstr ""
+msgstr "Zavřít otevřený video soubor"
 
 #: ../src/command/video.cpp:209 ../src/command/video.cpp:210
 msgid "Copy coordinates to Clipboard"
@@ -2463,16 +2505,16 @@ msgstr "Zkopírovat do schránky aktuální souřadnice myši ve videu"
 
 #: ../src/command/video.cpp:220 ../src/command/video.cpp:221
 msgid "Cycle active subtitles provider"
-msgstr ""
+msgstr "Přepnout aktivního poskytovatele titulků"
 
 #: ../src/command/video.cpp:222
 msgid "Cycle through the available subtitles providers"
-msgstr ""
+msgstr "Procházet dostupné poskytovatele titulků"
 
 #: ../src/command/video.cpp:233
 #, c-format
 msgid "Subtitles provider set to %s"
-msgstr ""
+msgstr "Poskytovatel titulků nastaven na %s"
 
 #: ../src/command/video.cpp:240
 msgid "&Detach Video"
@@ -2487,6 +2529,7 @@ msgid ""
 "Detach the video display from the main window, displaying it in a separate "
 "Window"
 msgstr ""
+"Oddělit zobrazení videa od hlavního okna a zobrazit ho v samostatném okně"
 
 #: ../src/command/video.cpp:260
 msgid "Show &Video Details"
@@ -2498,7 +2541,7 @@ msgstr "Zobrazit informace o videu"
 
 #: ../src/command/video.cpp:262
 msgid "Show video details"
-msgstr ""
+msgstr "Zobrazit informace o videu"
 
 #: ../src/command/video.cpp:272 ../src/command/video.cpp:273
 msgid "Toggle video slider focus"
@@ -2507,7 +2550,7 @@ msgstr "Přepnout zaměření posuvníku videa"
 #: ../src/command/video.cpp:274
 msgid ""
 "Toggle focus between the video slider and the previous thing to have focus"
-msgstr ""
+msgstr "Přepnout zaměření mezi posuvníkem videa a předchozím zaměřeným prvkem"
 
 #: ../src/command/video.cpp:299 ../src/command/video.cpp:300
 msgid "Copy image to Clipboard"
@@ -2528,13 +2571,13 @@ msgstr "Zkopírovat do schránky aktuálně zobrazený snímek, bez titulků"
 
 #: ../src/command/video.cpp:321 ../src/command/video.cpp:322
 msgid "Copy image to Clipboard (only subtitles)"
-msgstr ""
+msgstr "Kopírovat obrázek do schránky (pouze titulky)"
 
 #: ../src/command/video.cpp:323
 msgid ""
 "Copy the currently displayed subtitles to the clipboard, with transparent "
 "background"
-msgstr ""
+msgstr "Zkopírovat právě zobrazené titulky s průhledným pozadím do schránky"
 
 #: ../src/command/video.cpp:332 ../src/command/video.cpp:333
 msgid "Next Frame"
@@ -2550,7 +2593,7 @@ msgstr "Následující hranice"
 
 #: ../src/command/video.cpp:345
 msgid "Seek to the next beginning or end of a subtitle"
-msgstr ""
+msgstr "Přejít na další začátek nebo konec titulku"
 
 #: ../src/command/video.cpp:372 ../src/command/video.cpp:373
 msgid "Next Keyframe"
@@ -2579,7 +2622,7 @@ msgstr "Předchozí hranice"
 
 #: ../src/command/video.cpp:412
 msgid "Seek to the previous beginning or end of a subtitle"
-msgstr ""
+msgstr "Přejít na předchozí začátek nebo konec titulku"
 
 #: ../src/command/video.cpp:439 ../src/command/video.cpp:440
 msgid "Previous Keyframe"
@@ -2616,13 +2659,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:534 ../src/command/video.cpp:535
 msgid "Save PNG snapshot (only subtitles)"
-msgstr ""
+msgstr "Uložit snímek PNG (pouze titulky)"
 
 #: ../src/command/video.cpp:536
 msgid ""
 "Save the currently displayed subtitles with transparent background to a PNG "
 "file in the video's directory"
 msgstr ""
+"Uložit právě zobrazené titulky s průhledným pozadím jako soubor PNG do "
+"složky videa"
 
 #: ../src/command/video.cpp:546
 msgid "&Jump to..."
@@ -2646,7 +2691,7 @@ msgstr "Přejít na konec videa"
 
 #: ../src/command/video.cpp:562
 msgid "Jump the video to the end frame of current subtitle"
-msgstr ""
+msgstr "Přesunout video na koncový snímek aktuálního titulku"
 
 #: ../src/command/video.cpp:573
 msgid "Jump Video to &Start"
@@ -2658,7 +2703,7 @@ msgstr "Přejít na začátek videa"
 
 #: ../src/command/video.cpp:575
 msgid "Jump the video to the start frame of current subtitle"
-msgstr ""
+msgstr "Přesunout video na počáteční snímek aktuálního titulku"
 
 #: ../src/command/video.cpp:586
 msgid "&Open Video..."
@@ -2670,13 +2715,11 @@ msgstr "Otevřít video"
 
 #: ../src/command/video.cpp:588
 msgid "Open a video file"
-msgstr ""
+msgstr "Otevřít video soubor"
 
 #: ../src/command/video.cpp:593
-#, fuzzy
-#| msgid "Open video file"
 msgid "Open Video File"
-msgstr "Otevřít video"
+msgstr "Otevřít video soubor"
 
 #: ../src/command/video.cpp:602
 msgid "&Use Dummy Video..."
@@ -2688,7 +2731,7 @@ msgstr "Použít náhradní video"
 
 #: ../src/command/video.cpp:604
 msgid "Open a placeholder video clip with solid color"
-msgstr ""
+msgstr "Otevřít zástupný videoklip s jednolitou barvou"
 
 #: ../src/command/video.cpp:616 ../src/command/video.cpp:617
 msgid "Toggle autoscroll of video"
@@ -2696,15 +2739,13 @@ msgstr "Přepnout automatické posouvání videa"
 
 #: ../src/command/video.cpp:618
 msgid "Toggle automatically seeking video to the start time of selected lines"
-msgstr ""
+msgstr "Přepnout automatický přesun videa na čas začátku vybraných řádků"
 
 #: ../src/command/video.cpp:633 ../src/command/video.cpp:634
 msgid "Play"
 msgstr "Přehrát"
 
 #: ../src/command/video.cpp:635
-#, fuzzy
-#| msgid "Play video starting on this position"
 msgid "Play the video starting on this position"
 msgstr "Přehrát video od této pozice"
 
@@ -2713,10 +2754,8 @@ msgid "Play line"
 msgstr "Přehrát řádek"
 
 #: ../src/command/video.cpp:647
-#, fuzzy
-#| msgid "Play current line"
 msgid "Play the video for the current line"
-msgstr "Přehrát řádek"
+msgstr "Přehrát video aktuálního řádku"
 
 #: ../src/command/video.cpp:656
 msgid "Show &Overscan Mask"
@@ -2736,17 +2775,15 @@ msgstr ""
 
 #: ../src/command/video.cpp:673
 msgid "Reset Video &Pan"
-msgstr ""
+msgstr "Obnovit posun videa (&P)"
 
 #: ../src/command/video.cpp:674
-#, fuzzy
-#| msgid "Close Video"
 msgid "Reset Video Pan"
-msgstr "Zavřít video"
+msgstr "Obnovit posun videa"
 
 #: ../src/command/video.cpp:675
 msgid "Reset the video's position in the video display"
-msgstr ""
+msgstr "Obnovit pozici videa v zobrazení videa"
 
 #: ../src/command/video.cpp:685
 msgid "&100%"
@@ -2874,70 +2911,56 @@ msgid "Line"
 msgstr "čára"
 
 #: ../src/command/vis_tool.cpp:141
-#, fuzzy
-#| msgid "Appends a line"
 msgid "Append a line"
-msgstr "Přidá čáru"
+msgstr "Přidat úsečku"
 
 #: ../src/command/vis_tool.cpp:146 ../src/command/vis_tool.cpp:147
 msgid "Bicubic"
 msgstr "Bikubická křivka"
 
 #: ../src/command/vis_tool.cpp:148
-#, fuzzy
-#| msgid "Appends a bezier bicubic curve"
 msgid "Append a bezier bicubic curve"
-msgstr "Přidá Bézierovu bikubickou křivku"
+msgstr "Přidat kubickou Bézierovu křivku"
 
 #: ../src/command/vis_tool.cpp:153 ../src/command/vis_tool.cpp:154
 msgid "Convert"
 msgstr "Převést"
 
 #: ../src/command/vis_tool.cpp:155
-#, fuzzy
-#| msgid "Converts a segment between line and bicubic"
 msgid "Convert a segment between line and bicubic"
-msgstr "Převede úsek na čáru nebo kubickou křivku"
+msgstr "Převést úsek mezi úsečkou a kubickou křivkou"
 
 #: ../src/command/vis_tool.cpp:160 ../src/command/vis_tool.cpp:161
 msgid "Insert"
 msgstr "Vložit"
 
 #: ../src/command/vis_tool.cpp:162
-#, fuzzy
-#| msgid "Inserts a control point"
 msgid "Insert a control point"
-msgstr "Vloží řídící bód"
+msgstr "Vložit řídicí bod"
 
 #: ../src/command/vis_tool.cpp:167 ../src/command/vis_tool.cpp:168
 msgid "Remove"
 msgstr "Odebrat"
 
 #: ../src/command/vis_tool.cpp:169
-#, fuzzy
-#| msgid "Removes a control point"
 msgid "Remove a control point"
-msgstr "Odebere řídící bod"
+msgstr "Odebrat řídicí bod"
 
 #: ../src/command/vis_tool.cpp:174 ../src/command/vis_tool.cpp:175
 msgid "Freehand"
 msgstr "Kresba"
 
 #: ../src/command/vis_tool.cpp:176
-#, fuzzy
-#| msgid "Draws a freehand shape"
 msgid "Draw a freehand shape"
-msgstr "Nakreslí libovolný tvar"
+msgstr "Kreslit volný tvar"
 
 #: ../src/command/vis_tool.cpp:181 ../src/command/vis_tool.cpp:182
 msgid "Freehand smooth"
 msgstr "Vyhlazená kresba"
 
 #: ../src/command/vis_tool.cpp:183
-#, fuzzy
-#| msgid "Draws a smoothed freehand shape"
 msgid "Draw a smoothed freehand shape"
-msgstr "Nakreslí vyhlazený tvar"
+msgstr "Kreslit vyhlazený volný tvar"
 
 #: ../src/dialog_about.cpp:46
 msgid "Translated into LANGUAGE by PERSON\n"
@@ -3000,20 +3023,16 @@ msgid "Choose file to be attached"
 msgstr "Vyberte soubor, který chcete připojit"
 
 #: ../src/dialog_attachments.cpp:139 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "Font Face"
 msgid "Font Files"
-msgstr "Název písma"
+msgstr "Soubory písem"
 
 #: ../src/dialog_attachments.cpp:142
 msgid "attach font file"
 msgstr "přiložit soubor písma"
 
 #: ../src/dialog_attachments.cpp:149 ../src/dialog_attachments.cpp:170
-#, fuzzy
-#| msgid "attach graphics file"
 msgid "Graphic Files"
-msgstr "přiložit grafický soubor"
+msgstr "Soubory obrázků"
 
 #: ../src/dialog_attachments.cpp:152
 msgid "attach graphics file"
@@ -3074,7 +3093,7 @@ msgstr "Přidat skript Automatizace"
 #: ../src/dialog_automation.cpp:240
 #, c-format
 msgid "Script '%s' is already loaded"
-msgstr ""
+msgstr "Skript „%s“ je již načten"
 
 #: ../src/dialog_automation.cpp:279
 #, c-format
@@ -3092,18 +3111,7 @@ msgid "Scripting engines installed:"
 msgstr "Instalované skriptovací nástroje:"
 
 #: ../src/dialog_automation.cpp:291
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Script info:\n"
-#| "Name: %s\n"
-#| "Description: %s\n"
-#| "Author: %s\n"
-#| "Version: %s\n"
-#| "Full path: %s\n"
-#| "State: %s\n"
-#| "\n"
-#| "Features provided by script:"
+#, c-format
 msgid ""
 "\n"
 "Script info:\n"
@@ -3120,10 +3128,8 @@ msgstr ""
 "Popis: %s\n"
 "Autor: %s\n"
 "Verze: %s\n"
-"Umístění: %s\n"
+"Úplná cesta: %s\n"
 "Stav: %s\n"
-"\n"
-"Funkce skriptu: "
 
 #: ../src/dialog_automation.cpp:297
 msgid "Correctly loaded"
@@ -3135,17 +3141,16 @@ msgstr "Nepovedlo se načíst"
 
 #: ../src/dialog_automation.cpp:297
 msgid "Loaded with warnings"
-msgstr ""
+msgstr "Načteno s varováním"
 
 #: ../src/dialog_automation.cpp:300
-#, fuzzy, c-format
-#| msgid "2: Warning"
+#, c-format
 msgid "Warning: %s\n"
-msgstr "2: Varování"
+msgstr "Varování: %s\n"
 
 #: ../src/dialog_automation.cpp:303
 msgid "Features provided by script:\n"
-msgstr ""
+msgstr "Funkce poskytované skriptem:\n"
 
 #: ../src/dialog_automation.cpp:306
 #, c-format
@@ -3163,7 +3168,7 @@ msgstr "Info o skriptu Automatizace"
 
 #: ../src/dialog_autosave.cpp:67
 msgid "Open autosave file"
-msgstr ""
+msgstr "Otevřít automaticky uložený soubor"
 
 #: ../src/dialog_autosave.cpp:71 ../src/preferences.cpp:113
 msgid "Files"
@@ -3171,7 +3176,7 @@ msgstr "Soubory"
 
 #: ../src/dialog_autosave.cpp:76
 msgid "Versions"
-msgstr ""
+msgstr "Verze"
 
 #: ../src/dialog_autosave.cpp:86
 msgid "Open"
@@ -3180,12 +3185,12 @@ msgstr "Otevřít"
 #: ../src/dialog_autosave.cpp:95
 #, c-format
 msgid "%s [ORIGINAL BACKUP]"
-msgstr ""
+msgstr "%s [PŮVODNÍ ZÁLOHA]"
 
 #: ../src/dialog_autosave.cpp:96
 #, c-format
 msgid "%s [RECOVERED]"
-msgstr ""
+msgstr "%s [OBNOVENO]"
 
 #: ../src/dialog_colorpicker.cpp:527
 msgid "Select Color"
@@ -3245,7 +3250,7 @@ msgstr "Červená:"
 
 #: ../src/dialog_colorpicker.cpp:609
 msgid "Alpha:"
-msgstr ""
+msgstr "Alfa:"
 
 #: ../src/dialog_colorpicker.cpp:616 ../src/dialog_colorpicker.cpp:619
 msgid "Hue:"
@@ -3270,51 +3275,51 @@ msgstr "Video: %s"
 
 #: ../src/dialog_dummy_video.cpp:71
 msgid "640×480 (SD fullscreen)"
-msgstr ""
+msgstr "640×480 (SD celá obrazovka)"
 
 #: ../src/dialog_dummy_video.cpp:72
 msgid "704×480 (SD anamorphic)"
-msgstr ""
+msgstr "704×480 (SD anamorfní)"
 
 #: ../src/dialog_dummy_video.cpp:73
 msgid "640×360 (SD widescreen)"
-msgstr ""
+msgstr "640×360 (SD širokoúhlé)"
 
 #: ../src/dialog_dummy_video.cpp:74
 msgid "704×396 (SD widescreen)"
-msgstr ""
+msgstr "704×396 (SD širokoúhlé)"
 
 #: ../src/dialog_dummy_video.cpp:75
 msgid "640×352 (SD widescreen MOD16)"
-msgstr ""
+msgstr "640×352 (SD širokoúhlé MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:76
 msgid "704×400 (SD widescreen MOD16)"
-msgstr ""
+msgstr "704×400 (SD širokoúhlé MOD16)"
 
 #: ../src/dialog_dummy_video.cpp:77
 msgid "1024×576 (SuperPAL widescreen)"
-msgstr ""
+msgstr "1024×576 (SuperPAL širokoúhlé)"
 
 #: ../src/dialog_dummy_video.cpp:78
 msgid "1280×720 (HD 720p)"
-msgstr ""
+msgstr "1280×720 (HD 720p)"
 
 #: ../src/dialog_dummy_video.cpp:79
 msgid "1920×1080 (FHD 1080p)"
-msgstr ""
+msgstr "1920×1080 (FHD 1080p)"
 
 #: ../src/dialog_dummy_video.cpp:80
 msgid "2560×1440 (QHD 1440p)"
-msgstr ""
+msgstr "2560×1440 (QHD 1440p)"
 
 #: ../src/dialog_dummy_video.cpp:81
 msgid "3840×2160 (4K UHD 2160p)"
-msgstr ""
+msgstr "3840×2160 (4K UHD 2160p)"
 
 #: ../src/dialog_dummy_video.cpp:82
 msgid "1080×1920 (FHD vertical)"
-msgstr ""
+msgstr "1080×1920 (FHD na výšku)"
 
 #: ../src/dialog_dummy_video.cpp:104
 msgid "Dummy video options"
@@ -3348,7 +3353,7 @@ msgstr "Trvání (snímky):"
 #: ../src/dialog_dummy_video.cpp:180
 #, c-format
 msgid "Resulting duration: %s"
-msgstr ""
+msgstr "Výsledná délka: %s"
 
 #: ../src/dialog_export.cpp:102
 msgid "Export"
@@ -3379,17 +3384,13 @@ msgid "Export..."
 msgstr "Export..."
 
 #: ../src/dialog_export.cpp:190
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Export Subtitles File"
-msgstr "Export titulků"
+msgstr "Exportovat soubor titulků"
 
 #: ../src/dialog_export.cpp:205 ../src/dialog_export.cpp:208
 #: ../src/dialog_export.cpp:211
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error exporting subtitles"
-msgstr "Chyba při importu stylů"
+msgstr "Chyba při exportu titulků"
 
 #: ../src/dialog_export_ebu3264.cpp:83
 msgid "EBU STL export"
@@ -3522,7 +3523,7 @@ msgstr "Offset časového kódu:"
 #: ../src/dialog_fonts_collector.cpp:101
 #, c-format
 msgid "* An error occurred when enumerating the used fonts: %s.\n"
-msgstr ""
+msgstr "* Při výčtu použitých písem došlo k chybě: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:115
 msgid "Symlinking fonts to folder...\n"
@@ -3539,12 +3540,12 @@ msgstr "Kopíruji fonty do archivu...\n"
 #: ../src/dialog_fonts_collector.cpp:134
 #, c-format
 msgid "* Failed to create directory '%s': %s.\n"
-msgstr ""
+msgstr "* Nepodařilo se vytvořit složku „%s“: %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:145
 #, c-format
 msgid "* Failed to open %s.\n"
-msgstr ""
+msgstr "* Nepodařilo se otevřít %s.\n"
 
 #: ../src/dialog_fonts_collector.cpp:200
 #, c-format
@@ -3642,7 +3643,7 @@ msgstr "Zvolte jméno archivu"
 
 #: ../src/dialog_fonts_collector.cpp:348
 msgid "Zip Archives"
-msgstr ""
+msgstr "Archivy Zip"
 
 #: ../src/dialog_fonts_collector.cpp:352
 msgid "Select folder to save fonts on"
@@ -3685,8 +3686,6 @@ msgid "Dest: "
 msgstr "Cíl:"
 
 #: ../src/dialog_kara_timing_copy.cpp:386
-#, fuzzy
-#| msgid "Kanji Timer"
 msgid "Kanji timer"
 msgstr "Časovač Kanji"
 
@@ -3708,10 +3707,8 @@ msgid "Commands"
 msgstr "Příkazy"
 
 #: ../src/dialog_kara_timing_copy.cpp:408
-#, fuzzy
-#| msgid "Attempt to &interpolate kanji."
 msgid "Attempt to &interpolate kanji"
-msgstr "Pokus o interpolaci kanji."
+msgstr "Pokusit se interpolovat kanji (&I)"
 
 #: ../src/dialog_kara_timing_copy.cpp:415
 msgid ""
@@ -3791,7 +3788,7 @@ msgstr "Vyberte pole, na která chcete použít Chytré vložení:"
 
 #: ../src/dialog_paste_over.cpp:65
 msgid "Comment"
-msgstr ""
+msgstr "Komentář"
 
 #: ../src/dialog_paste_over.cpp:69 ../src/grid_column.cpp:202
 #: ../src/grid_column.cpp:203
@@ -3888,10 +3885,22 @@ msgstr "Rozlišení:"
 msgid "From &video"
 msgstr "Vzít z videa"
 
+#: ../src/dialog_properties.cpp:148
+msgid "Script: "
+msgstr "Skript: "
+
+#: ../src/dialog_properties.cpp:154 ../src/dialog_properties.cpp:169
+msgid "From video"
+msgstr "Z videa"
+
+#: ../src/dialog_properties.cpp:160
+msgid "Layout: "
+msgstr "Rozvržení: "
+
 #: ../src/dialog_properties.cpp:144 ../src/dialog_resample.cpp:180
 #: ../src/dialog_resample.cpp:193
 msgid "YCbCr Matrix:"
-msgstr ""
+msgstr "Matice YCbCr:"
 
 #: ../src/dialog_properties.cpp:155
 msgid "0: Smart wrapping, top line is wider"
@@ -3932,11 +3941,11 @@ msgstr "změna vlastnosti"
 
 #: ../src/dialog_resample.cpp:114
 msgid "Source Resolution"
-msgstr ""
+msgstr "Zdrojové rozlišení"
 
 #: ../src/dialog_resample.cpp:115
 msgid "Destination Resolution"
-msgstr ""
+msgstr "Cílové rozlišení"
 
 #: ../src/dialog_resample.cpp:116
 msgid "Margin offset"
@@ -3948,27 +3957,27 @@ msgstr "Symetrický"
 
 #: ../src/dialog_resample.cpp:152
 msgid "From s&cript"
-msgstr ""
+msgstr "Ze skriptu (&C)"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Add borders"
-msgstr ""
+msgstr "Přidat okraje"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Manual"
-msgstr ""
+msgstr "Ručně"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Remove borders"
-msgstr ""
+msgstr "Odebrat okraje"
 
 #: ../src/dialog_resample.cpp:155
 msgid "Stretch"
-msgstr ""
+msgstr "Roztáhnout"
 
 #: ../src/dialog_resample.cpp:156
 msgid "Aspect Ratio Handling"
-msgstr ""
+msgstr "Zacházení s poměrem stran"
 
 #: ../src/dialog_search_replace.cpp:47
 msgid "Replace"
@@ -3996,7 +4005,7 @@ msgstr "Přeskočit komentáře"
 
 #: ../src/dialog_search_replace.cpp:81
 msgid "S&kip Override Tags"
-msgstr ""
+msgstr "Přeskočit přepisovací tagy (&K)"
 
 #: ../src/dialog_search_replace.cpp:87 ../src/dialog_selection.cpp:139
 msgid "&Text"
@@ -4004,15 +4013,15 @@ msgstr "Text"
 
 #: ../src/dialog_search_replace.cpp:87
 msgid "A&ctor"
-msgstr ""
+msgstr "Herec (&C)"
 
 #: ../src/dialog_search_replace.cpp:87
 msgid "St&yle"
-msgstr ""
+msgstr "Styl (&Y)"
 
 #: ../src/dialog_search_replace.cpp:88
 msgid "A&ll rows"
-msgstr ""
+msgstr "Všechny řádky (&L)"
 
 #: ../src/dialog_search_replace.cpp:88 ../src/dialog_shift_times.cpp:170
 msgid "Selected &rows"
@@ -4115,36 +4124,36 @@ msgid "Set se&lection"
 msgstr "Zvolit výběr"
 
 #: ../src/dialog_selection.cpp:215
-#, fuzzy, c-format
+#, c-format
 msgid "Selection was set to one line"
 msgid_plural "Selection was set to %u lines"
-msgstr[0] "Výběr nastaven na jeden řádek"
-msgstr[1] "Výběr nastaven na jeden řádek"
-msgstr[2] "Výběr nastaven na jeden řádek"
+msgstr[0] "Výběr byl nastaven na jeden řádek"
+msgstr[1] "Výběr byl nastaven na %u řádky"
+msgstr[2] "Výběr byl nastaven na %u řádků"
 
 #: ../src/dialog_selection.cpp:216
 msgid "Selection was set to no lines"
 msgstr "Výběr nastaven na žádný řádek"
 
 #: ../src/dialog_selection.cpp:222
-#, fuzzy, c-format
+#, c-format
 msgid "One line was added to selection"
 msgid_plural "%u lines were added to selection"
 msgstr[0] "Do výběru byl přidán jeden řádek"
-msgstr[1] "Do výběru byl přidán jeden řádek"
-msgstr[2] "Do výběru byl přidán jeden řádek"
+msgstr[1] "Do výběru byly přidány %u řádky"
+msgstr[2] "Do výběru bylo přidáno %u řádků"
 
 #: ../src/dialog_selection.cpp:223
 msgid "No lines were added to selection"
 msgstr "Do výběru nebyl přidán žádný řádek"
 
 #: ../src/dialog_selection.cpp:234
-#, fuzzy, c-format
+#, c-format
 msgid "One line was removed from selection"
 msgid_plural "%u lines were removed from selection"
-msgstr[0] "Z výběru byl odstraněn jeden řádek"
-msgstr[1] "Z výběru byl odstraněn jeden řádek"
-msgstr[2] "Z výběru byl odstraněn jeden řádek"
+msgstr[0] "Z výběru byl odebrán jeden řádek"
+msgstr[1] "Z výběru byly odebrány %u řádky"
+msgstr[2] "Z výběru bylo odebráno %u řádků"
 
 #: ../src/dialog_selection.cpp:235
 msgid "No lines were removed from selection"
@@ -4162,9 +4171,9 @@ msgstr "neuložené"
 #, c-format
 msgid "1 frame"
 msgid_plural "%s frames"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "1 snímek"
+msgstr[1] "%s snímky"
+msgstr[2] "%s snímků"
 
 #: ../src/dialog_shift_times.cpp:98
 msgid "backward"
@@ -4296,20 +4305,16 @@ msgid "Misspelled word:"
 msgstr "Chybný výraz:"
 
 #: ../src/dialog_spellchecker.cpp:143
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker available."
-msgstr "Žádné návrhy kontroly pravopisu"
+msgstr "Není k dispozici žádná kontrola pravopisu."
 
 #: ../src/dialog_spellchecker.cpp:149
-#, fuzzy
-#| msgid "No spell checker suggestions"
 msgid "No spellchecker dictionaries available."
-msgstr "Žádné návrhy kontroly pravopisu"
+msgstr "Nejsou k dispozici žádné slovníky pro kontrolu pravopisu."
 
 #: ../src/dialog_spellchecker.cpp:183
 msgid "Ignore &UPPERCASE words"
-msgstr ""
+msgstr "Ignorovat slova VELKÝMI PÍSMENY (&U)"
 
 #: ../src/dialog_spellchecker.cpp:187
 msgid "&Replace"
@@ -4329,7 +4334,7 @@ msgstr "Přidat do slovníku"
 
 #: ../src/dialog_spellchecker.cpp:212
 msgid "Remove fro&m dictionary"
-msgstr ""
+msgstr "Odebrat ze slovníku (&M)"
 
 #: ../src/dialog_spellchecker.cpp:279
 msgid "Aegisub has finished checking spelling of this script."
@@ -4353,7 +4358,7 @@ msgstr "Editor stylů"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Border boxes"
-msgstr ""
+msgstr "Rámečky okraje"
 
 #: ../src/dialog_style_editor.cpp:173 ../src/dialog_style_editor.cpp:184
 #: ../src/dialog_style_editor.cpp:295
@@ -4362,7 +4367,7 @@ msgstr "Obrys"
 
 #: ../src/dialog_style_editor.cpp:173
 msgid "Shadow box (libass only)"
-msgstr ""
+msgstr "Rámeček stínu (pouze libass)"
 
 #: ../src/dialog_style_editor.cpp:181
 msgid "Font"
@@ -4447,7 +4452,7 @@ msgstr ""
 
 #: ../src/dialog_style_editor.cpp:236
 msgid "Whether to draw a normal outline or opaque boxes around the text"
-msgstr ""
+msgstr "Zda kolem textu kreslit běžný obrys, nebo neprůhledné rámečky"
 
 #: ../src/dialog_style_editor.cpp:237
 msgid "Outline width, in pixels"
@@ -4518,10 +4523,8 @@ msgid "Shadow:"
 msgstr "Stín:"
 
 #: ../src/dialog_style_editor.cpp:326
-#, fuzzy
-#| msgid "Sort styles"
 msgid "Border style:"
-msgstr "Seřadit styly"
+msgstr "Styl okraje:"
 
 #: ../src/dialog_style_editor.cpp:330
 msgid "Scale X%:"
@@ -4557,11 +4560,11 @@ msgstr "Barva pozadí náhledu"
 
 #: ../src/dialog_style_editor.cpp:431
 msgid "Style name conflict"
-msgstr ""
+msgstr "Konflikt názvu stylu"
 
 #: ../src/dialog_style_editor.cpp:431
 msgid "There is already a style with this name. Please choose another name."
-msgstr ""
+msgstr "Styl s tímto názvem již existuje. Zvolte prosím jiný název."
 
 #: ../src/dialog_style_editor.cpp:443
 msgid ""
@@ -4628,12 +4631,12 @@ msgid "Could not parse style"
 msgstr "Nepodařilo se provést rozbor stylu"
 
 #: ../src/dialog_style_manager.cpp:248
-#, fuzzy, c-format
+#, c-format
 msgid "Are you sure you want to delete this style?"
 msgid_plural "Are you sure you want to delete these %d styles?"
-msgstr[0] "Opravdu chcete odstranit tento styl?"
-msgstr[1] "Opravdu chcete odstranit tento styl?"
-msgstr[2] "Opravdu chcete odstranit tento styl?"
+msgstr[0] "Opravdu chcete smazat tento styl?"
+msgstr[1] "Opravdu chcete smazat tyto %d styly?"
+msgstr[2] "Opravdu chcete smazat těchto %d stylů?"
 
 #: ../src/dialog_style_manager.cpp:273
 msgid "Catalog of available storages"
@@ -4747,10 +4750,8 @@ msgid "style delete"
 msgstr "smazání stylu"
 
 #: ../src/dialog_style_manager.cpp:689
-#, fuzzy
-#| msgid "Export subtitles file"
 msgid "Unsupported subtitle format"
-msgstr "Export titulků"
+msgstr "Nepodporovaný formát titulků"
 
 #: ../src/dialog_style_manager.cpp:705
 msgid "Error Importing Styles"
@@ -4859,7 +4860,7 @@ msgstr "Začátek komentáře:"
 
 #: ../src/dialog_text_import.cpp:61
 msgid "Include blank lines"
-msgstr ""
+msgstr "Zahrnout prázdné řádky"
 
 #: ../src/dialog_timing_processor.cpp:157
 msgid "Apply to styles"
@@ -5091,12 +5092,12 @@ msgstr "Znovu připomenout za týden"
 
 #: ../src/dialog_version_check.cpp:295
 msgid "Curl could not be initialized."
-msgstr ""
+msgstr "Nepodařilo se inicializovat Curl."
 
 #: ../src/dialog_version_check.cpp:317
 #, c-format
 msgid "Checking for updates failed: %s."
-msgstr ""
+msgstr "Kontrola aktualizací selhala: %s."
 
 #: ../src/dialog_version_check.cpp:345
 msgid "An update to Aegisub was found."
@@ -5151,21 +5152,140 @@ msgid "Resolution:"
 msgstr "Rozlišení:"
 
 #: ../src/dialog_video_details.cpp:66
-#, fuzzy, c-format
-#| msgid "%s frames"
+#, c-format
 msgid "%d frame (%s)"
 msgid_plural "%d frames (%s)"
-msgstr[0] "%s snímků"
-msgstr[1] "%s snímků"
-msgstr[2] "%s snímků"
+msgstr[0] "%d snímek (%s)"
+msgstr[1] "%d snímky (%s)"
+msgstr[2] "%d snímků (%s)"
 
 #: ../src/dialog_video_details.cpp:66
 msgid "Length:"
 msgstr "Délka:"
 
 #: ../src/dialog_video_details.cpp:68
+msgid "Actual color matrix:"
+msgstr "Skutečná barevná matice:"
+
+#: ../src/dialog_video_details.cpp:69
+msgid "Forced color matrix:"
+msgstr "Vynucená barevná matice:"
+
+#: ../src/dialog_video_details.cpp:70
+msgid "Actual color range:"
+msgstr "Skutečný barevný rozsah:"
+
+#: ../src/dialog_video_details.cpp:71
+msgid "Forced color range:"
+msgstr "Vynucený barevný rozsah:"
+
+#: ../src/dialog_video_details.cpp:68
 msgid "Decoder:"
 msgstr "Dekodér:"
+
+#: ../src/dialog_video_properties.cpp:135
+#, c-format
+msgid ""
+"The video you have loaded has no specified color matrix. Aegisub will guess "
+"the color matrix to be %s, but there is no guarantee that other programs "
+"will guess the same matrix. This may make the video appear with different "
+"colors in different media players and can prevent subtitle colors from "
+"matching video colors.\n"
+" \n"
+"Consider tagging your video with a color matrix to ensure that your video "
+"displays consistently in all players and that subtitle colors can reliably "
+"match video colors."
+msgstr ""
+"Načtené video nemá určenou barevnou matici. Aegisub odhadne barevnou matici "
+"%s, ale není zaručeno, že ostatní programy odhadnou stejnou. To může "
+"způsobit, že video bude v různých přehrávačích vypadat barevně jinak a barvy "
+"titulků nebudou odpovídat barvám videa.\n"
+" \n"
+"Zvažte označení videa barevnou maticí, aby se ve všech přehrávačích "
+"zobrazovalo stejně a barvy titulků spolehlivě odpovídaly barvám videa."
+
+#: ../src/dialog_video_properties.cpp:140
+msgid "Untagged video"
+msgstr "Neoznačené video"
+
+#: ../src/dialog_video_properties.cpp:145
+msgid ""
+"The video you have loaded has HDR and/or WCG colors. While ordinary dialogue "
+"subtitles will work fine on such videos, matching video colors using "
+"subtitles will not be possible on HDR and/or WCG footage."
+msgstr ""
+"Načtené video obsahuje barvy HDR a/nebo WCG. Běžné dialogové titulky budou s "
+"takovým videem fungovat bez problémů, ale napodobit barvy videa pomocí "
+"titulků u obrazu HDR a/nebo WCG není možné."
+
+#: ../src/dialog_video_properties.cpp:148
+msgid "HDR and/or WCG video"
+msgstr "Video HDR a/nebo WCG"
+
+#: ../src/dialog_video_properties.cpp:161
+#, c-format
+msgid ""
+"The current subtitle file has no YCbCr Matrix set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's YCbCr Matrix to the video's color space "
+"(\"%s\").\n"
+"\n"
+"If you plan to use a different video file, you may want to\n"
+"leave the YCbCr Matrix unset until you load the correct video file.\n"
+"\n"
+"This prompt can be configured in the preferences."
+msgstr ""
+"Aktuální soubor titulků nemá nastavenou matici YCbCr.\n"
+"\n"
+"Pokud chcete tento soubor titulků použít s právě načteným video souborem,\n"
+"nastavte matici YCbCr souboru titulků na barevný prostor videa („%s“).\n"
+"\n"
+"Pokud chcete použít jiný video soubor, můžete\n"
+"matici YCbCr ponechat nenastavenou, dokud nenačtete správný video soubor.\n"
+"\n"
+"Toto upozornění lze nastavit v předvolbách."
+
+#: ../src/dialog_video_properties.cpp:166
+msgid "Set script's YCbCr Matrix?"
+msgstr "Nastavit matici YCbCr skriptu?"
+
+#: ../src/dialog_video_properties.cpp:167
+msgid "Leave YCbCr Matrix unset"
+msgstr "Nenastavovat matici YCbCr"
+
+#: ../src/dialog_video_properties.cpp:167
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Set script's YCbCr Matrix to the video's (\"%s\")"
+msgstr "Nastavit matici YCbCr skriptu podle videa („%s“)"
+
+#: ../src/dialog_video_properties.cpp:221
+#, c-format
+msgid ""
+"This video's recommended YCbCr Matrix (\"%s\") differs from the subtitle "
+"file's YCbCr Matrix (\"%s\").\n"
+"\n"
+"If this new video's colors look identical to the video the subtitle file was "
+"originally authored for,\n"
+"then the subtitle file's YCbCr Matrix should be set to the video's YCbCr "
+"Matrix."
+msgstr ""
+"Doporučená matice YCbCr tohoto videa („%s“) se liší od matice YCbCr souboru "
+"titulků („%s“).\n"
+"\n"
+"Pokud barvy nového videa vypadají stejně jako barvy videa, pro které byl "
+"soubor titulků původně vytvořen,\n"
+"měla by být matice YCbCr souboru titulků nastavena podle videa."
+
+#: ../src/dialog_video_properties.cpp:225
+msgid "YCbCr Matrix mismatch"
+msgstr "Nesoulad matic YCbCr"
+
+#: ../src/dialog_video_properties.cpp:226
+#, c-format
+msgid "Leave script's YCbCr Matrix as it is (\"%s\")"
+msgstr "Ponechat matici YCbCr skriptu („%s“)"
 
 #: ../src/dialog_video_properties.cpp:44
 msgid "Resolution mismatch"
@@ -5189,29 +5309,149 @@ msgstr ""
 "\n"
 "Přejete si změnit rozlišení titulků, aby odpovídalo videu?"
 
-#: ../src/dialog_video_properties.cpp:58 ../src/dialog_video_properties.cpp:67
-msgid "Set to video resolution"
-msgstr ""
+#: ../src/dialog_video_properties.cpp:271
+#: ../src/dialog_video_properties.cpp:280
+msgid "Leave resolution as it is"
+msgstr "Ponechat rozlišení"
 
 #: ../src/dialog_video_properties.cpp:59
 msgid "Resample script (stretch to new aspect ratio)"
-msgstr ""
+msgstr "Převzorkovat skript (roztáhnout na nový poměr stran)"
 
 #: ../src/dialog_video_properties.cpp:60
 msgid "Resample script (add borders)"
-msgstr ""
+msgstr "Převzorkovat skript (přidat okraje)"
 
 #: ../src/dialog_video_properties.cpp:61
 msgid "Resample script (remove borders)"
-msgstr ""
+msgstr "Převzorkovat skript (odebrat okraje)"
 
 #: ../src/dialog_video_properties.cpp:68
 msgid "Resample script"
+msgstr "Převzorkovat skript"
+
+#: ../src/dialog_video_properties.cpp:389
+#, c-format
+msgid ""
+"The current subtitle file has no layout resolution set.\n"
+"\n"
+"If you plan to use this subtitle file on this newly loaded video file,\n"
+"you should set the subtitle file's layout resolution to the video's display "
+"resolution.\n"
+"\n"
+"If you plan to use a different video file, you may want to leave\n"
+"the layout resolution unset until you load the correct video file.\n"
+"\n"
+"If you are adapting an existing old subtitle file that does not yet have\n"
+"a layout resolution set, you should set its layout resolution to the "
+"resolution\n"
+"of the video the subtitle file was intended to be played back on.\n"
+"Often, this is the same as the file's script resolution. (%d × %d)\n"
+"\n"
+"This prompt can be configured in the preferences."
 msgstr ""
+"Aktuální soubor titulků nemá nastavené rozlišení rozvržení.\n"
+"\n"
+"Pokud chcete tento soubor titulků použít s právě načteným video souborem,\n"
+"nastavte rozlišení rozvržení souboru titulků na zobrazovací rozlišení "
+"videa.\n"
+"\n"
+"Pokud chcete použít jiný video soubor, můžete\n"
+"rozlišení rozvržení ponechat nenastavené, dokud nenačtete správný video "
+"soubor.\n"
+"\n"
+"Pokud upravujete starší soubor titulků, který ještě nemá\n"
+"nastavené rozlišení rozvržení, nastavte ho na rozlišení\n"
+"videa, se kterým měly být titulky přehrávány.\n"
+"Obvykle je stejné jako rozlišení skriptu souboru. (%d × %d)\n"
+"\n"
+"Toto upozornění lze nastavit v předvolbách."
+
+#: ../src/dialog_video_properties.cpp:403
+msgid "Set script's layout resolution?"
+msgstr "Nastavit rozlišení rozvržení skriptu?"
+
+#: ../src/dialog_video_properties.cpp:404
+msgid "Leave layout resolution unset"
+msgstr "Nenastavovat rozlišení rozvržení"
+
+#: ../src/dialog_video_properties.cpp:405
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Set script's layout resolution to the video's (%d × %d)"
+msgstr "Nastavit rozlišení rozvržení skriptu podle videa (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:406
+#, c-format
+msgid "Set script's layout resolution to its script resolution (%d × %d)"
+msgstr "Nastavit rozlišení rozvržení skriptu podle rozlišení skriptu (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:464
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles don't match.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Usually, this is not an issue, and you may leave the subtitle file's layout "
+"resolution as it is.\n"
+"If your subtitle file does not contain any significant formatting and you "
+"now intend to perform\n"
+"formatting on the newly loaded video, you may want to set the script's "
+"layout resolution\n"
+"to the video's display resolution."
+msgstr ""
+"Rozlišení načteného videa a rozlišení rozvržení titulků se neshodují.\n"
+"\n"
+"Rozlišení videa:    %d × %d\n"
+"Rozlišení rozvržení titulků:    %d × %d\n"
+"\n"
+"Obvykle to nevadí a rozlišení rozvržení souboru titulků můžete ponechat.\n"
+"Pokud soubor titulků neobsahuje důležité formátování a chcete nyní\n"
+"formátovat pro právě načtené video, můžete rozlišení rozvržení skriptu\n"
+"nastavit na zobrazovací rozlišení videa."
+
+#: ../src/dialog_video_properties.cpp:475
+#, c-format
+msgid ""
+"The resolution of the loaded video and the layout resolution specified for "
+"the subtitles differ in aspect ratios.\n"
+"\n"
+"Video resolution:    %d × %d\n"
+"Subtitle layout resolution:    %d × %d\n"
+"\n"
+"Change layout resolution of subtitles to match video?"
+msgstr ""
+"Rozlišení načteného videa a rozlišení rozvržení titulků mají jiný poměr "
+"stran.\n"
+"\n"
+"Rozlišení videa:    %d × %d\n"
+"Rozlišení rozvržení titulků:    %d × %d\n"
+"\n"
+"Změnit rozlišení rozvržení titulků podle videa?"
+
+#: ../src/dialog_video_properties.cpp:483
+msgid "Layout resolution mismatch"
+msgstr "Nesoulad rozlišení rozvržení"
+
+#: ../src/dialog_video_properties.cpp:484
+#, c-format
+msgid "Leave layout resolution as it is (%d × %d)"
+msgstr "Ponechat rozlišení rozvržení (%d × %d)"
+
+#: ../src/dialog_video_properties.cpp:509
+msgid "change ycbcr matrix"
+msgstr "změna matice YCbCr"
 
 #: ../src/dialog_video_properties.cpp:168
 msgid "change script resolution"
 msgstr "změnit rozlišení skriptu"
+
+#: ../src/dialog_video_properties.cpp:515
+msgid "change layout resolution"
+msgstr "změna rozlišení rozvržení"
 
 #: ../src/export_fixstyle.cpp:46
 msgid "Fix Styles"
@@ -5302,12 +5542,12 @@ msgstr "Vybrat video stopu"
 #: ../src/font_file_lister.cpp:67
 #, c-format
 msgid "Style '%s' does not exist\n"
-msgstr ""
+msgstr "Styl „%s“ neexistuje\n"
 
 #: ../src/font_file_lister.cpp:154
 #, c-format
 msgid "Font '%s' is used in a drawing, but not in any text.\n"
-msgstr ""
+msgstr "Písmo „%s“ je použito v kresbě, ale v žádném textu.\n"
 
 #: ../src/font_file_lister.cpp:160
 #, c-format
@@ -5322,12 +5562,12 @@ msgstr "Nalezeno '%s' v '%s'\n"
 #: ../src/font_file_lister.cpp:174
 #, c-format
 msgid "'%s' does not have a bold variant.\n"
-msgstr ""
+msgstr "„%s“ nemá tučnou variantu.\n"
 
 #: ../src/font_file_lister.cpp:176
 #, c-format
 msgid "'%s' does not have an italic variant.\n"
-msgstr ""
+msgstr "„%s“ nemá kurzívní variantu.\n"
 
 #: ../src/font_file_lister.cpp:180
 #, c-format
@@ -5371,9 +5611,9 @@ msgstr "Všechny fonty nalezeny.\n"
 #, c-format
 msgid "One font could not be found\n"
 msgid_plural "%d fonts could not be found.\n"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Jedno písmo nebylo nalezeno\n"
+msgstr[1] "%d písma nebyla nalezena.\n"
+msgstr[2] "%d písem nebylo nalezeno.\n"
 
 #: ../src/font_file_lister.cpp:239
 #, c-format
@@ -5381,8 +5621,11 @@ msgid "One font was found, but was missing glyphs used in the script.\n"
 msgid_plural ""
 "%d fonts were found, but were missing glyphs used in the script.\n"
 msgstr[0] ""
+"Jedno písmo bylo nalezeno, ale chybí v něm znaky použité ve skriptu.\n"
 msgstr[1] ""
+"%d písma byla nalezena, ale chybí v nich znaky použité ve skriptu.\n"
 msgstr[2] ""
+"%d písem bylo nalezeno, ale chybí v nich znaky použité ve skriptu.\n"
 
 #: ../src/font_file_lister_fontconfig.cpp:55
 msgid "Updating font cache\n"
@@ -5410,27 +5653,27 @@ msgstr "Konec"
 
 #: ../src/grid_column.cpp:266
 msgid "Left Margin"
-msgstr ""
+msgstr "Levý okraj"
 
 #: ../src/grid_column.cpp:272
 msgid "Right Margin"
-msgstr ""
+msgstr "Pravý okraj"
 
 #: ../src/grid_column.cpp:278
 msgid "Vertical Margin"
-msgstr ""
+msgstr "Svislý okraj"
 
 #: ../src/grid_column.cpp:296
 msgid "CPS"
-msgstr ""
+msgstr "ZnS"
 
 #: ../src/grid_column.cpp:297
 msgid "Characters Per Second"
-msgstr ""
+msgstr "Znaky za sekundu"
 
 #: ../src/hotkey.cpp:261
 msgid "Invalid command name for hotkey"
-msgstr ""
+msgstr "Neplatný název příkazu pro klávesovou zkratku"
 
 #: ../src/main.cpp:202
 #, c-format
@@ -5438,6 +5681,8 @@ msgid ""
 "Configuration file is invalid. Error reported:\n"
 "%s"
 msgstr ""
+"Konfigurační soubor je neplatný. Nahlášená chyba:\n"
+"%s"
 
 #: ../src/main.cpp:266
 #, c-format
@@ -5472,15 +5717,15 @@ msgstr ""
 
 #: ../src/main.cpp:301
 msgid "Error saving config file"
-msgstr ""
+msgstr "Chyba při ukládání konfiguračního souboru"
 
 #: ../src/main.cpp:317 ../src/main.cpp:321 ../src/main.cpp:326
 msgid "Fatal error while initializing"
-msgstr ""
+msgstr "Závažná chyba při inicializaci"
 
 #: ../src/main.cpp:326
 msgid "Unhandled exception"
-msgstr ""
+msgstr "Neošetřená výjimka"
 
 #: ../src/main.cpp:414 ../src/main.cpp:417
 msgid "Program error"
@@ -5493,6 +5738,9 @@ msgid ""
 "\n"
 "The last startup step attempted was: %s."
 msgstr ""
+"Aegisub spadl při spouštění!\n"
+"\n"
+"Poslední zkoušený krok spuštění byl: %s."
 
 #: ../src/main.cpp:431
 #, c-format
@@ -5502,10 +5750,13 @@ msgid ""
 "\n"
 "Error Message: %s"
 msgstr ""
+"Došlo k neočekávané chybě. Uložte prosím svou práci a restartujte Aegisub.\n"
+"\n"
+"Chybová zpráva: %s"
 
 #: ../src/main.cpp:432
 msgid "Exception in event handler"
-msgstr ""
+msgstr "Výjimka v obsluze události"
 
 #: ../src/menu.cpp:96
 msgid "Empty"
@@ -5550,7 +5801,7 @@ msgstr "Zobrazit hlavní panel"
 
 #: ../src/preferences.cpp:103
 msgid "Save UI state in subtitles files"
-msgstr ""
+msgstr "Ukládat stav rozhraní do souborů titulků"
 
 #: ../src/preferences.cpp:106
 msgid "Toolbar Icon Size"
@@ -5586,11 +5837,11 @@ msgstr "Najít/Nahradit"
 
 #: ../src/preferences.cpp:120
 msgid "Default styles"
-msgstr ""
+msgstr "Výchozí styly"
 
 #: ../src/preferences.cpp:122
 msgid "Default style catalogs"
-msgstr ""
+msgstr "Výchozí katalogy stylů"
 
 #: ../src/preferences.cpp:126
 msgid ""
@@ -5599,26 +5850,30 @@ msgid ""
 "\n"
 "You can set up style catalogs in the Style Manager."
 msgstr ""
+"Zvolené katalogy stylů se načtou při založení nového souboru nebo při "
+"importu souborů v různých formátech.\n"
+"\n"
+"Katalogy stylů můžete nastavit ve Správci stylů."
 
 #: ../src/preferences.cpp:153
 msgid "New files"
-msgstr ""
+msgstr "Nové soubory"
 
 #: ../src/preferences.cpp:154
 msgid "MicroDVD import"
-msgstr ""
+msgstr "Import MicroDVD"
 
 #: ../src/preferences.cpp:155
 msgid "SRT import"
-msgstr ""
+msgstr "Import SRT"
 
 #: ../src/preferences.cpp:156
 msgid "TTXT import"
-msgstr ""
+msgstr "Import TTXT"
 
 #: ../src/preferences.cpp:157
 msgid "Plain text import"
-msgstr ""
+msgstr "Import prostého textu"
 
 #: ../src/preferences.cpp:164 ../src/preferences.cpp:414 default_hotkey.json:37
 msgid "Audio"
@@ -5746,53 +6001,43 @@ msgstr "Automaticky při otevření videa načítat audio"
 
 #: ../src/preferences.cpp:216
 msgid "Does nothing"
-msgstr ""
+msgstr "Nedělá nic"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Play video"
 msgid "Pans the video"
-msgstr "Přehrát video"
+msgstr "Posouvá video"
 
 #: ../src/preferences.cpp:216
 msgid "Pans the video (X/Y swapped)"
-msgstr ""
+msgstr "Posouvá video (prohozené X/Y)"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box"
-msgstr ""
+msgstr "Mění velikost rámečku videa"
 
 #: ../src/preferences.cpp:216
 msgid "Resizes the video box (reversed)"
-msgstr ""
+msgstr "Mění velikost rámečku videa (obráceně)"
 
 #: ../src/preferences.cpp:216
-#, fuzzy
-#| msgid "Zoom video in"
 msgid "Zooms the video"
-msgstr "Zvětšit video"
+msgstr "Přibližuje video"
 
 #: ../src/preferences.cpp:216
 msgid "Zooms the video (reversed)"
-msgstr ""
+msgstr "Přibližuje video (obráceně)"
 
 #: ../src/preferences.cpp:218
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Scrolling on the video display"
-msgstr "Posunout zobrazení audia doleva"
+msgstr "Posouvání kolečkem v zobrazení videa"
 
 #: ../src/preferences.cpp:219
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Ctrl+Scrolling on the video display"
-msgstr "Posunout zobrazení audia doleva"
+msgstr "Ctrl+posouvání kolečkem v zobrazení videa"
 
 #: ../src/preferences.cpp:220
-#, fuzzy
-#| msgid "Scroll the audio display left"
 msgid "Shift+Scrolling on the video display"
-msgstr "Posunout zobrazení audia doleva"
+msgstr "Shift+posouvání kolečkem v zobrazení videa"
 
 #: ../src/preferences.cpp:224
 msgid "Default Zoom"
@@ -5824,15 +6069,55 @@ msgstr "Výchozí výška"
 
 #: ../src/preferences.cpp:240
 msgid "Always resample"
-msgstr ""
-
-#: ../src/preferences.cpp:240
-msgid "Always set"
-msgstr ""
+msgstr "Vždy převzorkovat"
 
 #: ../src/preferences.cpp:242
 msgid "Match video resolution on open"
 msgstr "Při načtení srovnat rozlišení videa na"
+
+#: ../src/preferences.cpp:244
+msgid "Layout Resolution"
+msgstr "Rozlišení rozvržení"
+
+#: ../src/preferences.cpp:240
+msgid "Always set"
+msgstr "Vždy nastavit"
+
+#: ../src/preferences.cpp:246
+msgid "Always set from script resolution"
+msgstr "Vždy nastavit podle rozlišení skriptu"
+
+#: ../src/preferences.cpp:248
+msgid "Set layout resolution from video on open"
+msgstr "Při otevření nastavit rozlišení rozvržení podle videa"
+
+#: ../src/preferences.cpp:250
+msgid "When aspect ratio changes"
+msgstr "Při změně poměru stran"
+
+#: ../src/preferences.cpp:252
+msgid "Prompt on layout resolution mismatch"
+msgstr "Upozornit na nesoulad rozlišení rozvržení"
+
+#: ../src/preferences.cpp:254
+msgid "YCbCr Matrix"
+msgstr "Matice YCbCr"
+
+#: ../src/preferences.cpp:255
+msgid "Warn on untagged video color matrix"
+msgstr "Varovat u videa bez označené barevné matice"
+
+#: ../src/preferences.cpp:256
+msgid "Warn on HDR/WCG video"
+msgstr "Varovat u videa HDR/WCG"
+
+#: ../src/preferences.cpp:260
+msgid "Use video's YCbCr Matrix when script has no matrix set"
+msgstr "Použít matici YCbCr videa, pokud skript žádnou nemá"
+
+#: ../src/preferences.cpp:264
+msgid "Match video's YCbCr Matrix on open"
+msgstr "Při otevření sladit matici YCbCr s videem"
 
 #: ../src/preferences.cpp:249
 msgid "Interface"
@@ -5852,7 +6137,7 @@ msgstr "Přepisování v časových polích"
 
 #: ../src/preferences.cpp:254
 msgid "Shift+Enter adds \\n"
-msgstr ""
+msgstr "Shift+Enter přidá \\n"
 
 #: ../src/preferences.cpp:255
 msgid "Enable syntax highlighting"
@@ -5864,27 +6149,27 @@ msgstr "Adresář slovníků"
 
 #: ../src/preferences.cpp:259
 msgid "Character Counter"
-msgstr ""
+msgstr "Počítadlo znaků"
 
 #: ../src/preferences.cpp:260
 msgid "Maximum characters per line"
-msgstr ""
+msgstr "Maximální počet znaků na řádek"
 
 #: ../src/preferences.cpp:261
 msgid "Characters Per Second Warning Threshold"
-msgstr ""
+msgstr "Práh varování pro znaky za sekundu"
 
 #: ../src/preferences.cpp:262
 msgid "Characters Per Second Error Threshold"
-msgstr ""
+msgstr "Práh chyby pro znaky za sekundu"
 
 #: ../src/preferences.cpp:263
 msgid "Ignore whitespace"
-msgstr ""
+msgstr "Ignorovat mezery"
 
 #: ../src/preferences.cpp:264
 msgid "Ignore punctuation"
-msgstr ""
+msgstr "Ignorovat interpunkci"
 
 #: ../src/preferences.cpp:266
 msgid "Grid"
@@ -5892,7 +6177,7 @@ msgstr "Mřížka"
 
 #: ../src/preferences.cpp:267
 msgid "Focus grid on click"
-msgstr ""
+msgstr "Při kliknutí zaměřit mřížku"
 
 #: ../src/preferences.cpp:268
 msgid "Highlight visible subtitles"
@@ -5904,7 +6189,7 @@ msgstr "Skrýt override symboly"
 
 #: ../src/preferences.cpp:273
 msgid "Skip over whitespace"
-msgstr ""
+msgstr "Přeskakovat mezery"
 
 #: ../src/preferences.cpp:288
 msgid "Audio Display"
@@ -5913,6 +6198,14 @@ msgstr "Zobrazení audia"
 #: ../src/preferences.cpp:289
 msgid "Play cursor"
 msgstr "Barva přehrávacího kurzoru"
+
+#: ../src/preferences.cpp:312
+msgid "Current frame range"
+msgstr "Aktuální rozsah snímků"
+
+#: ../src/preferences.cpp:313
+msgid "Previous frame range"
+msgstr "Předchozí rozsah snímků"
 
 #: ../src/preferences.cpp:290
 msgid "Line boundary start"
@@ -5936,7 +6229,7 @@ msgstr "Zvýrazňování syntaxe"
 
 #: ../src/preferences.cpp:297
 msgid "Background"
-msgstr ""
+msgstr "Pozadí"
 
 #: ../src/preferences.cpp:298
 msgid "Normal"
@@ -5944,23 +6237,23 @@ msgstr "Normální"
 
 #: ../src/preferences.cpp:299
 msgid "Comments"
-msgstr ""
+msgstr "Komentáře"
 
 #: ../src/preferences.cpp:300
 msgid "Drawing Commands"
-msgstr ""
+msgstr "Kreslicí příkazy"
 
 #: ../src/preferences.cpp:301
 msgid "Drawing X Coords"
-msgstr ""
+msgstr "Souřadnice X kresby"
 
 #: ../src/preferences.cpp:302
 msgid "Drawing Y Coords"
-msgstr ""
+msgstr "Souřadnice Y kresby"
 
 #: ../src/preferences.cpp:303
 msgid "Underline Spline Endpoints"
-msgstr ""
+msgstr "Podtrhnout koncové body splajnů"
 
 #: ../src/preferences.cpp:305
 msgid "Brackets"
@@ -5992,7 +6285,7 @@ msgstr "Šablona karaoke"
 
 #: ../src/preferences.cpp:313
 msgid "Karaoke variables"
-msgstr ""
+msgstr "Proměnné karaoke"
 
 #: ../src/preferences.cpp:319
 msgid "Audio Color Schemes"
@@ -6060,35 +6353,35 @@ msgstr "Řádky"
 
 #: ../src/preferences.cpp:337
 msgid "CPS Error"
-msgstr ""
+msgstr "Chyba ZnS"
 
 #: ../src/preferences.cpp:339
 msgid "Visual Typesetting Tools"
-msgstr ""
+msgstr "Nástroje vizuálního sázení"
 
 #: ../src/preferences.cpp:340
 msgid "Primary Lines"
-msgstr ""
+msgstr "Primární čáry"
 
 #: ../src/preferences.cpp:341
 msgid "Secondary Lines"
-msgstr ""
+msgstr "Sekundární čáry"
 
 #: ../src/preferences.cpp:342
 msgid "Primary Highlight"
-msgstr ""
+msgstr "Primární zvýraznění"
 
 #: ../src/preferences.cpp:343
 msgid "Secondary Highlight"
-msgstr ""
+msgstr "Sekundární zvýraznění"
 
 #: ../src/preferences.cpp:346
 msgid "Visual Typesetting Tools Alpha"
-msgstr ""
+msgstr "Průhlednost nástrojů vizuálního sázení"
 
 #: ../src/preferences.cpp:347
 msgid "Shaded Area"
-msgstr ""
+msgstr "Šrafovaná oblast"
 
 #: ../src/preferences.cpp:356
 msgid "Backup"
@@ -6184,16 +6477,12 @@ msgid "Advanced"
 msgstr "Pokročilé"
 
 #: ../src/preferences.cpp:401
-#, fuzzy
-#| msgid ""
-#| "Changing these settings might result in bugs and/or crashes.  Do not "
-#| "touch these unless you know what you're doing."
 msgid ""
 "Changing these settings might result in bugs and/or crashes. Do not touch "
 "these unless you know what you're doing."
 msgstr ""
-"VAROVÁNÍ: Změna těchto nastavení může způsobit chyby, závady či pády "
-"aplikace. Pokud si nejste jisti, nesahejte na ně."
+"Změna těchto nastavení může způsobit chyby a/nebo pády. Neměňte je, pokud "
+"nevíte, co děláte."
 
 #: ../src/preferences.cpp:416 ../src/preferences.cpp:483
 msgid "Expert"
@@ -6249,27 +6538,27 @@ msgstr "Kvalita"
 
 #: ../src/preferences.cpp:436
 msgid "Compressed"
-msgstr ""
+msgstr "Komprimované"
 
 #: ../src/preferences.cpp:436
 msgid "Extended"
-msgstr ""
+msgstr "Rozšířené"
 
 #: ../src/preferences.cpp:436
 msgid "Linear"
-msgstr ""
+msgstr "Lineární"
 
 #: ../src/preferences.cpp:436
 msgid "Logarithmic"
-msgstr ""
+msgstr "Logaritmické"
 
 #: ../src/preferences.cpp:436
 msgid "Medium"
-msgstr ""
+msgstr "Střední"
 
 #: ../src/preferences.cpp:438
 msgid "Frequency mapping"
-msgstr ""
+msgstr "Mapování frekvencí"
 
 #: ../src/preferences.cpp:440
 msgid "Cache memory max (MB)"
@@ -6336,38 +6625,32 @@ msgid "Avisynth memory limit"
 msgstr "Limit paměti pro Avisynth"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "4: Debug"
 msgid "Debug"
-msgstr "4: Debug"
+msgstr "Ladění"
 
 #: ../src/preferences.cpp:501
-#, fuzzy
-#| msgid "0: Fatal"
 msgid "Fatal"
-msgstr "0: Fatální chyba"
+msgstr "Závažné"
 
 #: ../src/preferences.cpp:501
 msgid "Info"
-msgstr ""
+msgstr "Informace"
 
 #: ../src/preferences.cpp:501
 msgid "Panic"
-msgstr ""
+msgstr "Panika"
 
 #: ../src/preferences.cpp:501
 msgid "Quiet"
-msgstr ""
+msgstr "Tichý"
 
 #: ../src/preferences.cpp:501
 msgid "Verbose"
-msgstr ""
+msgstr "Podrobný"
 
 #: ../src/preferences.cpp:501 ../src/project.cpp:331
-#, fuzzy
-#| msgid "2: Warning"
 msgid "Warning"
-msgstr "2: Varování"
+msgstr "Varování"
 
 #: ../src/preferences.cpp:503
 msgid "Debug log verbosity"
@@ -6387,19 +6670,15 @@ msgstr "Klávesové zkratky"
 
 #: ../src/preferences.cpp:664
 msgid "Search"
-msgstr ""
+msgstr "Hledat"
 
 #: ../src/preferences.cpp:680 ../src/preferences.cpp:683
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkey"
-msgstr "Klávesové zkratky"
+msgstr "Klávesová zkratka"
 
 #: ../src/preferences.cpp:681 ../src/preferences.cpp:686
-#, fuzzy
-#| msgid "Commands"
 msgid "Command"
-msgstr "Příkazy"
+msgstr "Příkaz"
 
 #: ../src/preferences.cpp:760
 msgid ""
@@ -6438,16 +6717,13 @@ msgid "Font Size"
 msgstr "Velikost písma"
 
 #: ../src/project.cpp:85
-#, fuzzy
-#| msgid "Error Importing Styles"
 msgid "Error loading file"
-msgstr "Chyba při importu stylů"
+msgstr "Chyba při načítání souboru"
 
 #: ../src/project.cpp:111 ../src/project.cpp:130
-#, fuzzy, c-format
-#| msgid "All fonts found.\n"
+#, c-format
 msgid "%s not found."
-msgstr "Všechny fonty nalezeny.\n"
+msgstr "%s nenalezeno."
 
 #: ../src/project.cpp:199
 msgid "Do you want to load/unload the associated files?"
@@ -6456,38 +6732,38 @@ msgstr "Přejete si načíst/zavřít navázané soubory?"
 #: ../src/project.cpp:210
 #, c-format
 msgid "Load audio file: %s"
-msgstr ""
+msgstr "Načtení zvukového souboru: %s"
 
 #: ../src/project.cpp:210
 msgid "Unload audio"
-msgstr ""
+msgstr "Uvolnění zvuku"
 
 #: ../src/project.cpp:212
 #, c-format
 msgid "Load video file: %s"
-msgstr ""
+msgstr "Načtení video souboru: %s"
 
 #: ../src/project.cpp:212
 msgid "Unload video"
-msgstr ""
+msgstr "Uvolnění videa"
 
 #: ../src/project.cpp:214
 #, c-format
 msgid "Load timecodes file: %s"
-msgstr ""
+msgstr "Načtení souboru časových kódů: %s"
 
 #: ../src/project.cpp:214
 msgid "Unload timecodes"
-msgstr ""
+msgstr "Uvolnění časových kódů"
 
 #: ../src/project.cpp:216
 #, c-format
 msgid "Load keyframes file: %s"
-msgstr ""
+msgstr "Načtení souboru klíčových snímků: %s"
 
 #: ../src/project.cpp:216
 msgid "Unload keyframes"
-msgstr ""
+msgstr "Uvolnění klíčových snímků"
 
 #: ../src/project.cpp:218
 msgid "(Un)Load files?"
@@ -6495,7 +6771,7 @@ msgstr "Načíst(Zavřít) soubory?"
 
 #: ../src/project.cpp:267
 msgid "The audio file was not found: "
-msgstr ""
+msgstr "Zvukový soubor nebyl nalezen: "
 
 #: ../src/project.cpp:275
 msgid ""
@@ -6504,6 +6780,10 @@ msgid ""
 "\n"
 "The following providers were tried:\n"
 msgstr ""
+"Žádný z dostupných poskytovatelů zvuku nerozpoznal ve vybraném souboru "
+"zvuková data.\n"
+"\n"
+"Byli vyzkoušeni tito poskytovatelé:\n"
 
 #: ../src/project.cpp:278
 msgid ""
@@ -6512,22 +6792,21 @@ msgid ""
 "\n"
 "The following providers were tried:\n"
 msgstr ""
+"Žádný z dostupných poskytovatelů zvuku nemá kodek pro vybraný soubor.\n"
+"\n"
+"Byli vyzkoušeni tito poskytovatelé:\n"
 
 #: ../src/project.cpp:381
-#, fuzzy
-#| msgid "Close Timecodes File"
 msgid "Failed to parse timecodes file: "
-msgstr "Zavřít časový kód"
+msgstr "Nelze zpracovat soubor časových kódů: "
 
 #: ../src/project.cpp:407
-#, fuzzy
-#| msgid "Save keyframes file"
 msgid "Failed to parse keyframes file: "
-msgstr "Uložit klíčové snímky"
+msgstr "Nelze zpracovat soubor klíčových snímků: "
 
 #: ../src/project.cpp:411
 msgid "Keyframes file in unknown format: "
-msgstr ""
+msgstr "Soubor klíčových snímků je v neznámém formátu: "
 
 #: ../src/resolution_resampler.cpp:301
 msgid "resolution resampling"
@@ -6541,9 +6820,9 @@ msgstr "nahradit"
 #, c-format
 msgid "One match was replaced."
 msgid_plural "%d matches were replaced."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Byla nahrazena jedna shoda."
+msgstr[1] "Byly nahrazeny %d shody."
+msgstr[2] "Bylo nahrazeno %d shod."
 
 #: ../src/search_replace_engine.cpp:277
 msgid "No matches found."
@@ -6569,11 +6848,11 @@ msgstr "Záloha souboru byla uložena pod jménem  \"%s\"."
 
 #: ../src/subs_controller.cpp:282
 msgid "Exception when attempting to autosave file: "
-msgstr ""
+msgstr "Výjimka při pokusu o automatické uložení souboru: "
 
 #: ../src/subs_controller.cpp:285
 msgid "Unhandled exception when attempting to autosave file."
-msgstr ""
+msgstr "Neošetřená výjimka při pokusu o automatické uložení souboru."
 
 #: ../src/subs_controller.cpp:406
 msgid "untitled"
@@ -6612,7 +6891,7 @@ msgstr ""
 
 #: ../src/subs_edit_box.cpp:147
 msgid "Number of characters in the longest line of this subtitle."
-msgstr ""
+msgstr "Počet znaků v nejdelším řádku tohoto titulku."
 
 #: ../src/subs_edit_box.cpp:154
 msgid "Layer number"
@@ -6632,27 +6911,27 @@ msgstr "Trvání"
 
 #: ../src/subs_edit_box.cpp:164
 msgid "Left Margin (0 = default from style)"
-msgstr ""
+msgstr "Levý okraj (0 = výchozí ze stylu)"
 
 #: ../src/subs_edit_box.cpp:164
 msgid "left margin change"
-msgstr ""
+msgstr "změna levého okraje"
 
 #: ../src/subs_edit_box.cpp:165
 msgid "Right Margin (0 = default from style)"
-msgstr ""
+msgstr "Pravý okraj (0 = výchozí ze stylu)"
 
 #: ../src/subs_edit_box.cpp:165
 msgid "right margin change"
-msgstr ""
+msgstr "změna pravého okraje"
 
 #: ../src/subs_edit_box.cpp:166
 msgid "Vertical Margin (0 = default from style)"
-msgstr ""
+msgstr "Svislý okraj (0 = výchozí ze stylu)"
 
 #: ../src/subs_edit_box.cpp:166
 msgid "vertical margin change"
-msgstr ""
+msgstr "změna svislého okraje"
 
 #: ../src/subs_edit_box.cpp:185
 msgid "T&ime"
@@ -6672,7 +6951,7 @@ msgstr "Čas podle čísla snímku"
 
 #: ../src/subs_edit_box.cpp:189
 msgid "Show Original"
-msgstr ""
+msgstr "Zobrazit originál"
 
 #: ../src/subs_edit_box.cpp:190
 msgid ""
@@ -6680,6 +6959,9 @@ msgid ""
 "edit box. This is sometimes useful when editing subtitles or translating "
 "subtitles into another language."
 msgstr ""
+"Zobrazit nad editačním polem obsah řádku titulku v podobě, v jaké byl poprvé "
+"vybrán. Někdy se to hodí při úpravách titulků nebo při jejich překladu do "
+"jiného jazyka."
 
 #: ../src/subs_edit_box.cpp:446
 msgid "modify text"
@@ -6720,7 +7002,7 @@ msgstr "Vložit"
 #: ../src/subs_edit_ctrl.cpp:444
 #, c-format
 msgid "Remove \"%s\" from dictionary"
-msgstr ""
+msgstr "Odebrat „%s“ ze slovníku"
 
 #: ../src/subs_edit_ctrl.cpp:449
 msgid "No spell checker suggestions"
@@ -6762,12 +7044,12 @@ msgid ""
 "Could not get any subtitles provider for the preview box. Make sure that you "
 "have a provider installed."
 msgstr ""
+"Pro náhledové pole se nepodařilo získat žádného poskytovatele titulků. "
+"Ujistěte se, že je nějaký nainstalován."
 
 #: ../src/subs_preview.cpp:143
-#, fuzzy
-#| msgid "Subtitles provider"
 msgid "No subtitles provider"
-msgstr "Načtení titulků"
+msgstr "Žádný poskytovatel titulků"
 
 #: ../src/subtitle_format.cpp:102
 #, c-format
@@ -6841,11 +7123,11 @@ msgstr "Řádek přesahuje maximální délku: %s"
 
 #: ../src/subtitles_provider_libass.cpp:102
 msgid "Updating font index"
-msgstr ""
+msgstr "Aktualizace indexu písem"
 
 #: ../src/subtitles_provider_libass.cpp:103
 msgid "This may take several minutes"
-msgstr ""
+msgstr "Může to trvat několik minut"
 
 #: ../src/video_box.cpp:57
 msgid "Seek video"
@@ -6865,6 +7147,8 @@ msgid ""
 "Failed seeking video. The video file may be corrupt or incomplete.\n"
 "Error message reported: %s"
 msgstr ""
+"Přesun ve videu selhal. Video soubor může být poškozený nebo neúplný.\n"
+"Nahlášená chybová zpráva: %s"
 
 #: ../src/video_controller.cpp:234
 #, c-format
@@ -6872,6 +7156,8 @@ msgid ""
 "Failed rendering subtitles.\n"
 "Error message reported: %s"
 msgstr ""
+"Vykreslení titulků selhalo.\n"
+"Nahlášená chybová zpráva: %s"
 
 #: ../src/video_display.cpp:203
 #, c-format
@@ -6880,6 +7166,9 @@ msgid ""
 "updating your video card drivers may fix this.\n"
 "Error message reported: %s"
 msgstr ""
+"Nepodařilo se inicializovat zobrazení videa. Pomoci může zavření ostatních "
+"spuštěných programů a aktualizace ovladačů grafické karty.\n"
+"Nahlášená chybová zpráva: %s"
 
 #: ../src/video_display.cpp:210
 #, c-format
@@ -6887,6 +7176,8 @@ msgid ""
 "Could not upload video frame to graphics card.\n"
 "Error message reported: %s"
 msgstr ""
+"Nelze nahrát snímek videa do grafické karty.\n"
+"Nahlášená chybová zpráva: %s"
 
 #: ../src/video_display.cpp:252
 #, c-format
@@ -6894,22 +7185,20 @@ msgid ""
 "An error occurred trying to render the video frame on the screen.\n"
 "Error message reported: %s"
 msgstr ""
+"Při pokusu o vykreslení snímku videa na obrazovku došlo k chybě.\n"
+"Nahlášená chybová zpráva: %s"
 
 #: ../src/video_provider_manager.cpp:78
-#, fuzzy
-#| msgid "All fonts found.\n"
 msgid "file not found."
-msgstr "Všechny fonty nalezeny.\n"
+msgstr "soubor nenalezen."
 
 #: ../src/video_provider_manager.cpp:84
 msgid "video is not in a supported format."
-msgstr ""
+msgstr "video není v podporovaném formátu."
 
 #: ../src/video_provider_manager.cpp:101
-#, fuzzy
-#| msgid "Could not parse style"
 msgid "Could not open "
-msgstr "Nepodařilo se provést rozbor stylu"
+msgstr "Nelze otevřít "
 
 #: ../src/visual_tool.cpp:119
 msgid "visual typesetting"
@@ -7066,7 +7355,7 @@ msgstr "Automatizace"
 
 #: default_menu.json:0
 msgid "Window"
-msgstr ""
+msgstr "Okno"
 
 #: default_menu.json:0
 msgid "&Help"
@@ -7074,11 +7363,11 @@ msgstr "Nápověda"
 
 #: default_menu.json:0
 msgid "Open..."
-msgstr ""
+msgstr "Otevřít…"
 
 #: default_menu.json:0
 msgid "Open Recent"
-msgstr ""
+msgstr "Otevřít nedávné"
 
 #: default_menu.json:0
 msgid "Save"
@@ -7086,11 +7375,11 @@ msgstr "Uložit"
 
 #: default_menu.json:0
 msgid "Save As..."
-msgstr ""
+msgstr "Uložit jako…"
 
 #: default_menu.json:0
 msgid "Export As..."
-msgstr ""
+msgstr "Exportovat jako…"
 
 #: default_hotkey.json:244
 msgid "Subtitle Edit Box"
@@ -7160,16 +7449,16 @@ msgid "Adds \\be1 tags to all selected lines"
 msgstr "Přidá tag \\be1 všem označeným řádkům"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:6
-#, fuzzy
-#| msgid "Make fullwidth"
 msgid "Make text fullwidth"
-msgstr "Převést na plnou šířku"
+msgstr "Převést text na plnou šířku"
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:7
 msgid ""
 "Shows how to use the unicode include to iterate over characters and a lookup "
 "table to convert those characters to something else."
 msgstr ""
+"Ukazuje, jak pomocí unicode include procházet znaky a převádět je pomocí "
+"vyhledávací tabulky na něco jiného."
 
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:77
 #: ../automation/autoload/macro-2-mkfullwitdh.lua:80
@@ -7182,11 +7471,13 @@ msgstr "Konvertuje písmena latinky na písmena SJIS v plné šířce."
 
 #: ../automation/autoload/select-overlaps.moon:17
 msgid "Select overlaps"
-msgstr ""
+msgstr "Vybrat překryvy"
 
 #: ../automation/autoload/select-overlaps.moon:18
 msgid "Select lines which begin while another non-comment line is active"
 msgstr ""
+"Vybrat řádky, které začínají, zatímco je aktivní jiný řádek, který není "
+"komentářem"
 
 #: ../automation/autoload/strip-tags.lua:17
 msgid "Strip tags"
@@ -7202,28 +7493,33 @@ msgstr "odstranit tagy"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Installing runtime libraries..."
-msgstr ""
+msgstr "Instalace běhových knihoven..."
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Create a start menu icon"
-msgstr ""
+msgstr "Vytvořit ikonu v nabídce Start"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Automatically check for new versions of Aegisub"
-msgstr ""
+msgstr "Automaticky kontrolovat nové verze Aegisubu"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid "Update Checker:"
-msgstr ""
+msgstr "Kontrola aktualizací:"
 
 #: packages/win_installer/fragment_strings.iss:1
 msgid ""
-"This will install Aegisub {#BUILD_GIT_VERSION_STRING} on your computer."
-"%n%nAegisub is covered by the GNU General Public License version 2. This "
-"means you may use the application for any purpose without charge, but that "
-"no warranties of any kind are given either.%n%nSee the Aegisub website for "
-"information on obtaining the source code."
+"This will install Aegisub {#BUILD_GIT_VERSION_STRING} on your "
+"computer.%n%nAegisub is covered by the GNU General Public License version 2. "
+"This means you may use the application for any purpose without charge, but "
+"that no warranties of any kind are given either.%n%nSee the Aegisub website "
+"for information on obtaining the source code."
 msgstr ""
+"Tímto nainstalujete Aegisub {#BUILD_GIT_VERSION_STRING} do svého "
+"počítače.%n%nAegisub je šířen pod licencí GNU General Public License verze "
+"2. To znamená, že aplikaci můžete bezplatně používat k jakémukoli účelu, ale "
+"také že není poskytována žádná záruka.%n%nInformace o získání zdrojového "
+"kódu najdete na webu Aegisubu."
 
 #: ../packages/desktop/aegisub.desktop.in.in:4
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:6
@@ -7240,19 +7536,23 @@ msgstr "Tvorba a úprava titulků pro filmy."
 
 #: ../packages/desktop/aegisub.desktop.in.in:12
 msgid "subtitles;subtitle;captions;captioning;video;audio;"
-msgstr ""
+msgstr "titulky;titulek;titulkování;video;zvuk;"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:7
 msgid "Create and modify subtitles"
-msgstr ""
+msgstr "Vytvářejte a upravujte titulky"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:9
 msgid ""
 "Aegisub is a free, cross-platform open source tool for creating and "
 "modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
+"audio, and features many powerful tools for styling them, including a "
+"built-in real-time video preview."
 msgstr ""
+"Aegisub je bezplatný multiplatformní open-source nástroj pro vytváření a "
+"úpravu titulků. Aegisub umožňuje rychle a snadno časovat titulky podle zvuku "
+"a nabízí mnoho výkonných nástrojů pro jejich stylování, včetně vestavěného "
+"náhledu videa v reálném čase."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:10
 msgid ""
@@ -7264,6 +7564,13 @@ msgid ""
 "unrelated to Aegisub) many vital functions, or were too buggy and/or "
 "unreliable to be really useful."
 msgstr ""
+"Aegisub byl původně vytvořen jako nástroj, který měl usnadnit sázení "
+"titulků, zejména u anime fansubů. Když projekt začínal, mnoha jiným "
+"programům s podporou formátu Advanced SubStation Alpha chybělo mnoho "
+"důležitých funkcí (a v mnoha případech stále chybí; vývoj několika "
+"konkurenčních programů byl mezitím z různých důvodů nesouvisejících s "
+"Aegisubem ukončen), nebo byly příliš chybové a/nebo nespolehlivé, aby byly "
+"skutečně použitelné."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:11
 msgid ""
@@ -7274,46 +7581,52 @@ msgid ""
 "for creating karaoke effects, Automation can now be used much else, "
 "including creating macros and various other convenient tools)."
 msgstr ""
+"Od té doby se Aegisub rozrostl ve plnohodnotný, vysoce přizpůsobitelný "
+"editor titulků. Obsahuje mnoho praktických nástrojů pro časování, sázení, "
+"úpravy a překlad titulků a také výkonné skriptovací prostředí s názvem "
+"Automation (původně určené hlavně k vytváření karaoke efektů, dnes ale "
+"použitelné i pro mnohem víc, například makra a různé další užitečné "
+"nástroje)."
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:12
 msgid "Some highlights of Aegisub:"
-msgstr ""
+msgstr "Některé přednosti Aegisubu:"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:14
 msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
+msgstr "Jednoduché a intuitivní, přesto výkonné rozhraní pro úpravu titulků"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:15
 msgid "Support for many formats and character sets"
-msgstr ""
+msgstr "Podpora mnoha formátů a znakových sad"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:16
 msgid "Powerful video mode"
-msgstr ""
+msgstr "Výkonný režim videa"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:17
 msgid "Visual typesetting tools"
-msgstr ""
+msgstr "Nástroje vizuálního sázení"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:18
 msgid "Intuitive and customizable audio timing mode"
-msgstr ""
+msgstr "Intuitivní a přizpůsobitelný režim časování podle zvuku"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:19
 msgid "Fully scriptable through the Automation module"
-msgstr ""
+msgstr "Plně skriptovatelné pomocí modulu Automation"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:43
 msgid "Typesetting"
-msgstr ""
+msgstr "Sázení"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:47
 msgid "Audio video"
-msgstr ""
+msgstr "Zvuk a video"
 
 #: ../packages/desktop/aegisub.metainfo.xml.in.in:51
 msgid "Audio timing"
-msgstr ""
+msgstr "Časování podle zvuku"
 
 #~ msgid "Kanji timing"
 #~ msgstr "Časovač Kanji"
